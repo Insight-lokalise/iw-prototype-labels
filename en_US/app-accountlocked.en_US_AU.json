@@ -1,0 +1,7 @@
+{
+    "labels": {
+        "accountLockedMessage12": "Your account is locked due to multiple failed attempts to log in.",
+        "accountLockedMessage1245": "Your account is123 locked due to multiple failed attempts to log in.",
+        "accountLockedMessage12452": "Your account is123 locked due to multiple failed attempts to log in."
+    }
+}
