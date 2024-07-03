@@ -23,8 +23,7 @@ jobs:
           ref: lokalise
           clean: true
           token: ${{ secrets.WEB_TO_LOKALISE }}
-      - name: Synchronize ecom-services labels
-        working-directory: ecom-services
+      - name: Synchronize iw-prototype labels
         run: |
           modules=${{ env.MODULES }} 
             for item in "${modules[@]}"
