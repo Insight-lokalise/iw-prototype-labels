@@ -1,0 +1,45 @@
+name: Synchronize Insight.com Labels
+on:
+  push:
+    branches:
+      - main
+
+env:
+  MODULES: ("app-account-center")
+
+jobs:
+  Synchronize-labels:
+    name: Synchronize
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Checkout iw-prototype
+        uses: actions/checkout@v2
+        with:
+          repository: Insight-IT-Web/iw-prototype
+          path: iw-prototype
+          ref: lokalise
+          clean: true
+          token: ${{ secrets.WEB_TO_LOKALISE }}
+      - name: Synchronize ecom-services labels
+        working-directory: ecom-services
+        run: |
+          modules=${{ env.MODULES }} 
+            for item in "${modules[@]}"
+            do
+            echo "$item"
+            rm -Rf iw-prototype/packages/$item/labels
+            ls -ltr
+            pwd
+            cp -R  $item/labels iw-prototype/packages/$item/
+            cd iw-prototype
+            git remote set-url origin https://${{ secrets.WEB_TO_LOKALISE }}@github.com/Insight-IT-Web/iw-prototype.git
+            git status
+            git add .
+            git status
+            git commit -m "PRT-1234 synchronizing iw-prototype labels"
+            git push
+            done
+        shell: bash
