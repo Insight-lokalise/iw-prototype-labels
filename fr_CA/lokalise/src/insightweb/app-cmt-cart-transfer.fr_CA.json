@@ -1,0 +1,20 @@
+{
+    "labels": {
+        "taxEstimate": "",
+        "unitPrice": "",
+        "submit": "",
+        "totalPrice": "",
+        "shippingEstimate": "",
+        "unspsc": "",
+        "manufacturer": "",
+        "confirm": "",
+        "total": "",
+        "cartTransferPageHeading": "",
+        "subtotal": "",
+        "qty": "",
+        "prodName": "",
+        "pageDescription": "",
+        "partNumber": "",
+        "ewrFee": ""
+    }
+}
