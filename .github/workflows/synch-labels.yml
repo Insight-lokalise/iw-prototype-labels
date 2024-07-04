@@ -34,7 +34,7 @@ jobs:
             rm -Rf iw-prototype/packages/$item/src/assets/labels
             ls -ltr
             pwd
-            cp -R  $item/labels iw-prototype/packages/$item/src/assets/
+            cp -R  $item/src/assets/labels iw-prototype/packages/$item/src/assets/
             cd iw-prototype
             git remote set-url origin https://${{ secrets.WEB_TO_LOKALISE }}@github.com/Insight-IT-Web/iw-prototype.git
             git config --global user.email "pjetly@insight.com"
