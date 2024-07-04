@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "accountLockedMessage12": "Your account is locked due to multiple failed attempts to log in.",
+        "accountLockedMessage1245": "Your account is123 locked due to multiple failed attempts to log in.",
+        "accountLockedMessage12452": "Your account is123 locked due to multiple failed attempts to log in.",
+        "accountLockedMessage124522": "Your account is123 locked due to multiple failed attempts to log in.",
+        "accountLockedMessage1245223": "Your account is123 locked due to multiple failed attempts to log in.",
+        "accountLockedMessage124522311": "Your account is123 locked due to multiple failed attempts to log in.",
+        "accountLockedMessage": "Your account is123 locked due to multiple failed attempts to log in.",
+        "accountLockedMessage_demo456": "Your account is locked due to multiple failed attempts to log in:for demo.456",
+        "accountLockedMessage_demo": "Your account is locked due to multiple failed attempts to log in:for demo."
+    }
+}
