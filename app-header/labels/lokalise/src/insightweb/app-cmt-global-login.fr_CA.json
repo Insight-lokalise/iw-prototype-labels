@@ -1,0 +1,32 @@
+{
+    "labels": {
+        "no": "",
+        "lastName": "",
+        "errorSalesOrgNotFound": "",
+        "select": "",
+        "errorEmailNotInGLM": "",
+        "update": "",
+        "salesOrg": "",
+        "errorWithRequest": "",
+        "whatManage": "",
+        "stillSeemsReferenced": "",
+        "updateGLM": "",
+        "existingClientIssues": "",
+        "emailAddress": "",
+        "loginLinkSuccessful": "",
+        "loginRemoveSuccessful": "",
+        "errorSoldToNotFound": "",
+        "errorExistingSAPUserFound": "",
+        "yes": "",
+        "newSACErrors": "",
+        "linkToSoldTo": "",
+        "firstName": "",
+        "errorEmailNotLinkedToAccount": "",
+        "phoneNumber": "",
+        "linkToSoldToSuccessful": "",
+        "areYouSureDelete": "",
+        "soldToNumber": "",
+        "errorSAPContactNotFound": "",
+        "sapContactID": ""
+    }
+}
