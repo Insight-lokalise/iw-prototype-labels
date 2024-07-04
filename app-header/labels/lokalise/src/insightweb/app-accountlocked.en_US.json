@@ -1,0 +1,9 @@
+{
+    "labels": {
+        "accountLockedMessage1": "Your account is locked due to multiple failed attempts to log in.  Please",
+        "clickHereText": "reset your password",
+        "passwordAssistanceText": "Password Assistance",
+        "accountLockedMessage2": "or contact your Insight representative for assistance.",
+        "pageTitle": "Account Locked"
+    }
+}
