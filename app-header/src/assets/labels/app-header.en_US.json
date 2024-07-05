@@ -1,10 +1,10 @@
 {
-  "labels": {
-    "Renewals & warranty manager": "Renewals & warranty manager123",
-    "See all available accounts": "See all available accounts",
-    "Search suggestions": "Search suggestions",
-    "Account": "Account",
-    "Customer documents": "Customer documents",
-    "Form contains country select dropdown and language select dropdown": "Form contains country select dropdown and language select dropdown123"
-  }
+    "labels": {
+        "Renewals & warranty manager": "Renewals & warranty manager123",
+        "See all available accounts": "See all available accounts",
+        "Search suggestions": "Search suggestions",
+        "Account": "Account",
+        "Customer documents": "Customer documents",
+        "Form contains country select dropdown and language select dropdown": "Form contains country select dropdown and language select dropdown123"
+    }
 }
