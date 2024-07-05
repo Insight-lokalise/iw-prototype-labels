@@ -1,5 +1,8 @@
 name: Synchronize Insight.com Labels
 on:
+  push:
+    branches:
+      - main
   pull_request:
     types:
       - synchronize
