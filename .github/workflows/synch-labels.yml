@@ -11,7 +11,7 @@ env:
 jobs:
   Synchronize-labels:
     name: Synchronize
-    if: github.event.pull_request.merged == true
+    #if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -39,13 +39,11 @@ jobs:
             for item in "${modules[@]}"
             do
             echo "$item"
-            if [ -d  packages/$item/src/assets/labels ]; then
               if [ -d iw-prototype/packages/$item/src/assets/labels ]; then
                rm -Rf iw-prototype/packages/$item/src/assets/labels
               fi
               mkdir -p iw-prototype/packages/$item/src/assets/labels
               cp -R  $item/src/assets/labels iw-prototype/packages/$item/src/assets/
-            fi
             done
             cd iw-prototype
             git remote set-url origin https://${{ secrets.WEB_TO_LOKALISE }}@github.com/Insight-IT-Web/iw-prototype.git
