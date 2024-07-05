@@ -31,7 +31,11 @@ jobs:
             for item in "${modules[@]}"
             do
             echo "$item"
-            rm -Rf iw-prototype/packages/$item/src/assets/labels
+           if [ -d  packages/$item/src/assets/labels ]; then
+              if [ -d iw-prototype/packages/$item/src/assets/labels ]; then
+               rm -Rf iw-prototype/packages/$item/src/assets/labels
+              fi
+              mkdir -p iw-prototype/packages/$item/src/assets/labels
             ls -ltr
             pwd
             cp -R  $item/src/assets/labels iw-prototype/packages/$item/src/assets/
