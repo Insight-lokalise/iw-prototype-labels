@@ -14,7 +14,7 @@ env:
 jobs:
   Synchronize-labels:
     name: Synchronize
-    if: github.event.pull_request.merged == true
+    #if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -30,15 +30,7 @@ jobs:
           token: ${{ secrets.WEB_TO_LOKALISE }}
       - name: Synchronize iw-prototype labels
         run: |
-            modules=("app-account-center" "app-header" "app-add-to-cart-modal" "app-api-menu-filtering" "app-api-user-service"  "app-business-review"
-                      "app-ces-migration" "app-client-management-reports" "app-company-standards"  "app-compare-list"
-                      "app-compare-similar"  "app-core"  "app-create-account"  "app-cs-client"  "app-css"  "app-dd-management-tool"
-                      "app-dynamic-tabs"  "app-footer"  "app-gigya-sso"  "app-guest-checkout"  
-                      "app-insight-web"  "app-invoices"  "app-limit-pdp"  "app-obc-redesign"  "app-personal-products"
-                      "app-product"  "app-product-center"  "app-product-details"  "app-product-list"  "app-quotes"
-                      "app-ratings-reviews"  "app-reporting"  "app-review-submission"  "app-saved-carts"
-                      "app-saved-lists"  "app-search"  "app-secondary-nav"  "app-software-licensing"  "app-terms-conditions"
-                      "impact-client"  "impact-server"  "iw-checkout"  "iw-dashboard")
+          modules=("app-account-center" "app-header" "app-add-to-cart-modal" "app-api-menu-filtering" "app-api-user-service"  "app-business-review" "app-ces-migration" "app-client-management-reports" "app-company-standards"  "app-compare-list"      "app-compare-similar"  "app-core"  "app-create-account"  "app-cs-client"  "app-css"  "app-dd-management-tool" "app-dynamic-tabs"  "app-footer"  "app-gigya-sso"  "app-guest-checkout" "app-insight-web"  "app-invoices"  "app-limit-pdp" "app-obc-redesign" "app-personal-products" "app-product"  "app-product-center"  "app-product-details"  "app-product-list"  "app-quotes" "app-ratings-reviews"  "app-reporting"  "app-review-submission"  "app-saved-carts" "app-saved-lists"  "app-search"  "app-secondary-nav"  "app-software-licensing"  "app-terms-conditions" "impact-client"  "impact-server"  "iw-checkout"  "iw-dashboard")
             for item in "${modules[@]}"
             do
             echo "$item"
