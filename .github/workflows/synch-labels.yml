@@ -35,7 +35,9 @@ jobs:
             do
             echo "$item"
               if [ -d  $item/src/assets/labels ]; then
+                echo "inside first if"
                 if [ -d iw-prototype/packages/$item/src/assets/labels ]; then
+                  echo "inside second if"
                  rm -Rf iw-prototype/packages/$item/src/assets/labels
                 fi
                 mkdir -p iw-prototype/packages/$item/src/assets/labels
