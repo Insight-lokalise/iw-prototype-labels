@@ -52,5 +52,5 @@ jobs:
             git add .
             git status
             git commit -m "PRT-1234 synchronizing iw-prototype labels"
-            git push
+            git push -u origin lokalise
         shell: bash
