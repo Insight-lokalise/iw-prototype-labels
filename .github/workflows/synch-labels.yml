@@ -8,9 +8,6 @@ on:
       - synchronize
       - closed
 
-env:
-  MODULES: ("app-account-center")
-
 jobs:
   Synchronize-labels:
     name: Synchronize
@@ -48,7 +45,6 @@ jobs:
             git remote set-url origin https://${{ secrets.WEB_TO_LOKALISE }}@github.com/Insight-IT-Web/iw-prototype.git
             git config --global user.email "pjetly@insight.com"
             git config --global user.name "Pooja jetly"
-            git status
             git add .
             git status
             git commit -m "PRT-1234 synchronizing iw-prototype labels"
