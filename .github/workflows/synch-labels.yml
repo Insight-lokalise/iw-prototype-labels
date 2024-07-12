@@ -1,0 +1,48 @@
+name: Synchronize Insight.com Labels
+on:
+  pull_request:
+    types:
+      - synchronize
+      - closed
+
+jobs:
+  Synchronize-labels:
+    name: Synchronize
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Checkout iw-prototype
+        uses: actions/checkout@v2
+        with:
+          repository: Insight-IT-Web/iw-prototype
+          path: iw-prototype
+          ref: develop
+          clean: true
+          token: ${{ secrets.WEB_TO_LOKALISE }}
+      - name: Synchronize iw-prototype labels
+        run: |
+            modules=("app-account-center" "app-header" "app-add-to-cart-modal" "app-api-menu-filtering" "app-api-user-service"  "app-business-review" "app-ces-migration" "app-client-management-reports" "app-company-standards"  "app-compare-list"      "app-compare-similar"  "app-core"  "app-create-account"  "app-cs-client"  "app-css"  "app-dd-management-tool" "app-dynamic-tabs"  "app-footer"  "app-gigya-sso"  "app-guest-checkout" "app-insight-web"  "app-invoices"  "app-limit-pdp" "app-obc-redesign" "app-personal-products" "app-product"  "app-product-center"  "app-product-details"  "app-product-list"  "app-quotes" "app-ratings-reviews"  "app-reporting"  "app-review-submission"  "app-saved-carts" "app-saved-lists"  "app-search"  "app-secondary-nav"  "app-software-licensing"  "app-terms-conditions" "impact-client"  "impact-server"  "iw-checkout"  "iw-dashboard")
+            for item in "${modules[@]}"
+            do
+            echo "$item"
+              if [ -d  $item/src/assets/labels ]; then
+                if [ -d iw-prototype/packages/$item/src/assets/labels ]; then
+                 rm -Rf iw-prototype/packages/$item/src/assets/labels
+                fi
+                mkdir -p iw-prototype/packages/$item/src/assets/labels
+               cp -R  $item/src/assets/labels iw-prototype/packages/$item/src/assets/
+              fi
+            done
+            cd iw-prototype
+            git remote set-url origin https://${{ secrets.WEB_TO_LOKALISE }}@github.com/Insight-IT-Web/iw-prototype.git
+            git config --global user.email "pjetly@insight.com"
+            git config --global user.name "Pooja jetly"
+            git status
+            git add .
+            git status
+            git commit -m "PRT-1234 synchronizing iw-prototype labels"
+            git push
+        shell: bash
