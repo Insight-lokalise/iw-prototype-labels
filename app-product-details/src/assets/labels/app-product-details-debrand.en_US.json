@@ -1,1 +1,5 @@
-{"labelPath":"/content/messages/app-product-details-debrand/i18n/en_us.json/jcr:content","labels":"{}"}
+{
+  "labels": {
+    "new key_pooja": "this is my new key - added by Pooja"
+  }
+}
