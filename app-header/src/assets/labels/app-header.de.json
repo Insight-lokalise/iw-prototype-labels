@@ -1,12 +1,11 @@
 {
     "labels": {
         "Renewals & warranty manager": "",
-        "See all available accounts": "",
+        "See all available accounts": "Alle verfügbaren Konten anzeigen",
         "Search suggestions": "",
         "Account": "",
         "Customer documents": "",
-        "Form contains country select dropdown and language select dropdown": "",
-        "new key_suresh": "",
-        "new key_pooja": "Neuer Wert – hinzugefügt von Pooja-12"
+        "Form contains country select dropdown and language select dropdown": "Das Formular enthält ein Dropdown-Menü zur Länderauswahl und ein Dropdown-Menü zur Sprachauswahl",
+        "new key": "Neuer Wert - Aktualisiert von Suresh"
     }
 }
