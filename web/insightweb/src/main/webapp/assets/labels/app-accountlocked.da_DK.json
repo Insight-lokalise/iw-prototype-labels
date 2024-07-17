@@ -1,0 +1,10 @@
+{
+    "labels": {
+        "accountLockedMessage1": "12 11Din konto er låst på grund af flere mislykkede forsøg på at logge ind. Please",
+        "clickHereText": "Nulstil din adgangskode",
+        "passwordAssistanceText": "Adgangskodehjælp",
+        "accountLockedMessage2": "eller kontakt din Insight-repræsentant for at få hjælp.",
+        "pageTitle": "Konto låst",
+        "new_key_pooja": "Dette er min nøgle -Pooja-test1123"
+    }
+}
