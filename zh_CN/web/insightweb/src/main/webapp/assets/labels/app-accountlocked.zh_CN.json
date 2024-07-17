@@ -1,0 +1,10 @@
+{
+    "labels": {
+        "accountLockedMessage1": "12 11您的账户由于多次登录失败已被锁定。请",
+        "accountLockedMessage2": "或联系您的 Insight 代表寻求帮助。",
+        "clickHereText": "重置你的密码",
+        "new_key_pooja": "这是我的钥匙 -Pooja-test_chinese1212",
+        "pageTitle": "帐户被锁定",
+        "passwordAssistanceText": "密码协助"
+    }
+}
