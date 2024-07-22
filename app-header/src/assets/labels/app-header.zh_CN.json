@@ -1,12 +1,10 @@
 {
     "labels": {
-        "Account": "",
-        "Customer documents": "",
+        "Account": "帐户",
+        "Customer documents": "顾客评论",
         "Form contains country select dropdown and language select dropdown": "表单包含国家\/地区选择下拉列表和语言选择下拉列表1233-由 pooja 更新",
-        "Renewals & warranty manager": "",
-        "Search suggestions": "",
-        "See all available accounts": "",
-        "new key_pooja": "新价值 - 由 Pooja-12 添加",
-        "new key_suresh": "新价值 - 由 Suresh 更新 - 1234"
+        "Renewals & warranty manager": "续订和保修经理123",
+        "Search suggestions": "搜索建议",
+        "See all available accounts": "查看所有可用帐户"
     }
 }

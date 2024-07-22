@@ -1,12 +1,10 @@
 {
     "labels": {
-        "Account": "",
-        "Customer documents": "",
-        "Form contains country select dropdown and language select dropdown": "",
-        "Renewals & warranty manager": "",
-        "Search suggestions": "",
-        "See all available accounts": "",
-        "new key_pooja": "",
-        "new key_suresh": ""
+        "Account": "Account",
+        "Customer documents": "Customer documents",
+        "Form contains country select dropdown and language select dropdown": "Form contains country select dropdown and language select dropdown",
+        "Renewals & warranty manager": "Renewals & warranty manager",
+        "Search suggestions": "Search suggestions",
+        "See all available accounts": "See all available accounts"
     }
 }

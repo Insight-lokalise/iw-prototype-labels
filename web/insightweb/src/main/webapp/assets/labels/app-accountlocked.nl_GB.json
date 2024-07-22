@@ -1,0 +1,9 @@
+{
+    "labels": {
+        "accountLockedMessage1": "Uw account is vergrendeld wegens meerdere mislukte pogingen om in te loggen. Alstublieft",
+        "clickHereText": "reset uw wachtwoord",
+        "passwordAssistanceText": "Wachtwoordondersteuning",
+        "accountLockedMessage2": "of neem contact op met uw Insight-vertegenwoordiger voor hulp.",
+        "pageTitle": "Account vergrendeld"
+    }
+}

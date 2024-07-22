@@ -1,12 +1,10 @@
 {
     "labels": {
-        "Account": "",
-        "Customer documents": "",
-        "Form contains country select dropdown and language select dropdown": "",
-        "Renewals & warranty manager": "",
-        "Search suggestions": "",
-        "See all available accounts": "",
-        "new key_pooja": "",
-        "new key_suresh": ""
+        "Account": "Compte",
+        "Customer documents": "Documents du client",
+        "Form contains country select dropdown and language select dropdown": "Le formulaire contient une liste déroulante de sélection de pays et une liste déroulante de sélection de langue.",
+        "Renewals & warranty manager": "Gestionnaire des renouvellements et garanties",
+        "Search suggestions": "Suggestions de recherche",
+        "See all available accounts": "Afficher tous les comptes disponibles"
     }
 }
