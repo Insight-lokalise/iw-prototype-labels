@@ -1,0 +1,10 @@
+{
+    "labels": {
+        "accountLockedMessage1": "Votre compte est verrouillé en raison de plusieurs échecs de connexion. Veuillez",
+        "clickHereText": "réinitialiser votre mot de passe",
+        "passwordAssistanceText": "Assistance mot de passe",
+        "accountLockedMessage2": "ou contactez votre représentant Insight pour obtenir de l'aide.",
+        "pageTitle": "Compte verrouillé",
+        "new_key_pooja": ""
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "labels": {
+        "accountLockedMessage1": "Su cuenta está bloqueada debido a varios intentos fallidos de iniciar sesión. Por favor",
+        "clickHereText": "restablecer su contraseña",
+        "passwordAssistanceText": "Asistencia con la contraseña",
+        "accountLockedMessage2": "o póngase en contacto con su representante de Insight para obtener ayuda.",
+        "pageTitle": "Cuenta bloqueada",
+        "new_key_pooja": ""
+    }
+}
