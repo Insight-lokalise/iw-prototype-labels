@@ -20,8 +20,8 @@ jobs:
         id: api-request
         uses: muhfaris/request-action@v0.1.2
         with:
-          url:  ${{ secrets.DOWNLOAD_API_URL }}
-          headers: ${{ secrets.DOWNLOAD_API_SECRET }}
+          url:  ${{ secrets.PROTOTYPE_DOWNLOAD_API_URL }}
+          headers: ${{ secrets.LOKALISE_DOWNLOAD_API_SECRET }}
           body: |
             {
                "format":"json",
