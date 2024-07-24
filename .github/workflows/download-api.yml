@@ -1,12 +1,16 @@
-name: Synchronize Insight.com Labels
+name: Download labels from lokalise
 
 on:
-  workflow_dispatch:     
+  schedule:
+    - cron: '40 00 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - lokalise-1
 
 jobs:
-  Synchronize-labels:
-    name: Synchronize
-    if: github.event.pull_request.merged == true
+  Download_labels:
+    name: Download labels
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -14,13 +18,10 @@ jobs:
           fetch-depth: 0
       - name: Make API Request
         id: api-request
-        uses: muhfaris/request-action@v1
+        uses: muhfaris/request-action@v0.1.2
         with:
-          url: 'https://api.lokalise.com/api2/projects/6556663365f9906bb29784.43946375/files/download'
-          headers: |
-            {
-              "X-Api-Token" : "12c2c6e232647c64b402b71d053548442347c499"
-            }
+          url:  ${{ secrets.LOKALISE_DOWNLOAD_API_URL }}
+          headers: ${{ secrets.LOKALISE_DOWNLOAD_API_SECRET }}
           body: |
             {
                "format":"json",
