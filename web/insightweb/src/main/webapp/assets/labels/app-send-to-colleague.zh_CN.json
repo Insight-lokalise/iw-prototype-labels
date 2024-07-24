@@ -1,0 +1,23 @@
+{
+    "labels": {
+        "attachLicenseProof": "附上许可证证明",
+        "bottomText1": "您的电子邮件地址不会被出售或用于促销目的。它只是用来让接收者知道谁在推荐产品。",
+        "bottomText2": "如果您希望将此电子邮件发送给多个收件人，请在下面“收件人的电子邮件”框中的不同电子邮件地址之间使用逗号或分号。",
+        "bottomText3": "示例：recipient1@mywebsite.com、recipient2@mywebsite.com",
+        "emailErrorText": "请输入有效的电子邮件地址",
+        "emailFormat": "电子邮件格式",
+        "emailinputFormat": "请确保收件人的电子邮件地址格式正确",
+        "html": "HTML",
+        "inputErrorText": "此字段是必需的。请输入一个值。",
+        "pdf": "PDF",
+        "recEmail": "收件人的电子邮件",
+        "requiredFields": "表示必填字段",
+        "sendEmail": "发送电子邮件",
+        "sendtoColleague": "向同事发送",
+        "successMsg": "您的邮件已成功发送。",
+        "thankYou": "谢谢谢谢",
+        "yourComments": "您的评论",
+        "yourEmail": "您的电子邮件 ",
+        "yourName": "您的姓名 "
+    }
+}

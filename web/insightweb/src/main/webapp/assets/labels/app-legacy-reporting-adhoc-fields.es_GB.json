@@ -1,0 +1,328 @@
+{
+    "labels": {
+        "ADHOCReqOptions": [
+            {
+                "name": "ACCOUNT NAME",
+                "value": "Nombre de la cuenta"
+            },
+            {
+                "name": "ACCOUNT NUMBER",
+                "value": "Número de cuenta"
+            },
+            {
+                "name": "ORDER NUMBER",
+                "value": "Número de pedido"
+            },
+            {
+                "name": "ORDER LINE Number",
+                "value": "Número de línea de pedido"
+            },
+            {
+                "name": "INVOICE NUMBER",
+                "value": "Número de factura"
+            },
+            {
+                "name": "INVOICE LINE Number",
+                "value": "Número de línea de factura"
+            }
+        ],
+        "ADHOCoptions": [
+            {
+                "name": "# OF USERS",
+                "value": "# de usuarias"
+            },
+            {
+                "name": "ACCOUNT ADDRESS",
+                "value": "Dirección de la cuenta"
+            },
+            {
+                "name": "ACCOUNT ATTENTION",
+                "value": "Atención de cuenta"
+            },
+            {
+                "name": "ACCOUNT CITY",
+                "value": "Ciudad de la cuenta"
+            },
+            {
+                "name": "ACCOUNT STATE\/PROVINCE",
+                "value": "Estado\/provincia de la cuenta"
+            },
+            {
+                "name": "ACCOUNT POSTAL CODE",
+                "value": "Código postal de la cuenta"
+            },
+            {
+                "name": "ACCOUNT COUNTRY",
+                "value": "País de la cuenta"
+            },
+            {
+                "name": "ASSET TAG",
+                "value": "Etiqueta de activo"
+            },
+            {
+                "name": "BILLING ACCOUNT NUMBER",
+                "value": "Facturar a número de cuenta"
+            },
+            {
+                "name": "BILLING ACCOUNT NAME",
+                "value": "Facturar a la empresa"
+            },
+            {
+                "name": "CARRIER",
+                "value": "Transportista"
+            },
+            {
+                "name": "CONTACT EMAIL",
+                "value": "Correo electrónico de contacto"
+            },
+            {
+                "name": "CONTACT NAME",
+                "value": "Nombre del contacto"
+            },
+            {
+                "name": "CONTACT PHONE",
+                "value": "Teléfono de contacto"
+            },
+            {
+                "name": "COUNTRY OF USAGE",
+                "value": "País de uso"
+            },
+            {
+                "name": "CURRENCY",
+                "value": "Moneda"
+            },
+            {
+                "name": "CUSTOMER ID",
+                "value": "ID cliente"
+            },
+            {
+                "name": "CUSTOMER SKU",
+                "value": "SKU del cliente"
+            },
+            {
+                "name": "ENROLLMENT END DATE",
+                "value": "Fecha de finalización del alta"
+            },
+            {
+                "name": "ENROLLMENT NUMBER",
+                "value": "Número de alta"
+            },
+            {
+                "name": "ENROLLMENT START DATE",
+                "value": "Fecha de inicio de alta"
+            },
+            {
+                "name": "EWR FEES",
+                "value": "Tasas EWR"
+            },
+            {
+                "name": "EXTENDED PRICE",
+                "value": "Precio ampliado"
+            },
+            {
+                "name": "FREIGHT LINE",
+                "value": "Línea de costes de transporte"
+            },
+            {
+                "name": "FREIGHT TOTAL",
+                "value": "Total costes de transporte"
+            },
+            {
+                "name": "GST\/HST",
+                "value": "GST\/HST"
+            },
+            {
+                "name": "INSIGHT MATERAL NO",
+                "value": "N.º de material de Insight"
+            },
+            {
+                "name": "INVOICE DATE",
+                "value": "Fecha de la factura"
+            },
+            {
+                "name": "INVOICED QUANTITY",
+                "value": "Cantidad facturada"
+            },
+            {
+                "name": "LANGUAGE",
+                "value": "Idioma"
+            },
+            {
+                "name": "MANUFACTURER",
+                "value": "Fabricante"
+            },
+            {
+                "name": "MATERIAL DESCRIPTION",
+                "value": "Descripción del material"
+            },
+            {
+                "name": "MATERIAL NUMBER",
+                "value": "Número de material"
+            },
+            {
+                "name": "MAINTENANCE END DATE",
+                "value": "Fecha de finalización de mantenimiento"
+            },
+            {
+                "name": "MAINTENANCE START DATE",
+                "value": "Fecha de inicio de mantenimiento"
+            },
+            {
+                "name": "MASTER AGREEMENT NUMBER",
+                "value": "Número del contrato marco"
+            },
+            {
+                "name": "MEDIA",
+                "value": "Medios"
+            },
+            {
+                "name": "OPERATIONS CENTER",
+                "value": "Centro de operaciones"
+            },
+            {
+                "name": "ORDER DATE",
+                "value": "Fecha del pedido"
+            },
+            {
+                "name": "ORDER TYPE",
+                "value": "Tipo de pedido"
+            },
+            {
+                "name": "QUANTITY ORDERED",
+                "value": "Cantidad pedida"
+            },
+            {
+                "name": "PACKAGE COUNT",
+                "value": "Cantidad de paquetes"
+            },
+            {
+                "name": "PLANT SOURCE",
+                "value": "Fuente de la planta"
+            },
+            {
+                "name": "PO NUMBER",
+                "value": "Número de orden de compra"
+            },
+            {
+                "name": "PO Release No",
+                "value": "PONúmero de orden de compra"
+            },
+            {
+                "name": "PRODUCT CATEGORY",
+                "value": "Categoría del producto"
+            },
+            {
+                "name": "PRODUCT SUBCATEGORY",
+                "value": "Subcategoría de producto"
+            },
+            {
+                "name": "PRODUCT TITLE",
+                "value": "Título del producto"
+            },
+            {
+                "name": "PRODUCT TYPE",
+                "value": "Tipo de producto"
+            },
+            {
+                "name": "PST\/QST",
+                "value": "PST\/QST"
+            },
+            {
+                "name": "PURCHASE TYPE",
+                "value": "Tipo de compra"
+            },
+            {
+                "name": "REFERENCE NUMBER",
+                "value": "Número de referencia"
+            },
+            {
+                "name": "REGION",
+                "value": "Región"
+            },
+            {
+                "name": "REPORTING PARENT #",
+                "value": "N.º de nivel primario de informes"
+            },
+            {
+                "name": "REPORTING PARENT NAME",
+                "value": "Nombre de nivel primario de informes"
+            },
+            {
+                "name": "SALES REP NAME",
+                "value": "Nombre del representante de ventas"
+            },
+            {
+                "name": "SERIAL NUMBER",
+                "value": "Número de serie"
+            },
+            {
+                "name": "SALES SERVICE REP NAME",
+                "value": "Nombre del representante de ventas de servicio"
+            },
+            {
+                "name": "SHIPPING CITY",
+                "value": "Ciudad de envío"
+            },
+            {
+                "name": "SHIPPING COUNTRY",
+                "value": "País de envío"
+            },
+            {
+                "name": "SHIP DATE",
+                "value": "Fecha de envío"
+            },
+            {
+                "name": "Ship Method",
+                "value": "Método de envío"
+            },
+            {
+                "name": "SHIPPING NAME",
+                "value": "Nombre de envío"
+            },
+            {
+                "name": "SHIPPING STATE\/PROVINCE",
+                "value": "Estado\/provincia de envío"
+            },
+            {
+                "name": "SHIPPING ADDRESS",
+                "value": "Calle de envío"
+            },
+            {
+                "name": "SHIPPING ATTENTION",
+                "value": "Atención de envío"
+            },
+            {
+                "name": "SHIPPING POSTAL CODE",
+                "value": "Código postal de envío"
+            },
+            {
+                "name": "SHIPPING ACCOUNT",
+                "value": "Cuenta de envío"
+            },
+            {
+                "name": "TAX CHARGE",
+                "value": "Cargo de impuesto de factura"
+            },
+            {
+                "name": "TOTAL PRICE",
+                "value": "Precio total"
+            },
+            {
+                "name": "TRACKING NUMBER",
+                "value": "Número de seguimiento"
+            },
+            {
+                "name": "UNIT PRICE",
+                "value": "Precio unitario"
+            },
+            {
+                "name": "UNSPSC CODE",
+                "value": "Código UNSPSC"
+            },
+            {
+                "name": "VERSION",
+                "value": "Versión"
+            }
+        ]
+    }
+}

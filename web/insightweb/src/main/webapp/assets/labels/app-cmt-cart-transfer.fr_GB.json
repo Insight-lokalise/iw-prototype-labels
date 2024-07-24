@@ -1,0 +1,20 @@
+{
+    "labels": {
+        "cartTransferPageHeading": "Commande : Expédier, facturer et payer :",
+        "confirm": "Confirmer",
+        "ewrFee": "Estimation des frais EWR :",
+        "manufacturer": "Fabricant",
+        "pageDescription": "Merci d’avoir utilisé Insight comme solution d’approvisionnement électronique. Vérifiez le contenu du panier ci-dessous pour confirmer votre commande. Pour passer votre commande, veuillez<br\/> sélectionner et soumettre votre panier avec votre application hôte.",
+        "partNumber": "Numéro de pièce",
+        "prodName": "Nom du produit",
+        "qty": "Qté",
+        "shippingEstimate": "Estimation de livraison",
+        "submit": "Valider",
+        "subtotal": "Sous-total",
+        "taxEstimate": "Estimation des taxes",
+        "total": "Total",
+        "totalPrice": "Prix total",
+        "unitPrice": "Prix unitaire",
+        "unspsc": "Version UNSPSC "
+    }
+}

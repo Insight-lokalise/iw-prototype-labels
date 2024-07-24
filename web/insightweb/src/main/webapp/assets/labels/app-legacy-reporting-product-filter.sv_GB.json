@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "AllTypes": "ALLA typer",
+        "filterByProduct": "Filtrera enligt produkt:",
+        "hardwareFilters": "Visa endast maskinvarufilter",
+        "hardwareSoftwareFilters": "Visa programvaru- och maskinvarufilter",
+        "manufacturers": "Tillverkare",
+        "productCategories": "Produktkategorier",
+        "productSubCategories": "Produktunderkategorier",
+        "productTypes": "Produkttyp ",
+        "softwareFilters": "Visa endast maskinvarufilter"
+    }
+}

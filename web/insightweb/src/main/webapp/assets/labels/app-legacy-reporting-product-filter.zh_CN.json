@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "AllTypes": "所有类型",
+        "filterByProduct": "按产品筛选：",
+        "hardwareFilters": "仅显示硬件筛选器",
+        "hardwareSoftwareFilters": "显示软件和硬件筛选器",
+        "manufacturers": "厂家",
+        "productCategories": "产品分类\/子分类",
+        "productSubCategories": "产品子分类",
+        "productTypes": "软件许可类型",
+        "softwareFilters": "仅显示软件筛选器"
+    }
+}

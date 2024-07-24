@@ -1,0 +1,9 @@
+{
+    "labels": {
+        "endDate": "Enddatum:",
+        "filterByDate": "Nach Datumsbereich filtern:",
+        "quickDate": "Schneller Termin:",
+        "scheduleOpts": "Bericht zur Ausführung einplanen:",
+        "startDate": "Startdatum:"
+    }
+}

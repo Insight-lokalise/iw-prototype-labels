@@ -1,0 +1,27 @@
+{
+    "labels": {
+        "AllReportingPeriodsCurrent": "Todos los periodos de informe están al día",
+        "MonthlyRentalSku": "SKU de alquiler mensual",
+        "VSPPMonthlyRental": "Alquiler mensual de VSPP",
+        "YouAreAbout": "Está a punto de notificar cero uso para el mes seleccionado. ¿Está seguro de que desea continuar con notificar cero uso?",
+        "cancel": "Cancelar",
+        "cartproceed": "Ir al carrito >>",
+        "commitlevel": "Nivel de compromiso",
+        "dec2011": "Diciembre de 2011",
+        "earnedpoints": "Puntos ganados",
+        "jan2012": "Enero de 2012",
+        "monthlyoverage": "Alquiler mensual de VSPP (exceso)",
+        "nov2011": "Noviembre de 2011",
+        "one": "1",
+        "pointValue": "Valor de punto",
+        "product": "Producto",
+        "qty": "Cantidad",
+        "reportmessage": "La notificación de VMware vence el día 5 del mes. Debe informar del uso en orden mensual (enero, febrero, etc.).",
+        "reportperiod": "Periodo de notificación:",
+        "total": "Total",
+        "totalearnedpoints": "Total de puntos ganados",
+        "totalpoints": "Puntos totales",
+        "usagecalc": "Calculadora de uso de VMware",
+        "zero": "0"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "labels": {
+        "cartTransferPageHeading": "Bestelling: Verzending, facturering en betaling:",
+        "confirm": "Bevestigen",
+        "ewrFee": "Geschatte EWR-heffing:",
+        "manufacturer": "Fabrikant",
+        "pageDescription": "Bedankt dat u Insight als uw oplossing voor eprocurement gebruikt. Controleer de inhoud van de winkelwagen hieronder om zeker te zijn dat uw bestelling correct is. Om uw bestelling te plaatsen,<br\/> moet u uw winkelwagen selecteren en verzenden naar uw host-toepassing.",
+        "partNumber": "Onderdeelnummers",
+        "prodName": "Productnaam",
+        "qty": "Aantal",
+        "shippingEstimate": "Schatting van verzending",
+        "submit": "Verzenden",
+        "subtotal": "Subtotaal",
+        "taxEstimate": "Geschatte belasting",
+        "total": "Totaal",
+        "totalPrice": "Totale prijs",
+        "unitPrice": "Eenheidsprijs",
+        "unspsc": "UNSPSC-ver. "
+    }
+}

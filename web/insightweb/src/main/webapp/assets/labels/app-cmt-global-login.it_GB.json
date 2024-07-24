@@ -1,0 +1,32 @@
+{
+    "labels": {
+        "areYouSureDelete": "Eliminare questo login GLM?",
+        "emailAddress": "Indirizzo email",
+        "errorEmailNotInGLM": "Impossibile trovare l'indirizzo e-mail in GLM",
+        "errorEmailNotLinkedToAccount": "Impossibile trovare l'account esistente con l'e-mail",
+        "errorExistingSAPUserFound": "Utente SAP trovato con questo indirizzo e-mail",
+        "errorSAPContactNotFound": "Impossibile trovare il contatto SAP specificato",
+        "errorSalesOrgNotFound": "Impossibile trovare l'acquirente specificato",
+        "errorSoldToNotFound": "Impossibile trovare l'acquirente specificato",
+        "errorWithRequest": "Impossibile completare la richiesta",
+        "existingClientIssues": "Problemi GLM cliente esistente",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "linkToSoldTo": "Link user to additional GGP\/Soldto",
+        "linkToSoldToSuccessful": "Il login è stato collegato correttamente",
+        "loginLinkSuccessful": "Il login è stato collegato correttamente",
+        "loginRemoveSuccessful": "Il login è stato rimosso correttamente",
+        "newSACErrors": "Errori durante la creazione di un nuovo account semplificato",
+        "no": "N.",
+        "phoneNumber": "Phone Number",
+        "salesOrg": "salesOrg",
+        "sapContactID": "ID contatto SAP",
+        "select": "Seleziona",
+        "soldToNumber": "Numero acquirente",
+        "stillSeemsReferenced": "Il riferimento è ancora presente negli account in SAP.",
+        "update": "Aggiorna",
+        "updateGLM": "Aggiorna GLM",
+        "whatManage": "Cosa gestire",
+        "yes": "Si"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "labels": {
+        "AllReportingPeriodsCurrent": "Alle huidige rapportageperiodes",
+        "MonthlyRentalSku": "Maandelijkse huur SKU",
+        "VSPPMonthlyRental": "VSPP Maandelijkse huur",
+        "YouAreAbout": "U staat op het punt om nul gebruik voor de geselecteerde maand te rapporteren. Weet u zeker dat u wilt doorgaan met het rapporteren van nul gebruik?",
+        "cancel": "Annuleren",
+        "cartproceed": "Doorgaan naar winkelwagen >>",
+        "commitlevel": "Toezeggingsniveau",
+        "dec2011": "december 2011",
+        "earnedpoints": "Verdiende punten",
+        "jan2012": "Januari 2012",
+        "monthlyoverage": "VSPP Maandelijkse huur (overschot)",
+        "nov2011": "november 2011",
+        "one": "1",
+        "pointValue": "Puntenwaarde",
+        "product": "Product",
+        "qty": "Hoeveelheid",
+        "reportmessage": "VMware-rapportage moet uiterlijk op de 5e dag van de maand zijn voltooid. U moet het gebruik rapporteren in maandelijkse volgorde (januari, februari, enz...).",
+        "reportperiod": "Rapportageperiode:",
+        "total": "Totaal",
+        "totalearnedpoints": "Totaal aantal verdiende punten",
+        "totalpoints": "Totaal aantal punten",
+        "usagecalc": "VMware-gebruikscalculator",
+        "zero": "0"
+    }
+}

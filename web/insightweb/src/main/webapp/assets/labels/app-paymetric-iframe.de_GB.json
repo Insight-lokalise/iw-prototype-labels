@@ -1,0 +1,18 @@
+{
+    "labels": {
+        "CVV": "",
+        "Card number": "",
+        "Cardholder name": "",
+        "Enter cardholder's name exactly as it appears on the card.": "",
+        "Expiration date": "",
+        "Please enter a card number": "",
+        "Please enter a card number.": "",
+        "Please enter a valid expiration date.": "",
+        "Please enter the card security code.": "",
+        "Please enter the cardholder name.": "",
+        "Security code is required.": "",
+        "Select card": "",
+        "month": "",
+        "year": ""
+    }
+}

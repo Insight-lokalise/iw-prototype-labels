@@ -1,0 +1,32 @@
+{
+    "labels": {
+        "areYouSureDelete": "Vill du verkligen radera denna GLM-inloggning?",
+        "emailAddress": "E-postadress",
+        "errorEmailNotInGLM": "Det gick inte att hitta e-postadressen i GLM",
+        "errorEmailNotLinkedToAccount": "Det gick inte att hitta ett befintligt konto för e-postadressen",
+        "errorExistingSAPUserFound": "En SAP-användare med denna e-postadress hittades",
+        "errorSAPContactNotFound": "Det gick inte att hitta den angivna SAP-kontakten",
+        "errorSalesOrgNotFound": "Det gick inte att hitta den angivna köparen",
+        "errorSoldToNotFound": "Det gick inte att hitta den angivna köparen",
+        "errorWithRequest": "Det gick inte att slutföra begäran",
+        "existingClientIssues": "Befintliga GLM-klientproblem",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "linkToSoldTo": "Link user to additional GGP\/Soldto",
+        "linkToSoldToSuccessful": "Inloggningen har länkats",
+        "loginLinkSuccessful": "Inloggningen har länkats",
+        "loginRemoveSuccessful": "Inloggningen har tagits bort",
+        "newSACErrors": "Nya fel vid upprättande av förenklat konto",
+        "no": "Nej",
+        "phoneNumber": "Phone Number",
+        "salesOrg": "salesOrg",
+        "sapContactID": "SAP-kontakt-ID",
+        "select": "Välj",
+        "soldToNumber": "Köparnummer",
+        "stillSeemsReferenced": "Det verkar som att det fortfarande finns referenser för den i SAP-konton.",
+        "update": "Uppdatera",
+        "updateGLM": "Uppdatera GLM",
+        "whatManage": "Vad vill du hantera",
+        "yes": "Ja"
+    }
+}

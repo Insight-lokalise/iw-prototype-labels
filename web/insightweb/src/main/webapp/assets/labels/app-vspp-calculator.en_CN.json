@@ -1,0 +1,27 @@
+{
+    "labels": {
+        "AllReportingPeriodsCurrent": "All Reporting Periods Current",
+        "MonthlyRentalSku": "Monthly Rental Sku",
+        "VSPPMonthlyRental": "VSPP Monthly Rental",
+        "YouAreAbout": "You are about to report zero usage for the selected month. Are you sure you want to continue to report zero usage?",
+        "cancel": "Cancel",
+        "cartproceed": "Proceed to Cart >>",
+        "commitlevel": "Commitment Level",
+        "dec2011": "December, 2011",
+        "earnedpoints": "Points Earned",
+        "jan2012": "January, 2012",
+        "monthlyoverage": "VSPP Monthly Rental (Overage)",
+        "nov2011": "November, 2011",
+        "one": "1",
+        "pointValue": "Point Value",
+        "product": "Product",
+        "qty": "Quantity",
+        "reportmessage": "VMware Reporting is due by the 5th day of the month. You must report usage in monthly order (January, February, etc…).",
+        "reportperiod": "Reporting Period:",
+        "total": "Total",
+        "totalearnedpoints": "Total Points Earned",
+        "totalpoints": "Total Points",
+        "usagecalc": "VMware Usage Calculator",
+        "zero": "0"
+    }
+}

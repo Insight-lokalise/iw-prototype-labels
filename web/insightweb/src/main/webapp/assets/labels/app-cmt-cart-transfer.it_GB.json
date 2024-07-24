@@ -1,0 +1,20 @@
+{
+    "labels": {
+        "cartTransferPageHeading": "Ordine: Spedizione, fatturazione e pagamento:",
+        "confirm": "Confrema",
+        "ewrFee": "Stima contributo EWR:",
+        "manufacturer": "Produttore",
+        "pageDescription": "Grazie per aver utilizzato Insight come soluzione di approvvigionamento elettronico. Esaminare il contenuto del carrello seguente per confermare l'ordine. Per effettuare l'ordine, selezionare<br\/> e inviare il carrello con l'applicazione host.",
+        "partNumber": "Numero di parte",
+        "prodName": "Nome prodotto",
+        "qty": "Qtà",
+        "shippingEstimate": "Stima spedizione",
+        "submit": "Invia",
+        "subtotal": "Totale parziale",
+        "taxEstimate": "Stima delle imposte",
+        "total": "Totale doc.",
+        "totalPrice": "Prezzo totale",
+        "unitPrice": "Prezzo unitario",
+        "unspsc": "UNSPSC ver "
+    }
+}

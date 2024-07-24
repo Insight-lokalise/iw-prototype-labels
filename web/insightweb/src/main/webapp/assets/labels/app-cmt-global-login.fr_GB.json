@@ -1,0 +1,32 @@
+{
+    "labels": {
+        "areYouSureDelete": "Êtes-vous sûr de vouloir supprimer ce compte GLM ?",
+        "emailAddress": "Adresse de messagerie",
+        "errorEmailNotInGLM": "Impossible de trouver l’adresse e-mail dans GLM",
+        "errorEmailNotLinkedToAccount": "Impossible de trouver le compte existant lié à l’e-mail",
+        "errorExistingSAPUserFound": "Utilisateur SAP trouvé avec cette adresse e-mail",
+        "errorSAPContactNotFound": "Impossible de trouver le contact SAP spécifié",
+        "errorSalesOrgNotFound": "Impossible de trouver l’acheteur spécifié",
+        "errorSoldToNotFound": "Impossible de trouver l’acheteur spécifié",
+        "errorWithRequest": "Impossible de terminer la demande",
+        "existingClientIssues": "Problèmes GLM du client existant",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "linkToSoldTo": "Link user to additional GGP\/Soldto",
+        "linkToSoldToSuccessful": "La connexion a été liée avec succès",
+        "loginLinkSuccessful": "La connexion a été liée avec succès",
+        "loginRemoveSuccessful": "La connexion a été supprimée avec succès",
+        "newSACErrors": "Nouvelles erreurs de création de compte simplifiée",
+        "no": "Non",
+        "phoneNumber": "Phone Number",
+        "salesOrg": "salesOrg",
+        "sapContactID": "ID de contact SAP",
+        "select": "Sélectionner",
+        "soldToNumber": "Numéro d’acheteur",
+        "stillSeemsReferenced": "Elle semble toujours être référencée par les comptes dans SAP.",
+        "update": "Mise à jour",
+        "updateGLM": "Mettre à jour GLM",
+        "whatManage": "Ce que vous voulez gérer",
+        "yes": "Oui"
+    }
+}

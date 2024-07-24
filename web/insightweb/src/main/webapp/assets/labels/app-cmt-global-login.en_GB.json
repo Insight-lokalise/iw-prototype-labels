@@ -1,0 +1,32 @@
+{
+    "labels": {
+        "areYouSureDelete": "Are you sure you want to delete this GLM login?",
+        "emailAddress": "Email Address",
+        "errorEmailNotInGLM": "Could not find e-mail address in GLM",
+        "errorEmailNotLinkedToAccount": "Could not find existing account for email",
+        "errorExistingSAPUserFound": "SAP user found with this e-mail address",
+        "errorSAPContactNotFound": "Could not find specified SAP contact",
+        "errorSalesOrgNotFound": "Could not find specified SalesOrg",
+        "errorSoldToNotFound": "Could not find specified SoldTo",
+        "errorWithRequest": "Could not complete the request",
+        "existingClientIssues": "Existing Client GLM Issues",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "linkToSoldTo": "Link user to additional GGP\/Soldto",
+        "linkToSoldToSuccessful": "Login has been linked succcessfully",
+        "loginLinkSuccessful": "Login has been linked succcessfully",
+        "loginRemoveSuccessful": "Login has been removed succcessfully",
+        "newSACErrors": "New Simplified Account Creation Errors",
+        "no": "No",
+        "phoneNumber": "Phone Number",
+        "salesOrg": "salesOrg",
+        "sapContactID": "SAP Contact ID",
+        "select": "Select",
+        "soldToNumber": "Sold To Number",
+        "stillSeemsReferenced": "It seems to still be referenced by accounts in SAP.",
+        "update": "Update",
+        "updateGLM": "Update GLM",
+        "whatManage": "What do you want to manage",
+        "yes": "Yes"
+    }
+}

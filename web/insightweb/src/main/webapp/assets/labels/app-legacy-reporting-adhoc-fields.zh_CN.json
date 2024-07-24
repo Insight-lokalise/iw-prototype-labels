@@ -1,0 +1,328 @@
+{
+    "labels": {
+        "ADHOCReqOptions": [
+            {
+                "name": "ACCOUNT NAME",
+                "value": "账户名称"
+            },
+            {
+                "name": "ACCOUNT NUMBER",
+                "value": "账号"
+            },
+            {
+                "name": "ORDER NUMBER",
+                "value": "订单号"
+            },
+            {
+                "name": "ORDER LINE Number",
+                "value": "订单行号"
+            },
+            {
+                "name": "INVOICE NUMBER",
+                "value": "发票号码"
+            },
+            {
+                "name": "INVOICE LINE Number",
+                "value": "发票行号"
+            }
+        ],
+        "ADHOCoptions": [
+            {
+                "name": "# OF USERS",
+                "value": "用户数"
+            },
+            {
+                "name": "ACCOUNT ADDRESS",
+                "value": "帐户地址"
+            },
+            {
+                "name": "ACCOUNT ATTENTION",
+                "value": "客户关注"
+            },
+            {
+                "name": "ACCOUNT CITY",
+                "value": "帐户城"
+            },
+            {
+                "name": "ACCOUNT STATE\/PROVINCE",
+                "value": "账户州\/省"
+            },
+            {
+                "name": "ACCOUNT POSTAL CODE",
+                "value": "帐户邮政编码"
+            },
+            {
+                "name": "ACCOUNT COUNTRY",
+                "value": "帐户国家"
+            },
+            {
+                "name": "ASSET TAG",
+                "value": "资产标签"
+            },
+            {
+                "name": "BILLING ACCOUNT NUMBER",
+                "value": "支付到账号"
+            },
+            {
+                "name": "BILLING ACCOUNT NAME",
+                "value": "支付到公司"
+            },
+            {
+                "name": "CARRIER",
+                "value": "运输方式"
+            },
+            {
+                "name": "CONTACT EMAIL",
+                "value": "联系电子邮件地址"
+            },
+            {
+                "name": "CONTACT NAME",
+                "value": "联系人姓名"
+            },
+            {
+                "name": "CONTACT PHONE",
+                "value": "联系电话"
+            },
+            {
+                "name": "COUNTRY OF USAGE",
+                "value": "国家用法"
+            },
+            {
+                "name": "CURRENCY",
+                "value": "货币"
+            },
+            {
+                "name": "CUSTOMER SKU",
+                "value": "客户库存单位"
+            },
+            {
+                "name": "ENROLLMENT END DATE",
+                "value": "报名结束日期"
+            },
+            {
+                "name": "ENROLLMENT NUMBER",
+                "value": "招生人数"
+            },
+            {
+                "name": "ENROLLMENT START DATE",
+                "value": "登记起始日期"
+            },
+            {
+                "name": "EWR FEES",
+                "value": "电子垃圾回收费用"
+            },
+            {
+                "name": "EXTENDED PRICE",
+                "value": "总价"
+            },
+            {
+                "name": "FREIGHT LINE",
+                "value": "货运线路"
+            },
+            {
+                "name": "FREIGHT TOTAL",
+                "value": "货运总额"
+            },
+            {
+                "name": "GST\/HST",
+                "value": "商品销售和服务税\/销售协调税"
+            },
+            {
+                "name": "INSIGHT MATERAL NO",
+                "value": "Insight 材料号码"
+            },
+            {
+                "name": "INVOICE DATE",
+                "value": "发票日期"
+            },
+            {
+                "name": "INVOICED QUANTITY",
+                "value": "发票数量"
+            },
+            {
+                "name": "LANGUAGE",
+                "value": "语言"
+            },
+            {
+                "name": "MANUFACTURER",
+                "value": "制造商"
+            },
+            {
+                "name": "MATERIAL DESCRIPTION",
+                "value": "材质详情"
+            },
+            {
+                "name": "MATERIAL NUMBER",
+                "value": "材质编号"
+            },
+            {
+                "name": "MAINTENANCE END DATE",
+                "value": "维修结束日期"
+            },
+            {
+                "name": "MAINTENANCE START DATE",
+                "value": "保养开始日期"
+            },
+            {
+                "name": "MASTER AGREEMENT NUMBER",
+                "value": "主协议编号"
+            },
+            {
+                "name": "MEDIA",
+                "value": "媒体"
+            },
+            {
+                "name": "OPERATIONS CENTER",
+                "value": "运营中心"
+            },
+            {
+                "name": "ORDER DATE",
+                "value": "订单日期"
+            },
+            {
+                "name": "ORDER TYPE",
+                "value": "订单类型"
+            },
+            {
+                "name": "QUANTITY ORDERED",
+                "value": "订购数量"
+            },
+            {
+                "name": "PACKAGE COUNT",
+                "value": "包计数"
+            },
+            {
+                "name": "PO NUMBER",
+                "value": "订单号"
+            },
+            {
+                "name": "PO Release No",
+                "value": "采购订单发布编号"
+            },
+            {
+                "name": "PRODUCT CATEGORY",
+                "value": "产品类别"
+            },
+            {
+                "name": "PRODUCT SUBCATEGORY",
+                "value": "产品子类别"
+            },
+            {
+                "name": "PRODUCT TITLE",
+                "value": "产品名称"
+            },
+            {
+                "name": "PRODUCT TYPE",
+                "value": "产品类型"
+            },
+            {
+                "name": "PST\/QST",
+                "value": "省税\/魁北克销售税"
+            },
+            {
+                "name": "PURCHASE TYPE",
+                "value": "采购类型"
+            },
+            {
+                "name": "REFERENCE NUMBER",
+                "value": "参考编号"
+            },
+            {
+                "name": "REGION",
+                "value": "地区"
+            },
+            {
+                "name": "REPORTING PARENT #",
+                "value": "报告父 ＃"
+            },
+            {
+                "name": "REPORTING PARENT NAME",
+                "value": "报告父名称"
+            },
+            {
+                "name": "SALES REP NAME",
+                "value": "销售代表姓名"
+            },
+            {
+                "name": "SERIAL NUMBER",
+                "value": "序号"
+            },
+            {
+                "name": "SALES SERVICE REP NAME",
+                "value": "服务销售代表姓名"
+            },
+            {
+                "name": "SHIPPING CITY",
+                "value": "运输城市"
+            },
+            {
+                "name": "SHIPPING COUNTRY",
+                "value": "运输国家"
+            },
+            {
+                "name": "SHIP DATE",
+                "value": "运输日期"
+            },
+            {
+                "name": "Ship Method",
+                "value": "运输方式"
+            },
+            {
+                "name": "SHIPPING NAME",
+                "value": "运输名字"
+            },
+            {
+                "name": "SHIPPING STATE\/PROVINCE",
+                "value": "运输州\/省"
+            },
+            {
+                "name": "SHIPPING ADDRESS",
+                "value": "运输地址"
+            },
+            {
+                "name": "SHIPPING ATTENTION",
+                "value": "运输抬头"
+            },
+            {
+                "name": "SHIPPING POSTAL CODE",
+                "value": "运输邮编"
+            },
+            {
+                "name": "SHIPPING ACCOUNT",
+                "value": "运输账户"
+            },
+            {
+                "name": "TAX CHARGE",
+                "value": "应收税款"
+            },
+            {
+                "name": "TOTAL PRICE",
+                "value": "总额"
+            },
+            {
+                "name": "TRACKING NUMBER",
+                "value": "跟踪号"
+            },
+            {
+                "name": "UNIT PRICE",
+                "value": "单价"
+            },
+            {
+                "name": "UNSPSC CODE",
+                "value": "UNSPSC代码"
+            },
+            {
+                "name": "VERSION",
+                "value": "版本"
+            },
+            {
+                "name": "",
+                "value": ""
+            },
+            {
+                "name": "",
+                "value": ""
+            }
+        ]
+    }
+}
