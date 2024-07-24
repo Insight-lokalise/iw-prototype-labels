@@ -1,0 +1,10 @@
+{
+    "labels": {
+        "accountLockedMessage1": "Il tuo account è bloccato a causa di più tentativi di accesso non riusciti. Per favore",
+        "accountLockedMessage2": "o contatta il tuo rappresentante Insight per assistenza.",
+        "clickHereText": "reimposta la password",
+        "new_key_pooja": "",
+        "pageTitle": "Account bloccato",
+        "passwordAssistanceText": "Assistenza password"
+    }
+}
