@@ -1,0 +1,9 @@
+{
+    "labels": {
+        "endDate": "Slutdatum:",
+        "filterByDate": "Filtrera enligt datumintervall:",
+        "quickDate": "Snabbdatum:",
+        "scheduleOpts": "Schemalägg rapport att köra:",
+        "startDate": "Startdatum:"
+    }
+}

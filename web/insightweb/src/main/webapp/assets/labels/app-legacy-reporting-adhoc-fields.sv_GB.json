@@ -1,0 +1,328 @@
+{
+    "labels": {
+        "ADHOCReqOptions": [
+            {
+                "name": "ACCOUNT NAME",
+                "value": "Kontonamn"
+            },
+            {
+                "name": "ACCOUNT NUMBER",
+                "value": "Kontonummer"
+            },
+            {
+                "name": "ORDER NUMBER",
+                "value": "Beställningsnummer"
+            },
+            {
+                "name": "ORDER LINE Number",
+                "value": "Beställningsradnummer"
+            },
+            {
+                "name": "INVOICE NUMBER",
+                "value": "Fakturanummer"
+            },
+            {
+                "name": "INVOICE LINE Number",
+                "value": "Fakturaradnummer"
+            }
+        ],
+        "ADHOCoptions": [
+            {
+                "name": "# OF USERS",
+                "value": "# Antal användare"
+            },
+            {
+                "name": "ACCOUNT ADDRESS",
+                "value": "Kontots adress"
+            },
+            {
+                "name": "ACCOUNT ATTENTION",
+                "value": "Kontots mottagare"
+            },
+            {
+                "name": "ACCOUNT CITY",
+                "value": "Kontots ort"
+            },
+            {
+                "name": "ACCOUNT STATE\/PROVINCE",
+                "value": "Kontots delstat\/provins"
+            },
+            {
+                "name": "ACCOUNT POSTAL CODE",
+                "value": "Kontots postnummer"
+            },
+            {
+                "name": "ACCOUNT COUNTRY",
+                "value": "Kontots land"
+            },
+            {
+                "name": "ASSET TAG",
+                "value": "Resurstagg"
+            },
+            {
+                "name": "BILLING ACCOUNT NUMBER",
+                "value": "Fakturamottagande kontonummer"
+            },
+            {
+                "name": "BILLING ACCOUNT NAME",
+                "value": "Fakturamottagande företag"
+            },
+            {
+                "name": "CARRIER",
+                "value": "Speditör"
+            },
+            {
+                "name": "CONTACT EMAIL",
+                "value": "E-postadress för kontaktperson"
+            },
+            {
+                "name": "CONTACT NAME",
+                "value": "Kontaktperson"
+            },
+            {
+                "name": "CONTACT PHONE",
+                "value": "Kontakttelefonnummer"
+            },
+            {
+                "name": "COUNTRY OF USAGE",
+                "value": "Användningsland"
+            },
+            {
+                "name": "CURRENCY",
+                "value": "Valuta"
+            },
+            {
+                "name": "CUSTOMER ID",
+                "value": "Kund-ID"
+            },
+            {
+                "name": "CUSTOMER SKU",
+                "value": "Kundens SKU"
+            },
+            {
+                "name": "ENROLLMENT END DATE",
+                "value": "Registreringens slutdatum"
+            },
+            {
+                "name": "ENROLLMENT NUMBER",
+                "value": "Registreringsnummer"
+            },
+            {
+                "name": "ENROLLMENT START DATE",
+                "value": "Registreringens startdatum"
+            },
+            {
+                "name": "EWR FEES",
+                "value": "EWR-avgifter"
+            },
+            {
+                "name": "EXTENDED PRICE",
+                "value": "Utökat pris"
+            },
+            {
+                "name": "FREIGHT LINE",
+                "value": "Fraktrad"
+            },
+            {
+                "name": "FREIGHT TOTAL",
+                "value": "Frakt totalt"
+            },
+            {
+                "name": "GST\/HST",
+                "value": "GST\/HST"
+            },
+            {
+                "name": "INSIGHT MATERAL NO",
+                "value": "Insight-materialnr"
+            },
+            {
+                "name": "INVOICE DATE",
+                "value": "Fakturadatum"
+            },
+            {
+                "name": "INVOICED QUANTITY",
+                "value": "Fakturerat antal"
+            },
+            {
+                "name": "LANGUAGE",
+                "value": "Språk"
+            },
+            {
+                "name": "MANUFACTURER",
+                "value": "Tillverkare"
+            },
+            {
+                "name": "MATERIAL DESCRIPTION",
+                "value": "Materialbeskrivning"
+            },
+            {
+                "name": "MATERIAL NUMBER",
+                "value": "Materialnummer"
+            },
+            {
+                "name": "MAINTENANCE END DATE",
+                "value": "Slutdatum för underhåll"
+            },
+            {
+                "name": "MAINTENANCE START DATE",
+                "value": "Startdatum för underhåll"
+            },
+            {
+                "name": "MASTER AGREEMENT NUMBER",
+                "value": "Huvudavtalsnummer"
+            },
+            {
+                "name": "MEDIA",
+                "value": "Media"
+            },
+            {
+                "name": "OPERATIONS CENTER",
+                "value": "Driftscenter"
+            },
+            {
+                "name": "ORDER DATE",
+                "value": "Beställningsdatum"
+            },
+            {
+                "name": "ORDER TYPE",
+                "value": "Beställningstyp"
+            },
+            {
+                "name": "QUANTITY ORDERED",
+                "value": "Beställt antal"
+            },
+            {
+                "name": "PACKAGE COUNT",
+                "value": "Antal paket"
+            },
+            {
+                "name": "PLANT SOURCE",
+                "value": "Anläggningskälla"
+            },
+            {
+                "name": "PO NUMBER",
+                "value": "Inköpsordernr."
+            },
+            {
+                "name": "PO Release No",
+                "value": "PO-utgivningsnr"
+            },
+            {
+                "name": "PRODUCT CATEGORY",
+                "value": "Produktkategori"
+            },
+            {
+                "name": "PRODUCT SUBCATEGORY",
+                "value": "Produktunderkategori"
+            },
+            {
+                "name": "PRODUCT TITLE",
+                "value": "Produkttitel"
+            },
+            {
+                "name": "PRODUCT TYPE",
+                "value": "Produkttyp"
+            },
+            {
+                "name": "PST\/QST",
+                "value": "PST\/QST"
+            },
+            {
+                "name": "PURCHASE TYPE",
+                "value": "Inköpstyp"
+            },
+            {
+                "name": "REFERENCE NUMBER",
+                "value": "Referensnummer"
+            },
+            {
+                "name": "REGION",
+                "value": "Region"
+            },
+            {
+                "name": "REPORTING PARENT #",
+                "value": "Rapporterande överordnad, nr"
+            },
+            {
+                "name": "REPORTING PARENT NAME",
+                "value": "Rapporterande överordnad, namn"
+            },
+            {
+                "name": "SALES REP NAME",
+                "value": "Säljarens namn"
+            },
+            {
+                "name": "SERIAL NUMBER",
+                "value": "Serienummer"
+            },
+            {
+                "name": "SALES SERVICE REP NAME",
+                "value": "Servicesäljarens namn"
+            },
+            {
+                "name": "SHIPPING CITY",
+                "value": "Leveransens ort"
+            },
+            {
+                "name": "SHIPPING COUNTRY",
+                "value": "Leveransens land"
+            },
+            {
+                "name": "SHIP DATE",
+                "value": "Leveransdatum"
+            },
+            {
+                "name": "Ship Method",
+                "value": "Leveransens metod"
+            },
+            {
+                "name": "SHIPPING NAME",
+                "value": "Leveransens namn"
+            },
+            {
+                "name": "SHIPPING STATE\/PROVINCE",
+                "value": "Leveransens delstat\/provins"
+            },
+            {
+                "name": "SHIPPING ADDRESS",
+                "value": "Leveransens gata"
+            },
+            {
+                "name": "SHIPPING ATTENTION",
+                "value": "Leveransens mottagare"
+            },
+            {
+                "name": "SHIPPING POSTAL CODE",
+                "value": "Leveransens postnummer"
+            },
+            {
+                "name": "SHIPPING ACCOUNT",
+                "value": "Leveransens konto"
+            },
+            {
+                "name": "TAX CHARGE",
+                "value": "Skattesats från faktura"
+            },
+            {
+                "name": "TOTAL PRICE",
+                "value": "Pris totalt"
+            },
+            {
+                "name": "TRACKING NUMBER",
+                "value": "Spårningsnummer"
+            },
+            {
+                "name": "UNIT PRICE",
+                "value": "Enhetspris"
+            },
+            {
+                "name": "UNSPSC CODE",
+                "value": "UNSPSC-kod"
+            },
+            {
+                "name": "VERSION",
+                "value": "Version"
+            }
+        ]
+    }
+}

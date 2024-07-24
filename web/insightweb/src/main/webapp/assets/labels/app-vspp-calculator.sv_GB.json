@@ -1,0 +1,27 @@
+{
+    "labels": {
+        "AllReportingPeriodsCurrent": "Alla rapportperioder aktuella",
+        "MonthlyRentalSku": "Månadshyra-sku",
+        "VSPPMonthlyRental": "VSPP-månadshyra",
+        "YouAreAbout": "Du håller på att rapportera nollanvändning för den valda månaden. Vill du verkligen fortsätta att rapportera nollanvändning?",
+        "cancel": "Avbryt",
+        "cartproceed": "Gå till kundvagnen >>",
+        "commitlevel": "Engagemangsnivå",
+        "dec2011": "December 2011",
+        "earnedpoints": "Intjänade poäng",
+        "jan2012": "Januari 2012",
+        "monthlyoverage": "VSPP-månadshyra (överskott)",
+        "nov2011": "November 2011",
+        "one": "1",
+        "pointValue": "Poängvärde",
+        "product": "Produkt",
+        "qty": "Antal",
+        "reportmessage": "VMware-rapportering ska ske senast den 5:e dagen i månaden. Du måste rapportera användning i månatlig ordning (januari, februari osv.).",
+        "reportperiod": "Rapportperiod:",
+        "total": "Totalsumma",
+        "totalearnedpoints": "Totalt intjänade poäng",
+        "totalpoints": "Totalt antal poäng",
+        "usagecalc": "VMware-användningskalkylator",
+        "zero": "0"
+    }
+}

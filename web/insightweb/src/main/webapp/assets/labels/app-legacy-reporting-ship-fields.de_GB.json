@@ -1,0 +1,272 @@
+{
+    "labels": {
+        "ADHOCReqOptions": [
+            {
+                "name": "ORDER NUMBER",
+                "value": "Bestellnummer"
+            },
+            {
+                "name": "ORDER LINE NUMBER",
+                "value": "Nummer der Bestellzeile"
+            },
+            {
+                "name": "QUANTITY SHIPPED",
+                "value": "Versandte Menge"
+            },
+            {
+                "name": "SHIP DATE",
+                "value": "Datum des Versands"
+            }
+        ],
+        "ADHOCoptions": [
+            {
+                "name": "ACCOUNT NAME",
+                "value": "Kontoname"
+            },
+            {
+                "name": "ACCOUNT NUMBER",
+                "value": "Kontonummer"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 1",
+                "value": "Zusätzliche Labordaten 1"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 2",
+                "value": "Zusätzliche Labordaten 2"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 3",
+                "value": "Zusätzliche Labordaten 3"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 4",
+                "value": "Zusätzliche Labordaten 4"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 5",
+                "value": "Zusätzliche Labordaten 5"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 6",
+                "value": "Zusätzliche Labordaten 6"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 7",
+                "value": "Zusätzliche Labordaten 7"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 8",
+                "value": "Zusätzliche Labordaten 8"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 9",
+                "value": "Zusätzliche Labordaten 9"
+            },
+            {
+                "name": "ASSET TAG",
+                "value": "Bestandskennzeichnung"
+            },
+            {
+                "name": "CARRIER",
+                "value": "Fluggesellschaft"
+            },
+            {
+                "name": "CONTACT EMAIL",
+                "value": "Kontakt-E-Mail-Adresse"
+            },
+            {
+                "name": "CONTACT NAME",
+                "value": "Kontakt Name"
+            },
+            {
+                "name": "CONTACT PHONE",
+                "value": "Téléphone de contact"
+            },
+            {
+                "name": "CURRENCY",
+                "value": "Währung"
+            },
+            {
+                "name": "CUSTOMER SKU",
+                "value": "UGS du client"
+            },
+            {
+                "name": "EWR FEES",
+                "value": "EWR-Gebühren"
+            },
+            {
+                "name": "EXPECTED DELIVERY DATE",
+                "value": "Erwartetes Lieferdatum"
+            },
+            {
+                "name": "EXTENDED PRICE",
+                "value": "Erweiterter Preis"
+            },
+            {
+                "name": "FREIGHT LINE",
+                "value": "Frachtlinie"
+            },
+            {
+                "name": "GST\/HST",
+                "value": "GST\/HST"
+            },
+            {
+                "name": "INSIGHT MATERAL NO",
+                "value": "Insight-Material-Nr."
+            },
+            {
+                "name": "INVOICE DATE",
+                "value": "Rechnungsdatum"
+            },
+            {
+                "name": "INVOICE NUMBER",
+                "value": "Rechnungsnummer"
+            },
+            {
+                "name": "INVOICE LINE NUMBER",
+                "value": "Rechnung Positionsnummer"
+            },
+            {
+                "name": "INVOICED QUANTITY",
+                "value": "In Rechnung gestellte Menge"
+            },
+            {
+                "name": "MANUFACTURER",
+                "value": "Hersteller"
+            },
+            {
+                "name": "MATERIAL DESCRIPTION",
+                "value": "Materialbeschreibung"
+            },
+            {
+                "name": "MATERIAL NUMBER",
+                "value": "Materialnummer"
+            },
+            {
+                "name": "MSRP",
+                "value": "MSRP"
+            },
+            {
+                "name": "OPERATIONS CENTER",
+                "value": "Betriebszentrum"
+            },
+            {
+                "name": "ORDER DATE",
+                "value": "Bestelldatum"
+            },
+            {
+                "name": "ORDER TYPE",
+                "value": "Bestellungsart"
+            },
+            {
+                "name": "PO NUMBER",
+                "value": "Auftragsnummer"
+            },
+            {
+                "name": "PO RELEASE NO",
+                "value": "Auftragsfreigabe Nr."
+            },
+            {
+                "name": "PRODUCT CATEGORY",
+                "value": "Produktkategorie"
+            },
+            {
+                "name": "PRODUCT SUBCATEGORY",
+                "value": "Unterkategorie des Produkts"
+            },
+            {
+                "name": "PRODUCT TITLE",
+                "value": "Produktbezeichnung"
+            },
+            {
+                "name": "PRODUCT TYPE",
+                "value": "Art des Produkts"
+            },
+            {
+                "name": "PST\/QST",
+                "value": "PST\/QST"
+            },
+            {
+                "name": "RECEIVER OF PARCEL",
+                "value": "Paketempfänger"
+            },
+            {
+                "name": "REPORTING PARENT #",
+                "value": "Berichterstattende Muttergesellschaft Nr."
+            },
+            {
+                "name": "REPORTING PARENT NAME",
+                "value": "Name der berichtenden Muttergesellschaft"
+            },
+            {
+                "name": "SALES REP NAME",
+                "value": "Name des Vertriebsmitarbeiters"
+            },
+            {
+                "name": "SERIAL NUMBER",
+                "value": "Seriennummer"
+            },
+            {
+                "name": "CONSIGNMENT REFERENCE",
+                "value": "Referenz für den Versand"
+            },
+            {
+                "name": "SHIPPING CITY",
+                "value": "Versand-Stadt"
+            },
+            {
+                "name": "SHIPPING COUNTRY",
+                "value": "Versand-Land"
+            },
+            {
+                "name": "SHIP METHOD",
+                "value": "Versandart"
+            },
+            {
+                "name": "SHIPPING NAME",
+                "value": "Versandname"
+            },
+            {
+                "name": "SHIPPING STATE\/PROVINCE",
+                "value": "Versand Bundesland\/Provinz"
+            },
+            {
+                "name": "SHIPPING ADDRESS",
+                "value": "Lieferadresse"
+            },
+            {
+                "name": "SHIPPING ATTENTION",
+                "value": "Achtung beim Versand"
+            },
+            {
+                "name": "SHIPPING POSTAL CODE",
+                "value": "Postleitzahl für Versand"
+            },
+            {
+                "name": "TAX CHARGE",
+                "value": "Steuerlast aus der Rechnung"
+            },
+            {
+                "name": "TOTAL PRICE",
+                "value": "Gesamtpreis"
+            },
+            {
+                "name": "TRACKING DATE",
+                "value": "Datum der Nachverfolgung"
+            },
+            {
+                "name": "TRACKING NUMBER",
+                "value": "Verfolgungsnummer"
+            },
+            {
+                "name": "UNIT PRICE",
+                "value": "Stückpreis"
+            },
+            {
+                "name": "UNSPSC CODE",
+                "value": "UNSPSC-Code"
+            }
+        ]
+    }
+}

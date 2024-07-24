@@ -1,0 +1,23 @@
+{
+    "labels": {
+        "attachLicenseProof": "Attach License Proof",
+        "bottomText1": "Your e-mail address will not be sold or used for promotional purposes. It is simply used so the recipient knows who is recommending the product.",
+        "bottomText2": "If you wish to send this e-mail to more than one recipient, put a comma or semi-colon between separate e-mail addresses in the \"Recipient's E-mail\" box below.",
+        "bottomText3": "Example: recipient1@mywebsite.com, recipient2@mywebsite.com",
+        "emailErrorText": "Please enter valid email address",
+        "emailFormat": "Email Format",
+        "emailinputFormat": "Please ensure recipients email address is formatted correctly",
+        "html": "HTML",
+        "inputErrorText": "This field is required. Please enter a value.",
+        "pdf": "PDF",
+        "recEmail": "Recipient's Email",
+        "requiredFields": "Indicates required fields",
+        "sendEmail": "Send email",
+        "sendtoColleague": "Send to Colleague",
+        "successMsg": "Your email has been successfully sent.",
+        "thankYou": "Thank you",
+        "yourComments": "Your Comments",
+        "yourEmail": "Your Email",
+        "yourName": "Your Name"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "labels": {
+        "AllReportingPeriodsCurrent": "Tutti i periodi di rendicontazione correnti",
+        "MonthlyRentalSku": "SKU noleggio mensile",
+        "VSPPMonthlyRental": "Noleggio mensile VSPP",
+        "YouAreAbout": "Si sta per riportare l'utilizzo zero per il mese selezionato. Continuare a riportare l'utilizzo zero?",
+        "cancel": "Annulla",
+        "cartproceed": "Vai al carrello >>",
+        "commitlevel": "Livello di impegno",
+        "dec2011": "Dicembre 2011",
+        "earnedpoints": "Punti guadagnati",
+        "jan2012": "Gennaio 2012",
+        "monthlyoverage": "Noleggio mensile VSPP (eccedenza)",
+        "nov2011": "Novembre 2011",
+        "one": "1",
+        "pointValue": "Valore in punti",
+        "product": "Prodotto",
+        "qty": "Q.tà",
+        "reportmessage": "La rendicontazione VMware deve essere inviato entro il 5 del mese. È necessario riportare l'utilizzo in ordine mensile (gennaio, febbraio, ecc.).",
+        "reportperiod": "Periodo di rendicontazione:",
+        "total": "Totale doc.",
+        "totalearnedpoints": "Totale punti guadagnati",
+        "totalpoints": "Punti totali",
+        "usagecalc": "Calcolatrice di utilizzo VMware",
+        "zero": "0"
+    }
+}
