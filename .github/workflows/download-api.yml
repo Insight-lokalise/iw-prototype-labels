@@ -1,7 +1,10 @@
 name: Synchronize Insight.com Labels
 
 on:
-  workflow_dispatch:     
+  workflow_dispatch:
+  push:
+    branches:
+      - lokalise-1
 
 jobs:
   Synchronize-labels:
