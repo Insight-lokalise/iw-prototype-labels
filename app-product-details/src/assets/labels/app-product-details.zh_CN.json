@@ -56,7 +56,7 @@
         "Manufacturer protection": "",
         "Add to cart": "",
         "View less specifications": "",
-        "Instant savings": "Instant savings",
+        "Instant savings": "",
         "Advertised price includes": "",
         "Manufacturer Warranties": "",
         "The price displayed will be prorated in the cart based on the remaining agreement period.": "",
@@ -144,9 +144,6 @@
         "Customer reviews": "",
         "Please enter a review of at least 10 characters": "",
         "I agree to the terms & conditions": "",
-        "Current product:": "",
-        "View list": "",
-        "Added to personal product list": "",
-        " instantly": ""
+        "Current product:": "当前的"
     }
 }
