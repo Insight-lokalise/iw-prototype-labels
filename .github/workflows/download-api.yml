@@ -1,0 +1,44 @@
+name: Synchronize Insight.com Labels
+
+on:
+  workflow_dispatch:     
+
+jobs:
+  Synchronize-labels:
+    name: Synchronize
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Make API Request
+        id: api-request
+        uses: muhfaris/request-action@v1
+        with:
+          url: 'https://api.lokalise.com/api2/projects/6556663365f9906bb29784.43946375/files/download'
+          headers: |
+            {
+              "X-Api-Token" : "12c2c6e232647c64b402b71d053548442347c499"
+            }
+          body: |
+            {
+               "format":"json",
+                        "triggers": [
+                               "github"
+                             ],
+                "filter_repositories": [
+                  "Insight-lokalise/iw-prototype-labels"
+                ],
+              "original_filenames": true,
+              "directory_prefix": ""
+            }
+          method: POST
+
+      - name: Show API Response Status
+        run: |
+          echo "Response Status: ${{ steps.api-request.outputs.response-status }}"
+
+      - name: Show API Response Data
+        run: |
+          echo "Response Data: ${{ steps.api-request.outputs.response-data }}"
