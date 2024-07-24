@@ -7,9 +7,8 @@ on:
       - lokalise-1
 
 jobs:
-  Synchronize-labels:
-    name: Synchronize
-    if: github.event.pull_request.merged == true
+  Download_labels:
+    name: Download labels
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
