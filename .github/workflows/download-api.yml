@@ -1,6 +1,8 @@
-name: Synchronize Insight.com Labels
+name: Download labels from lokalise
 
 on:
+  schedule:
+    - cron: '40 00 * * *'
   workflow_dispatch:
   push:
     branches:
@@ -18,11 +20,8 @@ jobs:
         id: api-request
         uses: muhfaris/request-action@v0.1.2
         with:
-          url: 'https://api.lokalise.com/api2/projects/6556663365f9906bb29784.43946375/files/download'
-          headers: |
-            {
-              "X-Api-Token" : "12c2c6e232647c64b402b71d053548442347c499"
-            }
+          url:  ${{ secrets.DOWNLOAD_API_URL }}
+          headers: ${{ secrets.DOWNLOAD_API_SECRET }}
           body: |
             {
                "format":"json",
@@ -36,7 +35,6 @@ jobs:
               "directory_prefix": ""
             }
           method: POST
-
       - name: Show API Response Status
         run: |
           echo "Response Status: ${{ steps.api-request.outputs.response-status }}"
