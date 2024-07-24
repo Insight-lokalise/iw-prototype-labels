@@ -1,0 +1,32 @@
+{
+    "labels": {
+        "areYouSureDelete": "¿Está seguro de que desea eliminar este inicio de sesión de GLM?",
+        "emailAddress": "Dirección de correo electrónico",
+        "errorEmailNotInGLM": "No se pudo encontrar la dirección de correo electrónico en GLM",
+        "errorEmailNotLinkedToAccount": "No se ha podido encontrar la cuenta existente para el correo electrónico",
+        "errorExistingSAPUserFound": "Usuario de SAP encontrado con esta dirección de correo electrónico",
+        "errorSAPContactNotFound": "No se pudo encontrar el contacto de SAP especificado",
+        "errorSalesOrgNotFound": "No se ha podido encontrar Comprador especificado",
+        "errorSoldToNotFound": "No se ha podido encontrar Comprador especificado",
+        "errorWithRequest": "No se pudo completar la solicitud",
+        "existingClientIssues": "Problemas GLM cliente existente",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "linkToSoldTo": "Link user to additional GGP\/Soldto",
+        "linkToSoldToSuccessful": "El inicio de sesión se ha vinculado correctamente",
+        "loginLinkSuccessful": "El inicio de sesión se ha vinculado correctamente",
+        "loginRemoveSuccessful": "El inicio de sesión se ha eliminado correctamente",
+        "newSACErrors": "Errores de creación de nueva cuenta simplificada",
+        "no": "No",
+        "phoneNumber": "Phone Number",
+        "salesOrg": "salesOrg",
+        "sapContactID": "ID de contacto de SAP",
+        "select": "Seleccione",
+        "soldToNumber": "Número de comprador",
+        "stillSeemsReferenced": "Parece que hay cuentas de SAP que siguen haciendo referencia a ella.",
+        "update": "Actualizar",
+        "updateGLM": "Actualizar GLM",
+        "whatManage": "Qué quiere gestionar",
+        "yes": "Sí"
+    }
+}

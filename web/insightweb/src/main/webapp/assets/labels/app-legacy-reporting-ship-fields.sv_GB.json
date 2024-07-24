@@ -1,0 +1,272 @@
+{
+    "labels": {
+        "ADHOCReqOptions": [
+            {
+                "name": "ORDER NUMBER",
+                "value": "Beställningsnummer"
+            },
+            {
+                "name": "ORDER LINE NUMBER",
+                "value": "Beställningsradnummer"
+            },
+            {
+                "name": "QUANTITY SHIPPED",
+                "value": "Levererat antal"
+            },
+            {
+                "name": "SHIP DATE",
+                "value": "Leveransdatum"
+            }
+        ],
+        "ADHOCoptions": [
+            {
+                "name": "ACCOUNT NAME",
+                "value": "Kontonamn"
+            },
+            {
+                "name": "ACCOUNT NUMBER",
+                "value": "Kontonummer"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 1",
+                "value": "Ytterligare labbdata 1"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 2",
+                "value": "Ytterligare labbdata 2"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 3",
+                "value": "Ytterligare labbdata 3"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 4",
+                "value": "Ytterligare labbdata 4"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 5",
+                "value": "Ytterligare labbdata 5"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 6",
+                "value": "Ytterligare labbdata 6"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 7",
+                "value": "Ytterligare labbdata 7"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 8",
+                "value": "Ytterligare labbdata 8"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 9",
+                "value": "Ytterligare labbdata 9"
+            },
+            {
+                "name": "ASSET TAG",
+                "value": "Resurstagg"
+            },
+            {
+                "name": "CARRIER",
+                "value": "Speditör"
+            },
+            {
+                "name": "CONTACT EMAIL",
+                "value": "E-postadress för kontaktperson"
+            },
+            {
+                "name": "CONTACT NAME",
+                "value": "Kontaktperson"
+            },
+            {
+                "name": "CONTACT PHONE",
+                "value": "Kontakttelefonnummer"
+            },
+            {
+                "name": "CURRENCY",
+                "value": "Valuta"
+            },
+            {
+                "name": "CUSTOMER SKU",
+                "value": "Kundens SKU"
+            },
+            {
+                "name": "EWR FEES",
+                "value": "EWR-avgifter"
+            },
+            {
+                "name": "EXPECTED DELIVERY DATE",
+                "value": "Förväntat leveransdatum"
+            },
+            {
+                "name": "EXTENDED PRICE",
+                "value": "Utökat pris"
+            },
+            {
+                "name": "FREIGHT LINE",
+                "value": "Fraktrad"
+            },
+            {
+                "name": "GST\/HST",
+                "value": "GST\/HST"
+            },
+            {
+                "name": "INSIGHT MATERAL NO",
+                "value": "Insight-materialnr"
+            },
+            {
+                "name": "INVOICE DATE",
+                "value": "Fakturadatum"
+            },
+            {
+                "name": "INVOICE NUMBER",
+                "value": "Fakturanummer"
+            },
+            {
+                "name": "INVOICE LINE NUMBER",
+                "value": "Fakturaradnummer"
+            },
+            {
+                "name": "INVOICED QUANTITY",
+                "value": "Fakturerat antal"
+            },
+            {
+                "name": "MANUFACTURER",
+                "value": "Tillverkare"
+            },
+            {
+                "name": "MATERIAL DESCRIPTION",
+                "value": "Materialbeskrivning"
+            },
+            {
+                "name": "MATERIAL NUMBER",
+                "value": "Materialnummer"
+            },
+            {
+                "name": "MSRP",
+                "value": "Riktpris"
+            },
+            {
+                "name": "OPERATIONS CENTER",
+                "value": "Driftscenter"
+            },
+            {
+                "name": "ORDER DATE",
+                "value": "Beställningsdatum"
+            },
+            {
+                "name": "ORDER TYPE",
+                "value": "Beställningstyp"
+            },
+            {
+                "name": "PO NUMBER",
+                "value": "Inköpsordernr"
+            },
+            {
+                "name": "PO RELEASE NO",
+                "value": "PO-utgivningsnr"
+            },
+            {
+                "name": "PRODUCT CATEGORY",
+                "value": "Produktkategori"
+            },
+            {
+                "name": "PRODUCT SUBCATEGORY",
+                "value": "Produktunderkategori"
+            },
+            {
+                "name": "PRODUCT TITLE",
+                "value": "Produkttitel"
+            },
+            {
+                "name": "PRODUCT TYPE",
+                "value": "Produkttyp"
+            },
+            {
+                "name": "PST\/QST",
+                "value": "PST\/QST"
+            },
+            {
+                "name": "RECEIVER OF PARCEL",
+                "value": "Mottagare av paket"
+            },
+            {
+                "name": "REPORTING PARENT #",
+                "value": "Rapporterande överordnad, nr"
+            },
+            {
+                "name": "REPORTING PARENT NAME",
+                "value": "Rapporterande överordnad, namn"
+            },
+            {
+                "name": "SALES REP NAME",
+                "value": "Säljarens namn"
+            },
+            {
+                "name": "SERIAL NUMBER",
+                "value": "Serienummer"
+            },
+            {
+                "name": "CONSIGNMENT REFERENCE",
+                "value": "Consignment Reference"
+            },
+            {
+                "name": "SHIPPING CITY",
+                "value": "Leveransort"
+            },
+            {
+                "name": "SHIPPING COUNTRY",
+                "value": "Leveransens land"
+            },
+            {
+                "name": "SHIP METHOD",
+                "value": "Leveransens metod"
+            },
+            {
+                "name": "SHIPPING NAME",
+                "value": "Leveransens namn"
+            },
+            {
+                "name": "SHIPPING STATE\/PROVINCE",
+                "value": "Leveransens delstat\/provins"
+            },
+            {
+                "name": "SHIPPING ADDRESS",
+                "value": "Leveransadress"
+            },
+            {
+                "name": "SHIPPING ATTENTION",
+                "value": "Leverans till"
+            },
+            {
+                "name": "SHIPPING POSTAL CODE",
+                "value": "Leveransens postnummer"
+            },
+            {
+                "name": "TAX CHARGE",
+                "value": "Skattesats från faktura"
+            },
+            {
+                "name": "TOTAL PRICE",
+                "value": "Pris totalt"
+            },
+            {
+                "name": "TRACKING DATE",
+                "value": "Spårningsdatum"
+            },
+            {
+                "name": "TRACKING NUMBER",
+                "value": "Spårningsnummer"
+            },
+            {
+                "name": "UNIT PRICE",
+                "value": "Enhetspris"
+            },
+            {
+                "name": "UNSPSC CODE",
+                "value": "UNSPSC-kod"
+            }
+        ]
+    }
+}

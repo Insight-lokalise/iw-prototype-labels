@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "AllTypes": "TOUS les types",
+        "filterByProduct": "Filtrer par produit :",
+        "hardwareFilters": "Afficher uniquement les filtres Matériel informatique",
+        "hardwareSoftwareFilters": "Afficher les filtres Logiciel et Matériel informatique",
+        "manufacturers": "Fabricants",
+        "productCategories": "Catégories de produit",
+        "productSubCategories": "Sous-catégories de produit",
+        "productTypes": "Type de produit ",
+        "softwareFilters": "Afficher uniquement les filtres Logiciel"
+    }
+}

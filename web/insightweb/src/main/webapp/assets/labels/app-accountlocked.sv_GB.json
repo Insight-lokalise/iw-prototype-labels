@@ -3,7 +3,6 @@
         "accountLockedMessage1": "Ditt konto är låst på grund av flera misslyckade försök att logga in. Snälla",
         "accountLockedMessage2": "eller kontakta din Insight-representant för hjälp.",
         "clickHereText": "återställ ditt lösenord",
-        "new_key_pooja": "",
         "pageTitle": "Kontolåst",
         "passwordAssistanceText": "Password Assistance"
     }

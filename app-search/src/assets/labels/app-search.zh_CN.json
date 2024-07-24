@@ -1,9 +1,9 @@
 {
     "labels": {
         "Accessories": "",
-        "Account Center": "",
+        "Account Center": "Account Center",
         "Add protection": "",
-        "Add to Cart": "",
+        "Add to Cart": "添加到购物车",
         "Add to cart": "",
         "Added to cart": "",
         "Articles and resources": "",
@@ -35,7 +35,7 @@
         "In stock only": "",
         "Insight #:": "",
         "Insight recommends adding an extended warranty to your purchase and secure the longevity of your product. Listed below are some of the most popular options for the product you're purchasing.": "",
-        "It looks like we’ve encountered a technical issue. Please try your search again. The issue has been reported to our technical team.": "",
+        "It looks like we’ve encountered a technical issue. Please try your search again. The issue has been reported to our technical team.": "It looks like we’ve encountered a technical issue. Please try your search again. The issue has been reported to our technical team.",
         "Item backordered": "",
         "Item will ship once it's back in stock": "",
         "Item will ship when available": "",

@@ -1,0 +1,9 @@
+{
+    "labels": {
+        "endDate": "End Date:",
+        "filterByDate": "Filter by Date Range:",
+        "quickDate": "Quick Date:",
+        "scheduleOpts": "Schedule Report to Run:",
+        "startDate": "Start Date:"
+    }
+}

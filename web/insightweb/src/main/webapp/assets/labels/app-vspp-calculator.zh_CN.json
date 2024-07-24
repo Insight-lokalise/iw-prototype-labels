@@ -1,0 +1,27 @@
+{
+    "labels": {
+        "AllReportingPeriodsCurrent": "当前所有报告期间",
+        "MonthlyRentalSku": "月租 Sku",
+        "VSPPMonthlyRental": "VSPP 月租",
+        "YouAreAbout": "您即将报告所选月份的零使用。您确定要继续报告零使用吗？",
+        "cancel": "取消",
+        "cartproceed": "继续至购物车 >>",
+        "commitlevel": "保证等级",
+        "dec2011": "2011 年 12 月",
+        "earnedpoints": "获得的积分",
+        "jan2012": "2012 年 1 月",
+        "monthlyoverage": "VSPP 月租（超期）",
+        "nov2011": "2011 年 11 月",
+        "one": "1",
+        "pointValue": "积分值",
+        "product": "产品",
+        "qty": "数量",
+        "reportmessage": "VMware 报告在本月 5 日到期。您必须按月份报告使用（1 月、2 月等…）。",
+        "reportperiod": "报告期间：",
+        "total": "总计",
+        "totalearnedpoints": "获得的总积分",
+        "totalpoints": "总积分",
+        "usagecalc": "VMware 使用计算器",
+        "zero": "0"
+    }
+}

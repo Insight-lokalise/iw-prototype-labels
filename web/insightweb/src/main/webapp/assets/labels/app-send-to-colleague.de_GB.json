@@ -1,0 +1,23 @@
+{
+    "labels": {
+        "attachLicenseProof": "Lizenznachweis anhängen",
+        "bottomText1": "Ihre E-Mail-Adresse wird nicht verkauft oder für Werbezwecke verwendet. Es wird einfach verwendet, damit der Empfänger weiß, wer das Produkt empfiehlt.",
+        "bottomText2": "Wenn Sie diese E-Mail an mehrere Empfänger senden möchten, setzen Sie ein Komma oder ein Semikolon zwischen die einzelnen E-Mail-Adressen im Feld ",
+        "bottomText3": "Beispiel: recipient1@mywebsite.com, recipient2@mywebsite.com",
+        "emailErrorText": "Bitte geben Sie eine gültige Email Adresse an",
+        "emailFormat": "E-Mail Format",
+        "emailinputFormat": "Bitte stellen Sie sicher, dass die E-Mail-Adresse des Empfängers richtig formatiert ist",
+        "html": "HTML",
+        "inputErrorText": "Dieses Feld wird benötigt. Bitte einen Wert eingeben.",
+        "pdf": "PDF",
+        "recEmail": "E-Mail des Empfängers",
+        "requiredFields": "Kennzeichnet Pflichtfelder",
+        "sendEmail": "E-Mail senden",
+        "sendtoColleague": "An Kollegen senden",
+        "successMsg": "Ihre E-Mail wurde erfolgreich gesendet.",
+        "thankYou": "Danke",
+        "yourComments": "Ihre Kommentare",
+        "yourEmail": "Ihre E-Mail",
+        "yourName": "Ihr Name"
+    }
+}

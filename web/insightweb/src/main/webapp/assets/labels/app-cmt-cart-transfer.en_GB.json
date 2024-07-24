@@ -1,0 +1,20 @@
+{
+    "labels": {
+        "cartTransferPageHeading": "Order : Ship, Bill & Pay :",
+        "confirm": "Confirm",
+        "ewrFee": "EWR Fee Estimate:",
+        "manufacturer": "Manufacturer",
+        "pageDescription": "Thank you for using Insight as your eprocurement solution. Please review the contents of the shopping cart below to confirm your order. To place your order, please<br\/> select and submit your cart with your host application.",
+        "partNumber": "Part Number",
+        "prodName": "Product Name",
+        "qty": "Qty",
+        "shippingEstimate": "Shipping Estimate",
+        "submit": "Submit",
+        "subtotal": "Subtotal",
+        "taxEstimate": "Tax Estimate",
+        "total": "Total",
+        "totalPrice": "Total Price",
+        "unitPrice": "Unit Price",
+        "unspsc": "UNSPSC ver "
+    }
+}

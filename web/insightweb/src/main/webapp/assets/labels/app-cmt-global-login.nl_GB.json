@@ -1,0 +1,32 @@
+{
+    "labels": {
+        "areYouSureDelete": "Weet u zeker dat u deze GLM-login wilt verwijderen?",
+        "emailAddress": "E-mailadres",
+        "errorEmailNotInGLM": "Kon e-mailadres niet vinden in GLM",
+        "errorEmailNotLinkedToAccount": "Kan geen bestaande account vinden voor e-mail",
+        "errorExistingSAPUserFound": "SAP-gebruiker gevonden met dit e-mailadres",
+        "errorSAPContactNotFound": "Kan opgegeven SAP-contactpersoon niet vinden",
+        "errorSalesOrgNotFound": "Kan opgegeven VerkochtAan niet vinden",
+        "errorSoldToNotFound": "Kan opgegeven VerkochtAan niet vinden",
+        "errorWithRequest": "Kan het verzoek niet voltooien",
+        "existingClientIssues": "Bestaande klant GLM-problemen",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "linkToSoldTo": "Link user to additional GGP\/Soldto",
+        "linkToSoldToSuccessful": "Login is succesvol gekoppeld",
+        "loginLinkSuccessful": "Login is succesvol gekoppeld",
+        "loginRemoveSuccessful": "Login is succesvol verwijderd",
+        "newSACErrors": "Fouten bij aanmaken nieuw vereenvoudigde account",
+        "no": "Nee",
+        "phoneNumber": "Phone Number",
+        "salesOrg": "salesOrg",
+        "sapContactID": "ID van SAP-contactpersoon",
+        "select": "Selecteren",
+        "soldToNumber": "Verkocht aan-nummer",
+        "stillSeemsReferenced": "Er lijkt nog steeds naar te worden verwezen door accounts in SAP.",
+        "update": "Bijwerken",
+        "updateGLM": "GLM bijwerken",
+        "whatManage": "Wat wilt u beheren",
+        "yes": "Ja"
+    }
+}

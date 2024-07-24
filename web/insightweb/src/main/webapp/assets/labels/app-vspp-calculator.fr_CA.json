@@ -1,0 +1,27 @@
+{
+    "labels": {
+        "AllReportingPeriodsCurrent": "Toutes les périodes de suivi actuelles",
+        "MonthlyRentalSku": "Code de location mensuelle",
+        "VSPPMonthlyRental": "Location mensuelle VSPP",
+        "YouAreAbout": "Vous êtes sur le point de déclarer aucune utilisation pour le mois sélectionné. Êtes-vous certain de souhaiter déclarer aucune utilisation?",
+        "cancel": "Annuler",
+        "cartproceed": "Passer au panier >>",
+        "commitlevel": "Niveau d'engagement",
+        "dec2011": "Décembre  2011",
+        "earnedpoints": "Points obtenus",
+        "jan2012": "January, 2012",
+        "monthlyoverage": "Location mensuelle VSPP (surplus)",
+        "nov2011": "Novembre 2011",
+        "one": "1",
+        "pointValue": "Valeur des points",
+        "product": "Produit",
+        "qty": "Quantité",
+        "reportmessage": "Le suivi Vmware est dû le 5e jour de chaque mois. Vous devez déclarer votre utilisation dans votre commande mensuelle (janvier, février, etc.).",
+        "reportperiod": "Période du rapport :",
+        "total": "Total",
+        "totalearnedpoints": "Total de points obtenus",
+        "totalpoints": "Total de points :",
+        "usagecalc": "Calculateur d'utilisation Vmware",
+        "zero": "0"
+    }
+}

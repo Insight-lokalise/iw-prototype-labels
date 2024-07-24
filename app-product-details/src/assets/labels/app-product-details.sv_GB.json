@@ -2,6 +2,7 @@
     "labels": {
         " I recommend this product.": "",
         " characters remaining": "",
+        " instantly": "",
         " left in stock": "",
         "(Click to rate)": "(Klicka för att betygsätta)",
         "(click to rate)": "",
@@ -14,6 +15,7 @@
         "Add to cart": "Lägg till i varukorg",
         "Add to personal product list": "",
         "Added to cart": "Lagt i varukorg",
+        "Added to personal product list": "",
         "Advertised price includes": "Kampanjpris inkluderar",
         "Availability": "Tillgänglighet",
         "Back to results": "Tillbaka till sökresultat",
@@ -115,6 +117,7 @@
         "View less accessories": "Visa färre tillbehör",
         "View less protection plans": "Visa färre skyddsplaner",
         "View less specifications": "Visa färre specifikationer",
+        "View list": "",
         "View more accessories": "Visa fler tillbehör",
         "View more protection plans": "Visa fler skyddsplaner",
         "View more specifications": "Visa fler specifikationer",

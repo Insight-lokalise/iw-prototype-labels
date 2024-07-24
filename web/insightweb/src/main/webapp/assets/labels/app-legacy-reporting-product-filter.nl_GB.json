@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "AllTypes": "ALLE types",
+        "filterByProduct": "Filteren op product:",
+        "hardwareFilters": "Alleen hardwarefilters weergeven",
+        "hardwareSoftwareFilters": "Software- en hardwarefilters weergeven",
+        "manufacturers": "Fabrikanten",
+        "productCategories": "Productcategorieën",
+        "productSubCategories": "Productsubcategorieën",
+        "productTypes": "Producttype ",
+        "softwareFilters": "Alleen softwarefilters weergeven"
+    }
+}

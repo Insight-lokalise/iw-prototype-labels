@@ -1,0 +1,9 @@
+{
+    "labels": {
+        "endDate": "Data di fine:",
+        "filterByDate": "Filtra per intervallo di date:",
+        "quickDate": "Data rapida:",
+        "scheduleOpts": "Pianifica report da eseguire:",
+        "startDate": "Data di inizio:"
+    }
+}
