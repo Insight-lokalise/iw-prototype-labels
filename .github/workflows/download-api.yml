@@ -4,9 +4,6 @@ on:
   schedule:
     - cron: '40 00 * * *'
   workflow_dispatch:
-  push:
-    branches:
-      - lokalise-1
 
 jobs:
   Download_labels:
