@@ -1,12 +1,12 @@
 {
     "labels": {
-        "Account": "",
-        "Customer documents": "",
-        "Form contains country select dropdown and language select dropdown": "",
-        "Renewals & warranty manager": "",
-        "Search suggestions": "",
-        "See all available accounts": "",
-        "new key_pooja": "Ny værdi - Opdateret af Suresh - 123",
-        "new key_suresh": "Ny værdi - Opdateret af Suresh - 123"
+        "Account": "Konto",
+        "Customer documents": "Kundedokumenter",
+        "Form contains country select dropdown and language select dropdown": "Formularen indeholder rullemenu for valg af land og rullemenu for valg af sprog1233-opdateret af pooja123345",
+        "Renewals & warranty manager": "Erneuerungen & Garantiemanager1234",
+        "Search suggestions": "Søgeforslag",
+        "See all available accounts": "Se alle tilgængelige konti",
+        "new key_pooja": "Ny værdi - Opdateret af Suresh",
+        "new key_suresh": "Ny værdi - Opdateret af Suresh"
     }
 }
