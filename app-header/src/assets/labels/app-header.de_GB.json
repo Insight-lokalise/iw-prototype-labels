@@ -1,5 +1,12 @@
 {
-  "labels":{
-    "Account":"Konto"
-  }
+    "labels": {
+        "Account": "Konto",
+        "Customer documents": "Kundendokumente",
+        "Form contains country select dropdown and language select dropdown": "Das Formular enthält ein Dropdown-Menü zur Länderauswahl und ein Dropdown-Menü zur Sprachauswahl.",
+        "Renewals & warranty manager": "Erneuerungen & Garantiemanager123",
+        "Search suggestions": "Unsere Wissensdatenbank durchsuchen",
+        "See all available accounts": "Alle verfügbaren Konten anzeigen",
+        "new key_pooja": "Neuer Wert – hinzugefügt von Pooja-12",
+        "new key_suresh": "Neuer Wert - Aktualisiert von Suresh - 1234"
+    }
 }
