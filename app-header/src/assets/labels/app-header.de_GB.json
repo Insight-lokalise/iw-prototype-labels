@@ -1,12 +1,12 @@
 {
     "labels": {
-        "Account": "Konto",
+        "Account": "Kontowerkzeuge",
         "Customer documents": "Kundendokumente",
-        "Form contains country select dropdown and language select dropdown": "",
-        "Renewals & warranty manager": "",
-        "Search suggestions": "",
-        "See all available accounts": "",
-        "new key_pooja": "",
-        "new key_suresh": ""
+        "Form contains country select dropdown and language select dropdown": "Das Formular enthält ein Dropdown-Menü zur Länderauswahl und ein Dropdown-Menü zur Sprachauswahl1233 – aktualisiert von Pooja",
+        "Renewals & warranty manager": "Manager für Verlängerungen und Garantie",
+        "Search suggestions": "Suchvorschläge",
+        "See all available accounts": "Alle Konten durchsuchen",
+        "new key_pooja": "Neuer Wert - Aktualisiert von Suresh - 1234",
+        "new key_suresh": "updated degb"
     }
 }
