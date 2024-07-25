@@ -1,12 +1,13 @@
 {
     "labels": {
-        "Account": "Konto",
-        "Customer documents": "Kundendokumente",
+        "Account": "",
+        "Customer documents": "",
         "Form contains country select dropdown and language select dropdown": "",
         "Renewals & warranty manager": "",
         "Search suggestions": "",
         "See all available accounts": "",
         "new key_pooja": "",
-        "new key_suresh": ""
+        "new key_suresh": "",
+        "sprint review": ""
     }
 }
