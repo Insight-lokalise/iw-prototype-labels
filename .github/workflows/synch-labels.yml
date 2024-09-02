@@ -19,7 +19,7 @@ jobs:
         with:
           repository: Insight-IT-Web/iw-prototype
           path: iw-prototype
-          ref: lokalise-1
+          ref: lokalise
           clean: true
           token: ${{ secrets.WEB_TO_LOKALISE }}
       - name: Synchronize iw-prototype labels
