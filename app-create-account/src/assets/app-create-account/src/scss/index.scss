@@ -1,0 +1,20 @@
+.app-create-account {
+  @import '~@insight/toolkit-css-core';
+
+  .c-create-account-form {
+    padding: $global-spacing-unit;
+  }
+
+  .c-create-account-list {
+    margin-bottom: 0;
+    margin-left: $global-spacing-unit;
+    list-style-type: none;
+  }
+
+  .c-create-account-list__item {
+    &::before {
+      content: "-";
+      padding-right: $global-spacing-unit-tiny;
+    }
+  }
+}

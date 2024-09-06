@@ -1,0 +1,418 @@
+@charset 'utf-8';
+
+@import "~@insight/toolkit-css-core";
+@import "~@insight/toolkit-css-ui";
+@import '~@insight/toolkit-css-ui/src/components/button';
+@import "iw-styles/src/iw-settings";
+
+/**
+ * We import ALL iw-components CSS here.
+ * This is not the preferred approach because if we have 2 or more React
+ * projects on the page using this architecture then we will end up pulling in
+ * ALL the CSS for iw-components 2 or more times! This is bad for performance!
+ *
+ * On future projects we want to use a better CSS architecture based on ITCSS
+ * and BEMIT naming conventions:
+ * https://pmvscentral.atlassian.net/wiki/spaces/FD/pages/153845865/Proposed+CSS+Architecture
+ */
+
+@import "./libs/iw-components/index";
+
+// Imports toolkit libraries used for CES
+.c-simplified-search {
+  @import "~@insight/toolkit-css-core/src/_all";
+  @import "~@insight/toolkit-css-ui";
+  padding: $global-spacing-unit $global-spacing-unit-small !important;
+  margin-bottom: $global-spacing-unit-small !important;
+  background-color: $color-white;
+  border: 1px solid $color-warm-gray-5;
+
+  .c-adv-options-container {
+    width: 64%;
+    @include mq($until: desktop) {
+      width: 33%;
+    }
+  }
+
+  .c-adv-options-container-enhanced {
+    width: 64%;
+    @include mq($until: desktop) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .c-select-container {
+    width: 100%;
+    @include mq($from: desktop) {
+      width: 85%;
+    }
+
+    &:last-of-type {
+      @include mq($from: desktop) {
+        width: 100%;
+      }
+    }
+  }
+  .c-input {
+    height: $global-spacing-unit-large !important;
+  }
+  .c-select {
+    height: $global-spacing-unit-large !important;
+  }
+  .c-form__label {
+    margin-bottom: 0;
+  }
+  .c-button-group {
+    justify-content: space-around;
+    .c-button {
+      margin-bottom: $global-spacing-unit;
+      height: $global-spacing-unit-large;
+    }
+  }
+}
+/**
+ * Stop the scope of all styles within the confines of this class
+ * Add the class iw-styles to all projects using iw-styles and iw-components
+ */
+html body .iw-styles {
+  /**
+   * Useful mixins
+   */
+
+  @mixin font-brand() {
+    font-family: $body-font-family;
+    font-size: $font-size-base;
+  }
+
+  @mixin order-status() {
+    color: $brand-cyan;
+    font-weight: $global-weight-bold;
+  }
+
+  /**
+   * Variables used across project
+   */
+  $orders-spacing-huge: rem-calc(60);
+  $orders-spacing-xlarge: rem-calc(30);
+  $orders-spacing-large: rem-calc(20);
+  $orders-spacing-medium: rem-calc(15);
+  $orders-spacing-small: rem-calc(10);
+  $orders-spacing-tiny: rem-calc(5);
+
+  $font-size-xlarge: rem-calc(28);
+  $font-size-large: rem-calc(24);
+  $font-size-medium: rem-calc(18);
+  $font-size-base: rem-calc(16);
+  $font-size-small: rem-calc(14);
+  $font-size-xsmall: rem-calc(13);
+  $font-size-tiny: rem-calc(12);
+
+  $font-size-print-base: 8pt !important;
+  $font-size-print-large: 12pt !important;
+  $font-size-print-xlarge: 16pt !important;
+
+  $manage-content-bg-color: #f0eeed;
+
+  $product-image-width: 75px;
+  $product-image-height: 75px;
+
+  /**
+   * Standardise spacing used across the project
+   */
+  .orders__spacing {
+    &--bottom {
+      margin-bottom: $orders-spacing-medium;
+
+      @include breakpoint(medium) {
+        margin-bottom: $global-spacing-unit-small;
+      }
+    }
+
+    &--top {
+      margin-top: $orders-spacing-medium;
+
+      @include breakpoint(medium) {
+        margin-top: $orders-spacing-large;
+      }
+    }
+  }
+
+  /**
+   * Standardise components used across the project
+   */
+  .orders__container {
+    padding: $orders-spacing-small 0 $orders-spacing-medium;
+    height: 100%;
+
+    @include breakpoint(medium) {
+      padding: $orders-spacing-medium;
+    }
+
+    &--summary {
+      padding: 0;
+    }
+
+    @include breakpoint(small only) {
+      &--summary {
+        padding: 0 0 $orders-spacing-medium;
+      }
+    }
+
+    @include breakpoint(small only) {
+      &--tabs {
+        background-color: transparent;
+        padding: 0;
+      }
+    }
+
+    @media print {
+      padding: 0;
+    }
+  }
+
+  .order__details {
+    background-color: $color-white;
+    &--ces {
+      border: 1px solid $color-warm-gray-5;
+    }
+  }
+  .u-padding-left-none {
+    padding-left: 0 !important;
+  }
+  .u-padding-right-none {
+    padding-right: 0 !important;
+  }
+  .u-padding-none {
+    padding: 0 !important;
+  }
+  .u-padding-top-small {
+    padding-top: $global-spacing-unit-small;
+  }
+
+  /**
+   * Standardise icons used across the project
+   */
+  .orders__ion-icon {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: $font-size-medium;
+
+    /**
+     * When icons appear on the left give them some padding
+     */
+    &--left {
+      padding-right: 0.4em;
+    }
+
+    /**
+     * When icons appear on the right give them some padding
+     */
+    &--right {
+      padding-left: 0.5em;
+    }
+  }
+
+  /**
+   * Standardise links used across the project
+   */
+  .orders__link {
+    font-weight: $global-weight-bold;
+
+    &-text {
+      display: inline-block;
+      font-size: $font-size-small;
+    }
+
+    /**
+     * Make links display block
+     */
+    &--block {
+      display: block;
+    }
+
+    /**
+     * Make links display inline block
+     */
+    &--inline-block {
+      display: inline-block;
+    }
+
+    /**
+     * Give links a bottom margin
+     */
+    &--margin-bot {
+      margin-bottom: $orders-spacing-small;
+    }
+
+    /**
+     * Give links a top margin
+     */
+    &--margin-top {
+      margin-top: $orders-spacing-small;
+    }
+  }
+
+  /**
+   * Standardise unordered lists used across the project
+   */
+  .orders__list {
+    &-item {
+      line-height: 1.2;
+      margin-bottom: $orders-spacing-small;
+
+      @include breakpoint(large) {
+        margin-bottom: $orders-spacing-tiny;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    /**
+     * Remove bullets from unordered lists
+     */
+    &--no-bullets {
+      list-style: none;
+    }
+  }
+
+  /**
+    * Custom row styling for 'Back to orders' link
+    */
+  .orders__row {
+    border-bottom: 1px solid $brand-lightgray;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .react-datepicker-wrapper {
+    width: 100%;
+  }
+
+  /*
+    * Manually set styles for breadcrumbs to fix clash with iw-styles
+  */
+  .c-breadcrumbs__name {
+    font-size: 0.875rem !important;
+  }
+  .c-breadcrumbs__list {
+    margin-bottom: 0 !important;
+  }
+
+  /*
+    * Manually set styles for currency code to fix clash with iw-styles
+  */
+  .c-currency__code {
+    font-size: 75% !important;
+  }
+
+  /**
+   * Import all css needed for this project here so the scope is limited to
+   * anything contained within iw-styles
+   */
+  @import "Orders/Details/components/AddTrackingNotification/AddTrackingNotification";
+  @import "Orders/Details/components/CustomerDetailsTab/CustomerDetail";
+  @import "Orders/Details/components/CustomerDetailsTab/CustomerDetailsView";
+  @import "Orders/Details/components/DetailsHeader/DetailsHeaderView";
+  @import "Orders/Details/components/DetailsHeader/DetailsTable";
+  @import "Orders/Details/components/DetailsHeader/OrderAgainModal";
+  @import "Orders/Details/components/HostedLicensing/HostedLicensing";
+  @import "Orders/Details/components/ItemCard/BundleHeader";
+  @import "Orders/Details/components/ItemCard/CardType";
+  @import "Orders/Details/components/ItemCard/ContractHeader";
+  @import "Orders/Details/components/ItemCard/ItemBody";
+  @import "Orders/Details/components/ItemCard/ItemCard";
+  @import "Orders/Details/components/ItemCard/LineItemInformation";
+  @import "Orders/Details/components/ItemCard/ItemTracking/AssetSerialNumbers";
+  @import "Orders/Details/components/ItemCard/ItemTracking/TrackingHistory";
+  @import "Orders/Details/components/ItemCard/ItemTracking/ItemTracking";
+  @import "Orders/Details/components/ItemsList/ItemsList";
+  @import "Orders/Details/components/OrderDetailsTab/OrderDetailsTab";
+  @import "Orders/Details/components/ShipmentCard/LineItem";
+  @import "Orders/Details/components/ShipmentCard/ShipmentCard";
+  @import "Orders/Details/components/ShipmentCard/ShipmentCardBody";
+  @import "Orders/Details/components/ShipmentCard/ShipmentCardHeader";
+  @import "Orders/Details/components/ShipmentsTab/ShippingGroupsSelect";
+  @import "Orders/Details/components/Tabs/Tabs";
+
+  @import "Orders/Search/components/SearchForm/GenericSearchFormView";
+  @import "Orders/Search/components/SearchForm/SearchForm";
+
+  @import "Shared/components/AddToCart/AddToCart";
+  @import "Shared/components/AddToCart/Quantity";
+  @import "Shared/components/AddToCart/StockStatus";
+  @import "Shared/components/OrderCard/IWItemDetails";
+  @import "Shared/components/OrderCard/OrderCardHeader";
+  @import "Shared/components/OrderCard/OrderCardItem";
+  @import "Shared/components/OrderCard/OrderCardSection";
+  @import "Shared/components/SearchResults/SearchResults";
+  @import "Shared/components/StatusBar/StatusBar";
+
+  /**
+   * Import print specific styles last
+   */
+  @import "Print";
+  @import "Orders/Details/components/Print/PrintAssetSerialNumbers";
+  @import "Orders/Details/components/Print/PrintInvoiceNumbers";
+}
+
+/**
+   * Fix iw-modal being cut off by the header at the top
+   */
+html body .iw-styles.iw-dialog.iw-dialog-contents {
+  z-index: 2007;
+}
+
+/**
+ * Print styles
+ * These needed to be outside of the project styles therefore couldn't reside
+ * inside the Print stylesheet.
+ */
+@media print {
+  /**
+   * Add margins to each page that gets printed.
+   */
+  @page {
+    margin: 1.5cm 1cm;
+  }
+
+  /**
+   * Hide link href from print styles - this overrides the default Foundation
+   * print styles.
+   */
+  a[href]:after {
+    content: none !important;
+  }
+
+  /**
+   * Show Insight Nav - this overrides manage.css print styles.
+   */
+  .insight-nav {
+    display: block;
+  }
+
+  /**
+   * Give the Insight logo some margin to align with order details page grid.
+   */
+  #iw-header .c-logo__image {
+    margin: 0 0 0 30px;
+  }
+}
+
+.manage-content {
+  background-color: #f7f6f5;
+  padding-top: $global-spacing-unit-small;
+}
+
+.letter-spacing-normal {
+  letter-spacing: normal;
+}
+
+#react-document-history-app {
+  @media only screen and (min-width: 1440px)  {
+    margin: auto;
+    width: 1440px;
+  }
+}

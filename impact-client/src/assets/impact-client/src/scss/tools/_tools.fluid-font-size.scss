@@ -1,0 +1,40 @@
+///* ========================================================================
+//   #FLUID-FONT-SIZE
+//   ======================================================================== */
+
+// Generates responsive font sizing by passing in mobile, tablet and desktop
+// pixel font-sizes. Basic usage is simply:
+//
+//   @include fluid-font-size(14px, 16px, 18px);
+//
+// These font sizes are then passed into our `font-size()` mixin in order to
+// generate a rem-based `font-size`, and a `line-height` that will sit on our
+// baseline grid.
+
+@mixin fluid-font-size($mobile, $tablet: $mobile, $desktop: $tablet) {
+
+  /*
+   * Default font-size
+   */
+  @include font-size($mobile);
+
+  /*
+   * If a tablet font-size exists then generate a media query that targets
+   * tablet and above.
+   */
+  @if ($tablet != $mobile) {
+    @include mq($from: tablet) {
+      @include font-size($tablet);
+    }
+  }
+
+  /*
+   * If a desktop font-size exists then generate a media query that targets
+   * desktop and above.
+   */
+  @if ($desktop != $tablet) {
+    @include mq($from: desktop) {
+      @include font-size($desktop);
+    }
+  }
+}

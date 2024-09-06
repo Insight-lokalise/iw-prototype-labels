@@ -1,0 +1,83 @@
+.c-reporting {
+	&__list-column {
+		@include mq($from: tablet) {
+			padding: 0 $global-spacing-unit;
+		}
+
+		@include mq($from: desktop) {
+			padding: 0 $global-spacing-unit-large;
+		}
+	}
+
+	&-panel {
+		border: 1px solid $color-warm-gray-5;
+		margin-bottom: $global-spacing-unit;
+
+		&-title {
+			color: $color-warm-gray-8;
+			background: $color-warm-gray-custom-light;
+			font-size: $global-font-size-tiny * 2;
+		}
+	}
+
+	&-listItem__accordion {
+		&-item {
+			border: 0;
+			border-bottom: 1px solid $color-warm-gray-5;
+			margin-bottom: $global-spacing-unit-small + 2px;
+		}
+
+		&-panel {
+			border-top: 0;
+		}
+
+		&-controls {
+			background-color: unset;
+			display: flex;
+			justify-content: space-between;
+			padding: $global-spacing-unit-tiny 0;
+		}
+
+		&-trigger {
+
+			&:hover,
+			&:focus {
+				background-color: unset;
+				color: unset;
+			}
+
+			.c-icon {
+				color: $color-red-fuchsia;
+			}
+
+			.c-button__content .c-button__text {
+				font-size: $global-font-size-large;
+			}
+		}
+
+		&-action {
+			.c-button {
+				font-size: $global-font-size-small;
+
+				&:focus,
+				&:hover {
+					background-color: unset;
+				}
+			}
+		}
+
+		&-description {
+			font-size: $global-font-size-small;
+		}
+
+		&-info {
+			font-size: $global-font-size-small;
+
+			&-tab {
+				margin-bottom: $global-spacing-unit-tiny;
+				font-weight: $global-font-weight-bold;
+				font-size: $global-font-size;
+			}
+		}
+	}
+}

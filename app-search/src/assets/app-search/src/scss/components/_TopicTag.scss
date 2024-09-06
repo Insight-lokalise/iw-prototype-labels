@@ -1,0 +1,29 @@
+
+.c-tag-wrapper {
+  padding: 0;
+  letter-spacing: 0;
+  color: $color-warm-gray-11;
+  border: none;
+  background-color: $color-white;
+  margin-right: $global-spacing-unit-small;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.c-tag-name {
+  font-size: $global-spacing-unit-small;
+  align-self: center;
+  padding: $global-spacing-unit-tiny;
+  background-color: $color-warm-gray-custom-light;
+  border-radius: $global-spacing-unit-small;
+  box-sizing: border-box;
+  
+  @include mq($until: mobile-landscape) {
+    display: none;
+  }
+
+  &:hover {
+    color : $color-red-fuchsia;
+  }
+}

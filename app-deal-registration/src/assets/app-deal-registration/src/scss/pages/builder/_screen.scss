@@ -1,0 +1,27 @@
+.c-screen {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 70px);
+    padding: $global-spacing-unit-large $global-spacing-unit ($global-spacing-unit + $global-spacing-unit-tiny) $global-spacing-unit-large;
+    overflow-y: scroll;
+    background: $color-warm-gray-custom-light;
+
+    &.is-full {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .c-collapsible {
+        background: #fff;
+    }
+
+    .c-collapsible__content {
+        padding: $global-spacing-unit-small $global-spacing-unit;
+    }
+}
+
+.c-buildert-steps {
+    margin-top: $global-spacing-unit;
+    margin-bottom: $global-spacing-unit-large;
+}

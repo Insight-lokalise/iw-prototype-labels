@@ -1,0 +1,5 @@
+export { default as getRatingsAndReviews } from './getRatingsAndReviews'
+export { default as getSubmissionForm } from './getSubmissionForm'
+export { default as getTranslations } from './getTranslations'
+export { default as submitFeedback} from './submitFeedback'
+export { default as submitReview } from './submitReview'

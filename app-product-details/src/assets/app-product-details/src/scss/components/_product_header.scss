@@ -1,0 +1,41 @@
+.c-product-header {
+  &__name {
+    font-family: $global-font-family-heading;
+    font-size: $global-font-size-large * 1.3;
+    font-weight: $global-font-weight-bold;
+    margin-bottom: $global-spacing-unit-tiny;
+  }
+  &__subtitle {
+    display: flex;
+    gap: $global-spacing-unit-tiny $global-spacing-unit-small;
+    align-items: center;
+    font-size: $global-font-size-small;
+    .c-star-rating {
+      display: flex;
+    }
+  }
+  &__partnumbers {
+    .c-part-numbers {
+      margin: 0 !important;
+
+      &>div:first-child {
+        display: inline-flex;
+        gap: $global-spacing-unit-small;
+        font-size: $global-font-size-small;
+      }
+    }
+  }
+  &__reviews {
+    &__count {
+      display: flex;
+      align-items: center;
+      padding: 0 $global-spacing-unit-tiny;
+      color: $color-red;
+    }
+  }
+  @include mq($from: tablet) {
+    &__partnumbers {
+      order: 2;
+    }
+  }
+}

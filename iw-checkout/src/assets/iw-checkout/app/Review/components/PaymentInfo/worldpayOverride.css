@@ -1,0 +1,90 @@
+/**
+  This file will be uploaded offline to worldpay hosted page designer portal
+  we wanted to maintain a copy here for versioning
+  https://secure.worldpay.com/sso/public/auth/login.html?serviceIdentifier=merchantadmin&maiversion=version2&countryCode=US&languageCode=en
+  https://payments-test.worldpay.com/app/hpp-designer/32-1/
+*/
+
+#wp-cl div.wrapper {
+
+}
+
+#main {
+  border: none;
+  border-radius: 0;
+  background-color: #ffffff;
+  font-family: "allumi-2-std";
+}
+
+.warning-message.error-hint {
+  border: none;
+  border-radius: 0;
+}
+
+#main #paymentDetails {
+  border: none;
+  border-radius: 0;
+}
+
+#main .cardMakePaymentButton {
+
+}
+
+#main .payment-details .field-label {
+  color: #3e332d;
+  font-weight: 400;
+}
+
+#main .payment-details .required-field {
+  color: #c60f13;
+}
+
+.form-validation .error .icon {
+  color: #c60f13;
+}
+
+.form-validation .error .dropdown, .form-validation .error .textbox {
+  border: 1px solid #c60f13;
+}
+
+.form-validation .ok .dropdown, .form-validation .ok .textbox {
+  border: 1px solid #005885;
+}
+
+#main .payment-details .error-hint {
+  color: #c60f13;
+}
+
+.warning-message {
+  color: #c60f13;
+}
+
+.button {
+  border: none;
+  background-color: #ae0a46;
+  color: #fefefe;
+  font-weight: 400;
+  border-radius: 0;
+}
+
+.button:focus, .button:hover {
+  border: none;
+  background-color: #ae0a46;
+  color: #fefefe;
+  font-weight: 400;
+  border-radius: 0;
+}
+
+.button.btn-cancel[disabled], .button.btn-cancel[disabled]:hover, .button[disabled] {
+  border: none;
+  background-color: #eee;
+  color: #3e332d;
+  font-weight: 400;
+  border-radius: 0;
+}
+
+#main .payment-details .note {
+  color: #3e332d;
+}
+
+

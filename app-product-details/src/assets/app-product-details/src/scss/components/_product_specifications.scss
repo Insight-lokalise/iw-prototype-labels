@@ -1,0 +1,393 @@
+$custom-spacing-unit: 8px;
+
+.c-product-specifications {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  > section {
+    width: 100%;
+  }
+  &__listprice {
+    margin-left: $global-spacing-unit-small + 2 ;
+  }
+  &__pricing {
+    order: 1;
+    &__brand-logo {
+      display: flex;
+      justify-content: flex-end;
+      height: 60px;
+      margin-bottom: $global-spacing-unit-tiny;
+      a {
+        max-width: 100px;
+      }
+    }
+    &__call-for-price {
+      padding-bottom: 0 !important;
+      color: $color-turquoise;
+    }
+    &__price {
+      > div {
+        padding: 0;
+      }
+      .c-currency--large {
+        .c-currency__code{
+          font-size: $global-font-size-small;
+          color: #3E332D;
+          font-weight: $global-font-weight-normal;
+        }
+        .c-currency__value {
+          font-size: 26px;
+          color: #3E332D;
+        }
+      }
+
+    }
+    &__your-price {
+      display: flex;
+      align-items: baseline;
+    }
+    &__stock {
+      > div {
+        padding-bottom: $global-spacing-unit-small;
+      }
+    }
+    &__inventory{
+      display: inline-flex;
+      font-weight: $global-font-weight-bold;
+    }
+    &__proration {
+      color: $color-turquoise;
+      font-size: $global-font-size-small;
+      line-height: normal;
+      margin-bottom: $global-spacing-unit-tiny;
+    }
+  }
+  &__instant-rebates {
+    display: flex;
+    background-color: rgba(0, 121, 150, 1);
+    color: white;
+    width: 248px;
+    min-height: 48px;
+    padding-top: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-top: 2px;
+    float: right;
+    .promo_ribbon {
+      padding-top: 2px;
+    }
+    &__large {
+      font-size: 12px;
+      width: unset;
+    }
+    .rebate-text {
+      margin-left: $global-spacing-unit-tiny;
+      margin-top: -$global-spacing-unit-tiny;
+      font-weight: 400;
+    }
+  }
+  &__variants {
+    order: 2;
+  }
+  &__cart {
+    order: 3;
+    &__actions {
+      display: flex;
+      gap: $global-spacing-unit-small;
+      width: 100%;
+      height: 48px;
+      margin: $global-spacing-unit-small 0;
+      &__quantity-selector {
+        &.error {
+          border-color: #af0e2e;
+          box-shadow: 0 0 10px #af0e2e;
+          border-style: solid;
+          border-width: 1px;
+          input:focus {
+            box-shadow: none;
+            border-color: #af0e2e;
+          }
+        }
+      }
+    }
+    &__view-similar {
+      display: none;
+      justify-content: center;
+    }
+    &__add-to-cart {
+      flex: 1;
+      height: 100%;
+      justify-content: center;
+      letter-spacing: normal;
+    }
+    .c-quantity-selector,
+    .c-form__control,
+    .c-select-container,
+    input,
+    select {
+      height: 100%;
+    }
+    select {
+      min-width: 76px;
+    }
+    .c-form__element {
+      margin: 0;
+    }
+  }
+  &__pricing {
+    > div {
+      padding: $global-spacing-unit-tiny 0;
+    }
+    .pricing-left-col {
+      display: flex;
+      flex: 75%;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+    &__your-price {
+      margin-bottom: $custom-spacing-unit;
+      &__value {
+        margin-left: $global-spacing-unit-small - 2;
+      }
+      &__best-price {
+        background-color: $color-warm-gray-custom-light;
+        font-size: $global-font-size-tiny;
+        color: $color-warm-gray-8;
+        padding: 4px;
+        font-weight: $global-font-weight-bold;
+        white-space: nowrap;
+        margin-left: $global-spacing-unit-small;
+        align-self: center;
+      }
+    }
+    &__list-price {
+      .c-list-price__price {
+        min-height: $global-spacing-unit-small;
+        display: flex;
+        align-items: baseline;
+        margin-bottom: $global-spacing-unit-small;
+      }
+      .c-list-price__price__label {
+        padding-right: $global-spacing-unit-tiny;
+      }
+    }
+    &__stock-message {
+      padding: $global-spacing-unit-small 0;
+    }
+    &__contracts__list {
+      div {
+        margin: 0 $custom-spacing-unit $global-spacing-unit-tiny;
+        &:hover {
+          label {
+            display: flex;
+            .c-product-specifications__pricing__contracts__list-name {
+              text-overflow: initial;
+              overflow: hidden;
+              white-space: normal;
+            }
+          }
+        }
+      }
+      
+      label {
+        display: contents;
+        margin-bottom: 0;
+        span {
+          white-space: nowrap;
+        }
+      }
+      .o-grid--top {
+        flex-flow: nowrap;
+        overflow: hidden;
+      }
+      &-name {
+        white-space: nowrap;
+      }
+      &-name, &-id {
+        color: $color-turquoise;
+      }
+      &-best-price {
+        font-size: $global-font-size-tiny;
+        margin-left: $custom-spacing-unit;
+        padding-top: 2px;
+      }
+      &-tooltip {
+        display: flex;
+      }
+      .c-tooltip__anchor {
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+    &__selected-contract {
+      color: $color-turquoise;
+      font-size: $global-font-size-small;
+    }
+    &__ips-contracts {
+      background: $color-warm-gray-custom-light;
+      padding: $global-spacing-unit-tiny;
+      margin-bottom: $custom-spacing-unit;
+      input[type="radio"] {
+        margin-left: 0;
+      }
+    }
+    
+    &__contract__show-more {
+      font-size: $global-font-size-small;
+      font-weight: $global-font-weight-bold;
+      .c-icon {
+        width: $global-spacing-unit;
+        height: $global-spacing-unit;
+      }
+    }
+    &__vat {
+      .c-product-specifications__pricing__your-price {
+        &__value .c-currency__value {
+          color: $color-red-fuchsia;
+          font-size: $global-font-size-tiny + $global-font-size-small;
+        }
+      }
+    }
+  }
+  &__quantity-error {
+    order: 4;
+    .c-message {
+      color: $color-red;
+      border: 0;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  &__protection {
+    order: 5;
+    display: grid;
+    > div {
+      padding: $global-spacing-unit-tiny 0;
+    }
+    &__item {
+      &__divider {
+        padding: 0 $global-spacing-unit-tiny;
+      }
+      .c-form__element {
+        margin-left: $global-spacing-unit-tiny;
+        margin-bottom: 0;
+        display: inline-block;
+      }
+    }
+  }
+  &__warranty {
+    order: 6;
+  }
+  &__link {
+    order: 8;
+    display: grid;
+    > div {
+      padding: $global-spacing-unit-tiny 0;
+    }
+    &-success {
+      &-icon {
+        padding-right: $global-spacing-unit-tiny;
+        color: $color-green;
+      }
+      padding-right: $global-spacing-unit-small;
+      color: $color-green;
+
+    }
+  }
+  &__prop-compliance {
+    order: 8;
+  }
+  .c-compliance-icon {
+    float: left;
+    margin-right: $global-spacing-unit-tiny;
+  }
+  @include mq($from: tablet) {
+    margin-top: 0;
+    &__cart {
+      height: auto;
+      &__view-similar {
+        width: 378px;
+        &--show {
+          display: flex;
+        }
+      }
+      &__actions {
+        height: 60px;
+        &--hide {
+          display: none;
+        }
+      }
+      &__add-to-cart {
+        flex: initial;
+        width: 240px;
+      }
+    }
+    &__pricing {
+      &__brand-logo {
+        margin-left: auto;
+      }
+      &__promotion {
+        display: flex;
+        margin-left: auto;
+        width: $global-spacing-unit-huge * 2.58;
+        height: $global-spacing-unit-large;
+        background-color: #037996;
+        padding: $global-spacing-unit-tiny;
+      }
+      &__promotion span {
+        flex: 1;
+        color: white;
+        font-size: $global-font-size-tiny;
+        font-weight: $global-font-weight-bold;
+      }
+      &__ribbon {
+        color: white;
+        height: $global-spacing-unit-small * 2.5;
+        width: $global-spacing-unit-small * 2.5;
+        margin-right: $global-spacing-unit-tiny;
+      }
+      .pricing-left-col {
+        flex: 1 1;
+      }
+    }
+  }
+  @include mq($until: tablet) {
+    &__pricing {
+      &__brand-logo {
+        display: none;
+      }
+      &__price {
+        margin-top: $global-spacing-unit-tiny;
+      }
+      &__selected-contract {
+        margin-top: $global-font-size-small;
+      }
+      .pricing-left-col {
+        flex: 0 0 100%;
+      }
+    }
+    &__pricing__ips-contracts {
+      width: 100%;
+      background: none;
+      padding: 0 0 $global-spacing-unit-tiny;
+      select {
+        border-width: 0 0 1px;
+        padding: $global-font-size-small / 3;
+        color: $color-turquoise;
+        border-color:$color-warm-gray-5;
+        font-weight: $global-font-weight-bold;
+      }
+    }
+  }
+  .c-currency__strikethrough {
+    .c-currency__code {
+      font-size: $global-font-size-small;
+      color: #3E332D;
+      font-weight: $global-font-weight-normal;
+    }
+    .c-currency__value {
+      font-size: $global-font-size-small;
+      color: #3E332D;
+    }
+  }
+}

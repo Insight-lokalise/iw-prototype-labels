@@ -1,0 +1,29 @@
+.fav-name {
+    &__label {
+        height: 2.3125rem;
+        padding: .5rem;
+        border: 1px solid transparent;
+        line-height: 1.2;
+        font-weight: $global-weight-bold;
+    }
+
+    &__link {
+        color: $brand-mediumgray;
+        &:hover,
+        &:focus {
+            color: $brand-crimson;
+        }
+    }
+
+    &__icon {
+        font-size: rem-calc(20);
+
+        &--add {
+            color: $brand-mediumgray;
+        }
+    }
+
+    &__error {
+        margin-top: rem-calc(10);
+    }
+}

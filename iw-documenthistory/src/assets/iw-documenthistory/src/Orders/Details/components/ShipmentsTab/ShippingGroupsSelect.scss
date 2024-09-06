@@ -1,0 +1,33 @@
+@charset 'utf-8';
+
+.shipping-group {
+  background-color: white;
+  padding: $orders-spacing-large $orders-spacing-medium;
+
+  @include breakpoint(medium) {
+    padding: $orders-spacing-xlarge 0;
+  }
+
+  &__heading {
+    @include font-brand();
+  }
+
+  &__select {
+    margin-bottom: 0;
+    width: 100%;
+
+    @include breakpoint(medium) {
+      width: 20em;
+    }
+  }
+
+  &__message {
+    color: $brand-red;
+    font-weight: $global-weight-bold;
+    margin: $orders-spacing-medium 0 0;
+
+    @include breakpoint(medium) {
+      margin-top: $orders-spacing-large;
+    }
+  }
+}

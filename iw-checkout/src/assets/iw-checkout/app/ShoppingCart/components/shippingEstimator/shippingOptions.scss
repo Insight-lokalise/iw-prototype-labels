@@ -1,0 +1,47 @@
+.shipping-options {
+    > header {
+        padding: 10px 0;
+        border-bottom: 1px solid $brand-lightgray;
+    }
+
+    &__icon {
+        &--close {
+            font-size: rem-calc(36);
+            cursor: pointer;
+        }
+    }
+
+    > section {
+        padding: 15px 0;
+
+        .shipping-options--expand {
+            font-weight: $global-weight-bold;
+        }
+
+        ul {
+            &.shipping-options__list {
+                list-style: none;
+                margin-left: 0;
+
+                li {
+                    label {
+                        font-weight: 100;
+
+                        .shipping-options__condition {
+                            font-weight: $global-weight-bold;
+                        }
+
+                        input[type='radio'] {
+                            vertical-align: middle;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    > footer {
+        padding: 15px 0;
+    }
+}

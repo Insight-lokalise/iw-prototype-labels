@@ -1,0 +1,19 @@
+@mixin bottomShadowLarge($color: #666, $opacity: .3) {
+	box-shadow:
+		0 64px 64px 0 rgba($color, $opacity),
+		0 32px 32px 0 rgba($color, $opacity),
+		0 16px 16px 0 rgba($color, $opacity),
+		0 8px 8px 0 rgba($color, $opacity),
+		0 4xp 4xp 0 rgba($color, $opacity),
+		0 2px 2px 0 rgba($color, $opacity)
+}
+
+@mixin overflowShadowTop {
+	box-shadow: 0 -$global-spacing-unit-small $global-spacing-unit-small -$global-spacing-unit-tiny #fff;
+	z-index: 2;
+}
+
+@mixin overflowShadowBottom {
+	box-shadow: 0 $global-spacing-unit-small $global-spacing-unit-small -$global-spacing-unit-tiny #fff;
+	z-index: 2;
+}

@@ -1,0 +1,48 @@
+{
+  "name": "app-business-review",
+  "version": "1.0.0",
+  "dependencies": {
+    "@insight/toolkit-css-core": "^1.4.22",
+    "@insight/toolkit-css-ui": "^1.4.96",
+    "@insight/toolkit-react": "^2.0.22",
+    "@insight/toolkit-utils": "^1.4.93",
+    "axios": "^0.27.2",
+    "classnames": "^2.2.6",
+    "powerbi-client": "^2.14.1",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "react-html-parser": "^2.0.2",
+    "react-router-dom": "^5.2.0",
+    "react-select": "~1.0.0-rc.4",
+    "string-hash": "^1.1.3"
+  },
+  "jestSonar": {
+    "sonar56x": true,
+    "reportPath": "coverage",
+    "reportFile": "test-reporter.xml",
+    "indent": 4
+  },
+  "scripts": {
+    "start": "buildkit-legacy-scripts start",
+    "build": "buildkit-legacy-scripts build",
+    "aem-import": "buildkit-legacy-scripts aem-import",
+    "lint": "buildkit-legacy-scripts lint",
+    "prettify": "buildkit-legacy-scripts prettify",
+    "import-labels": "buildkit-legacy-scripts labels app-business-review",
+    "test": "buildkit-asserter --coverage",
+    "test:watch": "buildkit-asserter --watch",
+    "preinstall": "npm install --package-lock-only --ignore-scripts && npx npm-force-resolutions"
+  },
+  "resolutions": {
+    "faye": "1.1.3"
+  },
+  "devDependencies": {
+    "buildkit-legacy-scripts": "^5.0.0-Beta.8",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "buildkit-asserter": "^1.0.36",
+    "prop-types": "^15.7.2",
+    "react-router-dom": "^5.2.0",
+    "why-did-you-update": "^1.0.8"
+  }
+}

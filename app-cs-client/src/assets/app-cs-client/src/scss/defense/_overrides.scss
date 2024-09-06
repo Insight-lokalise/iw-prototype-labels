@@ -1,0 +1,68 @@
+/* ==========================================================================
+   #DEFENSE
+   ========================================================================== */
+
+/*
+ *
+ * Override a bunch of styles being set outside of this project.
+*/
+
+& {
+  -webkit-font-smoothing: auto;
+  color: $color-text;
+  font-family: $global-font-family-body;
+  font-size: ($global-font-size / 16px) * 1em;
+  font-weight: $global-font-weight-normal;
+  line-height: $global-line-height / $global-font-size;
+  min-height: 100%;
+  overflow-y: scroll;
+
+  @include mq($from: tablet-landscape) {
+    margin: -20px -10px 0;
+  }
+}
+
+label {
+  color: $color-text;
+  font-weight: $global-font-weight-normal;
+}
+
+input {
+  line-height: 1.5;
+  height: auto;
+  margin-bottom: 0px;
+}
+
+table {
+  border: none !important;
+}
+
+// overcomes legacy style bleeding into app-company-standards
+.c-button {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+// overcomes accordion styles set in toolkit-react
+.c-accordion__item {
+  &:not(:last-child) {
+    margin-bottom: $global-spacing-unit-small;
+  }
+}
+
+.c-accordion__controls {
+  padding: $global-spacing-unit-tiny;
+}
+
+.c-collapsible__content {
+  padding: 0px $global-spacing-unit-tiny 0px 0px;
+}
+
+.c-accordion .c-cs-parsed-element {
+  margin-bottom: 0px;
+}
+
+// this style overcomes the inline style being set in collapsible - the function setting the inline height is returning a height that is too small
+.c-accordion__item .c-collapsible {
+  height: auto !important;
+}

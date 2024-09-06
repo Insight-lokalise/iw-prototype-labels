@@ -1,0 +1,65 @@
+.c-item-card__details {
+	margin-bottom: $global-spacing-unit;
+
+	@include mq($from: tablet) {
+		margin-bottom: 0;
+	}
+}
+
+.c-item-card__details-grid {
+	flex-wrap: nowrap;
+}
+
+.c-item-card__details-image {
+	color: transparent;
+	height: 112px;
+  	width: 100px;
+	max-width: 150px;
+	margin-right: $global-spacing-unit-small;
+
+  &:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    height: 112px;
+    width: 100px;
+    background: url('/content/dam/insight-web/source/img/noImageAvailable_150x112.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+	@include mq($from: tablet) {
+		width: 150px;
+    &:before {
+      width: 150px;
+    }
+	}
+}
+
+.c-item-card__details-bullets {
+	margin-left: 17px;
+	@include font-size(14px);
+}
+
+.c-item-card__details-description {
+	margin-bottom: $global-spacing-unit-tiny;
+	color: $color-primary;
+	font-family: $global-font-family-heading;
+	&-disabled{
+		color: $color-text;
+	}
+}
+
+.c-item-card__details-text {
+	@include font-size(14px);
+	margin-bottom: 2px;
+	color: $color-text;
+}
+
+.c-item-card__details-grid--shrink {
+	@include mq($until: tablet) {
+		flex: 0;
+		width: 90%;
+		margin: $global-spacing-unit 0;
+	}
+}

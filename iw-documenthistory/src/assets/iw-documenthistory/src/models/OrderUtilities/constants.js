@@ -1,0 +1,1 @@
+export const EXPORT_RESULT_AS_XLS = 'EXPORT_RESULT_AS_XLS'

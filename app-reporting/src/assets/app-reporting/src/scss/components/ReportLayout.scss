@@ -1,0 +1,57 @@
+.c-reporting {
+  &__reports {
+    &__header {
+      font-size: $global-font-size-small * 2;
+      margin-bottom: $global-spacing-unit-small;
+    }
+
+    &__subText {
+      font-size: $global-font-size-small;
+    }
+
+    &__table {
+      border: 1px solid $color-warm-gray-5;
+      margin-bottom: $global-spacing-unit;
+      overflow: auto;
+
+      &-row {
+        min-width: $global-spacing-unit-huge * 12;
+        padding: $global-spacing-unit-small 0 $global-spacing-unit $global-spacing-unit-small;
+
+        &:nth-child(odd) {
+          background-color: $color-warm-gray-custom-light;
+        }
+
+        .o-grid__item {
+          font-size: $global-font-size;
+          padding: 0 $global-spacing-unit-tiny 0 0;
+        }
+      }
+    }
+
+    &__toast {
+      position: absolute;
+      right: $global-spacing-unit-large;
+    }
+  }
+
+  &__reportOptions {
+    &__options {
+      gap: $global-spacing-unit-tiny;
+      align-items: center;
+
+      &-btn {
+        line-height: 1;
+
+        &:focus,
+        &:hover {
+          background-color: unset;
+        }
+      }
+
+      &-separator {
+        color: $color-warm-gray-11;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+/**
+ * modal to prompt user to select an account when user is linked to multiple accounts with no default
+ */
+.c-default-account-modal .error-message {
+  border: none;
+  padding: 0;
+  margin-bottom: $global-spacing-unit-small;
+}
+
+.c-default-account-modal .c-header-account-menu__search .c-input {
+  border: 1px solid #cbc4c3;
+}
+
+.c-default-account-modal .c-header-account-menu__results .c-header-account-menu__item {
+  margin-top: $global-spacing-unit-tiny;
+}
+
+.c-default-account-modal .c-header-account-menu__results .c-header-account-menu__item button {
+  line-height: 30px;
+  color: $color-warm-gray-8;
+}
+
+.c-default-account-modal .c-header-account-menu__results .c-header-account-menu__item button:hover {
+  background: $color-warm-gray-2;
+  color: $color-warm-gray-8;
+  cursor: pointer;
+}
+
+.c-default-account-modal .c-header-account-menu__results > .c-header-account-menu__btn {
+  margin-top: $global-spacing-unit-small;
+}

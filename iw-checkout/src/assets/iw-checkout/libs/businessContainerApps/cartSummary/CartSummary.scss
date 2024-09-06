@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+$cart-summary-padding: 10px;
+$cart-summary-margin: 15px;
+
+.cart-summary-container {
+    margin-bottom: $shopping-cart-margin;
+}
+
+.cart-summary {
+    background-color: white;
+    padding-bottom: $cart-summary-padding *2;
+    border: 1px solid $color-warm-gray-5;
+
+    @include breakpoint(small only) {
+        margin-bottom: $cart-summary-padding;
+    }
+
+    &__label {
+        font-weight: $global-weight-bold;
+    }
+
+    &__heading {
+        background-color: $brand-cyan;
+        color: white;
+        padding-top: .625rem;
+        padding-bottom: .625rem;
+    }
+
+    &__requestor-group {
+        .cart-summary {
+            &__label {
+                display: flex;
+                align-self: center;
+                line-height: 20px;
+                white-space: nowrap;
+                margin: 2px 2px 5px;
+                &.ion-ios-information::before {
+                    margin: 0 5px 0 0;
+                    color: $brand-red;
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+
+    .summary-cart__line-item-padding {
+        padding-top: $cart-summary-padding;
+        padding-bottom: $cart-summary-padding;
+    }
+
+    &__subtotal {
+        padding-top: $cart-summary-padding *2;
+        padding-bottom: $cart-summary-padding;
+    }
+
+    &__shipping,
+    &__ewr,
+    &__tax {
+        @extend .summary-cart__line-item-padding;
+    }
+
+    &__hline {
+        border-color: $brand-lightgray;
+        margin: $cart-summary-padding 0;
+    }
+
+    &__total {
+        padding-top: $cart-summary-padding;
+        padding-bottom: $cart-summary-padding *2;
+
+        .cart-summary__label,
+        .iw-currency__amount {
+            font-size: rem-calc(18) !important;
+        }
+    }
+
+    &__button {
+        margin-bottom: $cart-summary-margin;
+        margin-top: $cart-summary-margin;
+    }
+}
+
+.hide-for-medium .cart-summary {
+    border-bottom: 1px solid $color-warm-gray-5;
+}
+
+.ewr-modal__body {
+    padding: 15px;
+}
+
+.cart-agreement {
+  margin-bottom: 10px;
+  input {
+    margin-right: 9px !important;
+  }
+  &__font-size {
+    font-size: .8rem;
+    color: #5f5753;
+  }
+  &__link{
+    font-size: .8rem;
+  }
+  &__modal{
+    margin: $cart-summary-margin;
+  }
+}

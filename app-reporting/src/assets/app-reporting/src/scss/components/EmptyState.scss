@@ -1,0 +1,33 @@
+.c-reporting__empty-state {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: $global-spacing-unit-huge 0;
+
+  &__empty-icon {
+    // container height and width for icon
+    // ref: file-review in symbols.svg
+    height: 75px;
+    width: 75px;
+    margin-bottom: $global-spacing-unit;
+  }
+
+  &__button {
+    font-size: $global-font-size-small;
+    font-weight: $global-font-weight-bolder;
+    .c-icon {
+      height: 17px;
+      width: 17px;
+      margin-right: $global-spacing-unit-small;
+    }
+  }
+
+  &__text {
+    margin-bottom: $global-spacing-unit-tiny;
+  }
+
+  &__text, &__subText {
+    font-size: $global-font-size-large;
+    font-weight: $global-font-weight-bold;
+  }
+}

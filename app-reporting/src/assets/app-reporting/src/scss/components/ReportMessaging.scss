@@ -1,0 +1,8 @@
+.c-reporting {
+  &__error-page {
+    align-items: center;
+    .c-message__body {
+      font-size: $global-font-size-small;
+    }
+  }
+}

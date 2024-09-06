@@ -1,0 +1,43 @@
+/* ==========================================================================
+   #STOCK INFO
+   ========================================================================== */
+
+/**
+ * Stock Info component.
+ */
+
+.c-cart-stock-info__container {
+  display: table;
+  margin: 0 auto;
+}
+
+
+
+.c-cart-stock-info {
+  @include font-size(13px, $modifier: -1);
+  display: table-row;
+  text-align: left;
+
+  > * {
+    display: table-cell;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+
+}
+
+
+
+.c-cart-stock-info__icon {
+  height: $global-font-size-small;
+  width: $global-font-size-small;
+  vertical-align: middle;
+  margin-top: -1px;
+}
+
+
+
+.c-cart-stock-info__stock {
+  padding-left: $global-spacing-unit-tiny;
+  text-align: right;
+}

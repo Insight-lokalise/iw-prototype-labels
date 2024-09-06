@@ -1,0 +1,35 @@
+/* ==========================================================================
+   #DEFENSE
+   ========================================================================== */
+
+/**
+ * Override a bunch of styles being set outside of this project.
+ */
+
+& {
+  -webkit-font-smoothing: auto;
+  color: $color-text;
+  font-family: $global-font-family-body;
+  font-size: ($global-font-size / 16px) * 1em;
+  font-weight: $global-font-weight-normal;
+  line-height: $global-line-height / $global-font-size;
+  min-height: 100%;
+  overflow-y: scroll;
+
+  @include mq($from: tablet-landscape) {
+    margin: -20px -10px 0;
+  }
+
+}
+
+
+
+.c-button {
+  letter-spacing: normal;
+}
+
+
+
+.c-structured-list {
+  border: 0;
+}

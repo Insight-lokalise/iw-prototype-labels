@@ -1,0 +1,38 @@
+.c-address-simple {
+    padding-right: $global-spacing-unit-small;
+
+    abbr.c-form__required[title] {
+        text-decoration: none;
+        -webkit-text-decoration: none;
+        cursor: pointer;
+    }
+
+    .c-form .u-margin-bot {
+        margin-bottom: $global-spacing-unit-tiny !important;
+    }
+
+    .o-grid--gutters-large>.o-grid__item {
+        padding-left: $global-spacing-unit-small;
+    }
+
+    .c-select, .c-radio {
+        margin-bottom: 1rem !important;
+    }
+
+    .c-readonly {
+        margin-top: $global-spacing-unit-tiny;
+        margin-bottom: 1rem;
+    }
+
+    .icon-alert {
+        color: $color-red;
+    }
+
+    &__billing {
+        font-size: $global-spacing-unit-small + 2;
+        font-weight: $global-font-weight-bold;
+        color: $color-turquoise;
+        border: none;
+        padding: $global-spacing-unit-small 0;
+    }
+}

@@ -1,0 +1,57 @@
+.c-tag {
+  padding: $global-spacing-unit-tiny;
+}
+
+.c-cs-tag__required-field::after {
+  content: "*";
+}
+
+.c-existing-tags-row {
+  &:first-child {
+    border-top: 1px solid $color-warm-gray-2;
+  }
+  border-bottom: 1px solid $color-warm-gray-2;
+}
+
+.c-cs-tags--deep-pink {
+  color: $color-deep-pink;
+}
+.c-cs-tags--purple {
+  color: $color-purple;
+}
+.c-cs-tags--fuchsia {
+  color: $color-fuchsia;
+}
+.c-cs-tags--maroon {
+  color: $color-maroon;
+}
+.c-cs-tags--red {
+  color: $color-red;
+}
+.c-cs-tags--red-fuchsia {
+  color: $color-red-fuchsia;
+}
+.c-cs-tags--warm-gray-5 {
+  color: $color-warm-gray-5;
+}
+.c-cs-tags--warm-gray-8 {
+  color: $color-warm-gray-8;
+}
+.c-cs-tags--warm-gray-11 {
+  color: $color-warm-gray-11;
+}
+.c-cs-tags--black-light {
+  color: $color-black-light;
+}
+.c-cs-tags--turquoise {
+  color: $color-turquoise;
+}
+.c-cs-tags--blue {
+  color: $color-blue;
+}
+.c-cs-tags--green {
+  color: $color-green;
+}
+.c-cs-tags--yellow {
+  color: $color-yellow;
+}

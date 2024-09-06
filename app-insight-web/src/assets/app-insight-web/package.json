@@ -1,0 +1,47 @@
+{
+  "name": "app-insight-web",
+  "version": "1.0.0",
+  "dependencies": {
+    "@insight/toolkit-css-core": "^2.2.17",
+    "@insight/toolkit-css-ui": "^2.2.117",
+    "@insight/toolkit-react": "^2.2.120",
+    "@insight/toolkit-utils": "^2.2.95",
+    "axios": "^0.27.2",
+    "classnames": "^2.2.6",
+    "dompurify": "^2.3.6",
+    "query-string": "^6.8.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "resize-observer-polyfill": "^1.5.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "buildkit-asserter": "^1.0.36",
+    "msw": "^0.36.3",
+    "prop-types": "^15.7.2",
+    "react-router-dom": "^5.0.1",
+    "why-did-you-update": "^1.0.6",
+    "buildkit-legacy-scripts": "^5.0.0-Beta.8"
+  },
+  "resolutions": {
+    "faye": "1.1.3"
+  },
+  "jestSonar": {
+    "sonar56x": true,
+    "reportPath": "coverage",
+    "reportFile": "test-reporter.xml",
+    "indent": 4
+  },
+  "scripts": {
+    "start": "buildkit-legacy-scripts start",
+    "build": "buildkit-legacy-scripts build",
+    "aem-import": "buildkit-legacy-scripts aem-import",
+    "import-labels": "buildkit-legacy-scripts labels app-login",
+    "test": "buildkit-asserter --coverage",
+    "test:watch": "buildkit-asserter --watch",
+    "lint": "buildkit-legacy-scripts lint",
+    "prettify": "buildkit-legacy-scripts prettify",
+    "preinstall": "npm install --package-lock-only --ignore-scripts && npx npm-force-resolutions"
+  }
+}

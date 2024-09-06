@@ -1,0 +1,92 @@
+html {
+  min-height: 100%;
+  background: #e6e6e5;
+}
+
+.shopping-cart__carrier-charge-message {
+  font-weight: 400;
+  color: #af0e2e;
+  padding: 10px;
+}
+
+@media (max-width: 596px) {
+  .small-float-center {
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+  }
+
+  .small-text-center {
+    text-align: center;
+  }
+}
+
+@media (max-width: 596px) {
+  table.body img {
+    width: auto;
+    height: auto;
+  }
+
+  table.body center {
+    min-width: 0;
+  }
+
+  table.body .container {
+    width: 95%;
+  }
+
+  table.body .columns {
+    height: auto;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  table.body .columns .columns {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  table.body .collapse .columns {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  th.small-6 {
+    display: inline-block;
+    width: 50%;
+  }
+
+  th.small-12 {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .columns th.small-12 {
+    display: block;
+    width: 100%;
+  }
+
+  table.menu {
+    width: 100%;
+  }
+
+  table.menu td,
+  table.menu th {
+    width: auto;
+    display: inline-block;
+  }
+
+  table.menu.vertical td,
+  table.menu.vertical th,
+  table.menu.small-vertical td,
+  table.menu.small-vertical th {
+    display: block;
+  }
+
+  table.menu[align="center"] {
+    width: auto;
+  }
+}

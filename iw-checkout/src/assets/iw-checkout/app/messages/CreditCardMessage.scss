@@ -1,0 +1,14 @@
+#cc-msg-id {
+  padding-bottom: 10px;
+  .cc-msg {
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: #7D726D;
+    line-height: normal;
+  }
+  &.row {
+    padding-top: 15px;
+  }
+}

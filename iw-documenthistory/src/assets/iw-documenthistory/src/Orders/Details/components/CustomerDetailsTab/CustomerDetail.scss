@@ -1,0 +1,27 @@
+@charset 'utf-8';
+
+.customer-detail {
+  padding: $orders-spacing-medium 0;
+  border-bottom: 1px solid $brand-lightgray;
+
+  @media print {
+    page-break-inside: avoid;
+    padding: $orders-spacing-tiny 0;
+    border-bottom: 0;
+  }
+
+  &__label {
+    display: block;
+    font-weight: $global-weight-bold;
+    padding-right: $orders-spacing-medium;
+  }
+
+  &__value {
+    display: block;
+    text-align: right;
+
+    @media print {
+      text-align: left;
+    }
+  }
+}

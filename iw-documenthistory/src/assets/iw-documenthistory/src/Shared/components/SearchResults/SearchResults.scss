@@ -1,0 +1,185 @@
+@charset 'utf-8';
+
+.search-results-container {
+  background-color: $color-white;
+  padding: $global-spacing-unit-small !important;
+  &--ces {
+    border: 1px solid $color-warm-gray-5;
+  }
+}
+
+.search-results {
+  padding: 0.875rem 0 !important;
+
+  .c-pagination {
+    .c-pagination__box {
+      margin-bottom: $global-spacing-unit-tiny;
+      min-width: $global-spacing-unit;
+      min-height: $global-spacing-unit;
+      border: 1px solid $brand-gray;
+      font-size: 11px;
+    }
+    .c-pagination--mobile {
+      margin-top: $global-spacing-unit;
+    }
+    .c-pagination__prev,
+    .c-pagination__next {
+      display: none;
+      border: solid 2px $brand-mediumgray !important;
+
+      .c-button__content {
+        padding: 4px 10px;
+      }
+      &:not(.is-disabled) {
+        &:hover,
+        &:focus {
+          background-color: $color-white;
+          border-color: $brand-mediumgray;
+          color: $color-link;
+        }
+      }
+    }
+    .c-pagination__prev {
+      margin-right: $global-spacing-unit-small !important;
+    }
+    .c-pagination__next {
+      margin-left: $global-spacing-unit-small !important;
+    }
+    .c-pagination--mobile {
+      .c-pagination__prev {
+        display: flex;
+      }
+      .c-pagination__next {
+        display: flex;
+      }
+    }
+    .c-pagination__group {
+      align-items: center;
+    }
+    .c-button-group {
+      .c-button {
+        margin: 5px;
+      }
+      .c-button--secondary {
+        background-color: #fff;
+        border-color: $brand-gray;
+        &:not(.is-disabled) {
+          &:hover,
+          &:focus {
+            background-color: $brand-mediumgray;
+            color: $color-white;
+            cursor: pointer;
+          }
+        }
+      }
+      .c-button--primary {
+        background-color: $color-link;
+        border-color: $brand-gray;
+        color: $color-white;
+
+        &:not(.is-disabled) {
+          &:hover,
+          &:focus {
+            background-color: $color-link-hover;
+            border-color: $color-link-hover;
+            color: $color-white;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  @include breakpoint(medium) {
+    .c-pagination {
+      .c-pagination__prev,
+      .c-pagination__next {
+        display: flex;
+        border: $brand-gray solid 1px !important;
+        .c-button__content {
+          padding: 0;
+        }
+      }
+    }
+    .c-pagination--mobile {
+      display: none;
+      .c-pagination__prev {
+        display: none;
+      }
+      .c-pagination__next {
+        display: none;
+      }
+    }
+  }
+
+  @include breakpoint(medium) {
+    padding: $orders-spacing-medium;
+  }
+
+  &-filters {
+    margin-top: $orders-spacing-medium;
+
+    @include breakpoint(medium) {
+      margin-bottom: $orders-spacing-small;
+    }
+
+    .c-dh-format-radio {
+      display: contents;
+      .c-radio__container {
+        margin-left: 8px;
+        margin-bottom: 12px;
+      }
+    }
+
+    &__filter {
+      margin-bottom: $orders-spacing-small;
+
+      @include breakpoint(medium) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  /**
+   * IWResponsiveTable component tweaks specifically for this project.
+   *
+   * 1 & 2 is a hack which hide the table head elements which is needed when
+   * only the order number, and no other fields are shown - this is to tidy up
+   * the UI so it's cleaner and matches the mockups. See OrderCardHeader.scss.
+   *
+   * 1. We need to visually hide the icon spacer table heading but keep its
+   *    space on the page so it doesn't affect the other table rows.
+   *
+   * 2. We need to hide the order number table heading because we're going to
+   *    show it in a different place.
+   *
+   * 3. We need to add some spacing to the first column and last columns to
+   *    better align with the expanded contents.
+   */
+  .iw-table {
+    border: 0;
+    margin: 0;
+
+    &__row > th:nth-last-child(2):first-child {
+      visibility: hidden; /* [1] */
+    }
+
+    &__row > th:nth-child(2):last-child {
+      display: none; /* [2] */
+    }
+
+    &__column:not(:only-of-type),
+    &__heading:not(:only-of-type) {
+      &:first-child {
+        padding-left: rem-calc(7); /* [3] */
+      }
+
+      &:last-child {
+        padding-right: $orders-spacing-medium; /* [3] */
+      }
+    }
+  }
+  &__no-results {
+    padding: $global-spacing-unit 0;
+  }
+}

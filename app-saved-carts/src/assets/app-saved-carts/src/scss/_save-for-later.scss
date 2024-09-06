@@ -1,0 +1,22 @@
+/* ==========================================================================
+   #SAVE FOR LATER
+   ========================================================================== */
+
+.c-save-for-later {
+
+  > * {
+    margin-bottom: $global-spacing-unit;
+
+    @include mq($from: tablet) {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+  }
+
+  @include mq($until: tablet) {
+    padding: 0;
+  }
+
+}

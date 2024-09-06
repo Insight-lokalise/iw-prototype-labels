@@ -1,0 +1,9 @@
+/**
+ * The main container contains all of the contents of the EMEA site below the
+ * header. It has a z-index of 1 set on it, which forces all content to appear
+ * below the header, even dialogs that should actually appear above the header.
+ */
+
+#main-container {
+  z-index: auto !important;
+}

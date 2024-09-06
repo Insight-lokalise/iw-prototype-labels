@@ -1,0 +1,36 @@
+.c-item-card__compare {
+	@include font-size(14px);
+  font-weight: $global-font-weight-normal;
+  height: $global-spacing-unit + $global-spacing-unit-tiny;
+	padding: 0;
+	position: absolute;
+	left: 24px;
+	bottom: -25px;
+	color: $color-blue;
+
+	@include mq($from: tablet) {
+		position: relative;
+		left: auto;
+		bottom: auto;
+	}
+}
+
+
+.c-item-card__compare-text {
+	color: $color-text;
+  &:before{
+    content: "\00a0 ";
+  }
+}
+
+.c-item-card__compare-now {
+  @include font-size(14px);
+  font-weight: $global-font-weight-normal;
+  padding: 0;
+
+  &:before{
+    content: '|';
+    color: $color-warm-gray-11;
+    padding: 0 5px;
+  }
+}

@@ -1,0 +1,108 @@
+.c-reviews-tabs {
+	position: relative;
+
+  .cnet-reviews {
+    margin-top: $global-spacing-unit-small;
+  }
+	.c-tabs {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+
+		@include mq($from: desktop) {
+      justify-content: flex-start;
+		}
+
+    .c-tab:not(:first-child) {
+      margin-left: $global-spacing-unit;
+      &::after {
+        content: "";
+        position: absolute;
+        right: calc(100% + 24px);
+        height: 50%;
+        bottom: 25%;
+        width: 1px;
+        border-right: 1px solid $color-warm-gray-2;
+      }
+    }
+	}
+  .c-reviews-tab {
+    padding: $global-spacing-unit-small $global-spacing-unit-tiny;
+    margin-right: $global-spacing-unit;
+
+    @include mq($from: desktop) {
+      padding: $global-spacing-unit-small 0;
+    }
+
+    &:active {
+      box-shadow: none;
+    }
+    .c-tab__content {
+      font-size: 24px;
+      font-family: $global-font-family-heading;
+      font-weight: 400;
+      letter-spacing: normal;
+    }
+  }
+}
+
+.c-reviews-tab {
+	position: relative;
+	background-color: transparent;
+	color: $color-text;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      height: 5px;
+      width: 100%;
+      background-color: $color-primary;
+      opacity: 0;
+      transition: opacity 250ms ease-in-out;
+      transform: translateX(-50%);
+    }
+
+
+	&:hover, &.is-selected {
+      &::before {
+        opacity: 1;
+      }
+	}
+
+	@include mq($from: tablet) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	@include mq($from: desktop) {
+		padding-top: 0;
+
+    &::before {
+      width: 100%;
+    }
+	}
+}
+
+.c-reviews__footer {
+	padding-left: $global-spacing-unit-small;
+	padding-top: $global-spacing-unit + $global-spacing-unit-tiny;
+
+	.c-button {
+    font-size: $global-font-size-small;
+		font-weight: $global-font-weight-normal;
+		padding-left: 0;
+		padding-right: 0;
+
+		&:nth-of-type(2) {
+			text-align: right;
+		}
+	}
+
+	p {
+    font-size: $global-font-size-small;
+		margin-bottom: 0;
+	}
+}

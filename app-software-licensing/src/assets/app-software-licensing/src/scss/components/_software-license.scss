@@ -1,0 +1,155 @@
+/**
+ * Software license title.
+ */
+
+.c-software-license__title {
+  @include font-family-body();
+  color: $color-white;
+}
+
+.c-software-license__row{  
+  border-top: 0;
+}
+
+/**
+ * Software license cell.
+ */
+
+.c-software-license__cell {
+  padding: $global-spacing-unit-small $global-spacing-unit;
+}
+
+/**
+ * Software license agreements.
+ *
+ * 1. Add a separator between each agreement, but not if it's the last one.
+ */
+
+.c-software-license__cell--agreement{
+  padding: $global-spacing-unit-small;
+  &:not(:last-child) {
+    border-bottom: 1px solid $color-warm-gray-2; /* [1] */
+  }
+}
+
+.c-software-license__cell--fields{
+  margin: $global-spacing-unit-small 0;
+}
+
+.c-software-license__flag {
+  padding-left: $global-spacing-unit-large+20;
+  position: relative;
+}
+
+.c-software-license__time { 
+  padding-left: $global-spacing-unit;
+}
+
+.c-software-license__expired--text{
+  background-color: $color-red;
+  text-align: center;
+  color: #fff;
+  padding: 0 $global-spacing-unit;
+  @include font-size($global-font-size-small);
+}
+
+.c-agreement-selection {
+  clear: both;
+}
+
+.c-agreement-selection__col {
+  float: left;
+}
+
+.c-agreement-selection__col__icon {
+  cursor: pointer;
+}
+
+/**
+ * Open/close row button and icon.
+ */
+
+ .c-software-license__btn {
+   color: $color-text;
+   margin-right: $global-spacing-unit-small;
+ }
+
+.c-software-license__icon {
+  flex: 0 0 auto;
+}
+
+.c-software-license__view-links{
+  margin: $global-spacing-unit-small 0 $global-spacing-unit-small $global-spacing-unit;
+}
+
+.c-software-license__view-products{
+  display: flex;
+  flex-direction: column;
+}
+
+.c-software-license__padding-bot{
+  padding-bottom: $global-spacing-unit-small;
+}
+
+.c-software-license__padding-top{
+  padding-top: $global-spacing-unit-small;
+}
+
+.c-software-license__margin-left{
+  margin-left: $global-spacing-unit;
+}
+
+.c-software-license__margin-right{
+  margin-right: $global-spacing-unit-small;
+}
+
+.c-software-license__vertical-separator{
+    padding: 0 $global-spacing-unit-small;
+}
+
+.c-software-license__horizontal-seperator{
+    margin: $global-spacing-unit-small 0;
+}
+
+.c-software-license__cell--header,
+.c-software-license__contract-details--header,
+.c-software-license__cell--agreement-header{
+  font-weight: $global-font-weight-bold;
+}
+
+.c-software-license__contact-rep{
+  color: $color-red;
+}
+
+.c-software-license__display-flex{
+  display: flex;
+}
+
+@include mq($until: tablet) {
+
+  /**
+   * On mobile:
+   *
+   * 1. Show a label (equivalent to the table header) using the `data-label`
+   *    attribute, and display it using the `before` pseudo element.
+   */
+  .c-software-license__cell--data-label::before {
+    content: attr(data-label); /* [1] */
+    display: inline-block;
+    margin-right: $global-spacing-unit-tiny;
+  }
+
+  .c-software-license__margin-left,
+  .c-software-license__view-links {
+    margin-left: 0px;
+  }
+
+  .c-software-license__expand-all{
+    display: block;
+    margin-left:0;
+  }
+
+  .c-software-license__time {
+    padding-left: 0;
+  }
+}

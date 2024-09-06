@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IWAddress renders w/o address1 1`] = `
+<DocumentFragment>
+  <p
+    class="rendered"
+  >
+    <br />
+    <span>
+      address2
+      <br />
+    </span>
+    city, state zipCode
+    <br />
+    countryId
+  </p>
+</DocumentFragment>
+`;
+
+exports[`IWAddress renders w/o address2 1`] = `
+<DocumentFragment>
+  <p
+    class="rendered"
+  >
+    address1
+    <br />
+    city, state zipCode
+    <br />
+    countryId
+  </p>
+</DocumentFragment>
+`;
+
+exports[`IWAddress renders w/o city 1`] = `
+<DocumentFragment>
+  <p
+    class="rendered"
+  >
+    address1
+    <br />
+    <span>
+      address2
+      <br />
+    </span>
+    state zipCode
+    <br />
+    countryId
+  </p>
+</DocumentFragment>
+`;
+
+exports[`IWAddress renders w/o countryId 1`] = `
+<DocumentFragment>
+  <p
+    class="rendered"
+  >
+    address1
+    <br />
+    <span>
+      address2
+      <br />
+    </span>
+    city, state zipCode
+    <br />
+  </p>
+</DocumentFragment>
+`;
+
+exports[`IWAddress renders w/o state 1`] = `
+<DocumentFragment>
+  <p
+    class="rendered"
+  >
+    address1
+    <br />
+    <span>
+      address2
+      <br />
+    </span>
+    city,  zipCode
+    <br />
+    countryId
+  </p>
+</DocumentFragment>
+`;
+
+exports[`IWAddress renders w/o zipCode 1`] = `
+<DocumentFragment>
+  <p
+    class="rendered"
+  >
+    address1
+    <br />
+    <span>
+      address2
+      <br />
+    </span>
+    city, state 
+    <br />
+    countryId
+  </p>
+</DocumentFragment>
+`;
+
+exports[`IWAddress renders with full address 1`] = `
+<DocumentFragment>
+  <p
+    class="rendered"
+  >
+    address1
+    <br />
+    <span>
+      address2
+      <br />
+    </span>
+    city, state zipCode
+    <br />
+    countryId
+  </p>
+</DocumentFragment>
+`;

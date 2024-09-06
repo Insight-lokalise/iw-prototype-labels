@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IWImage should match the previous snapshot 1`] = `
+<img
+  alt="sm"
+  className={undefined}
+  custom="prop"
+  onClick={undefined}
+  src="https://prod-assets.insight.com/ccms_img/noImageAvailable_150x112.png"
+/>
+`;

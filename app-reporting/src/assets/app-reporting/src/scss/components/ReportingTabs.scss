@@ -1,0 +1,27 @@
+.c-reporting {
+	&-tabs {
+		border-bottom: 1px solid $color-warm-gray-5;
+		margin-left: 0;
+
+		.c-tabs__item .c-tab {
+			padding: $global-spacing-unit-small $global-spacing-unit-small $global-spacing-unit-tiny;
+
+			&:hover,
+			&:focus,
+			&:active {
+				background-color: unset;
+				box-shadow: none;
+			}
+
+			span {
+				color: $color-red-fuchsia;
+				font-size: $global-font-size;
+				font-weight: $global-font-weight-bold;
+			}
+		}
+
+		&__icon {
+			margin-right: $global-spacing-unit-tiny;
+		}
+	}
+}

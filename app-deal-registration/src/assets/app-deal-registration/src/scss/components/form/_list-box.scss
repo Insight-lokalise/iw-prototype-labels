@@ -1,0 +1,64 @@
+.c-listbox {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.c-listbox__list {
+	display: flex;
+	flex-direction: column;
+	align-self: stretch;
+	flex: 1 0 0;
+}
+
+.c-listbox__filter,
+.c-listbox__select {
+	display: block;
+	width: 100%;
+	// Replace with variables
+	padding: 8px 12px;
+	border: 1px solid $color-warm-gray-5;
+	border-radius: $global-radius;
+}
+
+.c-listbox__filter {
+	margin-bottom: 10px;
+}
+
+.c-listbox__select-container {
+	display: flex;
+	flex: 1 0 auto;
+}
+
+.c-listbox__actions {
+	display: flex;
+	flex: 0 0 auto;
+	flex-direction: column;
+	margin: 0 10px;
+
+	.has-filter & {
+		padding-top: 44px;
+	}
+}
+
+.c-listbox__actions-left,
+.c-listbox__actions-right {
+	display: flex;
+	flex-direction: column;
+}
+
+.c-listbox__move {
+	display: flex;
+	justify-content: center;
+	height: 38px;
+	width: 55px;
+	margin-bottom: 5px;
+	background: $color-warm-gray-11;
+	border: 1px solid $color-warm-gray-5;
+	border-radius: $global-radius;
+
+	> .c-icon {
+		height: 13px;
+		width: 13px;
+	}
+}

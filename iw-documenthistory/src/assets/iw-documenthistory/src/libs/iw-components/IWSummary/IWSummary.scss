@@ -1,0 +1,62 @@
+@charset "utf-8";
+@import 'iw-styles/src/iw-settings';
+
+
+$iw-summary-padding: rem-calc(10);
+$iw-summary-margin: rem-calc(15);
+
+
+.iw-summary {
+  background-color: white;
+
+  &-ewr-modal__body {
+    padding: $global-spacing-unit-small !important;
+  }
+}
+
+  .iw-summary__header {
+    padding: $iw-summary-padding 0;
+    border-bottom: 1px solid $brand-lightgray;
+    color: $brand-darkgray;
+  }
+
+    .iw-summary__title {
+      margin: 0;
+    }
+
+  .iw-summary__totals {
+    margin-top: $iw-summary-margin;
+  }
+
+    .iw-summary__row {
+      padding-top: $iw-summary-padding;
+      padding-bottom: $iw-summary-padding;
+    }
+
+      .iw-summary__label {
+        font-weight: $global-weight-bold;
+
+        .iw-summary__row--total & {
+          font-size: rem-calc(18) !important;
+        }
+
+      }
+
+      .iw-currency__amount {
+
+        .iw-summary__row--total & {
+          font-size: rem-calc(18) !important;
+        }
+
+      }
+
+    .iw-summary__hline {
+      border-color: $brand-lightgray;
+      margin: $iw-summary-padding 0;
+    }
+
+    .iw-summary__footnote {
+      margin: $iw-summary-padding 0 $iw-summary-padding / 2;
+      font-size: .875em;
+      line-height: 1.4;
+    }

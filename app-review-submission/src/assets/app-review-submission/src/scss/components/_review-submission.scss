@@ -1,0 +1,59 @@
+.review-submission {
+  margin: auto;
+  @include mq($from: tablet) {
+    border: 1px solid $color-warm-gray-2;
+
+    width: 100%;
+    max-width: 760px;
+  }
+  @include mq($from: desktop) {
+    width: 760px;
+  }
+
+  h4 {
+    margin-left: 20px;
+    margin-bottom: $global-spacing-unit-tiny;
+    font-weight: 500;
+  }
+  .c-review-submission {
+    margin: $global-spacing-unit;
+    @include mq($from: tablet) {
+      margin: $global-spacing-unit-large $global-spacing-unit-large + $global-spacing-unit;
+    }
+  }
+}
+.review-submission-success {
+  width: 100%;
+  margin: auto;
+  padding: $global-spacing-unit-large;
+  text-align: center;
+  @include mq($from: tablet) {
+    width: 450px;
+    padding: $global-spacing-unit-huge;
+
+  }
+}
+
+.c-review-submission__star-ratings {
+  .c-icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.c-review-product-section {
+  margin-left: -10px;
+  margin-bottom: $global-spacing-unit-small;
+  align-items: center;
+}
+
+.c-review-product-section__image {
+  color: transparent;
+  width: 120px;
+}
+
+.c-review-product-section__title {
+  font-family: $global-font-family-heading;
+  margin-bottom: 0;
+}
+

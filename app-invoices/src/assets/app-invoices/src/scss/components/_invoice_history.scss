@@ -1,0 +1,28 @@
+.c-app-invoice-history {
+  @include mq($until: tablet) {
+    padding: $global-spacing-unit-small 0 $global-spacing-unit-small;
+  }
+  padding: $global-spacing-unit-small;
+  background-color: $color-warm-gray-custom-light;
+
+  .c-app-invoice-history__panel {
+    border: 1px solid $color-warm-gray-5;
+    .c-collapsible.is-open{
+      height: auto !important;
+    }
+  }
+
+  .c-app-invoice-history__panel-search {
+    margin-bottom: $global-spacing-unit-small;
+  }
+
+  /* TOBE removed once backend fix is done */
+  .c-resource-table__header {
+    padding: $global-spacing-unit-small !important;
+  }
+
+  .c-accordion__trigger {
+    display: none;
+  }
+  /* TOBE removed once backend fix is done */
+}

@@ -1,0 +1,66 @@
+.c-tooltip {
+    color: #fff;
+    background-color: $color-turquoise;
+    font-weight: $global-font-weight-bold;
+    width: 100%;
+    max-width: 340px;
+    font-size: $global-font-size;
+    line-height: $global-spacing-unit-tiny * 3;
+    z-index: 99999;
+    &.c-tool-tip--top {
+      &::before {
+        content: '';
+        position: absolute;
+        border-width: $global-spacing-unit-tiny;
+        border-style: solid;
+        top: 100%;
+        left: calc(50% - 3px);
+        border-top-color: $color-turquoise;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent
+      }
+    }
+    &.c-tool-tip--bottom {
+      &::before{
+        content: '';
+        position: absolute;
+        border-width: $global-spacing-unit-tiny;
+        border-style: solid;
+        bottom: 100%;
+        left: calc(50% - 3px);
+        border-bottom-color: $color-turquoise;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+      }
+    }
+    &.c-tool-tip--right {
+      &::before{
+        content: '';
+        position: absolute;
+        border-width: $global-spacing-unit-tiny;
+        border-style: solid;
+        right: 100%;
+        top: calc(50% - 3px);
+        border-right-color: $color-turquoise;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+      }
+    }
+    &.c-tool-tip--left {
+      &::before{
+        content: '';
+        position: absolute;
+        border-width: $global-spacing-unit-tiny;
+        border-style: solid;
+        left: 100%;
+        top: calc(50% - 3px);
+        border-left-color: $color-turquoise;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+      }
+    }
+  }

@@ -1,0 +1,87 @@
+.c-admin-preview {
+	margin: 40px 0;
+
+	.c-panel__title {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 50px;
+		padding: 0 8px;
+	}
+
+	h5, p {
+		margin: 0;
+		color: #fff;
+	}
+}
+
+.c-admin-preview__info {
+	width: 85%;
+	padding-top: 40px;
+	margin: 0 auto 25px auto;
+
+	.c-structured-list__description {
+		color: $color-text;
+		font-weight: 100;
+	}
+}
+
+.c-admin-preview__list {
+	display: inline-flex;
+	width: 50%;
+}
+
+.c-admin-preview__fields {
+	width: 85%;
+	margin: 0 auto;
+}
+
+.c-admin-preview__group {
+	display: inline-flex;
+	flex-direction: column;
+	width: 50%;
+
+	.c-form__element {
+		width: 90%;
+	}
+
+	.DayPickerInput {
+		width: 100%;
+
+		input {
+			width: 100%;
+		}
+	}
+}
+
+.c-admin-preview__group--notes {
+	width: 100%;
+	margin-top: 30px;
+
+	.c-form__element {
+		display: inline-block;
+		width: 45%;
+
+		&:nth-of-type(1) {
+			margin-right: 5%;
+		}
+	}
+}
+
+.c-admin-preview__submit {
+	display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+	width: 95%;
+	padding: 25px 0;
+
+	button {
+		width: 200px;
+		height: 50px;
+		justify-content: center;
+	}
+	.c-form__error {
+		margin-bottom: 15px;
+		margin-top: 0;
+	}
+}

@@ -1,0 +1,21 @@
+.c-improveicon {
+  fill: #ccc;
+  width: 20px;
+  margin: 0 1px;
+  &.c-improveicon-active {
+    fill: black;
+    filter: drop-shadow( -1px -1px 3px #bbb );
+  }
+  &.c-improveicon-low {
+    fill: darkgreen;
+    filter: drop-shadow( -1px -1px 3px #bbb );
+  }
+  &.c-improveicon-medium {
+    fill: goldenrod;
+    filter: drop-shadow( -1px -1px 3px #aaa );
+  }
+  &.c-improveicon-high {
+    fill: darkred;
+    filter: drop-shadow( -1px -1px 3px #bbb );
+  }
+}

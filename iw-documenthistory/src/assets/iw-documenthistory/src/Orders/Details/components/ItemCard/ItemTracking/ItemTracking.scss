@@ -1,0 +1,67 @@
+@charset 'utf-8';
+
+.item-tracking {
+  background-color: $brand-lightestgray !important; // !important needed to override print resets
+  padding: $orders-spacing-large $orders-spacing-medium 0;
+
+  @include breakpoint(large) {
+    padding-bottom: $orders-spacing-small;
+  }
+
+  &__label {
+    font-size: $font-size-small;
+    font-weight: $global-weight-bold;
+    margin-bottom: 1em;
+
+    @include breakpoint(large) {
+      margin-bottom: .5em;
+    }
+  }
+
+  &__value {
+    font-size: $font-size-small;
+    margin-bottom: 1em;
+    min-height: 1em;
+    text-align: right;
+
+    @include breakpoint(medium) {
+      text-align: left;
+    }
+
+    @include breakpoint(large) {
+      margin-bottom: .5em;
+
+      &--asset {
+        text-align: right;
+      }
+    }
+  }
+
+  &__highlight {
+    color: $brand-cyan;
+    font-size: $font-size-small;
+  }
+
+  /**
+   * Repeat the tracking information labels on mobile, tablet and print when
+   * there are 2 or more tracking numbers for any given item.
+   *
+   * For this to work we've added a data-label attribute to the
+   * item-tracking__value element which matches the actual label found in the
+   * item-tracking__label element.
+   */
+  &__row:nth-child(n+2) {
+    .item-tracking__value::before {
+      content: attr(data-label);
+      font-weight: $global-weight-bold;
+      left: -100%;
+      position: absolute;
+      text-align: left;
+      width: 100%;
+
+      @include breakpoint(large) {
+        display: none;
+      }
+    }
+  }
+}

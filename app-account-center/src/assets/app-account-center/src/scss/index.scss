@@ -1,0 +1,426 @@
+@import '~@insight/toolkit-css-core/src/_all';
+@import '~@insight/toolkit-css-ui';
+
+.c-user-availability {
+  position: absolute;
+  top: 0%;
+  right: 0;
+  font-weight: $global-font-weight-bold !important;
+}
+
+.c-password-unmask {
+  position: absolute;
+  top: 0;
+}
+
+@include mq($from: desktop) {
+  .c-user-availability {
+    margin-left: 15px !important;
+    top: 13%;
+    left: 67%;
+  }
+}
+
+.c-availability {
+  .c-message {
+    border: none;
+    padding: 0px;
+
+    &.c-message--success {
+      color: $color-green;
+    }
+
+    &.c-message--info {
+      color: $color-turquoise;
+    }
+
+    &.c-message--error {
+      color: $color-red;
+    }
+  }
+}
+
+.c-address-tiles__tooltip {
+  //renders outside #app-account-center scope
+  padding: 0;
+  color: #fff;
+  background-color: $color-turquoise;
+  width: 215px;
+  text-align: center;
+}
+
+#react-app-account-center {
+  .u-margin-left {
+    margin-left: $global-spacing-unit;
+  }
+
+  .c-screen-reader-only {
+    display: none;
+  }
+
+  .c-account-center {
+    background-color: $color-warm-gray-custom-light;
+
+    @include mq($until: tablet) {
+      padding: $global-spacing-unit-small 0 $global-spacing-unit-small;
+    }
+
+    padding: $global-spacing-unit-small;
+  }
+
+  .c-add-new-card-header {
+    flex: 0 0 100%;
+    width: 100%;
+
+    @include mq($from: tablet) {
+      flex: 0 0 auto;
+      width: auto;
+    }
+  }
+
+  .c-account-header {
+    border: 1px solid $color-warm-gray-5;
+    padding: $global-spacing-unit-tiny $global-spacing-unit-tiny
+      $global-spacing-unit-tiny $global-spacing-unit-small;
+    background-color: $color-white;
+    flex: 1;
+
+    &__heading {
+      padding: $global-spacing-unit-small 0;
+      display: flex;
+      align-items: center;
+    }
+
+    &__message {
+      margin-left: $global-spacing-unit-small;
+      margin-bottom: 0px;
+      border: none;
+
+      & div {
+        font-size: $global-font-size;
+        font-family: $global-font-family-body;
+        font-weight: $global-font-weight-normal;
+      }
+    }
+
+    &__icon {
+      margin-right: $global-spacing-unit-tiny;
+    }
+
+    @include mq($until: tablet) {
+      &__heading {
+        display: block;
+        padding: $global-spacing-unit-small 0;
+      }
+
+      &__message {
+        margin: 0;
+        padding: $global-spacing-unit-small 0 0 0;
+        border: none;
+      }
+    }
+
+    .c-account-header__error {
+      border: none;
+      color: $color-red-fuchsia;
+      margin-bottom: 0;
+
+      .c-message__icon {
+        margin-right: $global-spacing-unit-tiny;
+      }
+    }
+  }
+
+  .c-account-center-tiles {
+    padding-top: $global-spacing-unit-small;
+  }
+
+  .c-panel-border {
+    border: 1px solid $color-warm-gray-5;
+    margin-bottom: $global-spacing-unit-small;
+
+    @include mq($from: desktop) {
+      margin-bottom: 0;
+    }
+
+    &__default {
+      border: 2px solid $color-turquoise;
+    }
+  }
+
+  .c-ac-panel-title {
+    background-color: $color-white;
+    border-bottom: 1px solid $color-warm-gray-5;
+    color: $color-black;
+    font-family: 'klinic-slab', 'Helvetica Neue', 'Helvetica', 'Helvetica,Arial',
+      'sans-serif';
+  }
+
+  .c-title-bar__item {
+    padding: 0;
+  }
+
+  .c-static-form-field {
+    padding-bottom: $global-spacing-unit;
+  }
+
+  .c-ac-title-icon .c-button__icon--left {
+    margin-right: 0;
+  }
+
+  .c-personal-info__confirm {
+    margin-bottom: 0;
+  }
+
+  .c-personal-info__container {
+    min-height: $global-spacing-unit-large;
+  }
+
+  .c-ac-title-icon.c-button--none:focus {
+    color: $color-black;
+  }
+
+  .c-ac-container {
+    background: #fff;
+    position: relative;
+
+    @include mq($from: desktop) {
+      height: 100%;
+    }
+  }
+
+  .c-ac-address-button,
+  .c-ac-payment-button {
+    font-weight: $global-font-weight-bold;
+  }
+
+  .c-ac-button__group > * + * {
+    margin-left: $global-spacing-unit;
+  }
+
+  .c-ac-button__group {
+    position: absolute;
+    right: $global-spacing-unit-small;
+    bottom: $global-spacing-unit;
+  }
+
+  .c-ac-cancel-button {
+    padding: 0 $global-spacing-unit;
+  }
+
+  .c-address-header__search-button {
+    padding: $global-spacing-unit-tiny $global-spacing-unit-small;
+  }
+
+  .c-address-tiles {
+    min-height: 250px;
+    margin-right: $global-spacing-unit-small;
+    margin-bottom: $global-spacing-unit-small;
+    position: relative;
+  }
+
+  .c-address-section {
+    font-style: normal;
+  }
+
+  .c-address-tiles .c-address-tiles__buttons {
+    padding: $global-spacing-unit-tiny;
+    margin: 0;
+    position: absolute;
+  }
+
+  .c-address-tiles .c-address-tiles__edit-button {
+    top: $global-spacing-unit-tiny;
+    right: 0px;
+    z-index: 10;
+  }
+
+  .c-address-tiles .c-address-tiles__delete-button,
+  .c-address-tiles .c-address-tiles__primary-label {
+    bottom: 0px;
+    right: 0px;
+  }
+
+  .c-address-tiles .c-address-tiles__default-section {
+    bottom: 0px;
+    left: 0px;
+  }
+
+  .c-address-tiles .c-address-tiles__default-lozenge,
+  .c-address-tiles .c-address-tiles__primary-label {
+    margin-left: $global-spacing-unit-tiny;
+    margin-bottom: $global-spacing-unit-small;
+  }
+
+  .c-address-tiles .c-address-tiles__primary-label {
+    color: $color-turquoise;
+  }
+
+  .c-address-tiles__primary-label__primary-text {
+    margin-right: $global-spacing-unit-tiny;
+  }
+
+  .c-address-tiles .c-address-tiles__default-button {
+    padding: $global-spacing-unit-tiny;
+  }
+
+  .c-payment-card__item {
+    padding-bottom: $global-spacing-unit;
+  }
+
+  .c-payment-methods-default {
+    padding-bottom: $global-spacing-unit;
+  }
+
+  .c-payment-card-icon {
+    margin-right: $global-spacing-unit-tiny;
+  }
+
+  .c-radio.c-ac-pay-method-radio {
+    margin-right: $global-spacing-unit-small;
+  }
+
+  .u-margin-top-none {
+    margin-top: 0;
+  }
+
+  .c-paymetric-iframe {
+    border: none;
+    width: 100%;
+  }
+
+  .c-paymetric-message {
+    border: none;
+    padding-left: 0;
+    margin-bottom: $global-spacing-unit-tiny;
+  }
+
+  .c-account-breadcrumb {
+    background-color: $color-warm-gray-custom-light;
+    padding: $global-spacing-unit-small 0 0 $global-spacing-unit-small;
+  }
+
+  .c-account-header__search-button {
+    padding: $global-spacing-unit-tiny $global-spacing-unit-small;
+  }
+
+  .c-account-tiles {
+    margin-right: $global-spacing-unit-small;
+    margin-bottom: $global-spacing-unit-small;
+    position: relative;
+  }
+
+  .c-account-tiles .c-panel__body {
+    padding: $global-spacing-unit-small;
+  }
+
+  .c-account-pagination-top {
+    padding-bottom: $global-spacing-unit-small;
+  }
+
+  .c-account-section {
+    font-style: normal;
+  }
+
+  .c-account-tiles .c-account-tiles__default-section {
+    bottom: 0px;
+    left: 0px;
+  }
+
+  .c-account-tiles .c-account-tiles__default-lozenge {
+    margin-top: $global-spacing-unit-small;
+  }
+
+  .c-account-tiles .c-account-tiles__default-button {
+    padding: $global-spacing-unit-tiny;
+  }
+
+  .c-account-page-size {
+    padding-right: $global-spacing-unit-small;
+  }
+
+  .c-account-page-size .c-select {
+    height: 36px;
+    padding: $global-spacing-unit-tiny 36px $global-spacing-unit-tiny
+      $global-spacing-unit-tiny;
+  }
+
+  .c-change-password-info {
+    font-size: 12px;
+    background: $color-warm-gray-custom-light;
+    border: none;
+    padding: $global-spacing-unit-tiny;
+    font-weight: $global-font-weight-bold;
+    margin-bottom: 0;
+
+    .c-message__icon {
+      height: 15px;
+      width: 15px;
+      margin-right: $global-spacing-unit-tiny;
+      margin-top: 2px;
+    }
+  }
+
+  .c-change-password {
+    margin: $global-spacing-unit-tiny 0;
+    font-weight: $global-font-weight-bold;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    margin: auto;
+    width: 1440px;
+  }
+}
+
+.c-radio.c-ac-email-format-radio {
+  margin-right: $global-spacing-unit-small;
+
+  .c-form__label {
+    font-weight: $global-font-weight-bold;
+  }
+}
+
+.c-ac-email-order-checkbox .c-checkbox,
+.c-ac-email-quote-checkbox .c-checkbox {
+  margin-right: $global-spacing-unit-small;
+}
+
+.c-ac-email-format-field .c-radio__container {
+  width: 50%;
+}
+
+.c-radio__container {
+  margin-right: $global-spacing-unit;
+
+  .c-form__label.c-form__label--radio {
+    font-weight: $global-font-weight-bold;
+  }
+}
+
+.c-checkbox__container {
+  .c-form__label.c-form__label--checkbox {
+    font-weight: $global-font-weight-bold;
+  }
+}
+
+.c-quick-links {
+  text-align: left;
+
+  @include mq($from: desktop) {
+    text-align: right;
+  }
+}
+
+.c-modal-link {
+  padding: 0;
+  border: 0;
+
+  &--no-margin-bottom {
+    margin-bottom: 0;
+  }
+}
+
+.c-modal-link-container {
+  border-top: 1px solid $color-warm-gray-custom-light;
+  text-align: right;
+}

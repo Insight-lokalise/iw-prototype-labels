@@ -1,0 +1,43 @@
+{
+  "name": "app-dd-management-tool",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "buildkit-legacy-scripts start",
+    "build": "buildkit-legacy-scripts build",
+    "aem-import": "buildkit-legacy-scripts aem-import",
+    "test": "buildkit-asserter --coverage",
+    "test:watch": "buildkit-asserter --watch"
+  },
+  "jestSonar": {
+    "sonar56x": true,
+    "reportPath": "coverage",
+    "reportFile": "test-reporter.xml",
+    "indent": 4
+  },
+  "dependencies": {
+    "@insight/toolkit-react-prototype": "1.0.0-alpha.1",
+    "@insight/toolkit-utils": "1.0.0-alpha.0",
+    "axios": "^0.27.2",
+    "classnames": "^2.2.5",
+    "core-js": "^2.5.3",
+    "react": "^16.4",
+    "react-dom": "^16.4",
+    "react-modal": "^3.3.2",
+    "uuid": "^3.2.1"
+  },
+  "aem": {
+    "categories": ""
+  },
+  "devDependencies": {
+    "buildkit-legacy-scripts": "^5.0.0-Beta.1",
+    "@insight/toolkit-css-core": "1.0.0-alpha.6",
+    "@insight/toolkit-css-ui": "1.0.0-alpha.0",
+    "@insight/toolkit-css-ui-prototype": "1.0.0-alpha.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "buildkit-asserter": "^1.0.36",
+    "prop-types": "^15.6.1"
+  }
+}

@@ -1,0 +1,16 @@
+@charset 'utf-8';
+
+.items-list {
+  margin-top: $orders-spacing-xlarge;
+
+  @include breakpoint(small only) {
+    background-color: $manage-content-bg-color;
+    margin-top: 0;
+    border-top: $orders-spacing-medium solid white;
+  }
+
+  &__msg {
+    color: $brand-red;
+    font-weight: $global-weight-bold;
+  }
+}

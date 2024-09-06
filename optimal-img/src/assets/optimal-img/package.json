@@ -1,0 +1,32 @@
+{
+  "name": "optimal-img",
+  "version": "1.0.0",
+  "description": "An image component that will automatically pull down smaller images based on screen size.",
+  "main": "index.html",
+  "scripts": {
+    "build": "buildkit-legacy-scripts build",
+    "aem-import": "buildkit-legacy-scripts aem-import",
+    "start": "owc-dev-server --port 3000",
+    "test": "buildkit-asserter --coverage",
+    "test:watch": "buildkit-asserter --watch"
+  },
+  "jestSonar": {
+    "sonar56x": true,
+    "reportPath": "coverage",
+    "reportFile": "test-reporter.xml",
+    "indent": 4
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "buildkit-legacy-scripts": "^5.0.0-Beta.8",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "buildkit-asserter": "^1.0.36",
+    "owc-dev-server": "^1.0.0"
+  },
+  "dependencies": {
+    "lit-element": "^2.2.0",
+    "lit-html": "^1.1.1"
+  }
+}

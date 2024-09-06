@@ -1,0 +1,45 @@
+.iw-message {
+    padding-top: 10px;
+    display: flex;
+    align-items: flex-start;
+
+    &--margin-top {
+        margin-top: 1rem;
+    }
+
+    &:first-child {
+        padding-top: 0;
+    }
+
+    &:last-child {
+        padding-bottom: 0;
+    }
+
+    &__icon {
+        margin-right: 2px;
+        font-size: 20px;
+
+        &--warn::before {
+            color: orange;
+        }
+
+        &--error::before {
+            color: $brand-red;
+        }
+
+        &--info::before {
+            color: $brand-cyan;
+        }
+
+        &--success::before {
+            font-size: 19px;
+            color: $brand-green;
+        }
+    }
+
+    &__text {
+        &--error {
+            color: $color-red;
+        }
+    }
+}

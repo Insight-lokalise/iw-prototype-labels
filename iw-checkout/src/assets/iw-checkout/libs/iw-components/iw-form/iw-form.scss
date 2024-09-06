@@ -1,0 +1,131 @@
+/* Form styles */
+.form {
+    width: 100%;
+
+    /* Form labels */
+    &__label {
+        &--inline {
+            display: inline-block;
+        }
+
+        &--checkbox {
+            display: inline-block;
+            vertical-align: baseline;
+            margin: 0 0 0 .5rem;
+            line-height: 1.4;
+        }
+
+        &--radio {
+            display: inline-block;
+            vertical-align: baseline;
+            margin: 0 0 0 .5rem;
+        }
+
+        &--readonly {
+            cursor: default;
+        }
+
+        &__radio--readonly {
+            cursor: default;
+            opacity: .5;
+        }
+    }
+
+    /* Form fields */
+    &__field {
+        margin-bottom: rem-calc(10) !important;
+
+        /* Highlight fields with validation errors */
+        &--error {
+            border-color: $alert-color;
+
+            /* Highlight react select control fields with validation errors */
+            .Select-control {
+                border-color: $alert-color;
+            }
+        }
+
+        /* Change appearance of fields when disabled */
+        &--disabled,
+        &:disabled {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            height: auto;
+
+            /* Remove ability to resize textarea when it's disabled */
+            @at-root textarea#{&} {
+                resize: none !important;
+            }
+        }
+        &[readonly][type='text'] {
+            background-color: #e6e6e6 !important;
+        }
+
+        /* Message that appears below form field */
+        &-msg {
+            margin-bottom: rem-calc(10);
+            font-size: rem-calc(14);
+
+            /* Error message that appears underneath fields with validation errors */
+            &--error {
+                color: $alert-color;
+            }
+        }
+    }
+
+    /* Highlight required fields with an asterix - used next to form labels */
+    &__required {
+        color: $alert-color;
+        margin-left: 0.2rem;
+    }
+
+    /* Select menus */
+    &__select {
+        display: block;
+        margin-bottom: rem-calc(10) !important;
+        -webkit-appearance: none; /* Remove default styling */
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+
+        &::-ms-expand {
+            display: none; /* Remove native arrows in IE */
+        }
+    }
+
+    /* Radio button  */
+    &__input--radio {
+        margin-top: rem-calc(5) !important;
+    }
+
+    /* Checkbox  */
+    &__input--checkbox {
+        margin-top: rem-calc(3) !important;
+    }
+
+    /* File upload */
+    &__file {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: .657rem 1rem;
+
+        /* Make ion icon clearer by increasing font size and center aligning vertically */
+        .ion {
+            font-size: rem-calc(20);
+            vertical-align: middle;
+        }
+
+        &-wrapper {
+            margin-bottom: rem-calc(10);
+        }
+    }
+
+    /* Help text */
+    &__help-text {
+        font-size: rem-calc(14);
+        margin-bottom: rem-calc(10);
+    }
+}

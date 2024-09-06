@@ -1,0 +1,73 @@
+.c-landing {
+	width: 65%;
+	padding: 30px 0;
+	margin: 90px auto 40px auto;
+	border: 1px solid $color-warm-gray-2;
+}
+
+.c-landing__section {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	padding-left: 85px;
+	margin-bottom: 25px;
+
+	> button, a {
+		padding: 0;
+		padding-top: 4px;
+		width: 80%;
+		justify-content: flex-end;
+	}
+}
+
+.c-landing__section--loading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-left: 85px;
+	width: 50%;
+}
+
+.c-landing__error {
+	color: $color-status-error;
+}
+
+.c-landing__select {
+	.c-form__element {
+		width: 80%;
+	}
+}
+
+.c-landing__create {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin-top: 20px;
+
+	.c-form__element {
+		flex: 1 0 0;
+	}
+
+	button {
+		flex-grow: 0;
+		margin-left: 4px;
+		text-align: left;
+	}
+}
+
+.c-landing__radio {
+	display: flex;
+	flex-direction: column;
+}
+
+.c-landing__finalize {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-top: 80px;
+	padding-right: 30px;
+
+	button {
+		padding: 16px 56px;
+	}
+}

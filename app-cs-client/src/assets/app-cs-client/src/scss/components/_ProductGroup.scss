@@ -1,0 +1,49 @@
+.c-cs-client__productgrp-leftnav {
+  border: $global-input-border-width solid $global-input-border-color;
+  .c-collapsible__content {
+    padding: 0px;
+  }
+}
+
+.c-cs-accordion--prodgrp_highlight, .is-open ~ .c-accordion__controls {
+  border-left: $global-spacing-unit-tiny solid $color-purple;
+}
+
+.c-cs-client__expandcatalog {
+  width: 60px;
+  top: 133px;
+  left: -36px;
+  color: $color-white;
+  z-index: 1;
+  padding: $global-spacing-unit-tiny;
+  position: absolute;
+  background-color: $color-red-fuchsia;
+  border-top-right-radius: $global-spacing-unit-small + 3;
+  border-bottom-right-radius: $global-spacing-unit-small + 3;
+}
+
+.c-cs-backtotop--button{
+  position: fixed;
+  top: 770px;
+  z-index: 1;
+  right: 0px;
+}
+
+@include mq($until: tablet) {
+  .c-cs-client__productgrp-header--description {
+    border-top: $global-input-border-width solid $global-input-border-color;
+  }
+  .c-cs-client__productgrp-header {
+    border-bottom: 0;
+    padding-bottom: 0px;
+  }
+}
+
+// Exists to cancel the final paragraph margin in a parsed element
+.c-cs-pg-detail__parsed .c-cs-parsed-element:last-child {
+  margin-bottom: 0px;
+}
+
+.c-cs-pg-detail__parsed, .c-cs-pg-detail__parsed ul, .c-cs-pg-detail__parsed ol {
+  @include font-size($global-font-size-small)
+}

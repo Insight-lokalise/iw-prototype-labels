@@ -1,0 +1,116 @@
+$step-number-size: 32px;
+$step-number-margin: 16px;
+
+@mixin createStepsNumber() {
+	position: relative;
+	display: inline-block;
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 50%;
+	background-color: $color-turquoise;
+	font-size: .875rem;
+	line-height: 1.5rem;
+	text-align: center;
+	color: #fff;
+	z-index: 1;
+}
+
+@mixin makeLineProgress() {
+	height: 2px;
+	background-color: $color-turquoise;
+}
+
+.c-step-number {
+	@include createStepsNumber();
+
+	.c-step-number__icon {
+		position: relative;
+		top: -4px;
+		height: 16px;
+		width: 16px;
+	}
+}
+
+.c-steps {
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	flex-grow: 1;
+}
+
+.c-step {
+	position: relative;
+	text-align: center;
+	padding: 0.5rem 2.5rem;
+	cursor: pointer;
+	outline: none;
+
+	&:focus:not(.is-disabled),
+	&:hover:not(.is-disabled) {
+		.c-step-number {
+			transition: background-color 200ms linear,
+				color 200ms linear
+		}
+	}
+
+	&.is-disabled {
+		cursor: not-allowed;
+	}
+
+	&::after {
+		content: " ";
+		position: absolute;
+		left: -17%;
+		top: 1.25rem;
+		width: 30%;
+		height: 0.125rem;
+		border-top: 1px dotted $color-turquoise;
+	}
+
+	&:first-child::after {
+		display: none;
+	}
+
+	.c-step-number {
+		position: relative;
+		z-index: 1;
+		transition: all 150ms ease-in-out;
+	}
+
+	&.is-complete {
+		&::before,
+		&::after {
+			@include makeLineProgress;
+		}
+	}
+
+	&.is-selected {
+		&::before {
+			@include makeLineProgress;
+		}
+	}
+
+	&.is-incomplete {
+		.c-step-number {
+			background-color: $color-warm-gray-2;
+		}
+	}
+
+	.c-screen-reader-only {
+		visbility: hidden;
+		opacity: 0;
+		position: absolute;
+		left: -9999px;
+		height: 1px;
+	}
+}
+
+
+.c-step__title {
+	position: relative;
+	display: inline-block;
+	text-align: left;
+	z-index: 2;
+	padding: 0 0.5rem;
+	color: $color-turquoise;
+}

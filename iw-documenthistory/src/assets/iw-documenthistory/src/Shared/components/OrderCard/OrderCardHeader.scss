@@ -1,0 +1,33 @@
+@charset 'utf-8';
+
+.order-card-header {
+  background-color: $brand-lightestgray;
+  border: 1px solid $brand-gray;
+
+  /**
+   * This is a hack which shows the order number title, which is needed when
+   * only the order number, and no other fields are shown - this is to tidy up
+   * the UI so it's cleaner and matches the mockups. See SearchResults.scss.
+   *
+   * 1. We need to hide the order number title by default.
+   *
+   * 2. We need to show the order number title when the scenario above happens.
+   *
+   * 3. We need to float the order number right when the scenario above happens.
+   */
+  &__title {
+    display: none; /* [1] */
+    font-weight: $global-weight-bold;
+  }
+
+  .iw-table__column:nth-child(2):last-child {
+
+    .order-card-header__title {
+      display: inline-block; /* [2] */
+    }
+
+    .order-card-header__link {
+      float: right; /* [3] */
+    }
+  }
+}

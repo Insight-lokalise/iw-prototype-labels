@@ -1,0 +1,104 @@
+.c-favorites__header-title {
+	margin-bottom: $global-spacing-unit-small;
+  font-weight: $global-font-weight-bold;
+}
+
+.c-favorites__header-text {
+	margin-bottom: $global-spacing-unit-large;
+}
+
+.c-favorites__header-wrapper {
+	display: flex;
+	@include mq($until: tablet) {
+        display: block;
+    }
+}
+
+.c-favorites__header-parts {
+	margin-top: $global-spacing-unit-tiny + 3px;
+}
+
+.c-favorites__header-parts__wrapper {
+	position: relative;
+	display: flex;
+}
+
+.c-favorites__header-parts__submit {
+	height: $global-spacing-unit-small + $global-spacing-unit;
+  padding: 0 $global-spacing-unit;
+  .c-button__loading {
+    padding: 0;
+  }
+}
+
+.c-favorites__header-parts__text {
+	margin-right: 10px;
+  font-weight: $global-font-weight-bold;
+
+	@include mq($until: tablet) {
+		position: absolute;
+		top: -25px;
+		left: 0;
+	}
+}
+
+
+.c-favorites__header-parts__input {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	height: 80px;
+  margin-right: $global-spacing-unit-tiny;
+
+	@include mq($from: tablet) {
+		margin: 0 $global-spacing-unit-small;
+	}
+}
+
+.c-favorites__header-parts__input-help {
+	  margin-top: $global-spacing-unit-tiny;
+		@include font-size(11px);
+}
+
+.c-favorite-parts__input::placeholder {
+	color: $color-warm-gray-5;
+}
+
+.c-favorites__list--empty {
+	margin: auto;
+	text-align: center;
+
+  @include mq($from: tablet) {
+    width: 50%;
+  }
+  .c-icon {
+    color: $color-blue;
+    width: $global-spacing-unit + $global-spacing-unit-small;
+    height: $global-spacing-unit + $global-spacing-unit-small;
+    margin-right: $global-spacing-unit-small;
+  }
+}
+
+.c-favorites__list--empty--text{
+  font-weight: $global-font-weight-bold;
+}
+
+.c-favorites__list--message {
+  background-color: $color-warm-gray-custom-light;
+  padding: $global-spacing-unit-small;
+}
+
+.c-favorites-toasts {
+	margin-left: $global-spacing-unit-small;
+	@include mq($until: tablet) {
+	  margin: 0;
+	  width: fit-content;
+	}
+  
+	.c-toast-list__item {
+	  width: fit-content;
+	}
+	.c-toast__close {
+	  display: none;
+	}
+}

@@ -1,0 +1,27 @@
+.c-reporting__access-denied {
+	.o-grid__item {
+		margin: $global-spacing-unit-small 0;
+	}
+
+	@include mq($from: tablet) {
+		margin: ($global-spacing-unit-huge * 2) $global-spacing-unit-huge;
+	}
+
+	&__message-desc {
+		font-size: $global-font-size;
+	}
+
+	&__image {
+		@include mq($from: tablet) {
+			text-align: end;
+		}
+
+		.c-icon {
+			// container height and width for icon
+			// ref: access-denied in symbols.svg
+			height: 236px;
+			width: 359px;
+		}
+	}
+
+}

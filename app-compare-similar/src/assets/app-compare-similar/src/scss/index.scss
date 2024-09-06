@@ -1,0 +1,11 @@
+@import '@insight/toolkit-css-core/src/all';
+@import '@insight/toolkit-css-ui/src/all';
+
+@import 'components/breadcrumb';
+
+#react-app-compare-similar {
+  @import 'components/index';
+  @import 'components/header';
+  @import 'components/products';
+  @import 'components/CompareSimilarOptions';
+}

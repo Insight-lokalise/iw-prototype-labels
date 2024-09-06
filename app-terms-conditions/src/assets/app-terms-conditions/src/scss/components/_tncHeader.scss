@@ -1,0 +1,77 @@
+.c-tc-countryDropdown{
+  width: 150px;
+  font-size: 12px;
+
+  .c-dropdown__button {
+    font-size: 12px;
+  }
+}
+
+.c-tc-country {
+  margin-left: 10px;
+}
+
+.c-tc_heading {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.c-tc_termsTable {
+  border-left: none;
+  border-right: none;
+}
+
+.c-tc_termsTable .c-tc_termsRow:nth-child(odd){background-color: #f2f2f2;}
+
+.c-tc_tableHeader {
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
+
+.c-tc__descWrap {
+  overflow-wrap: break-word;
+  word-wrap: break-word; /* IE11, Firefox */
+}
+
+.c-tc_actionButton{
+  padding: 0;
+  font-size: $global-spacing-unit-small;
+}
+
+.c-tc__header {
+  .c-button--primary{
+    height: 10%;
+    font-size: $global-spacing-unit-small + 2px;
+  }
+  .c-tc__back {
+    font-size: $global-spacing-unit-small + 2px;
+    padding-top: 0;
+    padding-bottom: 5px;
+  }
+}
+
+.c-tc__success {
+  font-size: .875rem;
+  color: $color-green;
+}
+
+.c-tc__salesHeader {
+  background-color: #f2f2f2;
+}
+
+.c-tc__salesSection {
+  padding-left: $global-spacing-unit;
+}
+
+.c-tc_default {
+  background: $color-blue-light;
+  padding: 5px 10px;
+  vertical-align: middle;
+  border-radius: 9px;
+  color: $color-turquoise;
+}
+
+.c-tc__default-border {
+  border-left: 5px solid $color-blue;
+}
+

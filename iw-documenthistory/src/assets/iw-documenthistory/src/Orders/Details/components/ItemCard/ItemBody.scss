@@ -1,0 +1,87 @@
+@charset 'utf-8';
+
+.item-body {
+  padding: $orders-spacing-medium $orders-spacing-medium 0;
+
+  @include breakpoint(medium) {
+    padding: $orders-spacing-large $orders-spacing-medium $orders-spacing-small;
+  }
+
+  &--bundle,
+  &--contract {
+    border-bottom: 1px solid $brand-lightgray;
+    margin: 0 $orders-spacing-medium;
+    padding-bottom: $orders-spacing-small;
+    padding-left: 0;
+    padding-right: 0;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  &__row--ewr-total {
+    display: none;
+  }
+
+  @include breakpoint(large) {
+    &__row--ewr {
+      margin-top: $orders-spacing-medium;
+    }
+    &__row--ewr-total {
+      display: flex;
+    }
+  }
+
+  @media print {
+    page-break-inside: avoid;
+  }
+
+  &__label {
+    display: block;
+    font-size: $font-size-small;
+    font-weight: $global-weight-bold;
+    margin-bottom: 1em;
+
+    @include breakpoint(large) {
+      margin-bottom: 0.5em;
+
+      &--custom {
+        margin-right: 0.3em;
+        margin-top: $orders-spacing-medium;
+      }
+    }
+  }
+
+  &__label--ewr {
+    padding-right: $orders-spacing-medium;
+  }
+
+  &__value {
+    display: block;
+    font-size: $font-size-small;
+    margin-bottom: 1em;
+    text-align: right;
+    white-space: nowrap;
+    &--unit {
+      display: none;
+    }
+    @include breakpoint(medium) {
+      text-align: left;
+    }
+
+    @include breakpoint(large) {
+      margin-bottom: 0.5em;
+
+      &--custom {
+        margin-top: $orders-spacing-medium;
+      }
+      &--unit {
+        display: block;
+      }
+      &--total {
+        display: none;
+      }
+    }
+  }
+}

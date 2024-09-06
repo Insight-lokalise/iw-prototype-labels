@@ -1,0 +1,19 @@
+/* ==========================================================================
+   #PRODUCT-DESCRIPTION
+   ========================================================================== */
+
+/**
+ * Display the subtitle as regular text, even though it's within the <h1> for
+ * SEO purposes.
+ */
+ 
+.c-product-description {
+  @include h2-fluid-font-size;
+}
+
+.c-product-description__subtitle {
+  @include font-size($global-font-size);
+  color: $color-warm-gray-8;
+  display: block;
+  font-family: $global-font-family-body;
+}

@@ -1,0 +1,16 @@
+.c-app-stored-carts__breadcrumb {
+  background-color: $color-warm-gray-custom-light;
+  padding: $global-spacing-unit-small 0 0 $global-spacing-unit;
+}
+.c-stored-carts-view {
+  display: flex;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: $global-spacing-unit-large 0;
+}
+
+.c-screen-reader-only {
+  display: none;
+}

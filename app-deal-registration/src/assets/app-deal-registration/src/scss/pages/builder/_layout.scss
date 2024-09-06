@@ -1,0 +1,36 @@
+.c-builder-layout {
+	padding-bottom: 55px;
+}
+
+.c-builder-layout__group {
+	height: 100%;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 8px;
+}
+
+.c-builder-layout__input {
+	& {
+		width: 100%;
+	}
+}
+
+.c-builder-layout__title {
+	height: 40px;
+	background-color: $color-warm-gray-2;
+}
+
+.c-builder-layout__header {
+	padding: 10px 12px;
+	border-bottom: 1px solid $color-warm-gray-2;
+}
+
+.c-builder-layout__item {
+	& {
+		width: 100%;
+	}
+
+	.c-date-picker & {
+		z-index: 9000;
+	}
+}

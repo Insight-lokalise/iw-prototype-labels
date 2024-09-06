@@ -1,0 +1,46 @@
+#react-app-product-details {
+  @import '@insight/toolkit-css-ui/src/all';
+
+  @import 'components/index';
+  @import 'components/product_header';
+  @import 'components/product_gallery';
+  @import 'components/product_specifications';
+  @import 'components/product_tabs';
+  @import 'components/product_compare';
+  @import 'components/product_people_bought_together';
+}
+#review-submission-form {
+  @import '@insight/toolkit-css-ui/src/all';
+  .c-star-rating {
+    display: flex;
+  }
+  .c-form__radio {
+    display: flex;
+    .c-radio__container {
+      padding: 0 $global-spacing-unit-tiny;
+    }
+  }
+}
+
+.c-modal {
+  @import '~@insight/toolkit-css-core/src/_all';
+  @import '@insight/toolkit-css-ui/src/components/product-details-tabs';
+
+  &.c-pdp-modal {
+    .c-pdp__pricing-container__vat {
+      .c-pdp__customer-price-strike .c-currency__tax {
+        @include font-size($global-font-size-small);
+      }
+    }
+  }
+}
+
+.seo-tags {
+  display: none;
+}
+
+.c-tooltip__carousel {
+  top: 320px !important;
+  position: fixed !important;
+  z-index: 9999;
+}

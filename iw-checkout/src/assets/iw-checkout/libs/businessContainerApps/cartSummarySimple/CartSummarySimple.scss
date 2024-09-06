@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+.c-cart-summary-simple{
+  &__shipping-footnote{
+    padding: 0 ($global-spacing-unit-small*1.25) $global-spacing-unit-small;
+    font-size: $global-font-size-tiny;
+  }
+}
+
+.c-cart-summary-simple__link {
+    margin-top: $global-spacing-unit-small;
+    margin-bottom: $global-spacing-unit-small;
+}
+
+.c-cart-summary-simple__quicktext {
+  font-size: $global-font-size-tiny;
+}
+
+.c-cart-summary-simple__link {
+  .c-button[disabled] {
+    cursor: not-allowed;
+  }
+}
+
+.hide-for-medium .c-cart-summary-simple {
+    margin-bottom: $global-spacing-unit-small;
+}
+
+.c-cart-options {
+  padding-right: $global-spacing-unit-small;
+  padding-left: $global-spacing-unit-small;
+}
+
+@include mq($from: desktop) {
+    .c-cart-summary-simple {
+        margin-left: -0.9375rem;
+    }
+}

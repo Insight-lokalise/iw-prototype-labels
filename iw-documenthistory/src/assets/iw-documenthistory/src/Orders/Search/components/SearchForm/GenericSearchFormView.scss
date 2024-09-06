@@ -1,0 +1,80 @@
+@charset 'utf-8';
+
+.generic-search {
+
+  &__header {
+    padding: 0 $orders-spacing-small;
+
+    @include breakpoint(medium) {
+      padding-bottom: $orders-spacing-medium;
+      text-align: center;
+
+      &-text:first-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__list {
+    align-items: stretch;
+    display: flex;
+    height: calc(100% - #{$orders-spacing-medium};
+    list-style: none;
+    margin: 0 0 $orders-spacing-medium;
+
+    &-item {
+      border-top: 10px solid $brand-cyan;
+      color: $body-font-color;
+      cursor: pointer;
+      display: flex;
+      font-family: $header-font-family;
+      font-size: $font-size-medium;
+      flex: 1 1 auto;
+      font-weight: $global-weight-bold;
+      justify-content: center;
+      letter-spacing: inherit;
+      padding: .8em;
+      text-align: center;
+
+      & + .generic-search__list-item {
+        margin-left: 2px;
+      }
+
+      &:hover:not(.generic-search__list-item--active) {
+        color: $brand-cyan;
+      }
+
+      &--active {
+        background-color: $brand-cyan;
+        color: white !important;
+      }
+    }
+  }
+
+  @include breakpoint(medium down) {
+    &__separator {
+      margin-bottom: $orders-spacing-tiny;
+    }
+  }
+
+  @include breakpoint(large) {
+    &__btn {
+      color: $body-font-color !important;
+      background-color: white !important;
+
+      &-icon {
+        font-size: $font-size-xlarge;
+      }
+    }
+  }
+
+  /**
+   * Hack to keep the alignment of the last column on multiple rows the same on
+   * tablet and above
+   */
+  @include breakpoint(large) {
+    &__column--shrink-width {
+      width: rem-calc(90) !important;
+    }
+  }
+}

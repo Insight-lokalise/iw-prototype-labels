@@ -1,0 +1,24 @@
+# Ignore any compiled files.
+bin/
+**/target/**/*.js
+
+**/dist/**/*.js
+
+**/vendor/
+**/vendor/**/*.js
+
+**/foundation/
+**/foundation/**
+
+**/ckeditor/**/*.js
+**/farbtastic12/**/*.js
+
+# Ignore any minified files
+**/*.min.js
+
+# jquery has a lot of augmentations like jquery-autocomplete.js, jqueryblahblah
+# so we never lint anything with jquery in it.
+jquery*
+
+# and below are 3rd party library files which we should probably put elsewhere.
+fsmenu-validat_release-min.js

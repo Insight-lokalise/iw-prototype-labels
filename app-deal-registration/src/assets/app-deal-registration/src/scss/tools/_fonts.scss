@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "klinic-slab";
+  src: url(https://s.nsit.com/uk01/en-gb/styles/1524156067937/resources/klinicslab/klinicslabbook-webfont.eot);
+  src: url(https://s.nsit.com/uk01/en-gb/styles/1524156067937/resources/klinicslab/klinicslabbook-webfont.eot?#iefix) format("embedded-opentype"),
+    url(https://s.nsit.com/uk01/en-gb/styles/1524156067937/resources/klinicslab/klinicslabbook-webfont.woff) format("woff"),
+    url(https://s.nsit.com/uk01/en-gb/styles/1524156067937/resources/klinicslab/klinicslabbook-webfont.ttf) format("truetype"),
+    url(https://s.nsit.com/uk01/en-gb/styles/1524156067937/resources/klinicslab/klinicslabbook-webfont.svg#klinic-slab) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "klinic-slab";
+  src: url(https://s.nsit.com/uk01/en-gb/styles/1524156067937/resources/klinicslab/klinicslablight-webfont.eot);
+  src: url(https://s.nsit.com/uk01/en-gb/styles/1524156067937/resources/klinicslab/klinicslablight-webfont.eot?#iefix) format("embedded-opentype"),
+    url(https://s.nsit.com/uk01/en-gb/styles/1524156067937/resources/klinicslab/klinicslablight-webfont.woff) format("woff"),
+    url(https://s.nsit.com/uk01/en-gb/styles/1524156067937/resources/klinicslab/klinicslablight-webfont.ttf) format("truetype"),
+    url(https://s.nsit.com/uk01/en-gb/styles/1524156067937/resources/klinicslab/klinicslablight-webfont.svg#klinic-slab) format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+
+body, button {
+  font-family: 'allumi-2-std';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'klinic-slab';
+}
+
+p {
+  color: $color-text;
+}

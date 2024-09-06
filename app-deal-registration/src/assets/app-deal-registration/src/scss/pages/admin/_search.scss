@@ -1,0 +1,60 @@
+.c-admin-search {
+	width: 70%;
+	padding: 15px;
+	margin: 0 auto;
+	border: 1px solid $color-warm-gray-2;
+}
+
+.c-admin-search__types {
+	display: inline-flex;
+	flex-direction: column;
+	width: 49%;
+
+	.c-form__element {
+		margin-bottom: 24px;
+	}
+
+	.c-form__control {
+		width: 90%;
+	}
+
+	.c-select-container {
+		width: 100%;
+	}
+
+	.c-select {
+		width: 100%;
+	}
+}
+
+.c-admin-search__searches {
+	display: inline-flex;
+	flex-direction: column;
+	width: 49%;
+
+	.c-form__element {
+		margin-bottom: 24px;
+	}
+
+	.DayPickerInput {
+		width: 100%;
+		input {
+			width: 100%;
+		}
+	}
+}
+
+.c-admin-search__submit {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 100%;
+	margin-top: 30px;
+	padding-right: 2%;
+
+	button {
+		height: 45px;
+		width: 200px;
+		justify-content: center;
+	}
+}

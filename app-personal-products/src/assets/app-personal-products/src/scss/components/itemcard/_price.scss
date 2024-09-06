@@ -1,0 +1,17 @@
+.c-item-card__price {
+	justify-content: center;
+
+	@include mq($from: tablet) {
+		flex: 1;
+	}
+}
+
+.c-item-card__price-label {
+	margin-bottom: $global-spacing-unit-tiny;
+	color: $color-warm-gray-5;
+	text-align: center;
+
+	@include mq($from: tablet) {
+		display: none;
+	}
+}

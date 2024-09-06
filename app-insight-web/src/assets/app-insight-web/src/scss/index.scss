@@ -1,0 +1,45 @@
+/* ==========================================================================
+   #APP-INSIGHT-WEB
+   ========================================================================== */
+
+/**
+ * Toolkit CSS Core - All - Needed for page reset and base styles since no 
+ * legacy styles exist on this page.
+ */
+
+@import '~@insight/toolkit-css-core/src/all';
+@import '~@insight/toolkit-css-ui';
+
+
+/**
+ * Defense styles to undo styles in the legacy codebase.
+ */
+
+@import 'defense/defense';
+
+
+
+/**
+ * App styles:
+ *
+ * 1. Toolkit CSS Core
+ * 2. Toolkit CSS UI - Header variables - needed to use header height variables
+ * 3. Customer Documents
+ * 4. Jump Page
+ * 5. Login - Login page styles
+ * 6. New Requisition
+ * 7. Reset Password
+ * 8. Not Found 404
+ */
+
+.ds-v1.app-insight-web {
+  @import '~@insight/toolkit-css-core'; /* [1] */
+  @import '~@insight/toolkit-css-ui/src/components/header-variables'; /* [2] */
+
+  @import 'Components/customerDocuments'; /* [3] */
+  @import 'Components/jumpPage'; /* [4] */
+  @import 'Components/login'; /* [5] */
+  @import 'Components/newRequisition'; /* [6] */
+  @import 'Components/resetPassword'; /* [7] */
+  @import 'Components/notFound'; /* [8] */
+}

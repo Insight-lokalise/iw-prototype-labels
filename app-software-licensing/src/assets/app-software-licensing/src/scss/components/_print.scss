@@ -1,0 +1,49 @@
+@media print {
+
+    body, div, span, object, iframe, p, blockquote, pre, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
+      font-size: 12px;  
+    }
+
+    .c-software-license__expired--text{
+      color: $color-red !important;
+      background-color: none;
+    }
+
+    .c-software-license__contract-details{
+      margin-top: $global-spacing-unit;
+      margin-left:0px;
+    }
+
+    .c-software-license__flag{
+      padding-left: $global-spacing-unit-large;
+    }
+
+    .c-software-license__cell--data-label::before {
+      content: none !important;
+    }
+
+    .c-accordion__controls {
+      background-color: $color-warm-gray-custom-light !important;
+      -webkit-print-color-adjust: exact;
+    }
+    .c-button__icon--left {
+      display: none;
+    }
+    .c-collapsible {
+      display: block;
+    }
+    .c-collapsible__content {
+      visibility: visible;
+      opacity: 1;
+      height: auto;
+    }
+
+    .c-software-license__ips-header {
+      background-color: $color-blue-light !important;
+      -webkit-print-color-adjust: exact;
+    }
+
+    .c-software-license__time { 
+      padding-left: $global-spacing-unit;
+    }
+}

@@ -1,0 +1,22 @@
+/* ==========================================================================
+   #CODE
+   ========================================================================== */
+
+/**
+ * Default code font.
+ */
+
+ code {
+   font-family: "source-code-pro", monospace;
+ }
+
+/**
+ * TODO
+ */
+
+ p code,
+ li code {
+   background: $color-warm-gray-custom-light;
+   color: $color-red-fuchsia;
+   padding: 2px;
+ }

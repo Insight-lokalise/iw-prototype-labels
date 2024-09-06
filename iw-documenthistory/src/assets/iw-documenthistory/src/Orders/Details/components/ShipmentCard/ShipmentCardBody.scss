@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+.shipment-card-body {
+  border-top: 1px solid $brand-lightgray;
+  margin: $orders-spacing-medium;
+  padding-top: $orders-spacing-medium;
+
+  @include breakpoint(large) {
+    border-top-width: 0;
+    margin: 0;
+    padding: $orders-spacing-medium;
+  }
+}

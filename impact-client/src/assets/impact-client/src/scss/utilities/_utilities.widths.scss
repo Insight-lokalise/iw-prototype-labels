@@ -1,0 +1,132 @@
+/* ==========================================================================
+   #WIDTHS
+   ========================================================================== */
+
+/**
+ * Toolkit Core CSS generates a series of utility classes that give a fluid
+ * width to grid items, e.g.:
+ *
+ *   <div class="o-grid__item  u-1/2">
+ *
+ * By default, Toolkit Core CSS will also generate responsive variants of each
+ * of these classes by using our Sass MQ configuration, e.g.:
+ *
+ *   <div class="o-grid__item  u-1/1  u-1/2@tablet  u-1/3@desktop">
+ *
+ * Toolkit Core CSS will also generate offset classes which can push and pull
+ * elements left and right by a specified amount, e.g.:
+ *
+ *   <div class="o-grid__item  u-2/3  u-pull-1/3">
+ *
+ * This is useful for making very granular changes to the rendered order of
+ * items in a layout.
+ */
+
+
+
+// Toolkit Core CSS provides you fractions of one whole, halves, thirds,
+// quarters, fifths and sixths, e.g.:
+//
+//   .u-1/1
+//   .u-1/2
+//   .u-1/3
+//   .u-1/4
+//   .u-1/5
+//   .u-1/6
+
+$fractions: 1 2 3 4 5 6 7 8;
+
+
+
+
+
+// A mixin to spit out our width classes. Pass in the columns we want the widths
+// to have, and an optional suffix for responsive widths. E.g. to create thirds
+// and quarters for a tablet breakpoint:
+//
+// @include widths(3 4, @tablet);
+
+@mixin widths($columns, $breakpoint: null) {
+
+  // Loop through the number of columns for each denominator of our fractions.
+  @each $denominator in $columns {
+
+    // Begin creating a numerator for our fraction up until we hit the
+    // denominator.
+    @for $numerator from 1 through $denominator {
+
+      // Build a class in the format `.u-3/4[@<breakpoint>]`.
+
+      .u-#{$numerator}\/#{$denominator}#{$breakpoint} {
+        flex: 0 0 ($numerator / $denominator) * 100%;
+        max-width: ($numerator / $denominator) * 100%;
+      }
+
+      // Build a class in the format `.u-push-1/2[@<breakpoint>]`.
+      // TODO: Do we need 1/1, 2/2, 3/3, 4/4, 6/6 push classes? If not how do we
+      // modify this mixin to exclude these?
+
+      .u-push-#{$numerator}\/#{$denominator}#{$breakpoint} {
+        margin-left: ($numerator / $denominator) * 100%;
+      }
+
+      // Build a class in the format `.u-pull-5/6[@<breakpoint>]`.
+      // TODO: Do we need 1/1, 2/2, 3/3, 4/4, 6/6 pull classes? If not how do we
+      // modify this mixin to exclude these?
+
+      .u-pull-#{$numerator}\/#{$denominator}#{$breakpoint} {
+        margin-right: ($numerator / $denominator) * 100%;
+      }
+
+    }
+
+  }
+
+
+  // Create auto push and pull classes.
+
+  .u-push-none#{$breakpoint} {
+    margin-left: 0;
+  }
+
+  .u-pull-none#{$breakpoint} {
+    margin-right: 0;
+  }
+
+}
+
+
+
+
+
+/**
+ * A series of width helper classes that you can use to size columns in our grid
+ * system. Classes take a fraction-like format (e.g. `.u-2/3`). Use these in
+ * your markup:
+ *
+ * <div class="u-2/3">
+ *
+ * The following will generate widths helper classes based on the fractions
+ * defined in the `$fractions` list.
+ */
+
+@include widths($fractions);
+
+
+
+
+
+/**
+ * Using Sass-MQ, automatically generate grid system(s) for each of our defined
+ * breakpoints, and give them a Responsive Suffix, e.g.:
+ *
+ * <div class="u-1/4@tablet">
+ */
+
+@each $bp-name, $bp-value in $mq-breakpoints {
+
+  @include mq($from: $bp-name) {
+    @include widths($fractions, \@#{$bp-name});
+  }
+
+}

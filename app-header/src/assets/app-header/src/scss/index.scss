@@ -1,0 +1,227 @@
+/**
+ * Include all of the design system CSS (core and components), scoped to the
+ * "ds-v1" class so that it cannot break anything outside of this app. This is
+ * a stopgap solution and ideally we want (possibly multiple versions of)
+ * the design system CSS to be added to the page automatically, based on which
+ * components/apps are on the page.
+ *
+ * Since the header appears on all pages, including those with legacy styles,
+ * we provide a defense layer to undo styles applied directly to elements
+ * (such as <button>) in the legacy codebase.
+ */
+
+@import '~@insight/toolkit-css-core/src/tools/tools.z-index';
+
+.ds-v1 {
+  @import '~@insight/toolkit-css-core/src/all';
+  @import 'defense/reset';
+  @import '~@insight/toolkit-css-ui';
+
+  &.c-overlay-top {
+    .c-header-simple__top {
+      z-index: z('header');
+      background-color: #fff;
+    }
+  }
+}
+
+/**
+ * Styles specific to the header app, scoped to the "app-header" class to
+ * ensure that they do not affect any other apps.
+ */
+
+.app-header {
+  @import '~@insight/toolkit-css-core';
+  @import '~@insight/toolkit-css-ui/src/components/header-variables';
+  @import 'components/GuestSearch';
+  @import 'components/EndIESupportMessage';
+  @import 'components/TypeAhead';
+  @import 'components/SearchProductPreview';
+  @import 'components/GuestSearchSuggestions';
+  @import 'components/SeachSuggestions';
+  @import 'components/SearchDocs';
+
+  padding-bottom: $header-mob-size;
+
+  @include mq($from: desktop) {
+    padding-bottom: $header-desktop-size;
+
+    .is-logged-in & {
+      padding-bottom: $header-desktop-size-logged-in;
+    }
+  }
+
+  /**
+   * 1. The locale selector (country + language) can overflow the viewport if the
+   * user is linked to a lot of sites, so let's constrain it to the bottom of the
+   * viewport and scroll internally.
+   */
+  .c-header-locale {
+    max-height: calc(100vh - 60px); /* [1] */
+    overflow-y: auto;
+  }
+
+  .u-margin-top {
+    margin-top: $global-spacing-unit;
+  }
+  @import 'defense/legacy';
+  @import 'defense/chat-with-us';
+
+  // Overrides for printed media.
+  @import 'print';
+}
+
+/**
+ * Styles specific to CES user flow, scoped to the "c-simple-header" class to
+ * ensure that they do not affect other flows.
+ */
+.c-simple-header {
+  @import '~@insight/toolkit-css-core';
+  @import '~@insight/toolkit-css-ui/src/components/header-variables';
+  @import 'components/EndIESupportMessage';
+
+  background-color: $color-warm-gray-custom-light;
+  padding-bottom: $header-mob-size + $global-spacing-unit-large +
+    $global-spacing-unit-small;
+
+  @include mq($from: desktop) {
+    .is-logged-in & {
+      padding-bottom: $header-desktop-size-logged-in - $global-spacing-unit;
+    }
+    .is-logged-in-webgroup & {
+      padding-bottom: $header-desktop-size-logged-in +
+        $global-spacing-unit-small;
+    }
+  }
+
+  @import 'components/HeaderSimple';
+  @import 'components/SearchProductPreview';
+  @import 'components/PersonDropdown';
+  @import 'components/HeaderSimpleMobile';
+  @import 'components/SimpleSearchSuggestions';
+}
+
+/**
+ * Styles specific to CES checkout flow, scoped to the "c-checkout-header" class to
+ * ensure that they do not affect other flows.
+ */
+.c-checkout-header {
+  @import '~@insight/toolkit-css-core';
+  @import '~@insight/toolkit-css-ui/src/components/header-variables';
+
+  padding-bottom: $header-mob-size + $global-spacing-unit-small;
+
+  @include mq($until: desktop) {
+    .c-header-mega-menu {
+      top: $header-mob-size;
+    }
+  }
+  @include mq($from: desktop) {
+    .is-logged-in & {
+      padding-bottom: $global-spacing-unit-large;
+    }
+  }
+}
+
+/**
+ * Further defense styles to cope with unique elements of the page that only
+ * appear in development or authoring environments.
+ */
+
+@import 'defense/development';
+
+/**
+ * Further defense styles to adjust other parts of the page that have legacy
+ * styles that don't play nicely with the header.
+ */
+
+@import 'defense/non-header';
+
+/**
+ * Styles needed specifically for the modal component, which appears outside
+ * the header app. We need to include all relevant components and core styles
+ * to make it render correctly, plus any defense styles to undo styles applied
+ * to elements (such as <button>) in the legacy codebase.
+ */
+
+@import '~@insight/toolkit-css-core';
+@import '~@insight/toolkit-css-ui/src/components/modal';
+
+.c-modal {
+  @import '~@insight/toolkit-css-core/src/all';
+  @import '~@insight/toolkit-css-ui/src/components/button';
+  @import '~@insight/toolkit-css-ui/src/components/button-group';
+  @import '~@insight/toolkit-css-ui/src/components/icon';
+  @import '~@insight/toolkit-css-ui/src/components/modal';
+  @import 'components/DefaultAccountModal';
+  @import 'defense/reset';
+}
+
+/**
+ * Styles needed specifically for the Insight news iframe.
+ *
+ * 1. This percentage gives us a reasonable height / width for news content.
+ *    For more info see: https://davidwalsh.name/responsive-iframes
+ */
+
+.c-insight-news {
+  position: relative;
+  overflow: hidden;
+  padding-top: 70%; /* [1] */
+}
+
+.c-insight-news__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/**
+ * Styles needed specifically to override the `<body>` tag legacy styles, which
+ * when opening the account bar on content-width pages (non-insightweb, i.e.
+ * search results), the menu/overlay is cut off at the bottom.
+ */
+
+body {
+  height: auto;
+}
+
+@import "components/LeftNavigation";
+
+.c-header-mega-menu__submenu {
+  &.is-open {
+    .c-header-nav__favorites-preferences-icon {
+      display: none;
+    }
+  }
+}
+
+.c-pcm-modal {
+  background-image: $global-gradient-primary-v1;
+}
+
+.c-pcm-modal .c-pcm-text {
+  color: $color-white;
+  font-weight: $global-font-weight-bold;
+}
+
+.c-alert-ribbon.secondary-nav {
+  margin-top: 45px;
+}
+
+.c-alert-ribbon.secondary-nav-black {
+  margin-top: 31px;
+}
+/**
+Styles for header on Guest checkout flow
+**/
+@include mq($from: desktop) {
+  .guest-checkout-flow {
+    padding-bottom: 54px;
+    height: 54px;
+    background-color: $color-warm-gray-custom-light;
+  }
+}

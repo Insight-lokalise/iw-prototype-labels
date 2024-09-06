@@ -1,0 +1,98 @@
+.c-builder-finalize__status {
+	width: 97%;
+	margin: 45px auto 50px auto;
+	padding-bottom: 20px;
+
+	h5 {
+		margin: 0;
+		color: #fff;
+	}
+
+	p {
+		font-weight: 100;
+		line-height: 1.5;
+		padding: 5px 15px;
+	}
+}
+
+.c-builder-finalize__status-select {
+	padding-left: 15px;
+
+	.c-form__element {
+		width: 30%;
+	}
+
+	.c-select-container {
+		width: 100%;
+	}
+
+	.c-select {
+		width: 100%;
+	}
+}
+
+.c-builder-finalize__field-date {
+	z-index: 9000;
+}
+
+.c-builder-finalize__templates {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 0 55px;
+}
+
+.c-builder-finalize-groups {
+	margin-top: 40px;
+}
+
+.c-builder-finalize__templates-group {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+}
+
+.c-builder-finalize__templates-inputs {
+	flex: 1 0 auto;
+}
+
+.c-builder-finalize__templates-input {
+	margin: 10px 0;
+}
+
+.c-builder-finalize__template-field {
+	.c-select-container {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.c-select {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	&.has-error {
+		.c-input,
+		.c-select,
+		.c-textarea,
+		.c-date,
+		.c-listbox {
+			border-color: $color-status-error;
+		}
+
+		.c-deal-input__error {
+			margin-top: -18px;
+			color: $color-status-error;
+		}
+
+		.c-form__label {
+			color: $color-status-error;
+		}
+	}
+}
+
+.c-builder-finalize__url {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

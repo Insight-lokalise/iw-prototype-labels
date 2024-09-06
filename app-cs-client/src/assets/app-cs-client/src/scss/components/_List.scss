@@ -1,0 +1,31 @@
+.c-catalog-list-view__actions {
+  min-width: 135px;
+}
+
+.c-cs-showlistview {
+  display: block;
+  min-width: 0;
+}
+
+.c-cs-toggleview {
+  cursor: pointer;
+  display: inline-flex;
+  width: 80px;
+}
+
+.c-cs-toggleview-container {
+  width: 80px;
+}
+
+.c-cs-showtileview {
+  display: none;
+}
+
+@include mq($until: tablet) {
+  .c-cs-toggleview, c-cs-showlistview{
+    display: none;
+  }
+  .c-cs-showtileview {
+    display: block;
+  }
+}

@@ -1,0 +1,29 @@
+.c-builder {
+	display: flex;
+	position: relative;
+	height: calc(100vh - 70px);
+	overflow-y: hidden;
+
+	abbr {
+		border-bottom: none;
+		text-decoration: none;
+	}
+}
+
+.c-builder__content {
+	position: relative;
+	width: 100%;
+	min-height: calc(100vh - 70px);
+	padding-top: $global-spacing-unit + $global-spacing-unit-tiny;
+	padding-bottom: $global-spacing-unit-large;
+	background: #f7f6f5;
+}
+
+@import 'navs';
+@import 'sidebar';
+@import 'screen';
+@import 'fields';
+@import 'style';
+@import 'layout';
+@import 'finalize';
+@import 'link';

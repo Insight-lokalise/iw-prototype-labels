@@ -1,0 +1,43 @@
+/* ==========================================================================
+   #FOCUS
+   ========================================================================== */
+
+/**
+ * Standard 2-pixel blue outline to indicate focus.
+ */
+
+a,
+button,
+input,
+select,
+textarea,
+[tabindex] {
+  outline-width: 2px;
+  outline-color: $color-blue;
+  outline-offset: -1px;
+
+  &:focus {
+    outline-style: solid;
+  }
+}
+
+
+
+
+
+/**
+ * If the user is using some form of pointer device they should not see focus
+ * outlines for things like links and buttons.
+ *
+ * They *will* still see focus indicators for form fields.
+ */
+
+.is-using-pointer {
+  a,
+  button,
+  [tabindex] {
+    &:focus {
+      outline-style: none;
+    }
+  }
+}

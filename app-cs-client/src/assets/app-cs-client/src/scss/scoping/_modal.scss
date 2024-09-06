@@ -1,0 +1,224 @@
+// Modal is appended to document body, this is outside of the project css scoping.
+// This will be fixed with the new React template.
+
+.c-modal {
+	transition: opacity 300ms ease-in-out;
+	opacity: 0;
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9000;
+
+	@include mq($until: tablet) {
+		 background-color: #f7f6f5;
+	}
+
+	@include mq($from: tablet) {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background: rgba(#000, 0.6);
+	}
+
+	.c-modal__header {
+	  background-color:#fff;
+	  align-items: flex-start;
+	  display: flex;
+	  justify-content: space-between;
+	  border-bottom: 1px solid #E6E6E5;
+	}
+
+	.c-modal__heading {
+		font-size: 1.875rem;
+		line-height: 1.2;
+	  	margin-bottom: 0;
+	}
+
+	.c-modal__close {
+		 padding: 12px;
+	}
+
+	.c-modal__content {
+	  background-color: #fff;
+	}
+
+	.c-modal__footer {
+    padding: 24px;
+    text-align: right;
+	}
+
+	&.is-open {
+		opacity: 1;
+		visibility: visible;
+	}
+
+  .c-icon {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    vertical-align: bottom;
+
+    > * {
+      fill: currentColor; /* [1] */
+    }
+  }
+  @import "~@insight/toolkit-css-ui/src/components/tabs";
+  @import "~@insight/toolkit-css-ui/src/components/structured-list";
+}
+
+.c-modal-body__text{
+	text-align: center;
+}
+
+.c-modal-grid {
+	display: flex;
+	width: 100%;
+}
+
+.c-modal-info {
+	flex: 2 1 0;
+}
+
+
+
+.c-modal-description {
+	margin-left: 10px;
+	flex: 3 1 0;
+	font-size:6px;
+}
+
+.c-modal-description__text {
+	margin-bottom: 0;
+}
+
+.c-modal-button {
+	flex: 1;
+	background-color: transparent;
+	color: #AE0A46;
+	padding: 0;
+	height: 55px;
+	border: 1px solid #3E332D; // warm gray 11
+	margin-right: 10px;
+	transition: background-color .3s ease-in, border-color .3s ease-in, color .3s ease-in;
+	&:hover,
+	&:focus {
+		background-color: #CBC4C3;
+		border-color: #CBC4C3;
+	}
+}
+
+@keyframes modalEnter {
+	0% {
+		opacity: 0;
+		transform: translateY(-80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.c-button {
+  transition: color .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out;
+  background-color: transparent;
+  color: inherit;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 2px;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 10px 22px;
+  text-decoration: none;
+}
+
+.c-button--primary {
+  background-color: #AE0A46;
+  border-color: #AE0A46;
+  color: #fff;
+
+  &:hover,
+  &:focus,
+  &.is-active {
+    background-color: #AE0A46;
+    border-color: #AE0A46;
+    color: #fff;
+  }
+}
+
+/**
+ * Default secondary button styles.
+ */
+
+.c-button--secondary {
+  background-color:#fff;
+  border-color: #5F5753;
+  color: #AE0A46;
+
+  &:hover,
+  &:focus,
+  &.is-active {
+    background-color: #5F5753;
+    color: #fff;
+  }
+}
+
+.c-button--link {
+  background-color: transparent;
+  border-color: transparent;
+  color: #4d4d4d;
+}
+
+
+
+.u-hide-visually{
+		border: 0!important;
+    clip: rect(1px,1px,1px,1px)!important;
+    clip-path: inset(50%)!important;
+    height: 1px!important;
+    margin: -1px!important;
+    overflow: hidden!important;
+    padding: 0!important;
+    position: absolute!important;
+    white-space: nowrap!important;
+    width: 1px!important;
+}
+
+  .c-modal__container {
+    position: relative;
+    background: $color-white;
+  }
+  .c-modal__heading {
+    padding-top: 15px;
+  }
+  .c-modal__content {
+    margin-top: $global-spacing-unit-small;
+    padding: $global-spacing-unit-small;
+  }
+
+  .c-modal-body__text-heading {
+    font-weight: 500;
+  }
+
+  .c-modal__heading {
+    padding-left: $global-spacing-unit;
+  }
+
+  .c-button--link:hover,
+  .c-button--link:focus {
+    background-color: $color-white !important;
+    color: $color-warm-gray-11;
+  }
+
+  .c-modal .c-currency__tax {
+    font-size: 75%;
+  }
+  
+  .c-add-item-to-cart__resource {
+    padding: 12px 0;
+    margin: 0 !important;
+}
+

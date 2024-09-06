@@ -1,0 +1,92 @@
+.c-save-quote {
+  padding: 1rem 1rem 2rem;
+  background-color: $color-warm-gray-custom-light;
+
+  .c-address-form {
+    border: 1px solid $color-warm-gray-5;
+  }
+
+  .c-summary-card-header {
+    height: 55px;
+    padding: 12px;
+  }
+
+  &-panel {
+    border: 1px solid $color-warm-gray-5;
+    padding: $global-spacing-unit-small;
+    height: 100%;
+    &__main {
+      flex: 1 1 auto;
+    }
+    &-fit {
+      display: flex;
+      flex-direction: column;
+    }
+    &-bottom {
+      margin-top: $global-spacing-unit-small;
+    }
+    &__row {
+      margin-bottom: calc(#{$global-spacing-unit-small} * 2);
+    }
+    &__print .c-icon {
+      height: 24px;
+      width: 19px;
+    }
+    
+    &__view-all {
+      padding-left: 0px;
+    }
+
+  }
+  &-body,
+  .c-summary-card-body {
+    padding: $global-spacing-unit-small;
+    &__message {
+      font-size: $global-font-size-tiny;
+    }
+
+    &__save {
+      padding-top: $global-spacing-unit-small;
+      padding-bottom: $global-spacing-unit-small;
+    }
+  }
+
+  &__expires {
+    color: $color-datalink-blue;
+  }
+
+  &-confirmation {
+    &__message {
+      padding: 0;
+      border: 0;
+
+      .c-message__icon {
+        width: 20px;
+      }
+    }
+
+    &__header {
+      border-bottom: 1px solid $color-warm-gray-5;
+    }
+    
+    &__comments {
+      word-wrap: break-word;
+    }
+  }
+
+  &__empty {
+    margin: 0;
+    text-align: center;
+    line-height: 35px;
+  }
+   
+  &-message {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    width: $global-font-size;
+    height: $global-font-size;
+  }
+}

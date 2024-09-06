@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+.order-details {
+
+  &__header {
+
+    &-title {
+      margin-bottom: $global-font-size-small - 4; 
+      @media print {
+        font-size: $font-size-print-xlarge;
+      }
+    }
+
+    &-subtitle {
+      @include font-brand();
+      margin-bottom: .5em;
+
+      @media print {
+        margin-bottom: 0;
+      }
+    }
+
+    &-sales-doc-number {
+      @include order-status();
+      font-size: $font-size-large;
+      font-family: $global-font-family-body;
+      display: block;
+      margin-bottom: $orders-spacing-medium;
+
+      @media print {
+        font-size: $font-size-print-large;
+      }
+    }
+
+    &-link {
+      font-size: $font-size-small;
+    }
+  }
+
+  &__list {
+    margin-top: $orders-spacing-tiny;
+    margin-bottom: $orders-spacing-large;
+
+    @include breakpoint(large) {
+      margin-bottom: 0;
+    }
+  }
+}

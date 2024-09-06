@@ -1,0 +1,17 @@
+.button.iw-button--link {
+	background-color: white;
+	border-width: 0;
+	color: $brand-crimson;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 100!important;
+	letter-spacing: normal;
+	margin-bottom: 0;
+	padding: 10px 0 0;
+
+	/* overwrite default button hoverstyles */
+	&:hover {
+		background-color: white;
+		color: $brand-crimson;
+	}
+}

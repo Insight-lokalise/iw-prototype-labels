@@ -1,0 +1,14 @@
+/* ==========================================================================
+   #TRUNCATE
+   ========================================================================== */
+
+/**
+ * Attach our truncate mixin to a utility class.
+ * 
+ * This will only work on block level elements, or if the `display` property is
+ * set to `block`.
+ */
+
+.u-truncate {
+  @include truncate();
+}

@@ -1,0 +1,9 @@
+.c-breadcrumbs {
+  padding-top: $global-spacing-unit-small;
+  padding-left: $global-spacing-unit-small;
+  text-transform: capitalize;
+
+  >ol {
+    font-size: $global-font-size-small;
+  }
+}

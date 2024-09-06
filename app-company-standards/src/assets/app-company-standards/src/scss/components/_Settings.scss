@@ -1,0 +1,67 @@
+.c-settings-tab__title {
+  margin-bottom: $global-spacing-unit-tiny;
+}
+
+.c-cs-settings-tabs > .c-tabs {
+  margin-bottom: $global-spacing-unit-small;
+
+  @include mq($from: desktop) {
+    margin-bottom: $global-spacing-unit-large;
+  }
+
+  .c-cs-settings-tab {
+    margin-right: $global-spacing-unit;
+    padding: 0 0 $global-spacing-unit-tiny;
+    border: none;
+    cursor: pointer;
+
+    &:hover, &:focus, &.is-selected {
+      outline: none;
+      border-bottom: calc(4 * #{$global-input-border-width}) solid $color-red-fuchsia;
+    }
+  }
+}
+
+.c-cs-settings-tabs__content {
+  padding-bottom: $global-spacing-unit;
+
+  @include mq($from: tablet) {
+    width: 80%;
+  }
+  .c-form__label {
+    width: 100%;
+  }
+}
+
+.c-languageSelect__button {
+  @include font-size($global-font-size-small);
+  color: $color-blue;
+  padding-left: 0;
+}
+
+.c-edit-heading {
+  height: 50px;
+}
+
+.c-edit-heading__title {
+  font-weight: 400;
+}
+
+.c-edit-heading__button {
+  @include font-size($global-font-size-small);
+  .c-button__icon {
+    margin-right: $global-spacing-unit;
+  }
+}
+
+
+.c-settings-tags__dropdown-icon {
+  border: none;
+  padding: 0px;
+  &:focus {
+    background-color: lightblue;
+  }
+}
+.c-settings-tags__dropdown .c-dropdown {
+  display: block;
+}

@@ -1,0 +1,38 @@
+{
+  "name": "app-api-menu-filtering",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "buildkit-legacy-scripts start",
+    "build": "buildkit-legacy-scripts build",
+    "aem-import": "buildkit-legacy-scripts aem-import",
+    "test": "buildkit-asserter --coverage",
+    "test:watch": "buildkit-asserter --watch",
+    "preinstall": "npm install --package-lock-only --ignore-scripts && npx npm-force-resolutions"
+  },
+  "resolutions": {
+    "faye": "1.1.3"
+  },
+  "jestSonar": {
+    "sonar56x": true,
+    "reportPath": "coverage",
+    "reportFile": "test-reporter.xml",
+    "indent": 4
+  },
+  "dependencies": {
+    "@insight/toolkit-css-core": "1.0.0-alpha.6",
+    "@insight/toolkit-css-ui": "1.0.0-alpha.0",
+    "@insight/toolkit-css-ui-prototype": "1.0.0-alpha.0",
+    "@insight/toolkit-react-prototype": "1.0.0-alpha.1",
+    "@insight/toolkit-utils": "1.0.0-alpha.0",
+    "axios": "^0.27.2",
+    "react": "^16.4",
+    "react-dom": "^16.4"
+  },
+  "devDependencies": {
+    "buildkit-legacy-scripts": "^5.0.0-Beta.8",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "buildkit-asserter": "^1.0.36"
+  }
+}

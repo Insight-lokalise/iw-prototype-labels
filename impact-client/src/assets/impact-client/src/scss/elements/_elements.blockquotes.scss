@@ -1,0 +1,12 @@
+/* ==========================================================================
+   #BLOCKQUOTES
+   ========================================================================== */
+
+/**
+ * Default blockquote styles.
+ */
+
+blockquote {
+  @include font-size(21px, $modifier: +1);
+  margin-bottom: $global-spacing-unit;
+}

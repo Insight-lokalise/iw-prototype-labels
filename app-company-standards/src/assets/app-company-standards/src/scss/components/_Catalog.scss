@@ -1,0 +1,74 @@
+.c-catalog-list-item__dnd-icon {
+  border: $global-input-border-width solid $color-warm-gray-8;
+  background-color: $color-warm-gray-8;
+  color: $color-white;
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+}
+
+.c-catalog-list-item__dnd-icon--is-expanded {
+  background-color: $color-white;
+  color: $color-warm-gray-8;
+}
+
+.c-catalog-list-item__image img {
+  max-height: 74px;
+}
+
+@include mq($until: tablet) {
+  .c-catalog-list-item__image img {
+    max-height: 60px;
+  }
+}
+
+.c-catalog-list-item__p-set {
+  padding-top: calc(#{$global-spacing-unit} + #{$global-spacing-unit-tiny});
+  padding-bottom: $global-spacing-unit-tiny;
+}
+
+.c-catalog-list__header {
+  border-left: $global-input-border-width solid $global-input-border-color;
+}
+
+.c-invisible-spacer {
+  border: $global-input-border-width solid transparent;
+  height: 100%;
+}
+
+.c-invisible-spacer-width {
+  width: 50px;
+}
+
+.c-invisible-spacer-width--small {
+  width: 49px;
+}
+
+.c-invisible-spacer--border-right {
+  border-top: $global-input-border-width solid transparent;
+  border-right: $global-input-border-width solid $global-input-border-color;
+  border-left: $global-input-border-width solid transparent;
+  border-bottom: $global-input-border-width solid transparent;
+  height: 100%;
+  width: 50px;
+}
+
+.c-cs-actions__dropdown {
+  margin-right: $global-spacing-unit-tiny;
+}
+
+.c-cs-actions__dropdown button {
+  z-index: 7;
+}
+
+.c-image__fallback {
+  fill: $color-warm-gray-8;
+  max-height: 64px;
+}
+
+.c-category-empty {
+  padding-left: $global-spacing-unit-large + $global-spacing-unit-tiny;
+}
+
+.c-cs-product-group__name {
+  word-break: break-word;
+}

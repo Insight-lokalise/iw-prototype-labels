@@ -1,0 +1,15 @@
+.SBP__messages {
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #fff;
+    border: 1px solid $color-warm-gray-5;
+
+    .SBP__p65-warnings a {
+        color: $brand-crimson;
+    }
+
+    .ion-android-warning {
+        color: $warning-light-yellow;
+    }
+}

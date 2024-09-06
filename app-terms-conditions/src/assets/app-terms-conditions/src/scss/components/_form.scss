@@ -1,0 +1,38 @@
+.c-input{
+  height: 35px !important;
+  width: 85% !important;
+}
+
+.ql-editor {
+  white-space: normal !important;
+}
+
+.c-tc__salesAgreement, .c-tc__tncSubmit {
+  .c-button--primary, .c-button--secondary{
+    height: 10%;
+    font-size: 14px;
+  }
+}
+
+.c-tc__salesAgreement{
+  .c-button{
+    width: 125%;
+  }
+}
+
+.c-radio__container {
+  display: inline;
+  margin-right: 12px;
+}
+
+.c-form__label--radio {
+  vertical-align: text-bottom;
+}
+
+.ql-editor {
+  height: 200px;
+}
+
+.c-button--link {
+  padding-left: 0px;
+}

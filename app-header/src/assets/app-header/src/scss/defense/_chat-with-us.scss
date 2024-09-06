@@ -1,0 +1,18 @@
+// overrides for "Chat with us" style added by oracle chat
+.c-header-dropdown__item {
+    #navbarChatWithUs a {
+      color: $color-white;
+    }
+}
+
+.c-header-nav__item {
+  // IE11 style hack for chat with us
+  #navbarChatWithUs {
+    display: inline-flex;
+    display: -ms-inline-flexbox;
+  }
+
+  #navbarChatWithUs a {
+    color: $color-warm-gray-8;
+  }
+}

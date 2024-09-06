@@ -1,0 +1,52 @@
+/* ==========================================================================
+   #TYPOGRAPHY
+   ========================================================================== */
+
+/**
+ * Quick, easy and consistent typographic manipulation utilities.
+ */
+
+/* Alignment
+   ========================================================================== */
+
+.u-text-left {
+  text-align: left !important;
+}
+
+.u-text-center {
+  text-align: center !important;
+}
+
+.u-text-right {
+  text-align: right !important;
+}
+
+.u-text-justify {
+  text-align: justify !important;
+}
+
+
+
+
+
+/* Style
+   ========================================================================== */
+
+.u-text-bold {
+  font-weight: $global-font-weight-bold !important;
+}
+
+.u-text-italic {
+  font-style: italic !important;
+}
+
+
+
+
+
+/* Line Length
+   ========================================================================== */
+
+.u-text-constrain {
+  max-width: 30em !important;
+}

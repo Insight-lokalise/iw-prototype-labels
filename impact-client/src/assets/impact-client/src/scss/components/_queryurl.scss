@@ -1,0 +1,80 @@
+.c-queryurl {
+  display: flex;
+  margin: 10px;
+}
+.c-queryurl-url {
+  margin: 0 10px;
+  font-weight: bolder;
+}
+.c-flex0 {
+  flex: 0;
+}
+.c-flex1 {
+  flex: 1;
+}
+
+.c-button--analyze {
+ min-width: 150px;
+}
+
+/* Button component styles should be in insights css package but are not yet there. These can be deleted when they are. */
+@mixin iw-loading-size($size) {
+ height: $size;
+ width: $size;
+ line-height: $size;
+ font-size: $size;
+}
+
+.c-button {
+ text-align: center;
+ .c-loading {
+  font-family: Ionicons;
+  animation: iw-spin 1s infinite linear;
+  padding: 0;
+  display: inline-block;
+
+  &::before {
+   content: "\f29c";
+  }
+
+  @include iw-loading-size(30px);
+
+  &.c-loading--tiny {
+   @include iw-loading-size(12px);
+  }
+  &.c-loading--small {
+   @include iw-loading-size(20px);
+  }
+  &.c-loading--medium {
+   @include iw-loading-size(30px);
+  }
+  &.c-loading--large {
+   @include iw-loading-size(45px);
+  }
+  &.c-loading--huge {
+   @include iw-loading-size(60px);
+  }
+  &.c-loading--massive {
+   @include iw-loading-size(300px);
+  }
+
+  &__icon {
+   &-refresh::before {content: "\f21c"; margin-left: 0.11em;}
+   &-bubbles::before {content: "\f29a";}
+   &-paddles::before {content: "\f29b";}
+   &-streak::before {content: "\f29c";}
+   &-gear::before {content: "\f29d";}
+   &-recycle::before {content: "\f201";}
+  }
+ }
+}
+
+@keyframes iw-spin {
+ 0% {
+  transform: rotate(0deg);
+ }
+
+ 100% {
+  transform: rotate(359deg);
+ }
+}

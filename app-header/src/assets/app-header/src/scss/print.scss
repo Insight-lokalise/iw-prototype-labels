@@ -1,0 +1,46 @@
+/**
+ * Hide everything in the header, except the logo (and all ancestors of the
+ * logo).
+ */
+.app-header{
+@media print {
+
+  position: inherit;
+  padding: 0 !important;
+
+  * {
+    display: none;
+  }
+
+  & .is-logged-in  {
+    padding: 0 !important;
+  }
+
+  .c-header,
+  .c-header__bottom,
+  .c-header-logo,
+  .c-header-logo__btn,
+  .c-logo {
+    display: block;
+    padding-left: 0 !important;
+    position: inherit !important;
+    border: none;
+    border-bottom: none !important;
+  }
+
+  .c-logo{
+    * {
+      display: block;
+    }
+  }
+
+  /**
+   * Hide auto-generated printed links.
+   */
+
+  .c-header-logo__btn::after {
+    display: none !important;
+  }
+
+}
+}

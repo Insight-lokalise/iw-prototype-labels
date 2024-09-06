@@ -1,0 +1,31 @@
+
+@keyframes modalEnter {
+	0% {
+		opacity: 0;
+		transform: translateY(-80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.c-agreement-modal{
+  @import '~@insight/toolkit-css-core/src/_all.scss';
+  .c-agreement-modal__header{
+      display: flex;
+			padding-top: $global-spacing-unit;
+			padding-bottom: 0px;
+	 }
+}
+
+.c-modal__header {
+	.c-button--link{
+		color: $color-warm-gray-11;
+	}
+	.c-button--link:hover,
+	.c-button--link:focus {
+		background-color: $color-white !important;
+		color: $color-warm-gray-11;
+	}
+}

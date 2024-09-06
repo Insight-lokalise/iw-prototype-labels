@@ -1,0 +1,38 @@
+.c-item-card__quantity {
+	align-items: center;
+	flex-direction: column;
+
+	@include mq($from: tablet) {
+		flex: 1;
+		width: 100%;
+	}
+}
+
+.c-item-card__notAvailable-text {
+	margin-top: 0;
+	@include mq($from: tablet) {
+		margin-top: 20px;
+	}
+}
+
+.c-item-card__quantity-label {
+	margin-bottom: $global-spacing-unit-tiny;
+	text-align: center;
+	color: $color-warm-gray-5;
+	@include mq($from: tablet) {
+		display: none;
+	}
+}
+
+
+.c-item-card__quantity-input {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto $global-spacing-unit-small auto;
+
+	> input {
+		width: $global-spacing-unit-large + $global-spacing-unit;
+    text-align: center;
+	}
+}

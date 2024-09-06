@@ -1,0 +1,57 @@
+.c-speed-dial {
+	display: flex;
+	z-index: 1050;
+
+	&.is-up {
+		flex-direction: column-reverse;
+	}
+	&.is-down {
+		flex-direction: column;
+	}
+	&.is-left {
+		flex-direction: row-reverse;
+	}
+	&.is-right {
+		flex-direction: row;
+	}
+}
+
+.c-speed-dial__trigger {
+	pointer-events: auto;
+}
+
+.c-speed-dial__actions {
+	display: flex;
+	pointer-events: auto;
+
+	&.is-up {
+		flex-direction: column-reverse;
+		align-items: center;
+		margin-bottom: -32px;
+		padding-bottom: 48px;
+	}
+
+	&.is-closed {
+		transition: top 0 linear 0.2s;
+	}
+}
+
+.c-speed-dial-action {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+	transition: transform 0.2s, opacity 0.8s;
+
+	&.is-closed {
+		opacity: 0;
+		transform: scale(0);
+	}
+}
+
+.c-fab__icon {
+	position: relative;
+	display: block;
+	fill: #fff;
+}

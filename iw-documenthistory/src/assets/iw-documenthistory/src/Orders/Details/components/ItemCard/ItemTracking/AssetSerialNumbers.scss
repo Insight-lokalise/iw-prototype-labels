@@ -1,0 +1,49 @@
+@charset 'utf-8';
+
+.asset-serial-numbers {
+
+  /**
+   * If more than 1 row, add margin and border to all but the first row.
+   */
+  & + .asset-serial-numbers {
+    margin-top: $orders-spacing-medium;
+
+    @media print {
+      margin-top: $orders-spacing-small;
+    }
+
+    .asset-serial-numbers__description {
+      border-top: 1px solid $brand-lightgray;
+      padding-top: $orders-spacing-medium;
+
+      @media print {
+        padding-top: $orders-spacing-small;
+      }
+    }
+  }
+
+  &__label {
+    font-size: $font-size-small;
+    font-weight: $global-weight-bold;
+  }
+
+  &__value {
+    display: block;
+    font-size: $font-size-small;
+    margin-top: $orders-spacing-small;
+
+    @media print {
+      margin-top: $orders-spacing-tiny;
+    }
+  }
+
+  &__description {
+    font-family: $body-font-family;
+    font-size: $font-size-small;
+    margin-bottom: $orders-spacing-small;
+
+    @media print {
+      margin-bottom: $orders-spacing-tiny;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.c-resource-item {
+  &__lineLevel-heading {
+    color: $color-turquoise;
+    font-weight: $global-font-weight-bold;
+    font-family: "Allumi-std";
+    font-size: $global-spacing-unit-small + 4px;
+  }
+
+  &__license-heading {
+    font-size: $global-spacing-unit-small + 8px;
+    font-family: "klinic-slab";
+    font-weight: $global-font-weight-bold;
+  }
+
+  &__usageCountry{
+    .c-select-container, .c-select {
+      width: 100%;
+    }
+    .c-select-container {
+      .c-select {
+        padding: $global-spacing-unit-tiny + 1px;
+        height: $global-spacing-unit + $global-spacing-unit-small;
+      }
+    }
+  }
+
+  &__split {
+    padding-right: 0px;
+  }
+  &_link {
+    &:hover {
+      color: $color-warm-gray-11;
+      cursor: default;
+    }
+  }
+}

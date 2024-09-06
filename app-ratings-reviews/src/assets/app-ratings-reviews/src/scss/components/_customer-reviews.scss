@@ -1,0 +1,30 @@
+.c-customer-reviews__footer {
+	padding-left: $global-spacing-unit;
+	padding-top: $global-spacing-unit-small;
+
+	.c-button {
+		font-weight: $global-font-weight-normal;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+}
+
+.c-reviews-header {
+  align-items: center;
+}
+
+.c-reviews-header__label {
+  @include mq($from: tablet) {
+    margin: 0;
+  }
+}
+
+.c-reviews-header__leave-review {
+
+  @include mq($from: tablet) {
+    text-align: right;
+  }
+
+}

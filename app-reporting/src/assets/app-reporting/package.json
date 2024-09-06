@@ -1,0 +1,44 @@
+{
+  "name": "app-reporting",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "buildkit-legacy-scripts start",
+    "build": "buildkit-legacy-scripts build",
+    "aem-import": "buildkit-legacy-scripts aem-import",
+    "import-labels": "buildkit-legacy-scripts labels app-reporting",
+    "test": "buildkit-asserter --coverage",
+    "test:watch": "buildkit-asserter --watch",
+    "lint": "buildkit-legacy-scripts lint",
+    "prettify": "buildkit-legacy-scripts prettify"
+  },
+  "jestSonar": {
+    "sonar56x": true,
+    "reportPath": "coverage",
+    "reportFile": "test-reporter.xml",
+    "indent": 4
+  },
+  "dependencies": {
+    "@insight/toolkit-core": "^2.2.17",
+    "@insight/toolkit-css-core": "^2.2.17",
+    "@insight/toolkit-css-ui": "^2.2.195",
+    "@insight/toolkit-react": "^2.2.195",
+    "@insight/toolkit-utils": "^2.2.181",
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.11.12",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "@types/react-router-dom": "^5.3.2",
+    "axios": "^0.27.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.3.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.15.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "buildkit-asserter": "^1.0.36",
+    "buildkit-legacy-scripts": "^5.0.0-Beta.8",
+    "prop-types": "^15.7.2"
+  }
+}

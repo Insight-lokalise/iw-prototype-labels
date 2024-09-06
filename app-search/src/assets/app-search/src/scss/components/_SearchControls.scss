@@ -1,0 +1,174 @@
+.c-search-controls {
+  display: grid;
+  font-size: $global-font-size-small;
+  line-height: 20px;
+  padding: 0px;
+  &__top {
+    position: relative;
+    width: 95vw;
+    margin-bottom: $global-spacing-unit-small;
+    &__paging-container {
+      gap: $global-spacing-unit-small 0;
+    }
+    &__results {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      white-space: nowrap;
+      > span {
+        padding: 0 $global-spacing-unit-tiny / 3;
+      }
+    }
+
+    &__paging {
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: $global-spacing-unit;
+      &__controls {
+        .c-form__element {
+          margin-bottom: 0px;
+        }
+        .c-select {
+          height: 30px;
+          padding: 0 45px 0 $global-spacing-unit-small;
+          font-size: $global-font-size-small;
+        }
+      }
+      &__view-toggle {
+        display: none;
+        border: 1px solid $color-warm-gray-5;
+        height: 30px;
+        button {
+          border: 0;
+          padding: 0;
+          width: 30px;
+          justify-content: center;
+          &.active {
+            background-color: $color-warm-gray-5;
+          }
+          .c-button__content {
+            display: flex;
+          }
+        }
+        svg {
+          margin: 0;
+          height: 16px;
+          width: 16px;
+        }
+      }
+    }
+
+    &__query {
+      overflow: hidden;
+      display: block;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 50%;
+
+      @include mq($from: desktop) {
+        max-width: 50%;
+      }
+    }
+
+    &__recommendation {
+      align-items: center;
+      a {
+        color: $color-red;
+        font-size: $global-font-size-tiny;
+      }
+    }
+    @include mq($from: tablet) {
+      width: inherit;
+    }
+  }
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+
+    &__filters {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin: $global-spacing-unit-small 0 0;
+    }
+
+    &__filter-title {
+      font-size: $global-font-size-small;
+      font-weight: $global-font-weight-bold;
+      display: flex;
+      align-items: flex-start;
+      margin: $global-spacing-unit-tiny $global-spacing-unit-tiny
+        $global-spacing-unit-small 0;
+    }
+
+    &__filter {
+      display: flex;
+      padding: $global-spacing-unit-tiny / 2 $global-spacing-unit-tiny;
+      border: 1px solid $color-warm-gray-5;
+      word-break: break-all;
+      align-items: center;
+      margin-right: $global-spacing-unit-small;
+      margin-bottom: $global-spacing-unit-small;
+      background-color: #f7f6f5;
+      &__close {
+        margin-left: $global-spacing-unit-small;
+      }
+      .c-button__icon--left {
+        margin: 0;
+      }
+    }
+
+    &__clear-all {
+      font-size: $global-font-size-small;
+      padding: $global-spacing-unit-tiny 0;
+      margin-bottom: $global-font-size-small;
+    }
+  }
+  @include mq($from: tablet) {
+    &__top {
+      &__paging {
+        justify-content: flex-end;
+        &__controls {
+          margin-right: $global-spacing-unit;
+          flex-direction: row;
+        }
+        &__view-toggle {
+          display: flex;
+        }
+      }
+    }
+    &__bottom {
+      flex-direction: row;
+      align-items: flex-start;
+      margin-top: 0;
+
+      &__paging {
+        flex-basis: 45%;
+        justify-content: flex-end;
+        align-content: flex-end;
+        align-items: flex-end;
+        &__view-toggle {
+          display: flex;
+        }
+      }
+    }
+  }
+  @include mq($from: desktop) {
+    &__top {
+      &__apply-filters {
+        display: none;
+      }
+    }
+  }
+
+  // Need to add this to defend against conflicting styles that are loaded onto the page from legacy search.
+}
+
+.solutions-services-wrapper {
+  .c-search-controls__top__paging__controls {
+    margin-right: 0
+  }
+}

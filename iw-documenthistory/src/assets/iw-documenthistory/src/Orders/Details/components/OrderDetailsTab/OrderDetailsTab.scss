@@ -1,0 +1,32 @@
+@charset 'utf-8';
+
+.order-details-tab {
+  background-color: white;
+  padding: $orders-spacing-large $orders-spacing-medium $orders-spacing-tiny;
+
+  @include breakpoint(medium) {
+    padding: $orders-spacing-xlarge 0 0;
+  }
+
+  @include breakpoint(small only) {
+    &__block + .order-details-tab__block {
+      margin-top: $orders-spacing-medium;
+    }
+  }
+
+  &__heading {
+    @include font-brand();
+  }
+
+  &__address, &__attn {
+    margin-bottom: 0;
+  }
+
+  @media print {
+    page-break-inside: avoid;
+
+    &__title {
+      font-size: $font-size-print-large;
+    }
+  }
+}

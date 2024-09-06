@@ -1,0 +1,16 @@
+.c-date-picker {
+	label {
+		margin-bottom: 6px;
+	}
+
+	input {
+		padding: $global-input-padding;
+		background-color: $color-white;
+		border: $global-input-border-width solid $global-input-border-color;
+		border-radius: $global-radius;
+
+		&::-webkit-input-placeholder {
+			color: $color-warm-gray-5;
+		}
+	}
+}

@@ -1,0 +1,93 @@
+.c-reporting__report-modal {
+  @include mq($from: tablet) {
+    &.c-modal {
+      &.c-modal--medium .c-modal__container {
+        width: 700px;
+        max-height: 721px;
+      }
+
+      &__wrapper .c-modal__content {
+        padding: $global-spacing-unit-small 0;
+      }
+
+      .c-modal__header {
+        padding-left: $global-spacing-unit-small * 2;
+      }
+    }
+
+    .c-button.c-modal__close {
+      display: none;
+    }
+  }
+
+  & &__body.c-modal__content {
+    padding: $global-spacing-unit-small 0 0;
+
+    .c-loading {
+      margin-left: $global-spacing-unit-small*2;
+    }
+  }
+
+  &__confirmation.c-modal {
+    .c-modal__container {
+      min-width: 500px;
+      width: 500px;
+    }
+
+    .c-message {
+      border: 0;
+      padding: $global-spacing-unit-small;
+    }
+
+    .c-modal__content {
+      padding: $global-spacing-unit-small $global-spacing-unit-small 0;
+    }
+  }
+
+  &__content {
+    li {
+      padding: $global-spacing-unit-tiny $global-spacing-unit-small*2;
+
+      &:nth-child(even) {
+        background-color: $color-warm-gray-custom-light;
+      }
+    }
+
+    .c-message--error {
+      padding: $global-spacing-unit-tiny;
+      border: 0;
+      margin: 0;
+      background-color: unset;
+    }
+  }
+
+  &__email {
+    &.c-form__element {
+      width: 90%;
+      margin-bottom: 0;
+    }
+
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      word-wrap: anywhere;
+
+      &:not(:last-child) {
+        margin-bottom: $global-spacing-unit-tiny;
+      }
+    }
+  }
+
+  &__action-btn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: $global-spacing-unit-small;
+    padding: $global-spacing-unit-tiny;
+
+    .c-modal & .c-button {
+      font-size: $global-font-size-small;
+      padding: 0;
+    }
+  }
+}

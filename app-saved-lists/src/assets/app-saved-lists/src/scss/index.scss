@@ -1,0 +1,11 @@
+@import '~@insight/toolkit-css-core/src/_all';
+@import '~@insight/toolkit-css-ui';
+
+#react-app-saved-lists {
+  @import 'components/index';
+  @import 'components/stored_carts';
+  @media only screen and (min-width: 1440px)  {
+    margin: auto;
+    width: 1440px;
+  }
+}

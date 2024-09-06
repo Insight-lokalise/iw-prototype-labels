@@ -1,0 +1,26 @@
+$shadow-color: $color-warm-gray-8;
+$shadow-color-large: shade(saturate($color-warm-gray-2, 25%), 50%);
+
+
+@mixin bottomShadowSmall($color: $shadow-color, $opacity: .3) {
+	box-shadow:
+		0 2px 2px -1px rgba($color, $opacity),
+		0 1px 5px -2px rgba($color, $opacity);
+}
+
+@mixin bottomShadowMedium($color: $shadow-color, $opacity: .2) {
+	box-shadow:
+		0 6px 12px -1px rgba($color, $opacity),
+		0 4px 4px -1px rgba($color, $opacity),
+		0 2px 2px 0 rgba($color, $opacity);
+}
+
+@mixin bottomShadowLarge($color: $shadow-color, $opacity: .1, $adjust-borders: false) {
+	box-shadow:
+		0 40px 64px 0 rgba($color, $opacity),
+		0 24px 32px 0 rgba($color, $opacity),
+		0 16px 16px 0 rgba($color, $opacity),
+		0 8px 8px 0 rgba($color, $opacity),
+		0 4px 4px 0 rgba($color, $opacity),
+		0 2px 2px 0 rgba($color, $opacity);
+}

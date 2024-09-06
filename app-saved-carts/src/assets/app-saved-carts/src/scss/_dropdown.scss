@@ -1,0 +1,129 @@
+/* ==========================================================================
+   #DROPDOWN
+   ========================================================================== */
+
+/**
+ * A Dropdown toggles a contextual overlay for displaying a list of links.
+ */
+
+.c-dropdown {
+  display: inline-flex;
+  position: relative;
+}
+
+
+
+/*
+ * Dropdown menu contains the list of links or buttons.
+ *
+ * 1. Use transition mixin to ensure consistent animations. We only transition
+ *    the properties that we need to improve performance.
+ *
+ * 2. Hide dropdown menu.
+ *
+ * 3. Starting/finishing position for the dropdown menu to slide down from and
+ *    up to as it fades in/out.
+ *
+ * 4. Dropdown menu appears underneath the button aligned to the left.
+ */
+
+$dropdown-b: 1px;
+$dropdown-p: $global-spacing-unit-small - $dropdown-b;
+
+.c-dropdown__menu {
+  @include transition(opacity, top, visibility, z-index); /* [1] */
+  background-color: $color-white;
+  border: $dropdown-b solid $color-warm-gray-2;
+  left: 0; /* [4] */
+  opacity: 0; /* [2] */
+  padding: $dropdown-p 0;
+  position: absolute;
+  top: 80%; /* [3] */
+  visibility: hidden; /* [2] */
+  z-index: -1; /* [2] */
+}
+
+
+
+/*
+ * Dropdown menu appears underneath the button aligned to the right.
+ */
+
+.c-dropdown__menu--right {
+  left: auto;
+  right: 0;
+}
+
+
+
+/*
+ * Links that appear in the dropdown.
+ */
+
+.c-dropdown__item {
+  border-width: 0;
+  display: block;
+  padding: $global-spacing-unit-tiny $global-spacing-unit;
+  text-align: left;
+  white-space: nowrap;
+  width: 100%;
+
+  &:focus,
+  &:hover {
+    background-color: $color-warm-gray-custom-light;
+  }
+
+  &:active {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+}
+
+
+
+/*
+ * Dropdown button, which when clicked toggles the dropdown `is-open` class.
+ *
+ * 1. Give the dropdown button a higher z-index than the dropdown menu, so as
+ *    the dropdown menu slides down and up it's hidden behind the button. Uses
+ *    z-index function to keep z-index values organised across our apps.
+ */
+
+.c-dropdown__button {
+  z-index: z("dropdown-button"); /* [1] */
+}
+
+
+
+
+
+/* State: is-open
+   ========================================================================== */
+
+/*
+ * When the dropdown is open we:
+ *
+ * 1. Flip the icon vertically so it points upwards, indicating to the user
+ *    clicking it will close the dropdown.
+ *
+ * 2. Show the dropdown menu.
+ *
+ * 3. Give the dropdown menu a lower z-index than the button, so as it slides
+ *    down and up it's hidden behind the button. Uses z-index function to keep
+ *    z-index values organised across our apps.
+ */
+
+.c-dropdown.is-open {
+
+  .c-button__icon {
+    transform: rotate(180deg); /* [1] */
+  }
+
+  .c-dropdown__menu {
+    opacity: 1; /* [2] */
+    top: 100%; /* [2] */
+    visibility: visible; /* [2] */
+    z-index: z("dropdown"); /* [3] */
+  }
+
+}

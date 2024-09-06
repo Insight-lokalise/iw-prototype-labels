@@ -1,0 +1,11 @@
+.c-sidebar__logo {
+  background: linear-gradient(60deg,#AE0A46,#9F177A);
+}
+.c-logo.is-inverted {
+  display: inline-block;
+  fill: white;
+  margin: 10px;
+}
+.c-logo.is-inverted * {
+  fill: #fff!important;
+}

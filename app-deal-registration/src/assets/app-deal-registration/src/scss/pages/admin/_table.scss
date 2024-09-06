@@ -1,0 +1,70 @@
+.c-admin-table {
+	padding: 80px 0;
+}
+
+.c-admin-table__download {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding-left: 5px;
+	color: #fff;
+	background-color: $color-warm-gray-8;
+
+	h5 {
+		margin: 0;
+		color: #fff;
+	}
+}
+
+.c-admin-table__download-button {
+	display: flex;
+	align-items: center;
+	border: none;
+}
+
+.c-admin-table__table {
+	.rt-thead {
+		background-color: $color-warm-gray-2;
+
+		.rt-th {
+			border-right-color: $color-text !important;
+
+			span {
+				font-weight: 100;
+			}
+		}
+
+		.rt-resizable-header-content {
+			text-align: left;
+		}
+	}
+
+	.rt-tbody {
+		.rt-tr {
+			padding: 0;
+		}
+
+		.rt-td {
+			align-items: center;
+			justify-content: center;
+			border-right-color: transparent;
+			padding: 0 0 0 5px;
+			font-weight: 100;
+
+			span {
+				display: flex;
+			}
+		}
+	}
+}
+
+.c-admin-table__action {
+	border: none;
+}
+
+.c-admin-table__cell {
+	button {
+		padding-left: 5px;
+	}
+}

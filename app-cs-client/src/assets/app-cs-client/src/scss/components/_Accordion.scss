@@ -1,0 +1,95 @@
+.c-accordion__controls {
+  .c-button--none:hover, .c-button--none:focus{
+    color: $color-warm-gray-11 !important;
+  }
+}
+
+.c-cs-accordion--content{
+  padding: 0 0 0 $global-spacing-unit-large;
+  margin: 0 0 0 $global-spacing-unit-large;
+  .c-cs-pin{
+    left: 0 !important;
+    position: relative;
+    text-align: right;
+  }
+}
+
+.c-cs-accordion__category-mini-list {
+  padding-right: 0px;
+}
+
+.c-cs-accordion__category-mini-list .c-button__content {
+  @supports (-webkit-line-clamp: 2) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    /* autoprefixer: off */
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    display: block;
+    max-height: 3em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.c-cs-accordion__category {
+  margin: $global-spacing-unit-small $global-spacing-unit-small 0px $global-spacing-unit-small * 2;
+}
+
+.c-cs-tile__category-description ul,
+.c-cs-tile__category-description ol {
+  @include font-size($global-font-size-small);
+  display: inline-flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.c-cs-tile__category-description li {
+  text-align: left;
+}
+
+.c-cs-accordion--prodgrp{
+  padding: 0 0 0 $global-spacing-unit-large;
+  margin: $global-spacing-unit-small * 2 0;
+  .c-cs-pin{
+    position: relative;
+  }
+}
+
+.c-cs-accordion__category-highlight {
+  border-left: $global-spacing-unit-tiny solid $color-fuchsia;
+}
+
+
+@include mq($until: tablet) {
+  .c-cs-accordion--content{
+    margin: 0;
+  }
+  .c-cs-accordion--prodgrp{
+    padding: 0;
+  }
+  .c-cs-accordion__category{
+    margin: $global-spacing-unit-small * 2 0;
+  }
+  .c-cs-accordion--prodgrp-qty{
+    text-align: right;
+  }
+}
+
+.c-cs-list-view__action {
+  width: 23%;
+}
+
+.c-cs-accordion__pg-link {
+  word-break: break-word;
+}
+
+.c-cs-accordion__item--large {
+  height: $global-spacing-unit-large;
+}
+
+.c-cs-accordion__item--huge {
+  height: $global-spacing-unit-huge;
+}

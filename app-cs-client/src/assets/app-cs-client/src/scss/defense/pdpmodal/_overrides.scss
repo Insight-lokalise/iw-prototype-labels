@@ -1,0 +1,17 @@
+.c-pdp__tab--specs {
+  background-color: transparent;
+  padding: 0;
+  span {
+    color: $color-warm-gray-11;
+    padding: 0 $global-spacing-unit $global-spacing-unit-tiny;
+  }
+}
+
+.c-pdp__tab--specs:hover, .c-pdp__tab--specs:focus, .c-pdp__tab--specs.is-selected {
+  background-color: transparent;
+  span {
+    color: $color-warm-gray-11;
+    border-bottom: $global-input-border-width * 4 solid $color-primary;
+    padding: 0 $global-spacing-unit $global-spacing-unit-tiny;
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "name": "app-dynamic-tabs",
+  "description": "Displays tabs to be included into AEM.",
+  "version": "1.0.0",
+  "dependencies": {
+    "@insight/toolkit-css-ui": "^1.4.166",
+    "@insight/toolkit-react": "^2.0.28",
+    "@insight/toolkit-utils": "^1.4.130",
+    "axios": "^0.27.2",
+    "classnames": "^2.2.6",
+    "jsonpath-plus": "^5.0.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-html-parser": "^2.0.2"
+  },
+  "resolutions": {
+    "faye": "1.1.3"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "buildkit-asserter": "^1.0.36",
+    "buildkit-legacy-scripts": "^5.0.0-Beta.8",
+    "prop-types": "^15.7.2",
+    "why-did-you-update": "^1.0.6"
+  },
+  "aem": {
+    "categories": "insight-dynamic-tabs-react-app"
+  },
+  "jestSonar": {
+    "sonar56x": true,
+    "reportPath": "coverage",
+    "reportFile": "test-reporter.xml",
+    "indent": 4
+  },
+  "scripts": {
+    "start": "buildkit-legacy-scripts start",
+    "build": "buildkit-legacy-scripts build",
+    "aem-import": "buildkit-legacy-scripts aem-import",
+    "test": "buildkit-asserter --coverage",
+    "test:watch": "buildkit-asserter --watch",
+    "lint": "buildkit-legacy-scripts lint",
+    "prettify": "buildkit-legacy-scripts prettify",
+    "preinstall": "npm install --package-lock-only --ignore-scripts && npx npm-force-resolutions"
+  }
+}

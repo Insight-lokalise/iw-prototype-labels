@@ -1,0 +1,133 @@
+@import 'iw-styles/src/iw-settings';
+
+.iw-modal {
+    > header {
+        padding: 10px 0;
+        border-bottom: 1px solid $brand-lightgray;
+        margin-bottom: 1rem;
+    }
+
+    &__heading {
+        margin: 0;
+        font-family: $body-font-family;
+        font-size: rem-calc(18);
+
+        &-icon {
+          &::before {
+            margin-right: .5em;
+          }
+
+          &.ion-android-alert {
+            &::before {
+              color: $alert-color;
+            }
+          }
+        }
+    }
+
+    &__button {
+        margin-bottom: 0;
+        height: 100%;
+    }
+
+    &__icon {
+        &--close {
+            font-size: rem-calc(36);
+            cursor: pointer;
+        }
+    }
+
+    > footer {
+        padding: 15px 0;
+    }
+}
+
+.help-icon__icon {
+    cursor: pointer;
+}
+
+&.iw-dialog,
+.iw-dialog {
+
+    &.iw-dialog-backdrop {
+        position: fixed;
+        z-index: 1050;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: $brand-darkergray;
+        opacity: 0.2;
+    }
+
+    &.iw-dialog-contents {
+        position: fixed;
+        z-index: 1051;
+        bottom: 0;
+        right: auto;
+        background-color: $body-bg;
+        box-shadow: 0 5px 15px rgba(0,0,0,.5);
+        overflow-y: auto;
+        width: 100%;
+        height: auto;
+        top: 0;
+        outline: none;
+
+        @include breakpoint(medium) {
+            /* All CSS in here goes inside the media query*/
+            max-height: 70%;
+            top: 20%;
+            left: 50%;
+            bottom: auto;
+
+            &.tiny {
+                width: 400px;
+                margin-left: -200px;
+            }
+
+            &.small {
+                width: 500px;
+                margin-left: -250px;
+            }
+
+            &.medium,
+            &.large,
+            &.xLarge {
+                width: 600px;
+                margin-left: -300px;
+            }
+        }
+
+        @include breakpoint(large) {
+
+            &.large {
+                max-height: 80%;
+                top: 15%;
+                width: 800px;
+                margin-left: -400px;
+            }
+
+            &.xLarge {
+                max-height: 80%;
+                top: 10%;
+                width: 1000px;
+                margin-left: -500px;
+            }
+        }
+    }
+
+    &__heading {
+        margin: 0;
+    }
+
+    &__button {
+        margin-bottom: 0;
+    }
+
+    &__icon {
+        &--close {
+            font-size: rem-calc(36);
+            cursor: pointer;
+        }
+    }
+}

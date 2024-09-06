@@ -1,0 +1,98 @@
+/**
+ * The simple header search suggestions product preview.
+ */
+.c-search-product-preview {
+  padding-top: $global-spacing-unit-small;
+  padding-bottom: $global-spacing-unit-small;
+  font-size: 14px;
+
+  .c-search-product-preview__product-image {
+    .c-button {
+      display: block;
+    }
+
+    .c-button {
+      width: 90%;
+    }
+
+    .c-image__fallback {
+      fill: $color-warm-gray-5;
+    }
+  }
+
+  .c-search-product-preview__part-numbers {
+    font-size: 12px;
+    width: 100%;
+    margin-bottom: 0 !important;
+  }
+
+  &__price-container {
+    display: flex;
+    width: 100%;
+    &__price {
+      margin: 0  $global-spacing-unit-small;
+      &_seperator {
+        font-weight: $global-font-weight-normal;
+        font-size: $global-font-size - 1;
+        color: $color-warm-gray-11;
+      }
+    }
+  }
+  
+  &__background {
+    background-color: $color-warm-gray-custom-light;
+    padding: $global-spacing-unit-tiny;
+    width: 100%;
+  }
+
+  &__contract {
+    display: flex;
+    justify-content: space-between;
+    &-name {
+      font-size: $global-font-size-small !important;
+      font-weight: $global-font-weight-bold;
+      color: $color-turquoise;
+    }
+  }
+
+  &__best-price {
+    white-space: nowrap;
+    text-align: right;
+    font-size: $global-font-size-tiny;
+    padding-left: $global-spacing-unit-tiny;
+    padding-right: $global-spacing-unit-tiny;
+    font-weight: $global-font-weight-bold;
+    color: $color-warm-gray-11;
+  }
+
+  &__highlighted-price {
+     font-size: 16px;
+    .c-currency__value {
+      color: $color-red-fuchsia;
+    }
+  }
+
+  .c-search-product-preview__price {
+    font-size: 16px;
+  }
+
+  &:not(:last-child) {
+    border-bottom: solid 1px $color-warm-gray-5;
+  }
+
+  .c-search-product-preview__product-details__info__description {
+    width: 100%;
+
+    span {
+      display: block;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      /* autoprefixer: off */
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 14px;
+      word-break: break-word;
+    }
+  }
+}

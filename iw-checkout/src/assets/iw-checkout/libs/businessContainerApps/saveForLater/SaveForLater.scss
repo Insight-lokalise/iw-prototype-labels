@@ -1,0 +1,83 @@
+.save-for-later {
+    background: white;
+    padding-bottom: 15px;
+
+    @include breakpoint(small only) {
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        background-color: $brand-mediumgray;
+        color: white;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    &__action {
+        padding-top: 10px;
+        float: left;
+        clear: left;
+        text-align: left;
+    }
+
+    &__backdrop + .iw-dialog {
+        header div:nth-of-type(2) {
+            position: relative;
+
+            span {
+                display: block;
+                position: absolute;
+                right: 20px;
+                top: -16px;
+            }
+        }
+    }
+
+
+    &__modal-content {
+        padding: 45px 15px 0px;
+        
+        .form__field {
+            margin-top: 5px;
+        }
+
+        ~ footer {
+            margin-bottom: 20px;
+
+            div {
+                justify-content: flex-start;
+            }
+
+            button {
+                width: 145px!important;
+            }
+        }
+    }
+
+    &__modal-messages {
+        padding: 45px 15px 0px;
+        text-align: center;
+    }
+
+    &__modal-success {
+        color: $brand-cyan
+    }
+
+    &__modal-checkbox {
+        margin: 25px 0;
+        font-weight: 100!important;
+
+        input {
+            /* important to overwrite an !important that is being used in the commoncss */
+            margin-right: 10px!important;
+        }
+    }
+
+    .section__header {
+        border-bottom: none;
+    }
+}
+
+.hide-for-medium .save-for-later {
+    border: 1px solid $color-warm-gray-5;
+}

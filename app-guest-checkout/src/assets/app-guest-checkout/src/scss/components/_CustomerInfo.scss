@@ -1,0 +1,11 @@
+.c-guest-checkout_customer-info {
+    @include mq($from: tablet) {
+        margin-right: $global-spacing-unit-small;
+    }
+    &--header {
+        border: 1px solid $color-warm-gray-5;
+        border-bottom: 0;
+        background-color: $color-white;
+        padding: $global-spacing-unit-tiny $global-spacing-unit-small;
+    }
+}

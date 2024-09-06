@@ -1,0 +1,36 @@
+
+
+#react-app-personal-products {
+	// CSS-CORE
+	@import '~@insight/toolkit-css-core/src/all';
+
+	// CSS-UI
+	@import '~@insight/toolkit-css-ui/src/all';
+	@import 'temp_toolkit_styles/index';
+	@import 'generic/index';
+	@import 'components/index';
+	@import 'utilities/index';
+
+	background: $color-white;
+
+  #itemCardQuantity{
+    width: 45%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+// This is a special class name for the modal here. This is temporary until these styles can be provided globally or by toolkit-core itself. 
+// Since modals are rendered through a portal they are not scoped.
+// Checking two classes here is probably unecessary but .c-item-card__modal might not be
+// unique in the higher scope. 
+.c-item-card__modal.c-pdp-modal {
+	@import '~@insight/toolkit-css-core/src/all';
+	@import '~@insight/toolkit-css-ui/src/components/button';
+	@import '~@insight/toolkit-css-ui/src/components/button-group';
+	@import '~@insight/toolkit-css-ui/src/components/icon';
+	@import '~@insight/toolkit-css-ui/src/components/modal';
+	@import 'defence/modal';
+}
+
+@import 'defence/index';

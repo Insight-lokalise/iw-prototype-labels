@@ -1,0 +1,24 @@
+.c-item-details {
+  box-sizing: border-box;
+  border: 0;
+  &__row {
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+    &__key {
+      font-size: $global-font-size-tiny;
+      font-weight: $global-font-weight-bold;
+      padding: $global-spacing-unit-tiny 0;
+      vertical-align: baseline;
+      width: 120px;
+    }
+    &__value {
+      font-size: $global-font-size-tiny;
+      padding: $global-spacing-unit-tiny $global-spacing-unit;
+      &.left-align {
+        text-align: left;
+        padding: $global-spacing-unit-tiny 0;
+      }
+    }
+  }
+}

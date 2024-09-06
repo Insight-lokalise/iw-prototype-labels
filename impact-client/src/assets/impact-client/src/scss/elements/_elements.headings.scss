@@ -1,0 +1,110 @@
+/* ==========================================================================
+   #HEADINGS
+   ========================================================================== */
+
+/**
+ * Simple default styles for headings 1 through 6. Anything more opinionated
+ * than simple font-size changes should likely be applied via classes (see:
+ * http://csswizardry.com/2016/02/managing-typography-on-large-apps/).
+ */
+
+// We have all of our heading font sizes defined here. Passing these pixel
+// values into our `fluid-font-size()` mixin will generate responsive font
+// sizing for mobile, tablet and desktop.
+
+/*
+ * Generates H1 fluid font sizes.
+ */
+
+@mixin h1-fluid-font-size() {
+  @include fluid-font-size(48px, 48px, 48px);
+};
+
+
+
+/*
+ * Generates H2 fluid font sizes.
+ */
+
+@mixin h2-fluid-font-size() {
+  @include fluid-font-size(36px, 36px, 36px);
+};
+
+
+
+/*
+ * Generates H3 fluid font sizes.
+ */
+
+@mixin h3-fluid-font-size() {
+  @include fluid-font-size(30px, 30px, 30px);
+};
+
+
+
+/*
+ * Generates H4 fluid font sizes.
+ */
+
+@mixin h4-fluid-font-size() {
+  @include fluid-font-size(24px, 24px, 24px);
+};
+
+
+
+/*
+ * Generates H5 fluid font sizes.
+ */
+
+@mixin h5-fluid-font-size() {
+  @include fluid-font-size(20px, 20px, 20px);
+};
+
+
+
+/*
+ * Generates H6 fluid font sizes.
+ */
+
+@mixin h6-fluid-font-size() {
+  @include fluid-font-size(18px, 18px, 18px);
+};
+
+
+
+
+
+h1 {
+  @include h1-fluid-font-size();
+}
+
+h2 {
+  @include h2-fluid-font-size();
+}
+
+h3 {
+  @include h3-fluid-font-size();
+}
+
+h4 {
+  @include h4-fluid-font-size();
+}
+
+h5 {
+  @include h5-fluid-font-size();
+}
+
+h6 {
+  @include h6-fluid-font-size();
+}
+
+
+
+/**
+ * Set base font styles for headings.
+ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $global-font-family-heading;
+  font-weight: $global-font-weight-normal;
+}

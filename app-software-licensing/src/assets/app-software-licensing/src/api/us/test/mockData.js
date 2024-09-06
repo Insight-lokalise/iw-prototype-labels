@@ -1,0 +1,126 @@
+export const mockBasicResultsData = {
+  manufacturerInfos: [
+    {
+      name: "MICROSOFT",
+      expiredAgreement:false,
+      agreements: [
+        {
+            active: true,
+            agreementId: "TS8829218",
+            assortments:{"a1":"Sel PLUS License-B Apps","a2":"Sel PLUS Corp A-(MON) Subs-Sys","a3":"Sel PLUS SA-3yrs A Sys","a4":"Sel PLUS Lic&SA-3yrs -B Apps","a5":"Sel PLUS Lic&SA-3yrs -A Sys","a6":"Sel PLUS License-B Svrs","a7":"Geo Group TBI pool","a8":"Sel PLUS License-A Sys","a9":"Sel PLUS SA-3yrs B Svrs"},
+            currentReportingMonth: "",
+            endDate: 2524546800000,
+            enrollmentCountry: "US",
+            enrollmentId: "	TS8829218",
+            hld: false,
+            id: "0040015064",
+            ipsContractId: 'IPS ID 1',
+            ipsContractName: 'Contract: State of Colorado NASPO Valuepoint Software(Smart Test #18916510984)',
+            name: "MICROSOFT SELECT PLUS",
+            programId: "A000000022",
+            remainingMonths:370,
+            reportingMonthsDue: [],
+            startDate: 1297839600000,
+            usageReportable: false,
+            usageType: null,
+          },
+        {
+            active: true,
+            agreementId: "91076988",
+            assortments:{"a11":"Sel PLUS Corp B-(MON) Subs-Svrs","a21":"Sel PLUS Lic&SA-3yrs -B Svrs","a31":"Sel PLUS SA-3yrs B Apps","a41":"Sel PLUS Corp A-(MON) Subs-Sys Non-OLS","a51":"Sel PLUS Corp B-(MON) Subs-Svrs Non-OLS","a61":"Sel PLUS Corp B-(MON) Subs-Apps"},
+            currentReportingMonth: "2018-09-01",
+            endDate: 1567234800000,
+            enrollmentCountry: "US",
+            enrollmentId: "86316002",
+            hld: false,
+            id: "0040057552",
+            ipsContractId: 'IPS ID 2',
+            ipsContractName: 'State of Colorado NASPO Valuepoint Software(Smart Test #18916510984)',
+            name: "MICROSOFT SPLA",
+            programId: "A000000023",
+            remainingMonths:6,
+            reportingMonthsDue: ["2018-09-01","2018-10-01","2018-11-01","2018-12-01","2019-01-01","2019-02-01"],
+            startDate: 1469516400000,
+            usageReportable: true,
+            usageType: 'SPLA',
+        },
+        {
+            active: true,
+            agreementId: "51369209",
+            assortments:{"a12":"Sel PLUS License-B Svrs","a22":"Geo Group TBI pool","a32":"Sel PLUS License-A Sys","a42":"Sel PLUS SA-3yrs B Svrs","a52":"Sel PLUS Corp B-(MON) Subs-Svrs","a62":"Sel PLUS Lic&SA-3yrs -B Svrs","a72":"Sel PLUS SA-3yrs B Apps","a82":"Sel PLUS Corp A-(MON) Subs-Sys Non-OLS","a92":"Sel PLUS Corp B-(MON) Subs-Svrs Non-OLS","a10":"Sel PLUS Corp B-(MON) Subs-Apps"},
+            currentReportingMonth: "2018-09-01",
+            endDate: 1559286000000,
+            enrollmentCountry: "US",
+            enrollmentId: "3138137",
+            hld: false,
+            id: "0040064443",
+            ipsContractId: null,
+            ipsContractName: null,
+            name: "CITRIX SERVICE PROVIDER PROGRAM (CSP)",
+            programId: "A000000006",
+            remainingMonths:3,
+            reportingMonthsDue: ["2018-09-01","2018-10-01","2018-11-01","2018-12-01","2019-01-01","2019-02-01",],
+            startDate: 1495004400000,
+            usageReportable: true,
+            usageType: 'CITRIX',
+        }
+      ]
+    },
+    {
+      name: "CITRIX",      
+      expiredAgreement:true,
+      agreements: [
+        {
+            active: false,
+            agreementId: "51369209",
+            assortments:{"a12":"Sel PLUS License-B Svrs","a22":"Geo Group TBI pool","a32":"Sel PLUS License-A Sys","a42":"Sel PLUS SA-3yrs B Svrs","a52":"Sel PLUS Corp B-(MON) Subs-Svrs","a62":"Sel PLUS Lic&SA-3yrs -B Svrs","a72":"Sel PLUS SA-3yrs B Apps","a82":"Sel PLUS Corp A-(MON) Subs-Sys Non-OLS","a92":"Sel PLUS Corp B-(MON) Subs-Svrs Non-OLS","a10":"Sel PLUS Corp B-(MON) Subs-Apps"},
+            currentReportingMonth: "2018-09-01",
+            endDate: 1559286000000,
+            enrollmentCountry: "US",
+            enrollmentId: "3138137",
+            hld: false,
+            id: "0040064449",
+            ipsContractId: null,
+            ipsContractName: null,
+            name: "CITRIX SERVICE PROVIDER PROGRAM (CSP)",
+            programId: "A000000006",
+            remainingMonths:3,
+            reportingMonthsDue: ["2018-09-01","2018-10-01","2018-11-01","2018-12-01","2019-01-01","2019-02-01",],
+            startDate: 1495004400000,
+            usageReportable: true,
+            usageType: 'CITRIX',
+            repEmail: 'DG-Specialist@email.com',
+            repPhone: '1(888)555-5555'
+        }
+      ]
+    },
+    {
+      name: "MICRO FOCUS",      
+      expiredAgreement:true,
+      agreements: [
+        {
+            active: false,
+            agreementId: "51369209",
+            assortments:{"a12":"Sel PLUS License-B Svrs","a22":"Geo Group TBI pool","a32":"Sel PLUS License-A Sys","a42":"Sel PLUS SA-3yrs B Svrs","a52":"Sel PLUS Corp B-(MON) Subs-Svrs","a62":"Sel PLUS Lic&SA-3yrs -B Svrs","a72":"Sel PLUS SA-3yrs B Apps","a82":"Sel PLUS Corp A-(MON) Subs-Sys Non-OLS","a92":"Sel PLUS Corp B-(MON) Subs-Svrs Non-OLS","a10":"Sel PLUS Corp B-(MON) Subs-Apps"},
+            currentReportingMonth: "2018-09-01",
+            endDate: 1559286000000,
+            enrollmentCountry: "US",
+            enrollmentId: "3138137",
+            hld: false,
+            id: "0040064449",
+            ipsContractId: null,
+            ipsContractName: null,
+            name: "MICRO FOCUS PROVIDER PROGRAM (CSP)",
+            programId: "A000000006",
+            remainingMonths:3,
+            reportingMonthsDue: ["2018-09-01","2018-10-01","2018-11-01","2018-12-01","2019-01-01","2019-02-01",],
+            startDate: 1495004400000,
+            usageReportable: true,
+            usageType: 'MICRO FOCUS',
+            repEmail: 'DG-Specialist@email.com',
+            repPhone: '1(888)555-5555'
+        }
+      ]
+    }
+  ]
+}

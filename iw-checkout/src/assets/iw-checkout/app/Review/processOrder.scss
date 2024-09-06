@@ -1,0 +1,18 @@
+.c-process-order {
+  height: 800px;
+  background: $color-white;
+}
+
+.c-modal.c-process-order__modal {
+  background: none;
+  
+  [tabindex] {
+    outline-width: 0;
+  } 
+  
+  .c-process-order__modal__message {
+    margin-top: $global-spacing-unit-small !important;
+    color: $color-turquoise
+  }
+
+}

@@ -1,0 +1,55 @@
+
+/**
+* override global-font-size default from foundation-sites/scss/util/_unit.scss, this is conflicting with toolkit-css-core
+*/
+
+$global-font-size: 16px;
+/**
+ * Used to style some links during early development of the checkout app
+ */
+.temp-nav-links {
+    li {
+        float: left;
+        width: 150px;
+        list-style-type: gurmukhi; // woahhh
+    }
+}
+
+/**
+ * manage.css and styles.min.css automatically hide <select> elements.
+ */
+.select--show {
+    display: initial !important;
+}
+
+/**
+ * For styling a legacy modal for Usage Reporting in a very rare case.
+ * See definition of displayZeroUsageNotificationModal in models/Cart/UsageReporting
+ */
+.insightLightBoxClose {
+    top: -5px;
+    right: -5px;
+}
+
+/**
+ * Override body styles - causing movement in IE when opening/closing popups
+ */
+body {
+    -webkit-transition: none;
+    transition: none;
+}
+
+/**
+* IE scrollbar visibility hack for print and print-preview
+* https://msdn.microsoft.com/en-us/library/windows/apps/hh441298.aspx
+*/
+@media print {
+    body,
+    body * {
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+    // print template includes Insight logo and phone number, need to hide logo from header
+    .c-header {
+        display: none !important;
+    }
+}

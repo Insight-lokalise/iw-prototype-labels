@@ -1,0 +1,173 @@
+/**
+ *  This is the base file for global-ish SCSS variables.
+ *
+ *  Some definitions here are specifically to override Foundation 6's variables and
+ *  some are custom variables to use throughout your code. You can use any of these
+ *  variables in our React apps.
+ *
+ *  Nearly all colors should be defined
+ *  Some CSS pointers:
+ *      Prefer px / %; use em/rem for text-related sizing
+ *      BEM name your components. React component structure can naturally hint at a BEM name
+ *      Always define colors as variables
+ */
+
+$body-font-family: "allumi-2-std", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$header-font-family: "klinic-slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+
+$global-weight-bold: 400 !important;
+
+/* Insight brand colors*/
+$brand-crimson: #ae0a46;
+$brand-red: #af0e2e;
+$brand-magenta: #d40e8c;
+$brand-violet: #721357;
+$brand-cyan: #005885;
+$brand-blue: #8fe3ff;
+$brand-darkergray: #222222;
+$brand-darkgray: #3e332d;
+$brand-mediumgray: #5f5753;
+$brand-gray: #cbc4c3;
+$brand-lightgray: #e6e6e5;
+$brand-lightestgray: #f7f6f5;
+$brand-darkbrown: #6e6259;
+$brand-brown: #aca39a;
+$brand-lightbrown: #cbc4bc;
+$home-hero-font-color: $brand-darkgray;
+$primary-separator-color: #CBC4C3;
+
+
+/* Global colors*/
+$body-bg: #fff;
+$body-font-color: $brand-darkgray;
+$body-font-color-alt: #584f53;
+
+$warning-light-yellow: #FFC208;
+$brand-white: white;
+
+/* Override default Foundation color variables (this may have been replaced by foundation-palette, if so - remove)*/
+$primary-color: $brand-crimson;
+$secondary-color: $brand-lightgray;
+$success-color: $brand-cyan;
+$pending-yellow: $brand-violet;
+$alert-color: #c60f13;
+$brand-green: #4d8e00;
+$black: $brand-darkgray;
+
+/**
+ *  Override Foundation's color palette
+ */
+$foundation-palette: (
+  primary: $primary-color,
+  secondary: $secondary-color,
+  success: $success-color,
+  warning: #721357,
+  alert: #c60f13,
+);
+
+$global-radius: 0;
+
+$header-styles: (
+    small: (
+        'h1': ('font-size': 36),
+        'h2': ('font-size': 30),
+        'h3': ('font-size': 24),
+        'h4': ('font-size': 20),
+        'h5': ('font-size': 16),
+        'h6': ('font-size': 16),
+    ),
+    medium: (
+        'h1': ('font-size': 36), // changed
+        'h2': ('font-size': 30), // changed
+        'h3': ('font-size': 24), // changed
+        'h4': ('font-size': 20), // changed
+        'h5': ('font-size': 16), // changed
+        'h6': ('font-size': 16), // changed
+    ),
+);
+
+$anchor-color: $primary-color;
+$anchor-color-hover: scale-color($anchor-color, $lightness: -20%);
+
+$blockquote-color: $brand-darkgray;
+$cite-color: $brand-darkgray;
+
+$input-color: $brand-mediumgray;
+$input-border: 1px solid $brand-gray;
+$input-border-focus: 1px solid $brand-cyan;
+$input-shadow: none;
+$input-radius: 0;
+$input-placeholder-color: $brand-gray;
+$button-radius: 0;
+$button-padding: .75em 1em;
+$select-radius: 0;
+
+$dropdown-border: 1px solid $brand-lightgray;
+
+$hr-width: 100%;
+
+$callout-bg-dark-brown: #222222;
+$callout-background: $callout-bg-dark-brown;
+
+$table-striped-background: $brand-lightgray; /* originally $brand-lightestgray, Jon changed it because you couldn't tell the differences between rows*/
+$table-border: 1px solid $brand-lightgray;
+$table-head-background: lighten($brand-lightgray, 5);
+$table-head-font-color: $brand-darkgray;
+
+$topbar-background: $body-bg;
+$topbar-submenu-background: $brand-darkgray;
+/* we may be able to use this for some of the slew of custom topbar code we have.*/
+/* $topbar-unstack-breakpoint: medium;*/
+
+/* custom variables extracted from F4's _variables*/
+$topbar-height-mobile: 62px;
+$topbar-height-primary: 94px;
+$topbar-height-toolbar: 45px;
+$topbar-height-desktop: $topbar-height-primary + $topbar-height-toolbar + 1;
+$topbar-margin-bottom: 0;
+$topbar-title-height-mobile: 30px;
+$topbar-title-padding-mobile: 18px 0 15px 0;
+$topbar-title-height-desktop: 50px;
+$topbar-title-padding-desktop: 24px 0 10px 0;
+$topbar-search-height: 24px;
+$topbar-search-width: 24px;
+$topbar-search-margin: (($topbar-height-mobile - $topbar-search-height) / 2) (($topbar-height-mobile - $topbar-search-width) / 2);
+
+/*
+    The below are clear changes made in the original _variables file
+    that we have not yet found a variable or written additional css
+    to correct.
+
+    $button-border-width: 2px;
+    $alert-border-width: 0;
+    alert-close-position: 0;
+    $dropdown-font-color: $body-font-color;
+    $dropdown-color-selected: $brand-lightgray;
+	$table-head-padding: 15px 10px;
+	$topbar-arrows: false;
+
+    // F6 may not use sections anymore
+    $section-title-padding: 8px 20px;
+    $section-content-padding: 15px 0;
+ */
+
+$breakpoint-classes: (small medium large);
+
+/* Match F4 breakpoints */
+$breakpoints: (
+    small: 0px,
+    medium: 768px,
+    large: 1180px
+);
+
+/* Button sizes */
+$button-sizes: (
+    tiny: 0.75rem,
+    small: 0.875rem,
+    default: 1rem,
+    large: 1.25rem
+);
+
+/* print sizes */
+$print-heading-font: 15px;
+$print-text-font: 12px;

@@ -1,0 +1,36 @@
+$fab-measure: $global-spacing-unit-huge - $global-spacing-unit;
+
+.c-builder__header {
+    padding-bottom: $global-spacing-unit-small;
+}
+
+.c-builder__header-steps {
+    width: 80%;
+    margin: 0 auto;
+    padding: $global-spacing-unit-small + $global-spacing-unit-tiny 0;
+    background-color: #fff;
+}
+
+.c-builder-fab {
+    position: fixed;
+    right: $global-spacing-unit;
+    bottom: $global-spacing-unit + $global-spacing-unit-tiny;
+    width: $fab-measure;
+
+    .c-speed-dial__trigger {
+        height: $fab-measure;
+        width: $fab-measure;
+        border-radius: 50%;
+        border: none;
+        box-shadow: 0 4px 8px 8 rgba(0,0,0,0.1);
+        color: $color-primary;
+    }
+
+    .c-speed-dial-action {
+        height: $global-spacing-unit-large - ($global-spacing-unit-small * .75);
+        width: $global-spacing-unit-large - ($global-spacing-unit-small * .75);
+        margin: $global-spacing-unit-tiny 0;
+        border-radius: 50%;
+        color: #fff;
+    }
+}  

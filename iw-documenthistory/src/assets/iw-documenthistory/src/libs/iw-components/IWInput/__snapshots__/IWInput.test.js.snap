@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IWInput renders checkbox correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <label
+      class="form__label"
+      for="testing"
+    >
+      <span
+        class="form__label-text"
+      >
+        Testing 
+      </span>
+      <input
+        class="form__field form__input--checkbox"
+        formnovalidate=""
+        placeholder=""
+        type="checkbox"
+      />
+    </label>
+    <div
+      class="form__field-msg form__field-msg--error"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IWInput renders tel correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <label
+      class="form__label"
+      for="testing"
+    >
+      <span
+        class="form__label-text"
+      >
+        Testing 
+      </span>
+      <input
+        class="form__field"
+        formnovalidate=""
+        placeholder=""
+        type="tel"
+      />
+    </label>
+    <div
+      class="form__field-msg form__field-msg--error"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`IWInput renders textArea correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <label
+      class="form__label"
+      for="testing"
+    >
+      <span
+        class="form__label-text"
+      >
+        Testing 
+      </span>
+      <textarea
+        class="form__field"
+        placeholder=""
+      />
+    </label>
+    <div
+      class="form__field-msg form__field-msg--error"
+    />
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,10 @@
+.c-compare-similar-options {
+    display: flex;
+    justify-content: flex-end;
+
+    .c-button--inline-link {
+        &:hover, &:focus {
+          background-color: unset !important;
+        }
+      }
+}

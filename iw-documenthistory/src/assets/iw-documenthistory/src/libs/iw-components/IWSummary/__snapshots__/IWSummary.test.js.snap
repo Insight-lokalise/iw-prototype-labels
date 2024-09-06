@@ -1,0 +1,223 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IWSummary renders correctly renders something 1`] = `
+<DocumentFragment>
+  <div
+    class=""
+  >
+    <div
+      class="iw-summary"
+    >
+      <div
+        class="row iw-summary__header align-middle is-collapse-child"
+      >
+        <h3
+          class="columns iw-summary__title"
+        >
+          Summary
+        </h3>
+      </div>
+      <div
+        class="iw-summary__totals"
+      >
+        <div
+          class="row is-collapse-child iw-summary__row iw-summary__row--subtotal"
+        >
+          <div
+            class="columns iw-summary__label"
+          >
+            Subtotal
+          </div>
+          <div
+            class="columns shrink iw-summary__value"
+          >
+            <span
+              aria-label="USD$10,000.00 "
+              class="c-currency"
+              tabindex="0"
+            >
+              <span
+                class="c-currency__code"
+              >
+                USD 
+              </span>
+              <span
+                class="c-currency__value"
+              >
+                $10,000.00
+              </span>
+            </span>
+          </div>
+        </div>
+        <div
+          class="row is-collapse-child iw-summary__row iw-summary__row--shipping"
+        >
+          <div
+            class="columns iw-summary__label"
+          >
+            <span>
+              Shipping estimate
+            </span>
+          </div>
+          <div
+            class="columns shrink iw-summary__value"
+          >
+            <span
+              aria-label="USD$1,000.00 "
+              class="c-currency"
+              tabindex="0"
+            >
+              <span
+                class="c-currency__code"
+              >
+                USD 
+              </span>
+              <span
+                class="c-currency__value"
+              >
+                $1,000.00
+              </span>
+            </span>
+          </div>
+        </div>
+        <div
+          class="row is-collapse-child iw-summary__row"
+        >
+          <div
+            class="columns iw-summary__label"
+          >
+            <span>
+              <abbr
+                title="Electronic waste recycling"
+              >
+                EWR 
+              </abbr>
+              <span
+                class="ion-help-circled help-icon__icon hide-for-print"
+              />
+            </span>
+          </div>
+          <div
+            class="columns shrink iw-summary__value"
+          >
+            <span
+              aria-label="USD$10.00 "
+              class="c-currency"
+              tabindex="0"
+            >
+              <span
+                class="c-currency__code"
+              >
+                USD 
+              </span>
+              <span
+                class="c-currency__value"
+              >
+                $10.00
+              </span>
+            </span>
+          </div>
+        </div>
+        <div
+          class="row is-collapse-child iw-summary__row iw-summary__row--tax"
+        >
+          <div
+            class="columns iw-summary__label"
+          >
+            PST / QST estimate
+          </div>
+          <div
+            class="columns shrink iw-summary__value"
+          >
+            <span
+              aria-label="USD$1.00 "
+              class="c-currency"
+              tabindex="0"
+            >
+              <span
+                class="c-currency__code"
+              >
+                USD 
+              </span>
+              <span
+                class="c-currency__value"
+              >
+                $1.00
+              </span>
+            </span>
+          </div>
+        </div>
+        <div
+          class="row is-collapse-child iw-summary__row iw-summary__row--tax"
+        >
+          <div
+            class="columns iw-summary__label"
+          >
+            GST / HST estimate
+          </div>
+          <div
+            class="columns shrink iw-summary__value"
+          >
+            <span
+              aria-label="USD$0.10 "
+              class="c-currency"
+              tabindex="0"
+            >
+              <span
+                class="c-currency__code"
+              >
+                USD 
+              </span>
+              <span
+                class="c-currency__value"
+              >
+                $0.10
+              </span>
+            </span>
+          </div>
+        </div>
+        <div
+          class="row is-collapse-child"
+        >
+          <div
+            class="columns u-padding-none"
+          >
+            <hr
+              class="iw-summary__hline"
+            />
+          </div>
+        </div>
+        <div
+          class="row is-collapse-child iw-summary__row iw-summary__row--total"
+        >
+          <div
+            class="columns iw-summary__label"
+          >
+            Total
+          </div>
+          <div
+            class="columns shrink iw-summary__value"
+          >
+            <span
+              aria-label="USD$11,011.10 "
+              class="c-currency"
+              tabindex="0"
+            >
+              <span
+                class="c-currency__code"
+              >
+                USD 
+              </span>
+              <span
+                class="c-currency__value"
+              >
+                $11,011.10
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

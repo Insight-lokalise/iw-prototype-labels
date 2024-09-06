@@ -1,0 +1,50 @@
+
+
+.app-client-management-reports {
+  @import '~@insight/toolkit-css-core/src/all';
+  @import "defense/reset";
+  @import '~@insight/toolkit-css-ui/src/all';
+
+  margin: $global-spacing-unit;
+
+  .c-last-login-report {
+    @include mq($from: desktop) {
+      width: 60%;
+    }
+  }
+
+  .c-date-picker {
+
+    .DayPickerInput {
+      width: 100%;
+    }
+
+    label {
+      margin-bottom: 6px;
+    }
+
+    input {
+      padding: $global-input-padding;
+      background-color: $color-white;
+      border: $global-input-border-width solid $global-input-border-color;
+      border-radius: $global-radius;
+      width: 100%;
+
+      &::-webkit-input-placeholder {
+        color: $color-warm-gray-5;
+      }
+    }
+  }
+
+  .c-form__element {
+    margin-bottom: $global-spacing-unit;
+
+    &.has-error {
+      .c-date-picker input {
+        border-color: $color-status-error;
+        box-shadow: 0 0 10px $color-status-error;
+      }
+    }
+  }
+}
+

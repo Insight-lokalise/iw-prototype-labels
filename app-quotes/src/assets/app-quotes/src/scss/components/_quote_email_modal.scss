@@ -1,0 +1,36 @@
+.c-email-quote-modal {
+  .c-button.additional_email_add {
+    padding: 0;
+
+    .c-button__icon--left {
+      margin-right: $global-spacing-unit-tiny;
+    }
+  }
+
+  &__close-icon {
+    margin-top: $global-spacing-unit-small;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    svg {
+      cursor: pointer;
+    }
+  }
+
+  .c-ac-recipient-email {
+    margin-bottom: $global-spacing-unit-tiny;
+  }
+  
+  &__additional-email {
+    position: relative;
+    
+    .c-ac-recipient-email {
+      margin-right: 30px;
+    }
+  }
+
+  .comments_disclaimer {
+    font-size: $global-font-size-tiny;
+  }
+}

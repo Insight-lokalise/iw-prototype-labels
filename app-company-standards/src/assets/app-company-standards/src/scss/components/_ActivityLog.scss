@@ -1,0 +1,53 @@
+.c-activity-log {
+  margin-bottom: $global-spacing-unit;
+}
+
+.c-activity-log__row {
+  &:first-child {
+    border-top-width: $global-input-border-width;
+    border-top-style: solid;
+    border-top-color: $color-warm-gray-2;
+  }
+
+  border-bottom-width: $global-input-border-width;
+  border-bottom-style: solid;
+  border-bottom-color: $color-warm-gray-2;
+  padding-bottom: $global-spacing-unit-tiny;
+  padding-top: $global-spacing-unit-tiny;
+}
+
+.c-activity {
+  margin-top: $global-spacing-unit-tiny;
+  margin-bottom: $global-spacing-unit-tiny;
+}
+
+.c-activity__user-icon {
+  margin: 0 $global-spacing-unit-small 0;
+  color: $color-blue;
+}
+
+.c-activity__username, .c-activity__message {
+  @include font-size($global-font-size-small);
+  margin-bottom: $global-spacing-unit-tiny;
+}
+
+.c-activity__invalid {
+  @include font-size($global-font-size-small);
+  margin-left: $global-spacing-unit;
+  color: $color-warm-gray-5;
+}
+
+.c-activity-log__date {
+  @include font-size($global-font-size-tiny);
+  color: $color-warm-gray-8;
+}
+
+.c-activity-log {
+  .c-activity-log__paginator {
+    @include font-size($global-font-size);
+    .c-button, .c-activity-log__paginator__current-page {
+      padding: $global-spacing-unit-tiny / 2;
+    }
+  }
+}
+

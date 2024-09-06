@@ -1,0 +1,13 @@
+#react-app-obc-redesign {
+  // CSS-CORE
+  @import '~@insight/toolkit-css-core/src/_all';  
+
+  // CSS-UI
+  @import '~@insight/toolkit-css-ui';
+
+  // Defense layer to override specific styles which are outside of the project.
+  @import 'defense';
+
+  //Components
+  @import 'components/index';
+}

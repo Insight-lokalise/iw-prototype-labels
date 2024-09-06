@@ -1,0 +1,18 @@
+@import '~@insight/toolkit-css-core/src/_all';
+@import '~@insight/toolkit-css-ui';
+
+#react-app-quotes {
+  @import 'components/index';
+  @import 'components/quote_history';
+  @import 'components/quote_details';
+  @import 'components/quote_save';
+
+  @media only screen and (min-width: 1440px)  {
+     margin: auto;
+     width: 1440px;
+  }
+}
+
+@import 'components/print';
+@import 'components/quote_details_print';
+@import 'components/quote_email_modal';

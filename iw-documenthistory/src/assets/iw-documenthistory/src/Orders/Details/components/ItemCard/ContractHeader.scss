@@ -1,0 +1,16 @@
+@charset 'utf-8';
+
+.contract-header {
+  background-color: $brand-lightblue;
+  border-bottom: 1px solid $brand-lightgray;
+  padding: $orders-spacing-small $orders-spacing-medium;
+
+  @media print {
+    page-break-inside: avoid;
+  }
+
+  &__title {
+    @include font-brand();
+    margin-bottom: 0;
+  }
+}

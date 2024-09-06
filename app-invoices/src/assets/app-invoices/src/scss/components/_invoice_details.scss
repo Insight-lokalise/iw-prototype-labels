@@ -1,0 +1,114 @@
+.c-app-invoice-details {
+  @include mq($until: tablet) {
+    padding: $global-spacing-unit-small 0 $global-spacing-unit-small;
+  }
+  padding: 1rem 1rem 2rem;
+  background-color: $color-warm-gray-custom-light;
+
+  &__card {
+    border: 1px solid $color-warm-gray-5;
+
+    @include mq($from: tablet) {
+      height: 100%;
+    }
+  }
+
+  &__info {
+    @include mq($from: tablet) {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+
+  &__id {
+    font-weight: $global-font-weight-bold;
+    font-family: $global-font-family-body;
+    color: $color-turquoise;
+  }
+
+  &__expired,
+  &__summary-expired {
+    font-weight: $global-font-weight-bold;
+    color: $color-red;
+    font-size: $global-font-size-small;
+  }
+
+  &__summary-expired {
+    text-align: center;
+  }
+
+  &__header {
+    padding-right: $global-spacing-unit-small;
+    padding-bottom: 0;
+  }
+
+  @include mq($until: tablet) {
+    .c-app-invoice-details__linksection {
+      text-align: right !important;
+    }
+    .c-app-invoice-details__header {
+      padding-right: 0;
+      padding-bottom: $global-spacing-unit-small;
+    }
+  }
+
+  &__linksection {
+    text-align: left;
+
+    .c-app-invoice-details__links {
+      padding-bottom: 0;
+      padding-left: 0;
+    }
+  }
+
+  &__bottom {
+    margin-top: 10px;
+    border: 1px solid $color-warm-gray-5;
+
+    .c-tabs__item {
+      color: $color-red-fuchsia;
+
+      button {
+        font-weight: $global-font-weight-bold;
+      }
+    }
+
+    .c-tab__content {
+      margin-top: 0;
+      padding: 15px;
+    }
+  }
+
+  &__adddetails {
+    &__adddetails-heading {
+      font-weight: $global-font-weight-bold;
+    }
+  }
+  &__nav {
+    padding: 0;
+    font-weight: $global-font-weight-normal;
+  }
+  &__remit-title {
+    color: $color-turquoise;
+  }
+  &__row {
+    margin: $global-spacing-unit 0;
+    border-top: 1px solid #cbc4c3;
+  }
+
+  &__heading {
+    margin-bottom: $global-font-size-small - 4; 
+  }
+
+  &__links {
+    font-size: $global-font-size-small;
+    line-height: 1;
+    .c-button__icon {
+      height: $global-spacing-unit - 2;
+      width: $global-spacing-unit - 2 ;
+      &--right {
+        margin-left: 0;
+      }
+    }
+  }
+}

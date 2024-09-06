@@ -1,0 +1,15 @@
+.c-guest-search-bar .c-search-suggestions {
+  @include transition(opacity, visibility, z-index);
+  background-color: $color-white;
+  border: 1px solid $color-warm-gray-5;
+  border-top: none;
+  opacity: 0;
+  visibility: hidden;
+
+  @include mq($from: desktop) {
+    position: fixed;
+    box-shadow: 2px 2px 3px $color-warm-gray-8;
+    padding-left: calc(100vw - #{$header-search-bar-wide} - #{$global-spacing-unit});
+    padding-right: calc(100vw - #{$header-search-bar-wide} - #{$global-spacing-unit});
+  }
+}

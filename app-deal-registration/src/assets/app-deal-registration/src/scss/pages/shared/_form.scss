@@ -1,0 +1,81 @@
+.c-form-groups {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 40px;
+
+	abbr {
+		border-bottom: none;
+		text-decoration: none;
+	}
+
+	> div:not(.is-template) {
+		width: 100%;
+	}
+}
+
+.c-form-group {
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	margin-bottom: 30px;
+	width: 100%;
+
+	&.is-template {
+		width: 30%;
+	}
+}
+
+.c-form-group__header {
+	display: flex;
+	align-items: center;
+	height: 40px;
+	padding-left: 10px;
+	background-color: $color-warm-gray-2;
+
+	h5 {
+		margin: 0;
+	}
+}
+
+.c-form-group__inputs {
+	flex: 1 0 auto;
+	padding: 10px;
+}
+
+.c-form-group__input {
+	margin: 10px 0;
+	width: 100%;
+
+	&.is-date {
+		z-index: 7000;
+	}
+
+	&.has-error {
+		.c-form-group__error p {
+			color: $color-status-error;
+		}
+
+		.c-form__control {
+			border-color: $color-status-error;
+		}
+		
+		.c-form__label {
+			color: $color-status-error;
+		}
+	}
+
+	.c-select-container {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.c-select {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.c-number {
+		border: 1px solid $color-warm-gray-2;
+	}
+}

@@ -1,0 +1,47 @@
+/* ==========================================================================
+   Toolkit CSS Core (Tools Import)
+   ========================================================================== */
+
+/**
+ * Contains partials which don not directly compile to CSS - variables, mixins,
+ * functions and the like.
+
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Core.................Core settings.
+ * Global...............Project-wide variables and settings.
+ * Breakpoints..........Breakpoints for later use by Sass MQ.
+ *
+ * TOOLS
+ * Clearfix.............Micro clearfix mixin.
+ * Font-face............Klinic Slab heading font.
+ * Font-size............A mixin which guarantees baseline-friendly line-heights.
+ * Fluid-font-size......A mixin to generate responsive font sizing.
+ * Form-field...........A mixin to ensure consistent form field styles.
+ * Hide.................Mixin for hiding elements.
+ * Strip-unit...........Removes the unit of a length.
+ * Transition...........A mixin to generate transitions.
+ * Truncate.............A mixin to truncate text and add an ellipsis at the end.
+ * Z-index..............Function to keep track of z-index values.
+ * Sass MQ..............Default media query manager.
+ */
+
+// SETTINGS
+@import "settings/settings.core";
+@import "settings/settings.global";
+@import "settings/settings.breakpoints";
+
+// TOOLS
+@import "tools/tools.clearfix";
+@import "tools/tools.font-face";
+@import "tools/tools.font-size";
+@import "tools/tools.fluid-font-size";
+@import "tools/tools.form-field";
+@import "tools/tools.hide";
+@import "tools/tools.strip-unit";
+@import "tools/tools.transition";
+@import "tools/tools.truncate";
+@import "tools/tools.z-index";
+@import "~sass-mq/mq";

@@ -1,0 +1,120 @@
+@import 'iw-styles/src/iw-settings';
+
+$global-weight-normal: 100; // Add this variable to iw-settings
+
+$iw-table-col-padding: rem-calc(8);
+$iw-table-icon-size: rem-calc(20); // Needed to override the table font size override!
+$iw-table-icon-padding: rem-calc(8);
+$iw-table-font-size: rem-calc(14); // Needed to override common.css table font-size styles
+
+/**
+ * If you need a fixed height table for tablet and above viewport sizes (as used
+ * within the dashboard project), add a table wrapper and inner wrapper element
+ * around the IWResponsiveTable component. See example HTML below.
+ *
+ * <div className="iw-table__wrapper">
+ *   <div className="iw-table__inner-wrapper">
+ *     <IWResponsiveTable />
+ *   </div>
+ * </div>
+ *
+ * When combined with the CSS below, it allows the table to scroll vertically
+ * when the content is too large to fit within its parent container (the fixed
+ * height set in [2]).
+ *
+ * 1. 17px accounts for scrollbars on Windows OS, which stops the flicker due to
+ *    the table width calculations.
+ * 2. As there is no current way in CSS to determine the parent elements height,
+ *    we need to add a fixed height to the wrapper (this is the specific height
+ *    required for the dashboard project, change as needed)
+ *
+ *  @include breakpoint(medium) {
+ *    .iw-table__wrapper {
+ *      height: 530px; [2]
+ *      overflow-x: hidden;
+ *      overflow-y: auto;
+ *      width: calc(100% + 17px); [1]
+ *    }
+ *
+ *    .iw-table__inner-wrapper {
+ *      margin-right: 17px; [1]
+ *    }
+ *  }
+ */
+
+
+ /**
+  * Responsive data table component
+  *
+  * 1. Hack to override the following Foundation 4 column class CSS:
+  *    [class*="column"]+[class*="column"]:last-child {
+  *      float: right
+  *    }
+  */
+.iw-table {
+  border-collapse: collapse;
+  width: 100%;
+
+  /**
+   * Set the font size for all child elements of the table component to override
+   * common.css table font-size styles
+   */
+  & * {
+    font-size: $iw-table-font-size;
+  }
+
+  &__head {
+    background: transparent;
+    border-bottom: 1px solid $brand-lightgray;
+  }
+  
+  &__heading {
+    padding: $iw-table-col-padding;
+    font-weight: $global-weight-bold;
+    font-size: 1rem !important;
+  }
+
+  &__tbody:not(:last-child) {
+    border-bottom: 1px solid $brand-lightgray;
+  }
+
+  &__column {
+    padding: 0.75rem;
+    font-weight: $global-weight-normal;
+    float: none !important; /* [1] */
+
+    &:first-child {
+      padding: 0;
+    }
+
+    &--expand-icon {
+      padding: 0;
+      width: $iw-table-icon-padding * 2 + $iw-table-icon-size;
+    }
+  }
+
+  &__icon {
+    color: $body-font-color !important;
+    display: inline-block;
+
+    &-ion {
+      font-size: $iw-table-icon-size;
+      padding: $iw-table-icon-padding;
+      display: block;
+    }
+  }
+
+  &-nested {
+    padding: .5rem 0;
+
+    &__column {
+      padding: 0 $iw-table-col-padding $iw-table-col-padding;
+      font-weight: $global-weight-normal;
+      text-align: left;
+    }
+
+    &__heading {
+      font-weight: $global-weight-bold;
+    }
+  }
+}

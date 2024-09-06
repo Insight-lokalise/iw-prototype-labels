@@ -1,0 +1,394 @@
+@mixin shopping-cart-print-view {
+    /* override foundation-typography print anchor style */
+    a {
+        text-decoration: none;
+
+        &[href]::after {
+            content: "" !important;
+        }
+    }
+
+    /* unfortunately, Foundation's show-for-print class hides elements when not in print media. So here's another */
+    .print-show {
+        display: block !important;
+    }
+
+    .show-for-print {
+        &.print-inline {
+            display: inline-block !important;
+        }
+    }
+
+    /* for positioning cartSummary */
+    .print-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /* for positioning cartSummary */
+    .print-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+
+    /* for positioning cartSummary */
+    .print-offset-7 {
+        margin-left: 58.33333%;
+    }
+
+    /**
+     *
+     * Specific component styling.
+     *
+     */
+
+    .cart__table {
+        &-col {
+            &-header {
+                font-weight: $global-weight-bold;
+            }
+            &-header.cart__table-col--item {
+                margin-left: 0 !important;
+            }
+
+            &--image {
+                width: 120px !important;
+                height: 80px !important;
+            }
+        }
+
+        &-bundle-items {
+            padding-left: 10px;
+            margin-right: 55px;
+
+            .cart__table-row {
+                border-bottom: none;
+            }
+
+            .cart__item-heading {
+                margin-top: 0;
+            }
+        }
+
+        &-block:last-child {
+            border-bottom: 1px solid $brand-lightgray;
+        }
+    }
+
+    .cart-item {
+        &__qty {
+            background-color: white;
+            border: none;
+            padding: 0;
+        }
+    }
+
+    .cart__stock-icon {
+        &--in-stock {
+            color: #80AB52 !important;
+        }
+
+        &--out-of-stock {
+            color: $primary-separator-color !important;
+        }
+    }
+
+    .cart__approved-item-icon {
+        color: #005885 !important;
+    }
+
+    .cart__contract-header {
+        background-color: lighten($brand-blue, 30%) !important;
+    }
+
+    .cart__item-bundle {
+        padding-left: 0;
+    }
+
+    .cart-print-header {
+        &__logo {
+            width: 178px;
+            height: 80px;
+        }
+
+        &__title {
+            font-weight: $global-weight-bold;
+        }
+
+        &__address {
+            margin-bottom: 30px;
+            line-height: 1rem;
+        }
+
+        &__icon {
+            &--close {
+                font-size: rem-calc(48);
+                cursor: pointer;
+            }
+
+            &--print {
+                font-size: rem-calc(28);
+                color: $brand-crimson !important;
+                cursor: pointer;
+                vertical-align: middle;
+            }
+        }
+
+        &__sep::after {
+            font-size: rem-calc(16);
+            content: "|";
+            margin: 20px;
+            color: $brand-lightgray;
+        }
+    }
+
+    .usage-reporting {
+        &__footer {
+            text-align: left;
+            border: none;
+            padding-top: 0;
+        }
+
+        &__enrollment-id {
+            padding-left: 3rem;
+        }
+    }
+
+    .shopping-cart__messages {
+        // Adjust padding instead of margins to make sure the div stays in its bounds
+        // and does not cover the print preview button.
+        padding-top: 0;
+        border: none;
+    }
+
+    .shopping-cart__carrier-charge-message {
+        font-weight: $global-weight-bold;
+        color: $brand-red !important;
+    }
+
+    /* Section styles */
+    .section__header {
+        background-color: none !important;
+    }
+}
+
+.cart-print-preview {
+    @include shopping-cart-print-view;
+
+    padding: 10px;
+
+    & * {
+        background: transparent !important;
+        box-shadow: none !important;
+        color: #000 !important;
+        text-shadow: none !important;
+    }
+
+    .hide-for-print, .hide-for-print * {
+        display: none;
+    }
+
+    .show-for-print {
+        display: block !important;
+    }
+
+    /* Replicate foundation-typography's print media styles */
+    img {
+        max-width: 100% !important;
+        border-style: none;
+        page-break-inside: avoid;
+    }
+
+    /* Replicate foundation-typography's print media styles */
+    tr {
+        page-break-inside: avoid;
+    }
+}
+
+@mixin shopping-cart-print-label-view {
+    label {
+        &.form__label--readonly{
+            line-height: 1;
+            font-size: $print-text-font;
+            span{
+               font-size: $print-text-font;
+             }
+            p{
+                font-size: $print-text-font;
+                margin-bottom: 5px;
+                span{
+                    strong{
+                        font-size: $print-heading-font;
+                    }
+                }
+            }
+        }
+    }
+}
+@mixin shopping-cart-print-currency-view {
+    .iw-currency{
+        &__code, &__amount{
+            font-size: $print-text-font !important;
+        }
+    }
+}
+@media print {
+    @include shopping-cart-print-view;
+    @include shopping-cart-print-label-view;
+    @include shopping-cart-print-currency-view;
+    .section {
+        margin-bottom: $global-spacing-unit-small !important;
+
+        .c-address-section {
+            margin-bottom: 5px !important;
+        }
+    }
+    .section__body{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        h3{
+            font-size: $print-heading-font;
+        }
+        p{
+            font-size: $print-text-font;
+            margin-bottom: 5px;
+        }
+    }
+    /* flag to tell chrome to follow our exact print colors. IE has a browser setting for similar */
+    -webkit-print-color-adjust: exact;
+
+    /* The print header displays differently during print than in the preview popup. */
+    .cart-print-header {
+        &__title {
+            /* For some reason, the @media print header title is positioned differently than the preview. */
+            margin-left: 0;
+        }
+
+        &__actions {
+            margin-top: 35px;
+        }
+
+        &__telephone {
+            font-size: 1rem;
+        }
+
+        &__icon {
+            &--close {
+                display: none;
+            }
+
+            &--print {
+                display: none;
+            }
+        }
+
+        &__sep {
+            display: none;
+        }
+    }
+
+    .cart__item {
+        page-break-inside: avoid;
+        &-heading, &-part, &-bundle, .cart__approved-item, .cart__font-size--sm{
+            font-size: $print-text-font !important;
+        }
+
+        .line-level{
+            margin-bottom:0px;
+            padding-bottom: 0px;
+            padding-top: 0px;
+            &__section{
+                margin-top: 0px;
+                @include shopping-cart-print-label-view;
+            }
+            &__subheading{
+                font-size: $print-heading-font;
+            }
+        }
+
+        .cart__stock{
+            &-text{
+                font-size: $print-text-font;
+            }
+        }
+
+        .cart__table-col--ces-desc {
+            flex: 1 1;
+        }
+    }
+
+    .cart__table {
+        &-col {
+            &-header, .cart-item__qty--readonly{
+              font-size: $print-text-font !important;
+            }
+            &--image{
+                padding-left: 0px;
+            }
+            &--desc, &--price,
+            &--qty {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            &--price {
+                width: 135px !important;
+                text-align: center;
+            }
+            &--qty {
+                width: 60px !important;
+            }
+
+            &--total {
+                width: 135px !important;
+            }
+        }
+    }
+    .cart-summary{
+        margin-top: $global-spacing-unit-small;
+        border: none !important;
+
+        &__totals{
+           .cart-summary{
+               &__subtotal, &__tax, &__total, &__shipping {
+                   padding-top: 0px;
+                   padding-bottom: 5px;
+               }
+               &__label, &__label span{
+                   font-size: $print-heading-font !important;
+               }
+           }
+        @include shopping-cart-print-currency-view;
+        }
+    }
+
+    .c-cart-summary-simple .c-summary-card {
+        border: none !important;
+
+        .c-summary-card-header {
+            display: none;
+        }
+    }
+
+    .save-for-later {
+        border: none !important;
+    }
+
+    .review-wrapper, .print-cart-container{
+        section{
+            margin-bottom:0px;
+            .section__header{
+                .section__header-title, .section__header-text{
+                    font-size: $print-heading-font;
+                }
+            }
+            .section__body{
+                padding-bottom: 10px;
+                @include shopping-cart-print-label-view;
+            }
+        }
+    }
+    @page {
+        // Doesn't seem to be working, but styles here may be very handy before finalizing print.
+        //margin: 2cm;
+    }
+}

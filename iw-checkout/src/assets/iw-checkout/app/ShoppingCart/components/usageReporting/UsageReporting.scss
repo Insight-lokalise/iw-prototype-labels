@@ -1,0 +1,47 @@
+.usage-reporting {
+    background-color: white;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &--summary {
+        line-height: 1.6;
+    }
+
+    &__heading {
+        font-family: $body-font-family;
+        font-size: rem-calc(18);
+        margin-bottom: 15px;
+    }
+
+    &__warning {
+        background-color: $warning-light-yellow;
+        font-weight: $global-weight-bold;
+        padding: 10px;
+
+        &-icon {
+            margin-right: 5px;
+        }
+
+        &-message {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
+
+    &__detail {
+        margin-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    &__footer {
+        border-top: 1px solid $brand-lightgray;
+        padding-top: 15px;
+    }
+
+    .ion-android-warning {
+        font-size: 24px;
+        padding-right: 10px;
+        color: orange;
+    }
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="/Users/amoorthi/work-insight/iw-prototype/packages/app-deal-registration/src/pages/Builder/screens/Fields/ConfirmationDeleteModal.test.js">
+    <testCase name="&lt;ConfirmationDeleteModal&gt; should render confirmation modal" duration="198"/>
+    <testCase name="&lt;ConfirmationDeleteModal&gt; Click on YES removes input and closes the modal" duration="101"/>
+    <testCase name="&lt;ConfirmationDeleteModal&gt; Click on NO closes the modal" duration="86"/>
+  </file>
+</testExecutions>

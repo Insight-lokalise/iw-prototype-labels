@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SaveForLater /> should match previous snapshot. 1`] = `
+<Connect(ShowIfComponent)
+  permissions="save_cart"
+>
+  <div
+    className="save-for-later"
+  >
+    <div
+      className="row is-collapse-child hide-for-print"
+    >
+      <h4
+        className="columns save-for-later__title no-margin-bot"
+      >
+        Save for later
+      </h4>
+    </div>
+    <div
+      className="row is-collapse-child hide-for-print"
+    >
+      <div
+        className="columns"
+      >
+        <Connect(ShowIfComponent)
+          permissions="view_quotes"
+          test={true}
+        >
+          <IWAnchor
+            className="save-for-later__action"
+            href="/insightweb/displaysavequote"
+          >
+            Save as quote
+          </IWAnchor>
+        </Connect(ShowIfComponent)>
+        <Connect(ShowIfComponent)
+          permissions="save_cart"
+        >
+          <span>
+            <IWAnchor
+              className="save-for-later__action"
+              href="/insightweb/manageCart/Cart"
+            >
+              Save cart contents
+            </IWAnchor>
+            <IWAnchor
+              className="save-for-later__action"
+              href="/insightweb/manageCart/Template"
+            >
+              Save order template
+            </IWAnchor>
+          </span>
+        </Connect(ShowIfComponent)>
+      </div>
+    </div>
+  </div>
+</Connect(ShowIfComponent)>
+`;

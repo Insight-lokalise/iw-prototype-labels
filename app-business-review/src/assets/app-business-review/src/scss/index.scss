@@ -1,0 +1,64 @@
+@import '../node_modules/react-select/scss/default';
+@import '~@insight/toolkit-css-core';
+@import '~@insight/toolkit-css-ui';
+
+
+.powerbi__container {
+    background-color: white;
+    padding: $global-spacing-unit;
+    height: 100%;
+}
+
+.powerbi__header {
+    margin-bottom: $global-spacing-unit
+}
+
+.powerbi__no-report-error {
+    margin-top: $global-spacing-unit-large
+}
+
+#powerbi__report {
+    height: 95vh;
+    margin-top: $global-spacing-unit-large
+}
+
+iframe {
+    border-style: none;
+}
+
+.c-select-container {
+    display: block;
+
+    &::after {
+        content: none;
+    }
+}
+
+/* SCSS overrides for the react-select module to match up with Insight styles */
+.Select {
+    width: 25%;
+    margin: 0 0 1rem;
+    &-control {
+        height: rem-calc(35);
+        border-radius: 0;
+        border-color: $color-warm-gray-5;
+    }
+    &-placeholder {
+        color: $color-warm-gray-8;
+        padding-left: 10px;
+        line-height: rem-calc(35);
+    }
+    &-input {
+        height: rem-calc(35);
+        input {
+            padding: .5rem;
+        }
+    }
+    &-value {
+        line-height: rem-calc(35);
+        &-label {
+            color: $color-warm-gray-8 !important;
+            font-weight: $global-font-weight-bold;
+        }
+    }
+}

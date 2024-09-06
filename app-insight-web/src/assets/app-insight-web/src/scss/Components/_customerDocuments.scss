@@ -1,0 +1,17 @@
+.c-customer-documents {
+  background-color: $color-white;
+  margin: $global-spacing-unit;
+  padding: $global-spacing-unit $global-spacing-unit $global-spacing-unit-large;
+}
+
+.c-customer-document {
+  padding: $global-spacing-unit-small 0;
+  border-bottom: 1px solid $color-warm-gray-5;
+
+  &:first-child{
+    border-top: 1px solid $color-warm-gray-5;
+  }
+}
+.c-customer-document__button {
+  padding: 0 !important;
+}

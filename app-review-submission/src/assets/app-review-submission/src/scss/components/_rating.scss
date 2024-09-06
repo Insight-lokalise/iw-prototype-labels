@@ -1,0 +1,88 @@
+.c-button {
+  transition: color .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out;
+  background-color: transparent;
+  color: inherit;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 2px;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 10px 22px;
+  text-decoration: none;
+}
+
+.c-button--primary {
+  background-color: #AE0A46;
+  border-color: #AE0A46;
+  color: #fff;
+
+  &:hover,
+  &:focus,
+  &.is-active {
+    background-color: #AE0A46;
+    border-color: #AE0A46;
+    color: #fff;
+  }
+}
+
+
+.c-button--link {
+  background-color: transparent;
+  border-color: transparent;
+  color: #4d4d4d;
+}
+
+.c-icon {
+  display: inline-block;
+  height: 27px;
+  width: 27px;
+  vertical-align: bottom;
+
+  > * {
+    fill: currentColor; /* [1] */
+  }
+}
+
+.c-star-rating {
+    display: flex;
+}
+
+.c-star-rating__label {
+    color: #AE0A46;
+    cursor: pointer;
+}
+
+.c-star-rating__input:checked ~ .c-star-rating__label {
+	color: #3E332D;
+}
+
+.c-star-rating__input:checked + .c-star-rating__label {
+	color: #AE0A46;
+}
+
+.c-star-rating:hover .c-star-rating__input + .c-star-rating__label {
+	color: #AE0A46;
+}
+
+.c-star-rating .c-star-rating__input:hover ~ .c-star-rating__label,
+.c-star-rating .c-star-rating__input:focus ~ .c-star-rating__label {
+	color: #3E332D;
+}
+
+.c-star-rating .c-star-rating__input:hover + .c-star-rating__label,
+.c-star-rating .c-star-rating__input:focus + .c-star-rating__label {
+	color: #AE0A46;
+}
+
+.u-hide-visually{
+		border: 0!important;
+    clip: rect(1px,1px,1px,1px)!important;
+    clip-path: inset(50%)!important;
+    height: 1px!important;
+    margin: -1px!important;
+    overflow: hidden!important;
+    padding: 0!important;
+    position: absolute!important;
+    white-space: nowrap!important;
+    width: 1px!important;
+}

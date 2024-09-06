@@ -1,0 +1,190 @@
+.c-truncate .c-text {
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* autoprefixer: off */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: normal;
+  text-align: right;
+  direction: ltr;
+  box-sizing: initial;
+  white-space: normal;
+  &.long-text {
+    padding-right: $global-spacing-unit-tiny * 2; // padding for long text
+  }
+}
+
+.c-cart-actions {
+  &.grid {
+    width: 100%;
+  }
+
+  &__price-container {
+    margin-bottom: $global-spacing-unit-small;
+  }
+  &__highlighted-price {
+    .c-currency__value {
+      color: $color-red-fuchsia;
+    }
+  }
+  &__curreny-aligment {
+    margin-top: $global-spacing-unit-tiny - 1px;
+  }
+  &__call-for-price {
+    font-size: $global-font-size-small;
+    color: $color-turquoise;
+  }
+  &__label {
+    font-size: $global-font-size-small;
+    font-weight: $global-font-weight-bold;
+  }
+  &__list_price_label {
+    .c-list-price__price {
+      display: flex;
+      justify-content: flex-end;
+      align-items: baseline;
+    }
+    .c-list-price__price__label {
+      font-size: $global-font-size-small;
+      font-weight: $global-font-weight-normal;
+      color: #3E332D;
+    }
+    .c-list-price__save {
+      .c-currency__value{
+        font-size: $global-font-size-small;
+        color: $color-turquoise;
+      }
+    }
+    &_align {
+      &-right{
+        .c-list-price {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+      &-left {
+        .c-list-price__price {
+          display: flex;
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+  &__action-group {
+    display: flex;
+    height: 36px;
+    > button {
+      flex: 1;
+    }
+    input {
+      height: 100%;
+    }
+  }
+  :lang(de) &__button-add,
+  :lang(nl) &__button-add {
+    font-size: $global-font-size-small - 1px;
+    padding: 4px 0px;
+    line-height: 1;
+  }
+  &__contract {
+    &-name {
+      font-size: $global-font-size-small;
+      font-weight: $global-font-weight-bold;
+      color: $color-turquoise;
+      line-height: normal;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      /* autoprefixer -webkit-box-orient: vertical */
+      /* autoprefixer: off */
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &-change {
+      padding: 0px;
+      border: none;
+    }
+    &-tooltip {
+      display: inline-block;
+      width: 450px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    &-dropdown {
+      font-size: $global-font-size;
+      font-weight: $global-font-weight-bold;
+    }
+    &-best-price {
+      margin-left: $global-spacing-unit-tiny;
+      padding: $global-spacing-unit-tiny - 2px;
+      font-size: $global-font-size-tiny;
+      background-color: $color-warm-gray-custom-light;
+      font-weight: $global-font-weight-bold;
+      vertical-align: text-top;
+    }
+    &-listname {
+      padding: $global-spacing-unit-small 0px $global-spacing-unit-tiny 0px;
+      height: 50px;
+      align-items: flex-end;
+
+      &.c-truncate .c-text {
+        text-align: left;
+      }
+    }
+  }
+  @include mq($from: tablet) {
+    &.list {
+      width: 256px;
+    }
+  }
+  .custom-display-flex {
+    display: flex;
+  }
+}
+.list {
+  .c-cart-actions__action-group__qty-selector {
+    margin-right: $global-spacing-unit-small;
+  }
+}
+
+.grid {
+  .c-cart-actions {
+    &__list_price_label {
+      .c-list-price__price {
+        justify-content: flex-start;
+      }
+    }
+    &__action-group__qty-selector {
+      margin-right: $global-spacing-unit;
+    }
+  }
+}
+.c-cart-actions__label {
+  padding-right: $global-spacing-unit-tiny;
+  font-weight: $global-font-weight-normal;
+  color: #3E332D;
+}
+
+.c-currency {
+  font-weight: $global-font-weight-bold;
+  color: #3E332D;
+  font-size: 22px;
+  .c-currency__code {
+    font-weight: $global-font-weight-normal;
+    font-size: $global-font-size-small;
+    color: #3E332D;
+  }
+}
+.c-currency__strikethrough {
+  font-size: $global-font-size-small;
+  .c-currency__code {
+    font-weight: $global-font-weight-normal;
+    font-size: $global-font-size-small;
+    color: #3E332D;
+  }
+}
+.c-list-price__price__label {
+  padding-right: $global-spacing-unit-tiny;
+}

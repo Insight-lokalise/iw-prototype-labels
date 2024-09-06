@@ -1,0 +1,16 @@
+.c-item-card__drag{
+  width: $global-spacing-unit;
+
+  .c-item-card__drag-icon{
+   display: none;
+  }
+
+  .c-icon {
+    height: $global-spacing-unit-small + $global-spacing-unit-tiny;
+    width: $global-spacing-unit-small + $global-spacing-unit-tiny;
+  }
+
+  @include mq($from: tablet) {
+    width: $global-spacing-unit-large;
+  }
+}

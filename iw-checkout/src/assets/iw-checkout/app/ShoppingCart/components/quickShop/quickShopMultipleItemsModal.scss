@@ -1,0 +1,48 @@
+.multiple-items-modal {
+    > header {
+        padding: 10px 0;
+        border-bottom: 1px solid $brand-lightgray;
+    }
+
+    &__icon {
+        /* i need better way move common things out to parent, we can add an*/
+        /* extra class, any other options?*/
+        &--warning {
+            font-size: 1.5em;
+            color: orange;/* waiting on color variable here*/
+            padding-right: 5px;
+        }
+
+        &--close {
+            font-size: rem-calc(36);
+            cursor: pointer;
+        }
+    }
+
+
+    &__items-list {
+        list-style: none;
+        margin: 0 0 15px;
+        border-top: 1px solid $brand-lightgray;
+    }
+
+    &__item {
+        padding: 10px 0;
+        border-bottom: 1px solid $brand-lightgray;
+
+        input[type='checkbox']{
+            vertical-align: middle;
+        }
+
+        &-part {
+            margin-right: 10px;
+        }
+    }
+
+    &__message {
+        &--info {
+            margin: 15px 0;
+        }
+
+    }
+}

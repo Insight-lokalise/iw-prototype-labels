@@ -1,0 +1,64 @@
+/* ==========================================================================
+   #TRANSITION
+   ========================================================================== */
+
+/**
+ * Mixin to generate single and multiple property transitions. To use it with
+ * all default values simply use:
+ *
+ * .simple {
+ *   @include transition();
+ * }
+ *
+ * To improve performance we encourage developers to switch from the default
+ * `all` property and instead insert the required properties needed to
+ * transition the element in question, e.g.:
+ *
+ * .multiple-properties {
+ *   @include transition(color, border-color);
+ * }
+ *
+ * You can also set the property, duration, easing and delay values (in that
+ * order) for multiple properties individually, e.g.:
+ *
+ * .advanced {
+ *   @include transition(color 100ms ease-in 100ms, border-color 200ms linear);
+ * }
+ */
+
+@mixin transition($transitions...) {
+  $unfoldedTransitions: ();
+  @each $transition in $transitions {
+    $unfoldedTransitions: append($unfoldedTransitions, unfoldTransition($transition), comma);
+  }
+
+  transition: $unfoldedTransitions;
+}
+
+@function unfoldTransition ($transition) {
+
+  /*
+   * Default values
+   */
+  $property: all;
+  $duration: 300ms;
+  $easing: ease-in-out;
+  $delay: null; /* Browser default is 0, which is what we want */
+  $defaultProperties: ($property, $duration, $easing, $delay);
+
+  /*
+   * Grab transition properties if they exist
+   */
+  $unfoldedTransition: ();
+  @for $i from 1 through length($defaultProperties) {
+    $p: null;
+    @if $i <= length($transition) {
+      $p: nth($transition, $i)
+    } @else {
+      $p: nth($defaultProperties, $i)
+    }
+    $unfoldedTransition: append($unfoldedTransition, $p);
+  }
+
+  @return $unfoldedTransition;
+}

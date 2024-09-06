@@ -1,0 +1,44 @@
+/* ==========================================================================
+   #BUTTON GROUP
+   ========================================================================== */
+
+/**
+ * Button group to group multiple buttons on one line.
+ *
+ * 1. Vertically center align direct child elements of the button group.
+ *
+ * 2. When there are two or more direct child elements of the button group
+ *    space them out by adding some left margin.
+ */
+
+.c-button-group {
+  display: flex;
+  position: relative;
+  align-items: center; /* [1] */
+
+  > * + * {
+    margin-left: $global-spacing-unit-small; /* [2] */
+  }
+
+}
+
+
+
+/*
+ * Modifier class to distribute buttons evenly, the first button is flush with
+ * the start, and the last is flush with the end.
+ */
+
+.c-button-group--space-between {
+  justify-content: space-between;
+}
+
+
+
+/*
+ * Modifier class to align buttons to the right.
+ */
+
+.c-button-group--right {
+  justify-content: flex-end;
+}

@@ -1,0 +1,239 @@
+@import "~@insight/toolkit-css-core/src/_all";
+@import "~@insight/toolkit-css-core/src/_tools";
+@import "~@insight/toolkit-css-ui";
+@import "components/Gallery";
+
+html,
+body {
+  height: 100%;
+}
+
+.c-cs-container {
+  height: 100%;
+  a:hover {
+    text-decoration: none;
+  }
+  @include mq($until: tablet) {
+    width: 768px;
+  }
+  @import "components/index";
+  @import "defense/overrides";
+  @import "~react-quill/dist/quill.snow.css";
+
+  .c-cs-back--icon {
+    transform: rotate(90deg);
+  }
+
+  .c-cs-back--button {
+    padding-left: 0px !important;
+  }
+
+  .product-group-link {
+    padding: 0;
+  }
+
+  input[type='checkbox'] {
+    margin-right: $global-spacing-unit-small !important;
+  }
+}
+
+.c-cs-admin {
+  width: $global-wrapper;
+}
+
+.u-background-color__gray {
+  background-color: $color-warm-gray-custom-light;
+}
+
+.u-rotate-90 {
+  transform: rotate(90deg);
+}
+
+.u-word-break {
+  word-break: break-all;
+}
+
+.u-text-bolded {
+  font-weight: 900;
+}
+
+.u-border {
+  border: $global-input-border-width solid $color-warm-gray-5;
+}
+
+.u-border-top {
+  border-top: $global-input-border-width solid $color-warm-gray-5;
+}
+
+.u-border-right {
+  border-right: $global-input-border-width solid $color-warm-gray-5;
+}
+
+.u-border-bot {
+  border-bottom: $global-input-border-width solid $color-warm-gray-5;
+}
+
+.u-border-left {
+  border-left: $global-input-border-width solid $color-warm-gray-5;
+}
+
+.u-border-sides {
+  border-right: $global-input-border-width solid $color-warm-gray-5;
+  border-left: $global-input-border-width solid $color-warm-gray-5;
+}
+
+.u-padding-top {
+  padding-top: $global-spacing-unit;
+}
+
+.u-padding-right-small {
+  padding-right: $global-spacing-unit-small;
+}
+
+.u-padding-top-small {
+  padding-top: $global-spacing-unit-small;
+}
+
+.u-padding-bot {
+  padding-bottom: $global-spacing-unit;
+}
+
+.u-padding-bot-tiny {
+  padding-bottom: $global-spacing-unit-tiny;
+}
+
+.u-padding-side {
+  padding-left: $global-spacing-unit;
+  padding-right: $global-spacing-unit;
+}
+.u-padding-side-small {
+  padding-left: $global-spacing-unit-small;
+  padding-right: $global-spacing-unit-small;
+}
+
+.u-padding-side-large {
+  padding-left: $global-spacing-unit-large;
+  padding-right: $global-spacing-unit-large;
+}
+
+.u-padding-left-none {
+  padding-left: 0px;
+}
+
+.u-padding-left-small {
+  padding-left: $global-spacing-unit-small;
+}
+
+.u-padding-bot-none {
+  padding-bottom: 0px;
+}
+
+.u-padding-top-none {
+  padding-top: 0px !important;
+}
+
+.u-padding {
+  padding: $global-spacing-unit;
+}
+
+.u-padding-none {
+  padding: 0px;
+}
+
+.u-padding-tiny {
+  padding: $global-spacing-unit-tiny;
+}
+
+.u-padding-small {
+  padding: $global-spacing-unit-small;
+}
+
+.u-padding-side--none {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.u-margin-top-tiny {
+  margin-top: $global-spacing-unit-tiny;
+}
+
+.u-margin-top-small {
+  margin-top: $global-spacing-unit-small;
+}
+
+.u-margin-right {
+  margin-right: $global-spacing-unit;
+}
+
+.u-margin-right-small {
+  margin-right: $global-spacing-unit-small;
+}
+
+.u-margin-right-tiny {
+  margin-right: $global-spacing-unit-tiny;
+}
+
+.u-margin-left-tiny {
+  margin-left: $global-spacing-unit-tiny;
+}
+
+.u-margin-left-small {
+  margin-left: $global-spacing-unit-small;
+}
+
+.u-margin-left {
+  margin-left: $global-spacing-unit;
+}
+
+.u-margin-none {
+  margin: 0px;
+}
+
+.u-font-size {
+  @include font-size($global-font-size);
+}
+
+.u-font-size-small {
+  @include font-size($global-font-size-small);
+}
+
+.u-font-size-tiny {
+  @include font-size($global-font-size-tiny);
+}
+
+.u-multiline-truncate {
+  @supports (-webkit-line-clamp: 2) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    /* autoprefixer: off */
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    display: block;
+    max-height: 3em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.product-group-link-modal{
+  .c-modal__container{
+    width: 400px !important;
+  }
+  .product-info{
+    margin: 0;
+  }
+  .border-divider {
+    border-top: 1px solid $color-warm-gray-5;
+    margin-top: 20px;
+  }
+  
+  .product-link {
+    margin: $global-spacing-unit-small 0;
+  }
+  .c-button--link {
+    padding: 0;
+    border: none;
+  }
+}

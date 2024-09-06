@@ -1,0 +1,59 @@
+@charset 'utf-8';
+
+.item-details {
+  &__img {
+    margin-right: $orders-spacing-medium;
+    width: $product-image-width;
+
+    &-wrapper {
+      /**
+       * When the img isn't loaded (invalid url or something), the alt-text
+       * expands as wide as it needs to, so the below stops this from happening
+       */
+      margin-bottom: $orders-spacing-medium;
+      width: calc(
+        #{$product-image-width} + #{$orders-spacing-medium}
+      ) !important;
+      max-height: $product-image-height;
+      overflow: hidden;
+
+      .c-image__fallback {
+        padding-right: $global-spacing-unit-small;
+      }
+    }
+  }
+
+  &__desc {
+    @include font-brand();
+    margin: -0.15em 0 0.1em;
+    color: $color-link;
+    &:hover {
+      cursor: pointer;
+      color: $color-link-hover;
+    }
+
+    @include breakpoint(medium) {
+      margin-right: $orders-spacing-medium;
+    }
+  }
+
+  &__part {
+    font-size: 0.8125rem;
+    display: inline-block;
+    line-height: 1.2;
+    margin-bottom: $orders-spacing-small;
+    font-weight: $global-font-weight-bold;
+
+    @include breakpoint(medium) {
+      margin-right: $orders-spacing-medium;
+    }
+  }
+
+  &__part-number {
+    font-size: $font-size-small;
+  }
+
+  .item-details__part-number {
+    font-weight: $global-font-weight-normal;
+  }
+}

@@ -1,0 +1,1 @@
+export { useAccountToolsMenuDetails } from './useAccountToolsMenuDetails';

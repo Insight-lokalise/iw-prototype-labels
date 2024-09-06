@@ -1,0 +1,14 @@
+<html>
+<script type="module" src='/impact-client/packages/impact-client/src/api/harAnalytics.js'>
+<body>
+<script>
+
+fetch('../data/www-insight-com-2018-08-23.json')
+.then(resp => resp.json())
+.then((json) => {
+    console.log("abc "+harAnalytics.showprops(json));
+});
+
+</script>
+</body>
+</html>

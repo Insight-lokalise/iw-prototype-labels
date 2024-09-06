@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<IWCarousel> should match snapshot 1`] = `
+<Slider
+  className="Carousel Test__carousel"
+  infinite={false}
+  nextArrow={
+    <CustomArrow
+      direction="right"
+      hideArrows={true}
+    />
+  }
+  prevArrow={
+    <CustomArrow
+      direction="left"
+      hideArrows={true}
+    />
+  }
+  responsive={
+    Array [
+      Object {
+        "breakpoint": 768,
+        "settings": Object {
+          "slidesToShow": 2,
+        },
+      },
+      Object {
+        "breakpoint": 1180,
+        "settings": Object {
+          "slidesToShow": 3,
+        },
+      },
+      Object {
+        "breakpoint": 1600,
+        "settings": Object {
+          "slidesToShow": 4,
+        },
+      },
+    ]
+  }
+  slidesToShow={5}
+>
+  <div>
+    Projector
+     
+    <strong>
+      200
+    </strong>
+  </div>
+  <div>
+    Screen
+     
+    <strong>
+      60
+    </strong>
+  </div>
+  <div>
+    Cable
+     
+    <strong>
+      20
+    </strong>
+  </div>
+</Slider>
+`;

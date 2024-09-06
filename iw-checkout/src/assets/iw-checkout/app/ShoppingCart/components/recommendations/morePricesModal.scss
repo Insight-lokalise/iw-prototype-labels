@@ -1,0 +1,56 @@
+.more-prices-modal{
+    .parent-product {
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        &__img {
+            max-width: 25vw;
+        }
+
+        @include breakpoint(medium) {
+            padding-top: 15px;
+            padding-bottom: 15px;
+
+            &__img {
+                max-width: 100px;
+            }
+        }
+
+        &__border {
+            border-bottom: 1px solid $brand-lightgray;
+        }
+
+        &__name {
+            font-family: $body-font-family;
+            font-size: rem-calc(16);
+        }
+
+        &__text {
+            margin-bottom: rem-calc(5);
+        }
+    }
+
+    .more-prices-container {
+        padding: 0 20px;
+
+        &__items-list {
+            list-style: none;
+            margin: 0;
+        }
+
+        &__item {
+            padding: 10px 0;
+
+            &-label {
+                line-height: 1.4;
+                color: $brand-darkgray;
+                margin: 2px 0 5px;
+            }
+
+            &-input {
+                margin: 0 !important;
+            }
+        }
+
+    }
+}

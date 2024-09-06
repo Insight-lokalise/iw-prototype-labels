@@ -1,0 +1,9 @@
+.c-currency__code {
+	color: #888; // TODO: Replace with var
+}
+
+.c-currency__value {
+	display: inline-block;
+	margin-left: $global-spacing-unit-tiny;
+	color: #666;
+}

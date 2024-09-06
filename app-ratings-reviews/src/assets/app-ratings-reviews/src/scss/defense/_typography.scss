@@ -1,0 +1,8 @@
+// .product-details-vtabs > section.active .content-section
+// applies a font weight of 500 to normal text rather than
+// the 100 that is applied by the default syles.min that occurs on the page
+// this corrects that
+
+p {
+	font-weight: $global-font-weight-normal;
+}

@@ -1,0 +1,122 @@
+/**
+ * The simple header navigation.
+ */
+
+$search-bar-width-min: 270px;
+$search-bar-width-max: 100%;
+
+.c-header.is-search-open {
+  @include mq($from: desktop) {
+    .c-header__main-nav {
+      -ms-flex: 3 3 auto;
+      flex: 3 3 auto;
+      width: 0;
+    }
+
+    .c-guest-search-bar {
+      width: 85vw;
+    }
+  }
+  @include mq($until: desktop) {
+    .c-guest-search-bar {
+      flex: 1 0 auto;
+      position: fixed;
+      top: 54px;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      overflow-y: auto;
+      overflow-x: hidden;
+      visibility: visible;
+      z-index: 2009;
+    }
+
+    .c-guest-search-bar .c-type-ahead-input {
+      font-weight: 100;
+    }
+  }
+}
+/**
+  * The header search bar.
+*/
+.c-guest-search-bar {
+  flex: 1 0 auto;
+  @include mq($from: desktop) {
+    width: auto;
+    min-width: $search-bar-width-min;
+    @supports (width: 100vw) {
+      @include transition(width);
+    }
+  }
+  @include mq($until: desktop) {
+    &:not(.is-search-open) {
+      position: fixed;
+      top: 54px;
+      right: -100vw;
+      left: 100vw;
+      bottom: 0;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      visibility: hidden;
+      z-index: 2009;
+    }
+  }
+
+  .c-search-bar {
+    margin-top: 0;
+    width: 100%;
+
+    .c-search-bar__input {
+      padding-left: $global-spacing-unit-small !important;
+      border: solid 1px $color-warm-gray-5;
+      // TODO: Here we are overriding the focus style of inputs as defined in the
+      // Design System. We need to have a discussion with the design team about
+      // whether we really want to diverge like this, or whether we should in fact
+      // update the Design System focus styles to match this here.
+      outline-width: 2px !important;
+      outline-color: $color-blue !important;
+      outline-offset: -2px !important;
+      box-shadow: none !important;
+
+      &:focus {
+        outline-style: solid !important;
+      }
+    }
+    .c-guest-search-bar__button {
+      height: 100%;
+      padding-left: $global-spacing-unit-tiny;
+      padding-right: $global-spacing-unit-tiny;
+      background-color: $color-link;
+      color: $color-white;
+
+      &:hover {
+        background-color: $color-link-hover;
+        color: $color-white;
+      }
+    }
+
+    @include mq($from: desktop) {
+      position: relative;
+      margin-top: $global-spacing-unit-tiny + 2;
+      min-width: $search-bar-width-min;
+      max-width: $search-bar-width-max;
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+
+  .c-search-bar__input {
+    border: 1px solid transparent;
+  }
+  .c-search-bar__button {
+    height: 100%;
+    padding-left: $global-spacing-unit-tiny;
+    padding-right: $global-spacing-unit-tiny;
+    border: 1px solid transparent;
+    background-color: transparent;
+  }
+
+  .c-button {
+    border: none;
+  }
+}

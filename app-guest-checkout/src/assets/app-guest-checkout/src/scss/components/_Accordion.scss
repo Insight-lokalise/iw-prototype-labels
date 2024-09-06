@@ -1,0 +1,52 @@
+.c-accordion {
+
+  &__item{
+    background-color: $color-white;
+    border: 1px solid $color-warm-gray-5;
+    margin-bottom: $global-spacing-unit-small;
+    &.expanded {
+      .c-icon:not[class$="exclude"] {
+        display: none;
+      }
+    }
+  }
+
+  &__controls {
+    background-color: $color-white;
+  }
+
+  &__panel {
+    border-top: 1px solid $color-warm-gray-5;
+  }
+
+  &__trigger{
+    &:hover {
+      color: $color-maroon;
+      cursor: pointer;
+    }
+    .c-icon {
+      display: none;
+    }
+    .is-open {
+      color: $color-warm-gray-11;
+    }
+    .c-button__text {
+      font-size: $global-spacing-unit;
+      font-family: "klinic-slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    }
+  }
+
+  &__action {
+    float: right;
+    width: 20px;
+    &:hover {
+      color: $color-maroon;
+      cursor: pointer;
+    }
+  }
+
+  .c-collapsible.c-accordion__panel.is-open {
+    height: auto !important;
+  }
+
+}

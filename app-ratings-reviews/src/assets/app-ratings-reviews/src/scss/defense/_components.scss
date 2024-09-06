@@ -1,0 +1,17 @@
+.c-button {
+  letter-spacing: normal;
+}
+
+.c-button.c-button--link {
+  padding: 0;
+	border: none;
+  line-height: $global-line-height;
+  box-shadow: none;
+}
+
+
+.c-panel__title {
+	p {
+		margin-bottom: 0;
+	}
+}

@@ -1,0 +1,27 @@
+.quick-shop {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: $body-bg;
+    border: 1px solid $color-warm-gray-5;
+    border-bottom: none;
+
+    &__quantity {
+        &[type=number] {
+            -moz-appearance: textfield;
+            &::-webkit-inner-spin-button,
+            &::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
+    }
+
+    &__button {
+        padding-left: rem-calc(2);
+        padding-right: rem-calc(2);
+    }
+}
+
+.after-summary-section .quick-shop:last-child {
+    border-bottom: 1px solid $color-warm-gray-5;
+}

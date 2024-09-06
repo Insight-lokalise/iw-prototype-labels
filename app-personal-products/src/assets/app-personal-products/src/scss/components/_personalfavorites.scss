@@ -1,0 +1,32 @@
+.c-favorites {
+	position: relative;
+  padding: $global-spacing-unit $global-spacing-unit-small;
+	@include mq($from: tablet) {
+		padding: $global-spacing-unit;
+	}
+}
+
+.c-favorites__loader {
+	position: absolute;
+	left: 40%;
+	bottom: 0;
+
+  @include mq($from: tablet) {
+    left: 50%;
+  }  
+}
+
+.c-favorites-cs {
+	font-weight: $global-font-weight-bold;
+	margin-top: $global-spacing-unit-small;
+	margin-bottom: $global-spacing-unit-small;
+}
+
+.c-favorites-cs__icon {
+	color: $color-purple;
+}
+
+.c-favorites-cs__item {
+	margin-left: $global-spacing-unit-tiny;
+}
+

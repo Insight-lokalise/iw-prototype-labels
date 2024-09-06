@@ -1,0 +1,79 @@
+@Library('groovy-shared-lib') _
+def dealregpom
+def rootpom
+pipeline {
+  agent { label 'usphxublddev04' }
+
+  options {
+    buildDiscarder(logRotator(numToKeepStr: '10'))
+    disableConcurrentBuilds()
+  }
+
+  stages {
+    stage('Build & package') {
+      steps {
+        script {
+
+          rootpom = readMavenPom file: 'pom.xml'
+          rootprops = rootpom.getProperties()
+
+          dir('packages/app-deal-registration') {
+            dealregpom = readMavenPom file: 'pom.xml'
+            jenkinsfileutils.runNode { sh 'npm install && npm run build' }
+          }
+        }
+      }
+    }
+
+    stage('Package to TAR') {
+      steps {
+        script {
+          dir('packages') {
+            jenkinsfileutils.runSSHCmd("tar -zcf app-deal-registration.tar.gz app-deal-registration/")
+          }
+        }
+      }
+    }
+
+    stage('Deploy To Nexus') {
+      steps {
+        script {
+          dir('packages') {
+            withEnv(["JAVA_HOME=${tool 'jdk8u77'}", "PATH+MAVEN=${tool 'Maven 3.6.1'}/bin:${env.JAVA_HOME}/bin"]) {
+              if(!rootprops.revision.contains("SNAPSHOT"))
+              sh """ mvn deploy:deploy-file -DgroupId=${dealregpom.groupId}\
+                          -DartifactId=${dealregpom.artifactId} -Dversion=${rootprops.revision}\
+                          -DgeneratePom=true -Dpackaging=tar -DrepositoryId=releases\
+                          -Durl=http://ecomdepot/nexus/content/repositories/releases/ -Dfile=${
+                dealregpom.artifactId
+              }.tar.gz """
+              else
+                sh """ mvn deploy:deploy-file -DgroupId=${dealregpom.groupId}\
+                          -DartifactId=${dealregpom.artifactId} -Dversion=${rootprops.revision}\
+                          -DgeneratePom=true -Dpackaging=tar -DrepositoryId=snapshots\
+                          -Durl=http://ecomdepot/nexus/content/repositories/snapshots/ -Dfile=${
+                  dealregpom.artifactId
+                }.tar.gz """
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+  post {
+    success {
+      script {
+        jenkinsfileutils.teamsnotify('Result': "Success")
+        jenkinsfileutils.emailnotify('Result': "Success")
+      }
+    }
+    failure {
+      script {
+        jenkinsfileutils.teamsnotify('Result': "Failure")
+        jenkinsfileutils.emailnotify('Result': "Failure")
+      }
+    }
+  }
+}

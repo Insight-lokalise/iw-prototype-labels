@@ -1,0 +1,61 @@
+.c-app-stored-carts {
+  @include mq($until: tablet) {
+    padding: $global-spacing-unit-small 0 $global-spacing-unit-small;
+  }
+  padding: $global-spacing-unit-small;
+  background-color: $color-warm-gray-custom-light;
+  .c-stored-carts {
+    &--panel {
+      border: 1px solid $color-warm-gray-5;
+      .c-collapsible.is-open {
+        height: auto !important;
+      }
+    }
+    &__header {
+      margin-bottom: $global-spacing-unit-small;
+      &__search-btn {
+        padding: 10px;
+        .c-button__icon--left,
+        .c-button__loading {
+          margin: 0;
+        }
+      }
+    }
+    &__content {
+      &__btngroup {
+        &--header {
+          @include mq($until: tablet) {
+            justify-content: space-between;
+          }
+        }
+        &--icon {
+          padding-left: $global-spacing-unit-small;
+        }
+        &--line {
+          @include mq($until: tablet) {
+            justify-content: flex-end;
+          }
+        }
+      }
+    }
+  }
+  .o-grid__item {
+    @include mq($until: tablet) {
+      padding: $global-spacing-unit-tiny 0;
+    }
+  }
+  .c-resource-item--cell_header {
+    @include mq($until: tablet) {
+      margin-bottom: 0 !important;
+    }
+  }
+  .c-resource-item_text .c-message {
+    margin-bottom: 12px;
+  }
+  c-resource-item--warranty {
+    padding-top: 18px;
+  }
+  .c-resource-item--sub {
+    padding-bottom: 0;
+  }
+}

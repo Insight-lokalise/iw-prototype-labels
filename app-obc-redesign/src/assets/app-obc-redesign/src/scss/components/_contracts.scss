@@ -1,0 +1,34 @@
+/**
+ * Contracts
+ */
+
+.c-contracts {
+
+  &__button--clicked {
+    background-color: $color-warm-gray-8 !important;
+    color: $color-white !important;
+  }
+
+  &__button--unclicked {
+    background-color: $color-white !important;
+    color: $color-maroon !important;
+  }
+
+  .c-confirm-button {
+    padding: 2px 5px;
+    margin-top: 5px;
+  }
+
+  .c-soldto-button {
+    padding: 2px 5px;
+    margin-left: 15px;
+  }
+
+  .c-consortia-select {
+    margin-left: 5px;
+  }
+
+  .c-soldto-error {
+    color: $color-red;
+  }
+}

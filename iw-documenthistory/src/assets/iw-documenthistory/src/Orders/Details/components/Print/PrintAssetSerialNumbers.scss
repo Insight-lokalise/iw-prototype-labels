@@ -1,0 +1,16 @@
+@charset 'utf-8';
+
+/**
+ * Print styles
+ */
+@media print {
+
+  .print-asset-serial-numbers {
+    margin: $orders-spacing-small 0 $orders-spacing-tiny;
+
+    &__heading {
+      font-family: $body-font-family;
+      font-size: $font-size-print-base;
+    }
+  }
+}

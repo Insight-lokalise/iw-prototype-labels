@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.insight.web</groupId>
+    <artifactId>client-lib-parent</artifactId>
+    <version>${revision}</version>
+    <relativePath>../../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>app-add-to-cart-modal</artifactId>
+  <name>Insight App - Add to cart modal</name>
+  <packaging>content-package</packaging>
+  <description>Maven module for Insight App - Add to cart modal.</description>
+  <profiles>
+    <profile>
+      <id>autoInstallPackage</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>com.day.jcr.vault</groupId>
+            <artifactId>content-package-maven-plugin</artifactId>
+            <configuration>
+              <userId>${crx.user}</userId>
+              <password>${crx.password}</password>
+            </configuration>
+            <executions>
+              <execution>
+                <id>install-content-package</id>
+                <phase>install</phase>
+                <goals>
+                  <goal>install</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+</project>

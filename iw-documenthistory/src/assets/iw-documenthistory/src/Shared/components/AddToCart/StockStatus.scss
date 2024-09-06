@@ -1,0 +1,21 @@
+@charset 'utf-8';
+
+.stock-status {
+  display: block;
+  font-size: $font-size-tiny;
+  margin-bottom: $orders-spacing-medium;
+
+  &--in-stock {
+    color: $brand-green;
+  }
+
+  &--out-of-stock {
+    color: $brand-gray;
+  }
+
+  &__text {
+    font-size: $font-size-tiny;
+    color: $brand-darkgray;
+    padding-left: .1em;
+  }
+}

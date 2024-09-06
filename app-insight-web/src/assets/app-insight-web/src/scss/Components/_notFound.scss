@@ -1,0 +1,14 @@
+.c-page-not-found {
+  padding: $global-spacing-unit-large;
+  @include mq($from: tablet) {
+    padding: $global-spacing-unit-large $global-spacing-unit-huge;
+  }
+}
+
+.c-page-not-found-row {
+  flex-direction: column-reverse;
+
+  @include mq($from: tablet) {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,5 @@
+export const ADDRESS_FIELDS = ['Address', 'City', 'State', 'Zip']
+export const ADDRESS_GROUPS = ['accountInfo', 'shipTo', 'billTo']
+export const BOOLEAN_MAP = ['false', 'true']
+export const MISC_CURRENCY_FIELDS = ['opptyRevAmt', 'targetSellPrice']
+export const POPULATABLE_SELECTS = ['billToNumber', 'contactNumber', 'shipToNumber', 'salesOrg']

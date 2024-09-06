@@ -1,0 +1,67 @@
+.c-sidebar {
+	width: ($global-spacing-unit * 12);
+	height: 100vh;
+	border-right: 1px solid $color-warm-gray-2;
+}
+
+.c-sidebar__header {
+	position: relative;
+	padding: ($global-spacing-unit + $global-spacing-unit-small) $global-spacing-unit-small;
+	border-bottom: 1px solid $color-warm-gray-2;
+}
+
+.c-sidebar__close {
+	position: absolute;
+	top: $global-spacing-unit - $global-spacing-unit-tiny;
+	right: $global-spacing-unit-tiny;
+	padding: 0;
+}
+
+.c-sidebar__groups {
+	display: flex;
+	flex-direction: column;
+	// Measure elsewhere
+	max-height: calc(100vh - (139px + 75px));
+	padding: $global-spacing-unit ($global-spacing-unit-small + $global-spacing-unit-tiny);
+	margin-bottom: $global-spacing-unit-small;
+	overflow-y: scroll;
+}
+
+.c-sidebar__group {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 95%;
+	padding: ($global-spacing-unit + $global-spacing-unit-small) 0 $global-spacing-unit $global-spacing-unit-small;
+	margin: ($global-spacing-unit - $global-spacing-unit-small) auto;
+	background-color: transparent;
+	border: 1px solid $color-warm-gray-2;
+	cursor: pointer;
+	// TODO: use @transition mixin
+	transition: border-bottom .2s ease-in;
+}
+
+.c-sidebar__group:hover {
+	border-bottom: 4px solid $color-primary;
+	// TODO: use @transitions mixin
+	transition: border-bottom .2s ease-out;	
+}
+
+.c-sidebar__group.is-selected {
+	border-bottom: 4px solid $color-primary;
+}
+
+.c-sidebar__group-remove {
+	position: absolute;
+	top: $global-spacing-unit / 3;
+	right: $global-spacing-unit / 2;
+	padding: 0;
+}
+
+.c-sidebar__group-name {
+	margin-bottom: $global-spacing-unit-small;
+}
+
+.c-sidebar__group-inputs {
+	color: $color-warm-gray-5;
+}

@@ -1,0 +1,75 @@
+/* ==========================================================================
+   #MARGINS
+   ========================================================================== */
+
+/**
+ * Toolkit Core CSS generates a series of utility classes that give a bottom
+ * margin, e.g.:
+ *
+ *   <div class="u-margin-bot">
+ *
+ * By default, Toolkit Core CSS will also generate responsive variants of each
+ * of these classes by using our Sass MQ configuration, e.g.:
+ *
+ *   <div class="u-margin-bot-tiny  u-margin-bot-small@tablet  u-margin-bot-large@desktop">
+ */
+
+
+
+
+
+/**
+ * A mixin to spit out our bottom margin classes. Pass in an optional suffix
+ * for responsive margins.
+ */
+
+@mixin bottom-margins($breakpoint: null) {
+
+  @each $margin-name, $margin-value in $global-spacing-sizes {
+
+    .u-margin-bot#{$margin-name}#{$breakpoint} {
+      margin-bottom: $margin-value !important;
+    }
+
+  }
+
+}
+
+
+
+
+
+/**
+ * A series of bottom margin classes that you can use to space out elements
+ * vertically.
+ *
+ * Classes take the format `.u-margin-bot-tiny`. Use these in your markup:
+ *
+ * <div class="u-margin-bot-tiny">
+ *
+ * The following will generate bottom margin classes based on the values
+ * defined in the `$global-spacing-sizes` list.
+ */
+
+@include bottom-margins();
+
+
+
+
+
+/**
+ * Using Sass-MQ, automatically generate bottom margins classes for each of our
+ * defined breakpoints, and give them a Responsive Suffix, e.g.:
+ *
+ * <div class="u-margin-bot-small@tablet  u-margin-bot-large@desktop">
+ */
+
+@each $bp-name, $bp-value in $mq-breakpoints {
+
+  @include mq($from: $bp-name) {
+
+    @include bottom-margins(\@#{$bp-name});
+
+  }
+
+}

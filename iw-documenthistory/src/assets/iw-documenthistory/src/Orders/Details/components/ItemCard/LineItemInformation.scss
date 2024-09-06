@@ -1,0 +1,27 @@
+@charset 'utf-8';
+
+.line-item-info {
+  margin-top: $orders-spacing-tiny;
+
+  &__heading,
+  &__subheading {
+    @include font-brand();
+    margin-bottom: 1em;
+  }
+
+  &__label,
+  &__value {
+    display: block;
+    font-size: $font-size-small;
+    margin-bottom: 1em;
+  }
+
+  &__label {
+    font-weight: $global-weight-bold;
+    padding-right: $orders-spacing-medium;
+  }
+}
+
+.smart-tracker {
+  margin-top: $orders-spacing-medium;
+}

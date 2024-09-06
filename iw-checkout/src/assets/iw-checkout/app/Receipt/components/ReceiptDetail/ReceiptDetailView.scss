@@ -1,0 +1,32 @@
+.receipt-container {
+    .shopping-cart__header-title {
+        margin-bottom: $global-spacing-unit;
+    }
+    .reference-number {
+        font-weight: $global-font-weight-bold;
+        font-family: $global-font-family-body;
+        font-size: $global-spacing-unit;
+        color: $color-turquoise;
+        display: block;
+        margin-bottom: $global-spacing-unit-small + 3;
+    }
+    .message {
+        font-family: Verdana, Arial, sans-serif;
+        font-weight: $global-font-weight-bold;
+        font-style: normal;
+        font-size: 12px;
+        color: #7D726D;
+        line-height: normal;
+    }
+    .receipt-icons {
+        text-align: left;
+        .c-icon {
+            height: 22px;
+            width: 22px;
+        }
+        font-size: $global-spacing-unit-small + 2; 
+        @include mq($from: tablet) {
+            text-align: right;
+        }
+    }
+}

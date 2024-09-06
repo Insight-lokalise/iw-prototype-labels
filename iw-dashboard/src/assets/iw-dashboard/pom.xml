@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<!-- ====================================================================== -->
+	<!-- P R O J E C T D E S C R I P T I O N -->
+	<!-- ====================================================================== -->
+
+  <parent>
+	<groupId>com.insight.web</groupId>
+    <artifactId>client-lib-parent</artifactId>
+    <version>${revision}</version>
+    <relativePath>../../pom.xml</relativePath>
+  </parent>
+
+  <groupId>com.insight.web</groupId>
+	<artifactId>iw-dashboard</artifactId>
+	<name>Insight Dashboard</name>
+	<packaging>content-package</packaging>
+	<description>Maven module for Insight Dashboards.</description>
+	<scm>
+		<developerConnection>scm:git:http://usphxublddev02.insight.com/diffusion/IWDASHBOARD/iw-dashboard.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+
+	<repositories>
+		<repository>
+			<id>central.maven.org</id>
+			<name>Maven Central</name>
+			<url>http://central.maven.org/maven2/</url>
+		</repository>
+		<repository>
+			<id>adobe</id>
+			<name>Nexus Proxy Repository</name>
+			<url>https://repo.adobe.com/nexus/content/groups/public/</url>
+		</repository>
+		<repository>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>central</id>
+			<name>Central Repository</name>
+			<url>https://repo.maven.apache.org/maven2</url>
+		</repository>
+	</repositories>
+		<distributionManagement>
+        <repository>
+            <id>releases</id>
+            <url>https://ecomdepot.insight.com/nexus/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+			<uniqueVersion>true</uniqueVersion>
+            <url>https://ecomdepot.insight.com/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+	<pluginRepositories>
+		<pluginRepository>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>daily</updatePolicy>
+				<checksumPolicy>warn</checksumPolicy>
+			</snapshots>
+			<id>insight-snapshots</id>
+			<url>https://ecomdepot.insight.com/nexus/content/repositories/snapshots</url>
+		</pluginRepository>
+		<pluginRepository>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>daily</updatePolicy>
+				<checksumPolicy>warn</checksumPolicy>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>insight-releases</id>
+			<url>https://ecomdepot.insight.com/nexus/content/repositories/releases/</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>adobe</id>
+			<name>Nexus Proxy Repository</name>
+			<url>https://repo.adobe.com/nexus/content/groups/public/</url>
+		</pluginRepository>
+		<pluginRepository>
+			<releases>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>central</id>
+			<name>Central Repository</name>
+			<url>https://repo.maven.apache.org/maven2</url>
+		</pluginRepository>
+	</pluginRepositories>
+	<profiles>
+		<profile>
+				  <id>releasesProfile</id>
+				  <build>
+					 <plugins>
+						<plugin>
+						   <groupId>org.sonatype.plugins</groupId>
+						   <artifactId>nexus-staging-maven-plugin</artifactId>
+						   <version>1.5.1</version>
+						   <executions>
+							  <execution>
+								 <id>default-deploy</id>
+								 <phase>deploy</phase>
+								 <goals>
+									<goal>deploy</goal>
+								 </goals>
+							  </execution>
+						   </executions>
+						   <configuration>
+							  <serverId>Releases</serverId>
+							  <nexusUrl>https://ecomdepot.insight.com/nexus/content/repositories/releases/</nexusUrl>
+							  <skipStaging>true</skipStaging>
+						   </configuration>
+						</plugin>
+					 </plugins>
+				  </build>
+		</profile>
+		<profile>
+			<id>autoInstallPackage</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>com.day.jcr.vault</groupId>
+						<artifactId>content-package-maven-plugin</artifactId>
+						<configuration>
+							<userId>${crx.user}</userId>
+							<password>${crx.password}</password>
+						</configuration>
+						<executions>
+							<execution>
+								<id>install-content-package</id>
+								<phase>install</phase>
+								<goals>
+									<goal>install</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<id>buildNumberIsPresent</id>
+			<activation>
+				<property>
+					<name>env.BUILD_NUMBER</name>
+				</property>
+			</activation>
+			<properties>
+				<aem.package.version>${project.version}.${env.BUILD_NUMBER}</aem.package.version>
+			</properties>
+		</profile>
+		<profile>
+			<id>localDev</id>
+			<properties>
+				<crx.user>admin</crx.user>
+				<crx.password>admin</crx.password>
+				<crx.host>localhost</crx.host>
+				<crx.port>4502</crx.port>
+				<publish.crx.host>localdev</publish.crx.host>
+				<publish.crx.port>4503</publish.crx.port>
+			</properties>
+		</profile>
+	</profiles>
+</project>

@@ -1,0 +1,40 @@
+@charset 'utf-8';
+
+$small-gutter-width: $orders-spacing-small;
+$large-gutter-width: $orders-spacing-medium;
+
+.search-form {
+  background-color: $color-white;
+  /**
+   * Override legacy CSS which is causing the wrong padding to be applied to
+   * nested rows and columns when they are children of a form element.
+   */
+  &__date-field {
+    padding-left: $small-gutter-width !important;
+    padding-right: $small-gutter-width !important;
+
+    @include breakpoint(medium) {
+      padding-left: $large-gutter-width !important;
+      padding-right: $large-gutter-width !important;
+    }
+
+    &-wrapper {
+      margin-left: -$small-gutter-width !important;
+      margin-right: -$small-gutter-width !important;
+
+      @include breakpoint(medium) {
+        margin-left: -$large-gutter-width !important;
+        margin-right: -$large-gutter-width !important;
+      }
+    }
+  }
+
+  &__btn {
+    margin: $orders-spacing-small 0 0;
+  }
+
+  &__hr {
+    margin: $orders-spacing-large $orders-spacing-medium 0;
+    width: 100%;
+  }
+}

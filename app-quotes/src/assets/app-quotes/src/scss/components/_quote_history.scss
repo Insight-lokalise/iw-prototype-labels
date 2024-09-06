@@ -1,0 +1,19 @@
+.c-app-quote-history {
+  @include mq($until: tablet) {
+    padding: $global-spacing-unit-small 0 $global-spacing-unit-small;
+  }
+  padding: $global-spacing-unit-small;
+  background-color: $color-warm-gray-custom-light;
+
+  .c-quote-panel {
+    border: 1px solid $color-warm-gray-5;
+    .c-collapsible.is-open{
+      height: auto !important;
+    }
+  }
+
+  .c-quote-history--search {
+    margin-bottom: $global-spacing-unit-small;
+  }
+
+}

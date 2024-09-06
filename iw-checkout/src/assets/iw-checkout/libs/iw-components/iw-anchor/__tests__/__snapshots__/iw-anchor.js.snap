@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<IWAnchor> should render children 1`] = `
+<a
+  className="B__E--M"
+>
+  Clickable
+  <strong>
+    text
+  </strong>
+</a>
+`;

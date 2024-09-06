@@ -1,0 +1,17 @@
+.continue-shopping {
+    .Select {
+        .Select-control {
+            height: rem-calc(24);
+            .Select-placeholder {
+                line-height: rem-calc(24);
+                color: $brand-mediumgray;
+            }
+            .Select-input {
+                height: rem-calc(24);
+            }
+            .Select-value {
+                line-height: rem-calc(24);
+            }
+        }
+    }
+}

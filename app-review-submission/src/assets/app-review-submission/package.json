@@ -1,0 +1,44 @@
+{
+  "name": "app-review-submission",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "buildkit-legacy-scripts start",
+    "build": "buildkit-legacy-scripts build",
+    "aem-import": "buildkit-legacy-scripts aem-import",
+    "import-labels": "buildkit-legacy-scripts labels app-review-submission",
+    "test": "buildkit-asserter --coverage",
+    "test:watch": "buildkit-asserter --watch",
+    "lint": "buildkit-legacy-scripts lint",
+    "prettify": "buildkit-legacy-scripts prettify"
+  },
+  "jestSonar": {
+    "sonar56x": true,
+    "reportPath": "coverage",
+    "reportFile": "test-reporter.xml",
+    "indent": 4
+  },
+  "dependencies": {
+    "@insight/toolkit-css-core": "^1.4.115",
+    "@insight/toolkit-css-ui": "^1.4.613",
+    "@insight/toolkit-react": "^1.4.613",
+    "@insight/toolkit-utils": "^1.4.606",
+    "axios": "^0.27.2",
+    "classnames": "^2.2.6",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1",
+    "redux-immutable-state-invariant": "^2.1.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "buildkit-legacy-scripts": "^5.0.0-Beta.8",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "buildkit-asserter": "^1.0.36",
+    "prop-types": "^15.6.1",
+    "redux-logger": "^3.0.6"
+  }
+}

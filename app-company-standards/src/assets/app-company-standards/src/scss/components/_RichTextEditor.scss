@@ -1,0 +1,21 @@
+.c-rich-text-editor__character-count {
+    position: relative;
+    left: 93px;
+}
+
+.c-cs-admin-rte .ql-editor {
+    max-height: 300px;
+    min-height: 115px;
+    overflow: scroll;
+}
+.c-cs-admin-rte-disabled {
+    background-color: $color-warm-gray-2;
+    cursor: not-allowed;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    .ql-formats {
+        pointer-events: none;
+    }
+}

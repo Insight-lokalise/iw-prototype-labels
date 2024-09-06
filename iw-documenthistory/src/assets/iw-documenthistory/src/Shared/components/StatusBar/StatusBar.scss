@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+$on-hold-color: $brand-purple;
+$in-progress-color: $brand-crimson;
+$partial-color: $brand-violet;
+$lab-config-color: $brand-darkgray;
+$lab-complete-color: $brand-mediumgray;
+$complete-color: $brand-cyan;
+
+// Order statuses
+.order-status {
+  border: 1px solid $brand-lightgray;
+  color: white;
+  display: block;
+  font-size: $font-size-small;
+  font-weight: $global-weight-bold;
+  line-height: 1.2;
+  padding: .25em 2em;
+  text-align: center;
+
+  // On hold status
+  &--on-hold {
+    background-color: $on-hold-color
+  }
+
+  // In progress status
+  &--in-progress {
+    background-color: $in-progress-color;
+  }
+
+  // Partially shipped status
+  &--partial {
+    background-color: $partial-color;
+  }
+
+  // In configuration lab shipped status
+  &--lab-config {
+    background-color: $lab-config-color;
+  }
+
+  // Lab complete shipped status
+  &--lab-complete {
+    background-color: $lab-complete-color;
+  }
+
+  // Complete status
+  &--complete {
+    background-color: $complete-color;
+  }
+}
+
+// Order status bar
+.order-status-bar {
+  margin: 0 0 $orders-spacing-large;
+  padding: 0;
+  display: flex;
+  align-items: stretch;
+  border-left: 1px solid $brand-lightgray;
+
+  @include breakpoint(large) {
+    margin-bottom: $orders-spacing-xlarge;
+  }
+
+  // Order statuses when used in conjunction with order status bar
+  .order-status {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left-width: 0;
+
+    @include breakpoint(large) {
+      flex: 1 0 auto;
+      padding-left: .4em;
+      padding-right: .4em;
+    }
+  }
+
+  // On Hold status when used in conjunction with order status bar
+  &--on-hold {
+    .order-status {
+
+      &--on-hold {
+        color: white;
+      }
+
+      &--in-progress,
+      &--lab-config,
+      &--lab-complete,
+      &--partial,
+      &--complete {
+        @include breakpoint(medium down) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  // In progress status when used in conjunction with order status bar
+  &--in-progress {
+    .order-status {
+
+      &--on-hold {
+        display: none;
+      }
+
+      &--in-progress {
+        color: white;
+
+        @include breakpoint(large) {
+          width: calc(2/4 * 100%) !important;
+        }
+      }
+
+      &--lab-config,
+      &--lab-complete,
+      &--partial,
+      &--complete {
+        @include breakpoint(medium down) {
+          display: none;
+        }
+      }
+    }
+
+    @include breakpoint(large) {
+      /**
+       * If lab order, tweak width based on number of statuses in order status bar
+       */
+      &.order-status-bar--lab-order .order-status--in-progress {
+        width: calc(2/6 * 100%) !important;
+      }
+    }
+  }
+
+  // In configuration lab shipped status when used in conjunction with order status bar
+  &--lab-config {
+    .order-status {
+
+      &--on-hold,
+      &--in-progress {
+        display: none;
+      }
+
+      &--lab-config {
+        color: white;
+
+        @include breakpoint(large) {
+          width: calc(3/6 * 100%) !important;
+        }
+      }
+
+      &--lab-complete,
+      &--partial,
+      &--complete {
+        @include breakpoint(medium down) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  // Lab complete shipped status when used in conjunction with order status bar
+  &--lab-complete {
+    .order-status {
+
+      &--on-hold,
+      &--in-progress,
+      &--lab-config {
+        display: none;
+      }
+
+      &--lab-complete {
+        color: white;
+
+        @include breakpoint(large) {
+          width: calc(4/6 * 100%) !important;
+        }
+      }
+
+      &--partial,
+      &--complete {
+        @include breakpoint(medium down) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  // Partially shipped status when used in conjunction with order status bar
+  &--partial {
+    .order-status {
+
+      &--on-hold,
+      &--in-progress,
+      &--lab-config,
+      &--lab-complete {
+        display: none;
+      }
+
+      &--partial {
+        color: white;
+
+        @include breakpoint(large) {
+          width: calc(3/4 * 100%) !important;
+        }
+      }
+
+      &--complete {
+        @include breakpoint(medium down) {
+          display: none;
+        }
+      }
+    }
+
+    @include breakpoint(large) {
+      /**
+       * If lab order, tweak width based on number of statuses in order status bar
+       */
+      &.order-status-bar--lab-order .order-status--partial {
+        width: calc(5/6 * 100%) !important;
+      }
+    }
+  }
+
+  // Complete status when used in conjunction with order status bar
+  &--complete {
+    .order-status {
+
+      &--on-hold,
+      &--in-progress,
+      &--lab-config,
+      &--lab-complete,
+      &--partial {
+        display: none;
+      }
+
+      &--complete {
+        color: white;
+
+        @include breakpoint(large) {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}

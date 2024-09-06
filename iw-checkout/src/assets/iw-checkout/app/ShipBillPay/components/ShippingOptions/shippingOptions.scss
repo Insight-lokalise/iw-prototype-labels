@@ -1,0 +1,30 @@
+.Select__carrier-account {
+    .Select-input {
+        input {
+            padding-left: 0;
+        }
+    }
+}
+
+.shipping-options {
+    .edit-shipping-carrier {
+        .react-tabs {
+            margin-bottom: 1rem;
+        }
+        .react-tabs__tab-list {
+            margin-bottom: 2rem;
+        }
+        .iw-set-as-my-default__information, .iw-set-as-my-default__checkbox {
+            line-height: 1rem;
+            height: 1rem;
+        }
+    }
+    .vas-section{
+      margin-left: $global-spacing-unit-tiny;
+      margin-top: $global-spacing-unit-tiny;
+
+      &--options {
+        margin-bottom: $global-spacing-unit-tiny;
+      }
+    }
+}

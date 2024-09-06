@@ -1,0 +1,28 @@
+$pagination-item-padding: rem-calc(5) rem-calc(8);
+
+.pagination {
+    margin: 0;
+
+    &__page-item {
+        list-style: none;
+    }
+
+    &__page-link {
+        padding: $pagination-item-padding;
+        font-weight: $global-weight-bold;
+
+        &:hover:not(.pagination__page-link--disabled) {
+            background-color: $brand-crimson;
+            color: $white;
+        }
+
+        &--disabled {
+            color: $brand-gray;
+        }
+
+        &--active {
+            background-color: $white !important;
+            color: $brand-gray !important;
+        }
+    }
+}

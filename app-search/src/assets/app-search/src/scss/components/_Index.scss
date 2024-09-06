@@ -1,0 +1,15 @@
+&__search-result {
+  padding: 0 $global-spacing-unit-small;
+}
+&__products-container {
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+
+  @include mq($from: desktop) {
+    grid-template-rows: min-content 1fr min-content;
+  }
+}
+
+.c-button {
+  letter-spacing: normal;
+}

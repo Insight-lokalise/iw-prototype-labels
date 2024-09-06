@@ -1,0 +1,33 @@
+.c-tiny-pagination {
+  margin-top: 2px;
+  margin-right: $global-spacing-unit-small;
+  margin-bottom: $global-spacing-unit;
+}
+
+.c-tiny-pagination__box {
+  padding: 0;
+  margin-bottom: $global-spacing-unit-tiny;
+  height: $global-spacing-unit + $global-spacing-unit-tiny;
+  min-width: $global-spacing-unit + $global-spacing-unit-tiny;
+  font-size: $global-spacing-unit-small + 1;
+  border-width: 1px;
+}
+
+.c-tiny-pagination__box .c-button__content .c-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.c-tiny-pagination__box.is-disabled {
+  color: $color-warm-gray-5;
+}
+
+.c-tiny-pagination__current-page {
+  margin: $global-spacing-unit-tiny $global-spacing-unit-tiny 0;
+}
+
+.c-tiny-pagination__box--prev svg,
+.c-tiny-pagination__box--next svg {
+  margin-right: 0px;
+}
+

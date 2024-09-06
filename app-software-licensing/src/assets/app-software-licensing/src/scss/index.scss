@@ -1,0 +1,28 @@
+@import '~@insight/toolkit-css-core';
+@import '~@insight/toolkit-css-core/src/objects/objects.box';
+@import '~@insight/toolkit-css-core/src/utilities/utilities.typography';
+@import '~@insight/toolkit-css-ui/src/components/button';
+@import '~@insight/toolkit-css-ui/src/components/icon';
+@import '~@insight/toolkit-css-ui/src/components/loading';
+@import '~@insight/toolkit-css-ui/src/components/modal';
+@import 'modal';
+
+#react-app-software-licensing {
+  // CSS-CORE
+  @import '~@insight/toolkit-css-core/src/all';
+
+  // CSS-UI
+  @import '~@insight/toolkit-css-ui';
+
+  // Defense layer to override specific styles which are outside of the project.
+  @import 'reset';
+  @import 'defense';
+  @import 'components/index';
+}
+
+@media print {
+  //remove horizontal scroll bar when left nav from insightweb is collaped in print view
+  #manage-wrapper.menu-closed {
+    overflow-x: visible;
+  }
+}

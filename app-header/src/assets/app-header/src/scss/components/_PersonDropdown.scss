@@ -1,0 +1,98 @@
+/**
+ * The simple header person menu dropdown.
+ */
+.c-person-dropdown {
+  font-size: 14px;
+
+  .c-dropdown__menu {
+    z-index: z('mega-menu') + 1;
+    border: solid 1px $color-warm-gray-5;
+    border-top: solid 5px $color-fuchsia;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -13px;
+      right: 30px;
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 10px solid $color-fuchsia;
+    }
+  }
+
+  .c-person-dropdown__header {
+    display: flex;
+  }
+
+  .c-person-dropdown__header-logo {
+    align-self: center;
+    margin: 0 0 15px 5px;
+  }
+
+  .c-person-dropdown__list {
+    width: 265px;
+
+    .c-person-dropdown__heading {
+      text-align: left;
+    }
+
+    .c-person-dropdown__subheading {
+      padding-left: 2px;
+      text-align: left;
+    }
+
+    .c-person-dropdown__userheading {
+      font-weight: bold;
+    }
+
+    .c-person-dropdown__menuheading {
+      text-align: left;
+    }
+
+    .c-person-dropdown__link {
+      padding: $global-spacing-unit-tiny;
+      margin-right: $global-spacing-unit-tiny;
+      color: $color-warm-gray-11;
+      &:hover {
+        color: $color-maroon;
+      }
+    }
+
+    .c-person-dropdown__button {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    .c-person-dropdown__divider-top {
+      border-bottom: solid 1px $color-warm-gray-5;
+      padding-bottom: $global-spacing-unit-tiny;
+      margin-bottom: $global-spacing-unit-tiny;
+    }
+
+    .c-person-dropdown__divider-bottom {
+      border-top: solid 1px $color-warm-gray-5;
+      margin-top: $global-spacing-unit-tiny;
+      padding-top: $global-spacing-unit-tiny;
+    }
+  }
+
+  .c-dropdown__button {
+    cursor: pointer;
+
+    &:hover {
+      color: $color-link-hover;
+    }
+  }
+
+  .c-icon {
+    margin-right: $global-spacing-unit-tiny;
+  }
+}
+
+.c-person-dropdown .c-icon--dropdown,
+.c-person-dropdown--mobile .c-person-dropdown__icon {
+  width: 10px;
+  margin-right: 5px;
+}

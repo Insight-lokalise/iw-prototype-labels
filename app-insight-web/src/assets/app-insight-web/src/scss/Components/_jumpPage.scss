@@ -1,0 +1,41 @@
+.c-jump-page {
+  background-color: $color-white;
+}
+
+.c-jump-page__hero {
+  color: $color-white;
+  padding: $global-spacing-unit-large $global-spacing-unit;
+  background-image: $global-gradient-primary-v2;
+}
+
+.c-jp__hero-heading {
+  color: $color-white
+}
+
+.c-jump-page__options {
+  padding: $global-spacing-unit;
+}
+
+.c-available-sites {
+  background-color: $color-warm-gray-2;
+  padding: $global-spacing-unit-large;
+}
+
+.c-available-sites__site {
+  padding: $global-spacing-unit-small 0;
+  font-weight: $global-font-weight-bold;
+}
+
+.c-create-account {
+  background-color: $color-warm-gray-2;
+  padding: $global-spacing-unit-large;
+  margin-bottom: $global-spacing-unit;
+
+  @include mq($from: tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.u-jp-font-weight-override {
+  font-weight: $global-font-weight-bold;
+}

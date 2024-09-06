@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+.shipment-card-header {
+
+  @include breakpoint(large) {
+    background-color: $brand-lightestgray;
+    border-bottom: 1px solid $brand-lightgray;
+    padding: $orders-spacing-medium;
+  }
+
+  &__row {
+    padding: $orders-spacing-medium;
+
+    &--highlight {
+      background-color: $brand-lightgray;
+    }
+  }
+
+  @include breakpoint(large) {
+    &__row {
+      padding: 0;
+
+      &--highlight {
+        background-color: transparent;
+      }
+    }
+  }
+
+  &__label,
+  &__value {
+    display: block;
+    font-size: $font-size-small;
+
+    @include breakpoint(large) {
+      font-size: $font-size-base;
+    }
+  }
+
+  &__label {
+    font-weight: $global-weight-bold;
+    padding-right: $orders-spacing-medium;
+
+    @include breakpoint(large) {
+      margin-bottom: .5em;
+    }
+  }
+
+  &__value {
+    @include breakpoint(small only) {
+      text-align: right;
+    }
+
+    &--status {
+      @include order-status();
+    }
+  }
+
+  &__highlight {
+    color: $brand-cyan;
+  }
+}

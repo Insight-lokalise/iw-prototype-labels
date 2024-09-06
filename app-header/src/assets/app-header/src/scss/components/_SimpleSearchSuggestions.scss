@@ -1,0 +1,29 @@
+.c-search-suggestions {
+  @include transition(opacity, visibility, z-index);
+  background-color: $color-white;
+  border: 1px solid $color-warm-gray-5;
+  border-top: none;
+  opacity: 0;
+  visibility: hidden;
+
+  @include mq($until: desktop) {
+    @include transition(left, right, visibility);
+    padding-left: $global-spacing-unit-small;
+    padding-right: $global-spacing-unit-small;
+    position: fixed;
+    top: $header-mob-size + $global-spacing-unit-large + $header-bar-thickness;
+    right: -100vw;
+    left: 100vw;
+    bottom: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  @include mq($from: desktop) {
+    position: absolute;
+    width: 65%;
+    min-width: $search-bar-width-min;
+    max-width: $search-bar-width-max;
+    padding: $global-spacing-unit-small;
+  }
+}

@@ -1,0 +1,34 @@
+/**
+ * The simple header search typeahead.
+ */
+.c-type-ahead {
+  position: relative;
+
+  .c-type-ahead-hint {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    color: $color-warm-gray-8;
+    font-weight: $global-font-weight-bold;
+  }
+  @include mq($from: desktop) {
+    .c-search-bar__input {
+      font-size: $global-font-size-tiny;
+    }
+  }
+
+  @include mq($from: desktop-large) {
+    .c-search-bar__input {
+      font-size: $global-font-size-small;
+    }
+  }
+  .c-type-ahead-input {
+    background-color: transparent;
+    font-weight: $global-font-weight-bold;
+  }
+
+  input:focus::placeholder {
+    color: transparent;
+  }
+}

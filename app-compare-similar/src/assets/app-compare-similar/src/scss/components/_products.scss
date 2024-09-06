@@ -1,0 +1,280 @@
+.c-compare-similar__product {
+  &__skeleton {
+    display: none;
+  }
+
+  &__unavailable {
+    text-align: center;
+  }
+
+  &__item {
+    &.current {
+      background-color: $color-warm-gray-2;
+    }
+
+    &__header {
+      padding: $global-spacing-unit-tiny;
+
+      &__product-label {
+        margin-bottom: $global-spacing-unit-small * 1.3;
+        height: 1.5rem;
+
+        a {
+          color: $color-turquoise;
+          font-weight: $global-font-weight-bold;
+        }
+      }
+
+      &__image {
+        display: block;
+        position: relative;
+        padding: $global-spacing-unit-small 0;
+        margin-bottom: $global-spacing-unit-small * 1.3;
+
+        img {
+          max-width: 100%;
+          user-select: none;
+          pointer-events: none;
+        }
+      }
+
+      &__description {
+        display: block;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        /* autoprefixer -webkit-box-orient: vertical */
+        /* autoprefixer: off */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-weight: $global-font-weight-bold;
+        color: $color-red;
+        letter-spacing: normal;
+        font-size: $global-spacing-unit-small + 4;
+      }
+    }
+
+    &__body {
+      margin-left: $global-spacing-unit-tiny * 1.3;
+      margin-right: $global-spacing-unit-tiny * 1.3;
+      margin-top: auto;
+
+      &__ratings-content {
+        display: flex;
+        align-items: center;
+      }
+
+      &__ratings-count {
+        color: $color-red-fuchsia;
+        font-size: $global-font-size-small;
+      }
+
+      &__empty-row {
+        display: none;
+      }
+
+      &__prices {
+        padding: $global-spacing-unit-small 0;
+
+        &__save {
+          font-size: 14px;
+          color: $color-turquoise;
+        }
+
+        &__save .c-currency__code {
+          display: none;
+        }
+
+        &__vat .c-currency {
+          &__price-value .c-currency__value {
+            color: $color-red-fuchsia;
+          }
+          &__tax{
+            font-size: $global-spacing-unit-small;
+          }
+        }
+        .c-list-price__price__label {
+          margin-bottom: $global-spacing-unit-tiny;
+          width: 100%;
+          span {
+            font-weight: $global-font-weight-bold;
+            font-size: $global-font-size-tiny;
+          }
+        }
+      }
+
+      &__cta {
+        margin-bottom: $global-spacing-unit-tiny;
+
+        .c-quantity-selector,
+        input,
+        button,
+        >div {
+          height: 100%;
+        }
+
+        .c-quantity-selector {
+          input[type=number] {
+            -moz-appearance: textfield;
+          }
+        }
+
+        &__loading {
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        &__size {
+          font-size: 14px;
+          line-height: 1;
+        }
+      }
+
+      &__labels {
+        font-weight: $global-font-weight-bold;
+      }
+    }
+
+    &__row {
+      display: flex;
+      font-size: $global-font-size-small;
+      line-height: $global-spacing-unit-small * 1.6;
+      align-items: center;
+      padding: $global-spacing-unit-small * 1.3;
+      margin-left: $global-spacing-unit-tiny;
+
+      span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    &.is-ips {
+      padding-left: $global-spacing-unit-tiny;
+      padding-right: $global-spacing-unit-tiny;
+      margin-left: 0;
+      margin-right: 0;
+      header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        min-height: 270px;
+        .c-compare-similar__product__item__header__image {
+          text-align: center;
+          height: 174px;
+        }
+      }
+      .c-list-price__save {
+        padding: 0 0 $global-spacing-unit-small;
+      }
+      .c-compare-similar__product__item__body {
+        display: contents;
+        &__contract {
+          background-color: $color-warm-gray-custom-light;
+          padding: $global-spacing-unit-tiny;
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .is-best-price {
+            color: $color-warm-gray-8;
+            font-weight: $global-font-weight-bold;
+            margin-left: $global-spacing-unit-tiny;
+            font-size: $global-spacing-unit-small;
+          }
+          &__selected-contract {
+            font-weight: $global-font-weight-bold;
+            color: $color-turquoise;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            /* autoprefixer -webkit-box-orient: vertical */
+            /* autoprefixer: off */
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          &__options {
+            margin: $global-spacing-unit-tiny * 2 0;
+            min-height: $global-spacing-unit-small * 2.6;
+            &.is-single-contract {
+              min-height: auto;
+              margin: $global-spacing-unit-tiny 0;
+            }
+            select {
+              width: 100%;
+              border-width: 0 0 1px;
+              padding: $global-spacing-unit-tiny;
+              color: $color-turquoise;
+              border-color: $color-warm-gray-2;
+              font-weight: $global-font-weight-bold;
+              font-size: $global-font-size-small;
+              span {
+                color: $color-warm-gray-11;
+              }
+            }
+          }
+        }
+        &__prices {
+          padding: $global-spacing-unit-small 0 0;
+          display: grid;
+          align-items: end;
+          .c-list-price {
+            &__price {
+              margin-bottom: $global-spacing-unit-small;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__view {
+    display: flex;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: $global-spacing-unit-large 0;
+  }
+
+  @include mq($from: tablet) {
+    &__item {
+      display: flex;
+      flex-direction: column;
+
+      &__body {
+        &__cta {
+          height: 40px;
+        }
+
+        &__empty-row {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  @include mq($from: desktop) {
+    &__item {
+      &__row {
+        margin-left: 0px;
+      }
+    }
+
+    &__skeleton {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  picture {
+    display: contents;
+
+    svg {
+      max-width: 100%;
+      height: 100%;
+      user-select: none;
+      pointer-events: none;
+      fill: $color-warm-gray-5;
+    }
+  }
+}

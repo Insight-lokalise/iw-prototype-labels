@@ -1,0 +1,14 @@
+.tracking-notification-confirmation {
+
+  &__icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: .3em;
+    color: $brand-green;
+  }
+
+  &__text {
+    color: $brand-mediumgray;
+    font-size: $font-size-xsmall;
+  }
+}

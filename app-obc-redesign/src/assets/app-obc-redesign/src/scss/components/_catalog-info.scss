@@ -1,0 +1,21 @@
+/**
+ * Catalog Info
+ */
+
+.c-catalog-info {
+
+  @include font-family-body(16px);
+
+  &__add {
+    display: block;
+    margin: auto
+  }
+
+  .order-select {
+    margin-right: $global-spacing-unit-factor
+  }
+
+  .c-input {
+    margin: auto;
+  }
+}

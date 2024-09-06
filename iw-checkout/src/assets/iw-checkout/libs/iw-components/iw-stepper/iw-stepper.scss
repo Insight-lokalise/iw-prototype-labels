@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+@import "../../../libs/_iw-settings.scss";
+
+.iw-stepper {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    border-collapse: collapse;
+
+    .iw-step {
+        position: relative;
+        display: table-cell;
+        text-align: center;
+        padding: 0.5rem 2rem;
+
+        &::after {
+            content: " ";
+            position: absolute;
+            left: -50%;
+            top: 1.25rem;
+            width: 100%;
+            height: 0.125rem;
+            border-top: 1px dotted $brand-cyan;
+        }
+
+        &:first-child::after {
+            display: none;
+        }
+
+        &__indicator {
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+            vertical-align: inherit;
+        }
+
+        &__label {
+            position: relative;
+            display: inline-block;
+            color: $brand-cyan;
+            z-index: 1;
+            vertical-align: inherit;
+            text-align: left;
+            padding: 0 0.5rem;
+            background: #fff;
+            font-size: .875rem;
+        }
+
+        &__info {
+            position: relative;
+            display: inline-block;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            background-color: $brand-cyan;
+            font-size: .875rem;
+            font-weight: $global-weight-bold;
+            line-height: 1.5rem;
+            text-align: center;
+            color: #fff;
+            z-index: 1;
+        }
+
+        &__link {
+            &:focus {
+                outline: 0;
+            }
+        }
+
+        &--disabled {
+            &::after {
+                border-top-color: $brand-gray;
+            }
+
+            .iw-step__info {
+                background-color: $brand-mediumgray;
+            }
+
+            .iw-step__label {
+                color: $brand-mediumgray;
+            }
+
+            .iw-step__link {
+                cursor: default; // Reset <a> tag cursor
+            }
+        }
+
+        &--current {
+            &::after {
+                border-top-color: $brand-cyan;
+            }
+
+            .iw-step__label {
+                font-weight: $global-weight-bold;
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+.c-compare-similar__header {
+  padding-left: $global-spacing-unit-small;
+  
+  .c-button--inline-link {
+    &:hover {
+      background-color: unset !important;
+    }
+  }
+}

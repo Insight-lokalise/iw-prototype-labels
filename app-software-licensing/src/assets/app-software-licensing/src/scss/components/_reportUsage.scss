@@ -1,0 +1,28 @@
+
+.c-software-license__report-usage{
+  border: 1px solid $color-warm-gray-2;
+  padding: $global-spacing-unit-small;
+  margin: $global-spacing-unit 0 $global-spacing-unit $global-spacing-unit;
+}
+
+.c-software-license__report-ZeroUsage{
+  border-left: 2px solid $color-warm-gray-2;
+}
+
+.c-software-license__reporting-link, .c-software-license__reporting-month{
+  padding-left: $global-spacing-unit-small;
+}
+
+.c-software-license__reporting_current {
+  color: $color-green;
+}
+
+@include mq($until: tablet) {
+  .c-software-license__report-period,
+  .c-software-license__retrieve-btn{
+    display: block;
+  }
+  .c-software-license__report-usage{
+    margin: $global-spacing-unit 0 $global-spacing-unit 0;
+  }
+}

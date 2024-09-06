@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the <Contracts /> component 1`] = `
+<div
+  className="o-grid c-contracts"
+>
+  <div
+    className="o-grid__item u-1/1"
+  >
+    <span
+      className="u-bold"
+    >
+      Sold To: 
+    </span>
+    <button
+      className="c-button  c-button--primary c-soldto-button"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Edit
+    </button>
+  </div>
+  <div
+    className="o-grid__item u-1/1"
+  >
+    <h4
+      className="u-margin-bot"
+    >
+      You can select contract(s) you want to save.  If this is not required, continue to next step.
+    </h4>
+    <div
+      className="o-grid u-margin-bot"
+    >
+      <div
+        className="o-grid__item  u-1/5 u-margin-bot-tiny"
+      >
+        <button
+          className="c-contracts__button--unclicked c-button c-button--secondary"
+          onClick={[Function]}
+          type="button"
+          value="SW-0040039434"
+        >
+          0040039434
+        </button>
+      </div>
+      <div
+        className="o-grid__item  u-1/5 u-margin-bot-tiny"
+      >
+        <button
+          className="c-contracts__button--unclicked c-button c-button--secondary"
+          onClick={[Function]}
+          type="button"
+          value="SW-0040039453"
+        >
+          0040039453
+        </button>
+      </div>
+      <div
+        className="o-grid__item  u-1/5 u-margin-bot-tiny"
+      >
+        <button
+          className="c-contracts__button--unclicked c-button c-button--secondary"
+          onClick={[Function]}
+          type="button"
+          value="SW-0040040496"
+        >
+          0040040496
+        </button>
+      </div>
+      <div
+        className="o-grid__item  u-1/5 u-margin-bot-tiny"
+      >
+        <button
+          className="c-contracts__button--unclicked c-button c-button--secondary"
+          onClick={[Function]}
+          type="button"
+          value="SW-0040062808"
+        >
+          0040062808
+        </button>
+      </div>
+      <div
+        className="o-grid__item  u-1/5 u-margin-bot-tiny"
+      >
+        <button
+          className="c-contracts__button--unclicked c-button c-button--secondary"
+          onClick={[Function]}
+          type="button"
+          value="SW-0040069482"
+        >
+          0040069482
+        </button>
+      </div>
+      <div
+        className="o-grid__item  u-1/5 u-margin-bot-tiny"
+      >
+        <button
+          className="c-contracts__button--unclicked c-button c-button--secondary"
+          onClick={[Function]}
+          type="button"
+          value="SW-0040086321"
+        >
+          0040086321
+        </button>
+      </div>
+    </div>
+    <label
+      className="c-form__label"
+    >
+      Number of selected contracts:
+      0
+    </label>
+    <div
+      className="c-panel u-text-right"
+    >
+      <div
+        className="o-box  c-panel__body"
+      >
+        <button
+          className="c-button  c-button--primary"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Continue
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

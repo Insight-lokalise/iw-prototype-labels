@@ -1,0 +1,21 @@
+.app-ces-migration {
+  @import '~@insight/toolkit-css-core/src/all';
+  @import 'reset';
+  @import '~@insight/toolkit-css-ui/src/all';
+
+  .c-migration-header {
+    margin-bottom: $global-spacing-unit-large;
+    @include mq($from: desktop) {
+      margin-bottom: $global-spacing-unit-huge;
+    }
+  }
+
+  .c-migration-tabs .c-tab-manager {
+    border: 1px solid $color-warm-gray-5;
+  }
+
+  .c-migration-tool-tab {
+    margin: $global-spacing-unit;
+  }
+
+}

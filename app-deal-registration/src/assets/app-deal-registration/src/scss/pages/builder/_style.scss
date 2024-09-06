@@ -1,0 +1,26 @@
+.c-builder-style {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.c-builder-style__popover {
+    display: flex;
+    flex-direction: column;
+    padding: $global-spacing-unit-small;
+    background-color: #fff;
+    border: 1px solid $color-warm-gray-11;
+}
+
+.c-builder-style__picker {
+    position: relative;
+    padding: $global-spacing-unit 0;
+}
+
+.c-builder-style__close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 0;
+}

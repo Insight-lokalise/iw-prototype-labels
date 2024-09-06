@@ -1,0 +1,43 @@
+@import "../../../libs/_iw-settings.scss";
+
+.iw-set-as-my-default {
+  .iw-set-as-my-default__label{
+    padding-left: 0px;
+  }
+  .iw-set-as-my-default__information {
+    display: inline-block;
+    color: $brand-darkgray;
+    height: 1rem;
+    font-size: 0.8rem;
+  }
+  span.iw-set-as-my-default__information:not(.iw-set-as-my-default__checkbox) {
+    color: $brand-cyan;
+  }
+  .iw-set-as-my-default__label {
+    margin-bottom: 0.25rem;
+    display: inline-block;
+  }
+  .iw-set-as-my-default__top {
+    margin-bottom: 0;
+  }
+  .iw-set-as-my-default__checkbox {
+    font-size: 0.8rem;
+    &>div {
+      display: inline;
+      label {
+        display: inline;
+        input[type=checkbox] {
+          margin: 0 !important
+        }
+        .form__label--checkbox {
+          font-weight: 100;
+          height: 1rem;
+          font-size: 0.8rem;
+        }
+      }
+      .form__field-msg {
+        display: none;
+      }
+    }
+  }
+}

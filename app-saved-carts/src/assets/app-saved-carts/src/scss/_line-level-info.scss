@@ -1,0 +1,33 @@
+/* ==========================================================================
+   #LINE LEVEL INFO
+   ========================================================================== */
+
+.c-line-level-info {
+  margin-top: $global-spacing-unit;
+}
+
+
+
+.c-line-level-info__table {
+  margin-bottom: 0;
+
+  @include mq($from: tablet, $until: tablet-landscape) {
+    table-layout: auto;
+  }
+
+}
+
+.c-line-level-info__caption {
+  margin-bottom: 0;
+  white-space: nowrap;
+  color: $color-warm-gray-11;
+}
+
+
+
+.c-line-level-info__heading {
+  @include font-size($global-font-size);
+  font-family: $global-font-family-body;
+  padding: $global-spacing-unit 0 $global-spacing-unit-small;
+  text-align: left;
+}

@@ -1,0 +1,50 @@
+button, div {
+	outline-style: none !important;
+}
+.c-modal__container {
+	min-height: 200px;
+	padding: 0 15px;
+}
+
+.c-modal__header {
+	position: relative;
+}
+
+.c-modal__header--custom {
+	padding: 15px 0 25px 0;
+	border-bottom: none;
+}
+
+.c-modal__content {
+	padding: 15px 0;
+}
+
+.c-modal__close {
+	position: absolute;
+	margin: 0;
+	top: 8px;
+	right: 0;
+	color: $color-text;
+}
+
+.c-modal__footer {
+	padding: 15px 10px;
+}
+
+.c-dropdown__button {
+	border: none;
+	display: flex;
+	align-items: center;
+}
+
+.c-dropdown__menu {
+	background: #fff;
+}
+
+.c-dropdown__menu .c-button {
+	border: none;
+}
+
+.c-form__element {
+	font-weight: 100;
+}

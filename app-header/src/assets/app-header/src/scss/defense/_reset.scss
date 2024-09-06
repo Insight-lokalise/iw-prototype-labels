@@ -1,0 +1,84 @@
+/**
+ * Defense styles to fix issues caused by legacy styles bleeding into elements
+ * that use the design system styles.
+ *
+ * TODO: Once the design system styles are included automatically and correctly
+ * name spaced then these styles should be included as part of the toolkit.
+ */
+
+& {
+  @include font-size($global-font-size);
+  box-sizing: border-box;
+  line-height: $global-spacing-unit;
+}
+
+body, div, span, object, iframe, p, blockquote, pre, abbr, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
+  font-size: inherit;
+}
+
+button {
+  letter-spacing: 0;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  letter-spacing: 0;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  letter-spacing: 0;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  letter-spacing: 0;
+}
+:-moz-placeholder { /* Firefox 18- */
+  letter-spacing: 0;
+}
+
+button:focus, button:hover {
+  background-color: unset;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
+  color: inherit;
+}
+
+ol, ul, li {
+  line-height: $global-line-height;
+}
+
+form {
+  margin-bottom: 0;
+}
+
+input[type=search] {
+  box-sizing: inherit !important;
+  height: auto;
+}
+
+select {
+  display: inherit;
+  width: inherit;
+}
+
+h2 a {
+  margin-left: 0;
+}
+
+a,
+button,
+[tabindex] {
+  outline-color: $color-blue !important;
+}
+
+a:focus {
+  outline-width: 2px;
+}
+
+.c-logo--its {
+  height: 40px !important;
+  width: 138px !important;
+}
+

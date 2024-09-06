@@ -1,0 +1,72 @@
+$product-tile-font-size: 1.2em;
+
+.Carousel .product-tile {
+  background-color: white;
+  margin: 10px 10px 0;
+  padding: 15px;
+  text-align: center;
+
+  &__img-wrapper {
+    height: 120px;
+    margin-bottom: 10px;
+  }
+
+  &__img {
+    // These %s cause the test images to match the 112px / 150px height:width dimensions of the 'large' images.
+    // This may be coupled to viewport dimensions or pixel density - we need to test on different devices.
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    max-height: 120px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  &__name-wrapper {
+    font-weight: $global-weight-bold;
+    margin-bottom: 10px;
+
+    // Restrict the name to only wrap two lines.
+    // Set height to 2 * the parent font size, causing any overrun to be out of bounds and then hide the overflow.
+    line-height: 1.2;
+    height: 2.4em;
+    overflow: hidden;
+  }
+  &__name.iw-button--link {
+    font-weight: $global-weight-bold;
+    padding: 5px 0;
+    box-shadow: none;
+  }
+
+  &__price {
+    display: block;
+    margin-bottom: 10px;
+      .c-currency{
+        display: block;
+      }
+      &__excl-vat .c-currency__value {
+          color: $color-red-fuchsia;
+      }
+      .c-currency__tax{
+        width: $global-spacing-unit-large;
+        display: inline-block;
+        padding-left: $global-spacing-unit-tiny / 2;
+      }     
+  }
+
+  &__contract-title {
+    padding: 0 10px;
+    height: 2em;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  &__more-prices {
+    font-weight: $global-weight-bold;
+    margin-bottom: 15px;
+  }
+
+  &__price-fill {
+    min-height: $product-tile-font-size;
+  }
+}

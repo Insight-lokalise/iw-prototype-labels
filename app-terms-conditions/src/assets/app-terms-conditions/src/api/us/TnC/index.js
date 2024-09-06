@@ -1,0 +1,6 @@
+export { addTnCData } from './save-Tnc'
+export { getSalesAgreement, getSalesAreaData, saveAgreements } from './get-salesArea'
+export { getTnCData } from './get-TnC'
+export { publishDeleteTnCData } from './publish-TnC'
+export { updateTnCData } from './update-Tnc'
+export { setDefaultTerm } from './default-Tnc'

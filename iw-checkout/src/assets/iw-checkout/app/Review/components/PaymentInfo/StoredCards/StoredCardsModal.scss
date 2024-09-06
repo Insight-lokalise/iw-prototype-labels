@@ -1,0 +1,24 @@
+.stored-cards-modal {
+
+    &__heading,
+    &__text {
+        margin-bottom: 0;
+
+        @include breakpoint(small only) {
+            margin-bottom: rem-calc(10);
+        }
+    }
+
+    &__heading {
+        font-weight: $global-weight-bold;
+    }
+
+    &__icon {
+        font-size: rem-calc(20);
+        cursor: pointer;
+    }
+
+    &__selected {
+        margin: 0 !important; // Overrides radio button legacy styles from common.css
+    }
+}

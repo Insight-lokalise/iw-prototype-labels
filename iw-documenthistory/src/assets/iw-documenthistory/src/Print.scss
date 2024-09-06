@@ -1,0 +1,67 @@
+@charset 'utf-8';
+
+@media print {
+  /**
+   * Set all text to a new baseline for print.
+   */
+  * {
+    font-size: $font-size-print-base;
+  }
+
+  /**
+   * Add overriding print grid column classes.
+   */
+  .print {
+
+    &-2 {
+      flex: 0 0 16.66667%;
+      max-width: 16.66667%;
+    }
+
+    &-3 {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+
+    &-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+
+  /**
+   * Add overriding print margin reset class.
+   */
+  .print__spacing--reset {
+    margin: 0 !important;
+  }
+
+  /**
+   * Hack to fix flexbox print bug in IE11/Edge and Firefox
+   * https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/11961322/
+   */
+  .print__display--block {
+    display: block !important;
+  }
+
+  /**
+   * Add overriding iw-summary component print styles.
+   * This was added specifically for orders due to the checkout also having a
+   * print page on order confirmation which features the iw-summary component.
+   */
+  .iw-summary {
+
+    &__header {
+      padding: 0;
+    }
+
+    &__title {
+      font-size: $font-size-print-large;
+    }
+
+    &__row {
+      padding-top: $orders-spacing-tiny;
+      padding-bottom: $orders-spacing-tiny;
+    }
+  }
+}

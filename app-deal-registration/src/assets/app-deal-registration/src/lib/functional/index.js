@@ -1,0 +1,7 @@
+export { default as defaultTo } from './defaultTo'
+export { default as dispatchFn } from './dispatchFn'
+export { default as dissoc } from './dissoc'
+export { default as groupBy } from './groupBy'
+export { default as mapIn } from './mapIn'
+export { default as pathOr } from './pathOr'
+export { default as setIn } from './setIn'

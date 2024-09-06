@@ -1,0 +1,11 @@
+.c-share__table-item--disabled {
+    color: $color-black-opacity-50;
+}
+.c-share__category {
+  .c-form__element:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .c-form__validation-message {
+    position: absolute;
+  }
+}

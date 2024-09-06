@@ -1,0 +1,11 @@
+.c-reporting__deletion-modal .c-modal__container {
+  padding: $global-spacing-unit-small;
+
+  .c-modal__content {
+    display: flex;
+
+    .c-icon {
+      margin-right: $global-spacing-unit-tiny;
+    }
+  }
+}

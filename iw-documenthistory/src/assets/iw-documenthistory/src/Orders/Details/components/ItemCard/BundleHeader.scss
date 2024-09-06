@@ -1,0 +1,26 @@
+@charset 'utf-8';
+
+.bundle-header {
+  background-color: $brand-lightgray;
+  border-bottom: 1px solid $brand-lightgray;
+  padding: $orders-spacing-medium $orders-spacing-medium 0;
+
+  @media print {
+    page-break-inside: avoid;
+  }
+
+  &__part {
+    @include font-brand();
+    font-weight: $global-weight-bold;
+
+    @include breakpoint(large) {
+      margin: -.15em $orders-spacing-medium .3em 0;
+    }
+  }
+
+  &__status {
+    @include order-status();
+    display: inline-block;
+    margin-bottom: $orders-spacing-medium;
+  }
+}

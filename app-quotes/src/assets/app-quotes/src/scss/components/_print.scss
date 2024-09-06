@@ -1,0 +1,30 @@
+@media print {
+
+  #react-app-quotes {
+
+    .c-save-quote__top {
+      
+      .u-3\/4\@tablet{
+        flex: 0 0 60%;
+        max-width: 60%;
+      }
+
+      .u-1\/4\@tablet {
+        flex: 0 0 40%;
+        max-width: 40%;
+        padding-left: $global-spacing-unit-small;
+      }
+    
+    }
+    
+    .c-save-quote-panel-bottom {
+      margin-top: $global-spacing-unit-small;
+    }
+
+  }
+
+  .hide-for-print, .footer {
+    display: none;
+  }
+
+}

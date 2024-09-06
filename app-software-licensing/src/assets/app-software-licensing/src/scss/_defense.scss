@@ -1,0 +1,51 @@
+/* ==========================================================================
+   #DEFENSE
+   ========================================================================== */
+
+/**
+ * Override a bunch of styles being set outside of this project.
+ */
+
+& {
+  -webkit-font-smoothing: auto;
+  color: $color-text;
+  font-family: $global-font-family-body;
+  font-size: ($global-font-size / 16px) * 1em;
+  font-weight: $global-font-weight-normal;
+  line-height: $global-line-height / $global-font-size;
+  min-height: 100%;
+  overflow-y: visible;
+
+  @include mq($from: tablet-landscape) {
+    margin: -20px -10px 0;
+  }
+
+}
+
+.c-button {
+  letter-spacing: normal;
+}
+
+.c-select{
+  display: block;
+}
+
+.c-form__label{
+  font-size: $global-font-size;
+}
+
+/**
+ * FOCUS INDICATORS
+ * Override the default (1px dotted) outline for focused elements.
+ */
+
+a,
+button,
+select {
+  &:focus {
+    outline-style: none !important;
+  }
+  &:active{
+    box-shadow: none !important;
+  }
+}

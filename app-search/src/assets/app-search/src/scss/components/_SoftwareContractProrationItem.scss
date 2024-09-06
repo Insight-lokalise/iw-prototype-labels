@@ -1,0 +1,10 @@
+
+.prorationItem {
+    color: $color-turquoise;
+    font-size: $global-font-size-small;
+    line-height: normal;
+    margin-top: $global-spacing-unit-small;
+    @include mq($until: tablet, $media-type: screen) {
+      margin-bottom: $global-spacing-unit-small + $global-spacing-unit-tiny;
+    }
+}

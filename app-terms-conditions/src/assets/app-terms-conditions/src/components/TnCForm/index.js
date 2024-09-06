@@ -1,0 +1,5 @@
+export { default as TnCContent } from './TnCContent'
+export { default as TnCForm } from './TnCForm'
+export { default as TnCPreviewForm } from './TnCPreviewForm'
+export { default as TnCSalesAgreement } from './TnCSalesAgreement'
+export { default as RichTextEditor } from'./RichTextEditor'

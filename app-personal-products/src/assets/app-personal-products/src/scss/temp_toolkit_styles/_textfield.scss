@@ -1,0 +1,9 @@
+.c-text-field {
+  &.is-invalid {
+    border: 1px solid $color-red;
+  }
+}
+
+.c-field-error {
+  color: $color-red;
+}

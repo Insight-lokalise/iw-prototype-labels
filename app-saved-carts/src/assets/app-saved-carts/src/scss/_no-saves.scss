@@ -1,0 +1,16 @@
+/* ==========================================================================
+   #NO SAVES
+   ========================================================================== */
+
+/**
+ * When there are no saved carts and/or order templates to display we show a
+ * message.
+ */
+
+.c-no-saves {
+  text-align: center;
+}
+
+.c-no-saves__icon {
+  margin-right: $global-spacing-unit-small;
+}

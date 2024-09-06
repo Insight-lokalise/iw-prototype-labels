@@ -1,0 +1,1 @@
+export { loadInsightApplicationData } from './insightApplicationData'

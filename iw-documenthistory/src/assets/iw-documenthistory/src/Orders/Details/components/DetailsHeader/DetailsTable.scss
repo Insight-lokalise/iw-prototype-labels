@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+.order-details__table {
+
+  @include breakpoint(medium) {
+    margin-bottom: 1.5rem;
+  }
+
+  @include breakpoint(large) {
+    &-item:not(:last-of-type) {
+      margin-right: $orders-spacing-huge;
+
+      @media print {
+        margin-right: $orders-spacing-xlarge;
+      }
+    }
+  }
+
+  @media print {
+    margin-bottom: 0;
+  }
+
+  &-label {
+    font-weight: $global-weight-bold;
+
+    @include breakpoint(small only) {
+      display: inline-block;
+      width: 50%;
+    }
+
+    @include breakpoint(medium) {
+      display: block;
+      margin-bottom: .2em;
+    }
+  }
+
+  &-value {
+    @include breakpoint(small only) {
+      display: inline-block;
+      text-align: right;
+      width: 50%;
+    }
+
+    @include breakpoint(medium) {
+      display: block;
+    }
+  }
+}

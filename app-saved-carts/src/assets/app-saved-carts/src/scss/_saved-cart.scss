@@ -1,0 +1,186 @@
+/* ==========================================================================
+   #SAVED CART
+   ========================================================================== */
+
+/**
+ * Saved cart title.
+ */
+
+.c-saved-cart__title {
+  @include font-family-body();
+  color: $color-white;
+}
+
+
+
+/**
+ * Saved cart row.
+ *
+ * 1. Add a separator between each row, but not if it's the last row.
+ */
+
+.c-saved-cart__row {
+  @include transition(background-color);
+  background-color: $color-white;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $color-warm-gray-2; /* [1] */
+  }
+
+}
+
+
+
+/**
+ * Saved cart row modifier - Open.
+ */
+
+.c-saved-cart__row.is-open {
+  background-color: $color-warm-gray-custom-light;
+}
+
+
+
+/**
+ * Saved cart cell.
+ */
+
+.c-saved-cart__cell {
+  padding: $global-spacing-unit-small $global-spacing-unit;
+}
+
+
+/**
+ * Saved cart cell modifier - Cart container.
+ */
+
+.c-saved-cart__cell--cart {
+  padding-bottom: $global-spacing-unit;
+  padding-top: 0;
+
+  > :not(:last-child) {
+    margin-bottom: $global-spacing-unit-small;
+  }
+
+}
+
+
+
+/**
+ * Saved cart cell modifier - Header.
+ */
+
+.c-saved-cart__cell--header {
+  padding-bottom: $global-spacing-unit-tiny;
+  padding-top: $global-spacing-unit-tiny;
+}
+
+
+
+/**
+ * Saved cart cell modifier - Name.
+ */
+
+.c-saved-cart__cell--name {
+  display: inline-flex;
+  align-items: center;
+}
+
+.c-save-for-later__desc {
+  font-size: $global-font-size;
+}
+
+
+
+/**
+ * Saved cart cell modifiers - Name, Actions, Cart container.
+ *
+ * On mobile change the order of the cells to be:
+ *
+ * Cart name > Date > Actions.
+ */
+
+@include mq($until: tablet) {
+
+  .c-saved-cart__cell--name {
+    padding-bottom: 0;
+    padding-right: 0;
+  }
+
+  .c-saved-cart__cell--date {
+    padding-bottom: 0;
+  }
+
+  .c-saved-cart__cell--actions {
+    order: 1;
+  }
+
+  .c-saved-cart__cell--cart {
+    order: 1;
+  }
+
+}
+
+
+
+/**
+ * On mobile:
+ *
+ * 1. Show a label (equivalent to the table header) using the `data-label`
+ *    attribute, and display it using the `before` pseudo element.
+ */
+
+@include mq($until: tablet) {
+
+  .c-saved-cart__cell--data-label::before {
+    content: attr(data-label) ":"; /* [1] */
+    color: $color-warm-gray-8;
+    display: inline-block;
+    font-weight: $global-font-weight-bold;
+    margin-right: $global-spacing-unit-tiny;
+  }
+
+}
+
+
+
+/**
+ * Table header.
+ */
+
+.c-saved-cart__header {
+  background-color: $color-warm-gray-2;
+  font-weight: $global-font-weight-bold;
+}
+
+
+
+/**
+ * Open/close row button and icon.
+ */
+
+ .c-saved-cart__btn {
+   color: $color-text;
+   margin-right: $global-spacing-unit-small;
+ }
+
+.c-saved-cart__icon {
+  flex: 0 0 auto;
+}
+
+
+
+/**
+ * Cart name heading.
+ */
+
+.c-saved-cart__heading {
+  @include font-family-body($font-weight: $global-font-weight-normal);
+}
+
+
+
+.c-saved-cart__date {
+  display: inline-block;
+  white-space: nowrap;
+}

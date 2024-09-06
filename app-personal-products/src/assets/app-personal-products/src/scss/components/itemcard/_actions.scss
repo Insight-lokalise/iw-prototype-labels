@@ -1,0 +1,20 @@
+.c-item-card__actions {
+	display: flex;
+	margin-top: $global-spacing-unit;
+	justify-content: space-around;
+
+	@include mq($from: tablet) {
+		justify-content: center;
+		margin-top: 0;
+	}
+}
+
+.c-item-card__actions-button {
+	@include font-size(14px);
+	height: $global-spacing-unit-large;
+  justify-content: center;
+	&:disabled {
+		background-color: $color-warm-gray-5;
+		pointer-events: none;
+	}
+}

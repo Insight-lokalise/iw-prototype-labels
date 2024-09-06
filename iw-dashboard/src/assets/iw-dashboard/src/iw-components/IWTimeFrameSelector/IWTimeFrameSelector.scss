@@ -1,0 +1,77 @@
+@import '~iw-styles/src/iw-settings';
+
+$time-frame-selector-spacing: .5rem;
+$time-frame-selector-font-size: .875rem;
+
+.iw-time-frame-selector {
+  display: table;
+
+  @include breakpoint(small only) {
+    width: 100%;
+  }
+
+  &__table-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &__heading {
+    font-family: $body-font-family;
+    font-size: $time-frame-selector-font-size;
+    font-weight: $global-weight-bold;
+    margin-bottom: 0;
+  }
+
+  &__tab,
+  &__custom {
+    border: 1px solid $brand-lightgray;
+    padding: rem-calc(5) rem-calc(8);
+    color: $brand-darkgray;
+    display: block;
+    font-size: $time-frame-selector-font-size;
+    font-weight: $global-weight-normal;
+    text-align: center;
+  }
+
+  &__tab {
+    &--selected {
+      background-color: $brand-blue;
+      color: white !important;
+    }
+  }
+
+  &__separator {
+    margin-top: 1rem;
+  }
+
+  @include breakpoint(medium) {
+
+    &__heading,
+    &__tab {
+      margin-right: $time-frame-selector-spacing;
+    }
+
+    &__custom {
+      margin-left: -$time-frame-selector-spacing;
+      border-left: none;
+    }
+
+    &__tab--selected,
+    &__custom {
+      display: inline-block;
+    }
+
+    &__separator {
+      display: none;
+    }
+  }
+
+  &__overlay {
+    padding: 1rem 0 !important;
+
+    @include breakpoint(medium) {
+      width: 545px !important;
+      border-radius: 0 !important;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import '~@insight/toolkit-css-ui/src/components/currency';
+@import '~@insight/toolkit-css-ui/src/components/image';
+
+.c-cs-modalbody {
+  overflow-y:  auto;
+  max-height: 410px;
+  margin-top: 0;
+}
+
+.c-cs-modalProduct__description {
+  font-weight: $global-font-weight-bold !important;
+  margin-bottom: $global-spacing-unit-tiny !important;
+}
+
+.c-image__fallback {
+  fill: $color-warm-gray-5;
+}
+
+.u-border-bot {
+  border-bottom: $global-input-border-width solid $global-input-border-color;
+}
+
+.u-padding-top-small {
+  padding-top: $global-spacing-unit-small;
+}
+
+.u-padding-vertical {
+  padding: $global-spacing-unit 0;
+}
+
+.u-margin-bot--small {
+  margin-bottom: $global-spacing-unit-small;
+}
+
+
+

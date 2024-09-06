@@ -1,0 +1,40 @@
+@charset 'utf-8';
+
+.customer-details-tab {
+  background-color: white;
+  padding: 0 $orders-spacing-medium $orders-spacing-large;
+
+  @include breakpoint(medium) {
+    padding: 0 0 $orders-spacing-xlarge;
+  }
+
+  @media print {
+    padding: 0;
+  }
+
+  &__block {
+    margin-top: $orders-spacing-large;
+
+    @include breakpoint(medium) {
+      margin-top: $orders-spacing-xlarge;
+    }
+
+    @include breakpoint(large) {
+      &:nth-child(odd) {
+        padding-right: $orders-spacing-xlarge !important;
+      }
+
+      &:nth-child(even) {
+        padding-left: $orders-spacing-xlarge !important;
+      }
+    }
+
+    @media print {
+      margin: 0;
+    }
+  }
+
+  &__link {
+    margin-top: $orders-spacing-large;
+  }
+}

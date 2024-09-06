@@ -1,0 +1,10 @@
+.ds-v1 {
+  @import "~@insight/toolkit-css-core/src/all";
+  @import "~@insight/toolkit-css-ui";
+}
+
+#react-app-secondary-nav {
+  @import "~@insight/toolkit-css-core";
+  @import '~@insight/toolkit-css-ui/src/components/header-variables';
+  @import "components/subnav";
+}

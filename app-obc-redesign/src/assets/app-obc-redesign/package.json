@@ -1,0 +1,40 @@
+{
+  "name": "app-obc-redesign",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "buildkit-legacy-scripts start",
+    "build": "buildkit-legacy-scripts build",
+    "test": "buildkit-asserter --coverage",
+    "test:watch": "buildkit-asserter --watch"
+  },
+  "jestSonar": {
+    "sonar56x": true,
+    "reportPath": "coverage",
+    "reportFile": "test-reporter.xml",
+    "indent": 4
+  },
+  "dependencies": {
+    "@insight/toolkit-css-core": "^2.2.17",
+    "@insight/toolkit-css-ui": "^2.2.117",
+    "@insight/toolkit-react": "^2.2.120",
+    "@insight/toolkit-utils": "^2.2.95",
+    "axios": "^0.27.2",
+    "react": "^16.8.1",
+    "react-dom": "^16.6.0",
+    "react-router-dom": "^4.3.1",
+    "uuid": "^3.2.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.18.9",
+    "@babel/preset-react": "^7.18.6",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "babel-jest": "^26.6.3",
+    "browser-resolve": "^2.0.0",
+    "buildkit-asserter": "^1.0.36",
+    "buildkit-legacy-scripts": "^5.0.0-Beta.8",
+    "prop-types": "^15.6.2",
+    "react-test-renderer": "~16.7",
+    "why-did-you-update": "^0.1.1"
+  }
+}

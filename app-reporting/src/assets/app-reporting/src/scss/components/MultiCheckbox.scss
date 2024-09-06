@@ -1,0 +1,42 @@
+$input-height: 36px;
+.c-multi-checkbox {
+    display: block;
+    padding: $global-spacing-unit-tiny * 2;
+    border: 1px solid $color-warm-gray-5;
+    height: auto;
+    width: 100%;
+    .c-select-container {
+        &::after {
+            display: none;
+        }
+    }
+    input[type="search"] {
+        height: $input-height;
+    }
+    &__search-button {
+        height: $input-height;
+        width: $input-height;
+        background-color: $color-fuchsia;
+        text-align: center;
+        color: #fff;
+        display: block;
+    }
+    fieldset {
+        height: 190px;
+        overflow-y: scroll;
+    }
+    &__no-results {
+        font-size: $global-font-size-small;
+        color: $color-warm-gray-8;
+    }
+}
+@include mq($from: desktop) {
+    .c-multi-checkbox {
+        width: 330px;
+    }
+}
+@include mq($until: desktop) {
+    .c-multi-checkbox {
+        width: 100%;
+    }
+}

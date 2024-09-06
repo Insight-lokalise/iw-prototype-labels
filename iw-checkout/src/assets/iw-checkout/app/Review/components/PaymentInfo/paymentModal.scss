@@ -1,0 +1,38 @@
+.c-worldpay-iframe {
+  width: 100%;
+}
+
+.payment-modal {
+  min-height: 250px;
+}
+
+.payment-modal-loading {
+  height: 60px;
+  line-height: 60px;
+  font-size: 60px;
+  margin: 10px;
+}
+
+.additional-payment-fields {
+  width: 75%;
+  margin: auto;
+  padding-left: 15px;
+}
+
+.additional-payment-fields input[type=text] {
+  /* style overrides to match worldpay form fields */
+  height: 30px;
+  padding: 4.5px;
+}
+
+.stored-cards-modal-view {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.payment-modal .stored-card-or-new-card-links {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 20px 0 0;
+}
+

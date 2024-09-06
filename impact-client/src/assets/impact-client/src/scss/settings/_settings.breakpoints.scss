@@ -1,0 +1,56 @@
+/* ==========================================================================
+   #BREAKPOINTS
+   ========================================================================== */
+
+// Define our breakpoints for later use with Sass MQ. The key (e.g. `tablet`)
+// becomes the alias for a breakpoint; the value (e.g. `768px`) is that point at
+// which that breakpoint kicks in. These pixel values will be converted into ems
+// by Sass MQ.
+//
+// Note: Sass MQ's `em` values are calculated via the browser-default HTML
+//       font-size of `16px`, *not* Toolkit's $global-font-size.
+//       Further reading: https://stackoverflow.com/a/39935188
+//
+// Make use of these breakpoints like so:
+//
+//   .foo {
+//     color: red;
+//
+//     @include mq($from: tablet) {
+//       color: green;
+//     }
+//
+//   }
+//
+// This will compile to:
+//
+//   .foo {
+//     color: red;
+//   }
+//
+//   @media (min-width: 48em) {
+//     .foo {
+//       color: green;
+//     }
+//   }
+
+
+// The standard set of approved breakpoints.
+$mq-standard-breakpoints: (
+  mobile-landscape: 576px,
+  tablet:           768px,
+  tablet-landscape: 1024px,
+  desktop:          1200px,
+);
+
+
+// Apps can override this map to support additional breakpoints.
+$mq-additional-breakpoints: (
+) !default;
+
+
+// Merge the app-specific additional breakpoints in with the standard ones.
+$mq-breakpoints: map-merge(
+  $mq-standard-breakpoints,
+  $mq-additional-breakpoints
+);

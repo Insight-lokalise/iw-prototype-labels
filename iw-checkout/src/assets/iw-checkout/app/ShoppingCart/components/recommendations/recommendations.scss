@@ -1,0 +1,36 @@
+// We should place this in a common variables file!
+$shopping-cart-margin: 10px;
+
+.recommendations {
+  &__container {
+    margin-bottom: $global-spacing-unit-small - 2;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &--dark {
+      background-color: $color-white;
+      border: 1px solid $color-warm-gray-5;
+    }
+
+    &--light {
+      background-color: white;
+      border: 1px solid $color-warm-gray-5;
+
+      .Carousel .product-tile {
+          margin-top: 0;
+      }
+    }
+  }
+
+  &__title {
+    font-size: rem-calc(20);
+  }
+
+  &__carousel {
+    margin: 0 10px;
+  }
+}
+
+.cart-carousels {
+  margin-top: $global-spacing-unit-small;
+}

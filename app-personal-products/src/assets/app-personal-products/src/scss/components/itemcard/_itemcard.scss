@@ -1,0 +1,37 @@
+.c-item-card {
+  background: $color-white;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+  margin-top: $global-spacing-unit-small;
+	margin-bottom: $global-spacing-unit-small;
+	height: auto !important; // Old styles are being cached somewhere.
+	border-bottom: 1px solid $color-warm-gray-2;
+
+  &.is-dragging {
+    border-top: 1px solid $color-warm-gray-11;
+    padding-top: $global-spacing-unit-tiny;
+    border-bottom: 1px solid $color-warm-gray-11;
+  }
+
+  &:hover, &:focus, &.is-dragging {
+    .c-item-card__drag-icon{
+      display: inline;
+    }
+  }
+}
+
+.c-item-card__grid {
+  @include mq($until: tablet) {
+    flex-direction: column;
+  }
+}
+
+@import 'contract';
+@import 'details';
+@import 'compare';
+@import 'price';
+@import 'quantity';
+@import 'stock';
+@import 'actions';
+@import 'draghandle';

@@ -1,0 +1,17 @@
+/* ==========================================================================
+   #ABBR
+   ========================================================================== */
+
+/**
+ * Default abbreviation styles.
+ *
+ * 1. Added a dotted bottom border.
+ *
+ * 2. Removed the dotted text decoration due to lack of browser support.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted $color-text; /* [1] */
+  cursor: help;
+  text-decoration: none; /* [2] */
+}

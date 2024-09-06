@@ -1,0 +1,29 @@
+.iw-modal {
+    > header{
+        padding: 10px 0;
+        border-bottom: 1px solid $brand-lightgray;
+    }
+
+    &__heading {
+        margin: 0;
+    }
+
+    &__button {
+        margin-bottom: 0;
+    }
+
+    &__icon {
+        &--close {
+            font-size: rem-calc(36);
+            cursor: pointer;
+        }
+    }
+
+    > footer{
+        padding: 15px 0;
+    }
+}
+
+.help-icon__icon {
+    cursor: pointer;
+}

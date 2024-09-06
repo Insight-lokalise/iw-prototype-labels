@@ -1,0 +1,54 @@
+@mixin iw-loading-size($size) {
+  height: $size;
+  width: $size;
+  line-height: $size;
+  font-size: $size;
+}
+
+.c-loading {
+  font-family: Ionicons;
+  animation: iw-spin 1s infinite linear;
+  text-align: center;
+  padding: 0;
+  display: inline-block;
+
+  @include iw-loading-size(30px);
+
+  .c-loading--tiny {
+    @include iw-loading-size(12px);
+  }
+  .c-loading--small {
+    @include iw-loading-size(20px);
+  }
+  .c-loading--medium {
+    @include iw-loading-size(30px);
+  }
+  .c-loading--large {
+    @include iw-loading-size(45px);
+  }
+  .c-loading--huge {
+    @include iw-loading-size(60px);
+  }
+  .c-loading--massive {
+    @include iw-loading-size(300px);
+  }
+
+  &__icon {
+    &-refresh::before {content: "\f21c"; margin-left: 0.11em;}
+    &-bubbles::before {content: "\f29a";}
+    &-paddles::before {content: "\f29b";}
+    &-streak::before {content: "\f29c";}
+    &-gear::before {content: "\f29d";}
+    &-recycle::before {content: "\f201";}
+  }
+}
+
+@keyframes iw-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(359deg);
+  }
+}

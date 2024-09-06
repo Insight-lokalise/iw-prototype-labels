@@ -1,0 +1,28 @@
+.c-draggable-list__item {
+	margin-bottom: $global-spacing-unit-small;
+}
+
+.c-list__header {
+	height: $global-spacing-unit-large;
+	color: #fefefe;
+	background-color: $color-warm-gray-8;
+  font-weight: $global-font-weight-bold;
+
+	> div {
+		display: none;
+    align-items: center;
+
+		&:nth-of-type(1) {
+			display: flex;
+			padding-left: $global-spacing-unit-large;
+		}
+	}
+}
+
+@include mq($from: tablet) {
+	.c-list__header {
+		> div {
+			display: flex;
+		}
+	}
+}

@@ -1,0 +1,104 @@
+// custom classes
+.c-new-request {
+  min-height: 100%;
+  background-color: $color-white;
+  margin-left: $global-spacing-unit;
+  margin-right: $global-spacing-unit;
+}
+
+.c-new-request__label {
+  font-weight: 300;
+  font-size: $global-font-size-small;
+}
+
+.c-new-request__table {
+  max-height: 392px;
+  overflow-y: scroll;
+  border: $global-input-border-width solid $global-input-border-color;
+}
+
+.c-new-request__loading {
+  border-top: $global-input-border-width solid $global-input-border-color;
+}
+
+.c-new-request__form {
+  width: 100%;
+}
+
+.c-new-request__table table {
+  margin-bottom: 0px;
+}
+
+.c-new-request__table tr > td:nth-child(1){
+  width: 24px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.c-new-request__table tr > td:nth-child(1) > button{
+  width: 24px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.c-new-request-input__tip {
+  @include font-size($global-font-size-small);
+}
+
+// utilities
+  //margin
+.u-margin-left {
+  margin-left: $global-spacing-unit;
+}
+
+.u-margin-top {
+  margin-top: $global-spacing-unit;
+}
+
+  //padding
+.u-padding-top {
+  padding-top: $global-spacing-unit;
+}
+
+.u-padding-left {
+  padding-left: $global-spacing-unit;
+}
+
+.u-padding-right {
+  padding-right: $global-spacing-unit;
+}
+
+.u-padding-bot {
+  padding-bottom: $global-spacing-unit;
+}
+
+//overrides
+.c-form__element:not(:last-child) {
+  //margin-bottom: 0px; //TODO: Need to check whether this breaks anything!
+}
+
+// scrollbar
+.c-new-request__table-scrollbar::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+.c-new-request__table-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .3);
+  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+.c-table__cell {
+  &:before {
+    content: '';
+    display: block;
+    font-weight: $global-font-weight-bold;
+  }
+}
+
+.c-table__cell--empty {
+  border: none !important;
+}

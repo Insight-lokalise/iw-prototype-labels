@@ -1,0 +1,243 @@
+@import '~@insight/toolkit-css-core/src/_all';
+@import '~@insight/toolkit-css-ui/src/components/tooltip';
+@import '~@insight/toolkit-css-ui/src/components/currency';
+@import 'scoping/index';
+
+// Defense layer to override tabmanager styling in PDPModal
+@import 'defense/pdpmodal/overrides';
+
+#react-app-cs-client {
+  // Import toolkit-css-ui first so that other components are able to override the styling.
+  // Since the header appears on all pages, including those with legacy styles,
+  // we provide reset.scss file into toolkit-css-ui to create an option for undo styles applied directly to elements
+  // (such as <button>) in the legacy codebase.
+  @import '~@insight/toolkit-css-ui';
+  @import '~@insight/toolkit-css-ui/src/components/reset';
+
+  // Defense layer to override specific styles which are outside of the project.
+  @import 'defense/overrides';
+  @import 'components/index';
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $color-text;
+  }
+
+  p,
+  span,
+  div {
+    @include font-size($global-font-size);
+  }
+
+  .c-cs-container {
+    background-color: $color-warm-gray-2;
+    padding: $global-spacing-unit;
+
+    .c-cs-searchPanel {
+      margin-bottom: $global-spacing-unit-small;
+
+      @include mq($until: tablet) {
+        margin-bottom: 0;
+        border-bottom: $global-input-border-width solid $global-input-border-color;
+      }
+    }
+  }
+
+  .c-screen-reader-only {
+    visbility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: -9999px;
+    height: 1px;
+  }
+
+  .c-accordion,
+  .c-accordion__controls {
+    width: 100%;
+  }
+
+  .u-border-top {
+    border-top: $global-input-border-width solid $global-input-border-color;
+  }
+
+  .u-border-bot {
+    border-bottom: $global-input-border-width solid $global-input-border-color;
+  }
+
+  .u-margin-none {
+    margin: 0;
+  }
+
+  .u-margin {
+    margin: $global-spacing-unit;
+  }
+
+  .u-margin-small {
+    margin: $global-spacing-unit-small;
+  }
+
+  .u-margin-bot {
+    margin-bottom: $global-spacing-unit;
+  }
+
+  .u-margin-bot-tiny {
+    margin-bottom: $global-spacing-unit-tiny;
+  }
+
+  .u-margin-bot-small {
+    margin-bottom: $global-spacing-unit-small;
+  }
+
+  .u-margin-top {
+    margin-top: $global-spacing-unit-small * 2;
+  }
+
+  .u-margin-top-tiny {
+    margin-top: $global-spacing-unit-tiny;
+  }
+
+  .u-margin-top-small {
+    margin-top: $global-spacing-unit-small;
+  }
+
+  .u-margin-sides {
+    margin: 0 $global-spacing-unit;
+  }
+
+  .u-margin-bot {
+    margin-bottom: $global-spacing-unit;
+  }
+
+  .u-margin-sides-small {
+    margin: 0 $global-spacing-unit-small;
+  }
+
+  .u-margin-right-small {
+    margin-right: $global-spacing-unit-small;
+  }
+
+  .u-margin-right-tiny {
+    margin-right: $global-spacing-unit-tiny;
+  }
+
+  .u-padding {
+    padding: $global-spacing-unit;
+  }
+
+  .u-padding-top {
+    padding-top: $global-spacing-unit;
+  }
+
+  .u-padding-none {
+    padding: 0;
+  }
+
+  .u-padding-small {
+    padding: $global-spacing-unit-small;
+  }
+
+  .u-padding-tiny {
+    padding: $global-spacing-unit-tiny;
+  }
+
+  .u-padding-top-small {
+    padding-top: $global-spacing-unit-small;
+  }
+
+  .u-padding-bot-small {
+    padding-bottom: $global-spacing-unit-small;
+  }
+
+  .u-padding-left-none {
+    padding-left: 0;
+  }
+
+  .c-cs-back--icon {
+    transform: rotate(90deg);
+  }
+
+  .c-cs-back--button {
+    padding-left: 0px !important;
+  }
+
+  .c-cs-viewMode {
+    padding: $global-spacing-unit-tiny - 1;
+    border: 1px solid $color-warm-gray-2;
+    height: 38px;
+
+    &.is-active {
+      background-color: $color-warm-gray-5;
+    }
+  }
+
+  .u-font-size-tiny {
+    @include font-size($global-font-size-tiny);
+  }
+
+  .u-font-size-small {
+    @include font-size($global-font-size-small);
+  }
+
+  .u-font-size {
+    @include font-size($global-font-size);
+  }
+
+  .u-font-size-large {
+    @include font-size($global-font-size-large);
+  }
+
+  .u-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .c-cs-parsed-element {
+    .ql-size-small {
+      font-size: 10px;
+    }
+
+    .ql-size-large {
+      font-size: 18px;
+    }
+
+    .ql-size-huge {
+      font-size: 32px;
+    }
+  }
+}
+
+// popover styling
+.u-font-size-tiny {
+  @include font-size($global-font-size-tiny);
+}
+
+.c-message {
+  justify-content: flex-end;
+  border: 0 !important;
+}
+
+.addToCart-gap {
+  margin-left: 10px;
+  margin-right: $global-font-size-small;
+}
+
+.c-add-item-to-cart__resource--dividers {
+  border-bottom: 2px solid #e6e6e5;
+  margin: 15px !important;
+}
+
+.c-add-item-to-cart__product__price {
+  padding: 10px;
+}
+
+.toast-display {
+  position: fixed;
+  top: 40px;
+  z-index: 1000000000;
+  right: 15px;
+}

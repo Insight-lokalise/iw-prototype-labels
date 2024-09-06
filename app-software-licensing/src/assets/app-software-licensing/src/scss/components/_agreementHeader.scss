@@ -1,0 +1,70 @@
+/**
+ * Heading.
+ */
+
+.c-software-license__heading {
+  @include font-family-body($font-weight: $global-font-weight-normal);
+  @include h3-fluid-font-size();
+}
+
+.c-software-license__show-all{
+  .c-select-container{
+    width: 100%
+  }
+}
+
+.c-software-license__expand-all{
+  margin-left: $global-spacing-unit*4;
+}
+
+.c-software-license__manufaturer-logo{
+  height: 50px;
+}
+
+.o-grid__item.c-software-license__toggle {
+  text-align:left;  
+}
+
+.c-software-license__ips-header {
+  background: $color-blue-light;
+  border-top: 1px solid $color-warm-gray-2;
+  border-bottom: 1px solid $color-warm-gray-2;
+  margin: ($global-spacing-unit-small+1)*-1 $global-spacing-unit*-1 $global-spacing-unit-small $global-spacing-unit*-1;
+  padding: $global-spacing-unit-tiny $global-spacing-unit-small;
+}
+
+.c-software-license__contract-details {
+  margin-top: $global-spacing-unit-large;
+}
+
+.c-software-license__contract-header {
+  margin-top: $global-spacing-unit-small;
+  clear: both;
+}
+
+@include mq($from: tablet, $until: desktop) {
+  .c-software-license__contract-details {
+    margin-left: $global-spacing-unit;
+  }
+}
+
+@include mq($from: tablet) {
+  .c-software-license__show-all{    
+      width: 300px;
+  }
+  .o-grid__item.c-software-license__toggle {
+    padding-left: 0;
+  }
+}
+
+@include mq($until: desktop) {
+  .o-grid__item.c-software-license__toggle {
+    text-align: right;
+  }
+  .c-software-license__contract-details {
+    margin-top: 0;
+  }
+  .c-software-license__contract-header {
+    margin-top: 0;
+  }
+}

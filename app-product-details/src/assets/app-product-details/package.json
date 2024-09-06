@@ -1,0 +1,45 @@
+{
+  "name": "app-product-details",
+  "version": "1.0.0",
+  "dependencies": {
+    "@insight/toolkit-core": "^2.2.17",
+    "@insight/toolkit-css-core": "^2.2.17",
+    "@insight/toolkit-css-ui": "^2.2.197",
+    "@insight/toolkit-react": "^2.2.198",
+    "@insight/toolkit-utils": "^2.2.181",
+    "axios": "^0.27.2",
+    "date-fns": "^2.28.0",
+    "dompurify": "^2.3.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-lines-ellipsis": "^0.15.3",
+    "react-router-dom": "^5.3.0",
+    "sse.js": "^2.2.0"
+  },
+  "scripts": {
+    "start": "buildkit-legacy-scripts start",
+    "build": "buildkit-legacy-scripts build",
+    "aem-import": "buildkit-legacy-scripts aem-import",
+    "import-labels": "buildkit-legacy-scripts labels app-product-details",
+    "test": "buildkit-asserter --coverage",
+    "test:watch": "buildkit-asserter --watch",
+    "lint": "buildkit-legacy-scripts lint",
+    "prettify": "buildkit-legacy-scripts prettify"
+  },
+  "jestSonar": {
+    "sonar56x": true,
+    "reportPath": "coverage",
+    "reportFile": "test-reporter.xml",
+    "indent": 4
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.15.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "buildkit-asserter": "^1.0.36",
+    "buildkit-legacy-scripts": "^5.0.0-Beta.9",
+    "msw": "^0.36.3",
+    "prop-types": "^15.7.2",
+    "why-did-you-update": "^1.0.8"
+  }
+}

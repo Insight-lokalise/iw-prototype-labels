@@ -1,0 +1,10 @@
+.c-submission__submit {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: $global-spacing-unit-large 0;
+}
+
+.c-submission__message {
+  padding: $global-spacing-unit-large $global-spacing-unit-small;
+}

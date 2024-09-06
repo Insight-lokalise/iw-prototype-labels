@@ -1,0 +1,76 @@
+.accessories-modal{
+    > header {
+        padding: 10px 0;
+        border-bottom: 1px solid $brand-lightgray;
+    }
+
+    &__icon {
+        &--close {
+            font-size: 3em;
+            position: absolute;
+            top: 5px;
+            right: 25px;
+            cursor: pointer;
+        }
+    }
+
+    .parent-product {
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        &__img {
+            max-width: 25vw;
+        }
+
+        @include breakpoint(medium) {
+            padding-top: 15px;
+            padding-bottom: 15px;
+
+            &__img {
+                max-width: 150px;
+            }
+        }
+
+        &__border {
+            border-bottom: 1px solid $brand-lightgray;
+        }
+
+        &__name {
+            font-family: $body-font-family;
+            font-size: rem-calc(16);
+        }
+
+        &__text {
+            margin-bottom: rem-calc(5);
+        }
+    }
+
+    &__carousel {
+        margin: 0 10px;
+    }
+
+    > footer{
+        padding: 15px 0;
+    }
+}
+
+.c-accessory-modal {
+  &__image img {
+    width: 150px;
+    height: 112px;
+  }
+
+  &__description{
+    padding-left: $global-spacing-unit;
+    padding-top: $global-spacing-unit-small;
+  }
+
+  &__recommendation {
+    margin-top: $global-spacing-unit-small;
+    border-top: 1px solid $color-warm-gray-5;
+  }
+
+  &__partNumbers {
+    font-size: 13px;
+  }
+}

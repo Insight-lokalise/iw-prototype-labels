@@ -1,0 +1,17 @@
+.c-activity-log__paginator-link{
+  padding: $global-spacing-unit-tiny $global-spacing-unit-small;
+  border-width: $global-input-border-width;
+  border-style: solid;
+  border-color: $color-warm-gray-2;
+  margin-right: $global-spacing-unit-small;
+  margin-bottom: $global-spacing-unit-small;
+}
+
+.c-activity-log__paginator-link--active {
+  border-width: $global-input-border-width;
+  border-style: solid;
+  border-color: $color-red-fuchsia;
+  background-color: $color-red-fuchsia;
+  color: $color-white;
+  display: inline-block;
+}

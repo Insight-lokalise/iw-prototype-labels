@@ -1,0 +1,311 @@
+/* ==========================================================================
+   #CART
+   ========================================================================== */
+
+/**
+ * The Cart component uses the Grid to create a responsive table-equivalent
+ * layout suitable for displaying product information in rows and columns.
+ */
+
+.c-cart {
+  background-color: transparent;
+  justify-content: space-around;
+}
+
+
+
+/**
+ * Cart title.
+ */
+
+.c-cart__title {
+  @include font-family-body();
+  color: $color-white;
+}
+
+.c-cart__items {
+  font-weight: $global-font-weight-normal;
+  padding-left: $global-spacing-unit-small;
+  border-left: 1px solid $color-warm-gray-2;
+  margin-left: $global-spacing-unit-small;
+}
+
+
+
+/**
+ * Table header.
+ */
+
+.c-cart__header {
+  background-color: $color-warm-gray-2;
+  font-weight: $global-font-weight-bold;
+}
+
+
+
+/**
+ * Table body.
+ */
+
+.c-cart__body > :not(:last-child) {
+  margin-bottom: $global-spacing-unit-small;
+}
+
+
+
+/**
+ * Table row.
+ */
+
+.c-cart__row {
+  background-color: $color-white;
+  border: 1px solid $color-warm-gray-2;
+}
+
+
+
+/**
+ * Table row modifier: Border
+ *
+ * 1. Show a thin border between rows using the `after` pseudo element.
+ */
+
+.c-cart__row--border {
+
+  &::after { /* [1] */
+    background-color: $color-custom-container;
+    content: "";
+    height: 1px;
+    position: absolute;
+    left: $global-spacing-unit;
+    right: $global-spacing-unit;
+  }
+
+}
+
+
+
+/**
+ * Table cell.
+ */
+
+.c-cart__cell {
+  padding: $global-spacing-unit;
+}
+
+
+
+/**
+ * Table header cell.
+ */
+
+.c-cart__cell--header {
+  padding-bottom: $global-spacing-unit-tiny;
+  padding-top: $global-spacing-unit-tiny;
+  color: $color-warm-gray-11;
+}
+
+
+
+/**
+ * On mobile:
+ *
+ * 1. Show a label (equivalent to the table header) using the `data-label`
+ *    attribute, and display it using the `before` pseudo element.
+ *
+ * 2. Remove the bottom padding from the product image/text table cell.
+ */
+
+@include mq($until: tablet) {
+
+  .c-cart__cell--data-label::before {
+    content: attr(data-label) ":"; /* [1] */
+    color: $color-warm-gray-8;
+    display: block;
+    font-size: $global-font-size-small;
+    margin-bottom: $global-spacing-unit-tiny;
+  }
+
+  .c-cart__cell--item {
+    padding-bottom: 0; /* [2] */
+  }
+
+}
+
+
+
+/**
+ * Table cell modifier: Unit price and Quantity.
+ */
+
+.c-cart__cell--unit-price,
+.c-cart__cell--qty {
+  text-align: center;
+
+  @include mq($from: tablet) {
+    padding-left: 0;
+  }
+
+}
+
+
+
+/**
+ * Table cell modifier: Line level info.
+ *
+ * 1. Move the order of the line level info so that it appears after the unit
+ *    price and quantity on tablet and above.
+ */
+
+.c-cart__cell--line-level-info {
+
+  @include mq($until: tablet) {
+    padding-bottom: 0;
+  }
+
+  @include mq($from: tablet) {
+    order: 1; /* [1] */
+    padding-top: 0;
+  }
+
+}
+
+
+
+/**
+ * Product image.
+ *
+ * 1. Limit the size of product images to the mobile equivalent so there's more
+ *    space available for other content.
+ *
+ * 2. Reduce the font-size of product image alt text, which is only seen when
+ *    the image doesn't load.
+ *
+ * 3. When a product image doesn't load, stop the alt text from taking up more
+ *    than the amount of space the image would ordinarily have taken up. This
+ *    stops large amounts of alt text from causing layout issues.
+ */
+
+.c-product__image {
+  width: $product-image-width-mobile; /* [1] */
+
+  img {
+    @include font-size($global-font-size-small, $modifier: -1); /* [2] */
+    max-height: $product-image-width-mobile; /* [3] */
+    overflow: hidden; /* [3] */
+  }
+}
+
+
+
+/**
+ * Quantity text.
+ */
+
+.c-cart__qty {
+  display: block;
+  background: none;
+}
+
+
+
+/**
+ * Approved product.
+ *
+ * 1. We need to add some breathing space between the part numbers and the
+ *    approved product.
+ */
+
+.c-cart__approved-product {
+  margin-top: $global-spacing-unit-small; /* [1] */
+}
+
+
+
+
+
+/* BUNDLES
+   ========================================================================== */
+
+/**
+ * Bundles group together products, and display a bundle title and quantity.
+ */
+
+.c-cart__bundle {
+  border: 1px solid $color-warm-gray-2;
+}
+
+
+
+.c-cart__row--bundle {
+  border: 0;
+
+  &:first-child::after {
+    display: none;
+  }
+
+}
+
+
+
+.c-cart__bundle-heading {
+  @include font-family-body($margin: 0 0 $global-spacing-unit-tiny);
+}
+
+
+
+.c-cart__bundle-btn {
+  font-weight: $global-font-weight-normal;
+}
+
+.c-cart__bundle-icon {
+  margin-left: $global-spacing-unit-tiny;
+}
+
+
+
+/**
+ * Table cell modifier: Bundle header
+ *
+ * 1. Remove right padding from the bundle header to close up the gap between
+ *    the bundle name and the number of items.
+ */
+
+.c-cart__cell--bundle-header {
+  padding-right: 0; /* [1] */
+}
+
+
+
+/**
+ * Table cell modifier: Bundle action for opening/closing bundle line items.
+ */
+
+.c-cart__cell--action {
+  margin-top: -$global-spacing-unit;
+  padding-top: 0;
+}
+
+
+
+
+
+/* CONTRACTS / IPS ORDERS
+   ========================================================================== */
+
+/**
+ * Table cell modifier: Contract
+ *
+ * Contracts are highlighted using a blue background.
+ */
+
+.c-cart__cell--contract {
+  background-color: $color-blue-light;
+  padding: $global-spacing-unit-tiny $global-spacing-unit-small;
+}
+
+
+
+.c-cart__contract-header {
+  @include font-family-body();
+}

@@ -1,0 +1,48 @@
+$proration-modal-padding: 15px;
+
+.proration-modal {
+
+    &__message {
+        padding-top: $proration-modal-padding;
+        padding-bottom: $proration-modal-padding;
+        border-bottom: 1px solid $brand-lightgray;
+    }
+
+    &__text {
+
+        &--deploy{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__icon {
+        font-size: rem-calc(24);
+
+        &--message {
+            color: #F6A810;
+            margin-right: 5px;
+        }
+    }
+}
+
+.proration-modal__table {
+    width: 100%;
+    margin-top: $proration-modal-padding;
+    margin-bottom: $proration-modal-padding;
+}
+
+.proration-modal__table-header {
+    padding: 5px;
+    font-weight: $global-weight-bold;
+}
+
+.proration-modal__table-body {
+    padding: 5px;
+    font-weight: 100;
+}
+
+.proration-modal__deploy-date {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,160 @@
+.warranties-modal {
+    > header {
+        padding: 10px 0;
+        border-bottom: 1px solid $brand-lightgray;
+    }
+
+    &__icon {
+        &--close {
+            font-size: rem-calc(36);
+            cursor: pointer;
+        }
+    }
+
+    .parent-product {
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        &__img {
+            max-width: 25vw;
+        }
+
+        @include breakpoint(medium) {
+            padding-top: 15px;
+            padding-bottom: 15px;
+
+            &__img {
+                max-width: 150px;
+            }
+        }
+
+        &__border {
+            border-bottom: 1px solid $brand-lightgray;
+        }
+
+        &__name {
+            font-family: $body-font-family;
+            font-size: rem-calc(16);
+        }
+
+        &__text {
+            margin-bottom: rem-calc(5);
+        }
+    }
+
+    .warranties-container {
+        padding: 0 20px;
+
+        &__items-list {
+            list-style: none;
+            margin: 0;
+        }
+
+        &__item {
+            padding: 10px 0;
+            border-bottom: 1px solid $brand-lightgray;
+
+            &:first-child {
+                border-top: 1px solid $brand-lightgray;
+            }
+
+            &-label {
+                line-height: 1.4;
+                color: $brand-darkgray;
+                margin: 2px 0 5px;
+            }
+
+            &-input {
+                margin: 0 !important;
+            }
+        }
+
+    }
+
+    > footer{
+        padding: 15px 0;
+    }
+}
+
+
+.c-warranties-modal {
+
+  &__header-image {
+    width: 150px;
+    height: 112px;
+  }
+
+  &__description{
+    padding-left: $global-spacing-unit-small + 4;
+  }
+
+  &__radio {
+    margin-top: $global-spacing-unit;
+    max-width: 6% !important;
+  }
+
+  //&__thumbnail {
+  //  margin-bottom: $global-spacing-unit;
+  //}
+
+  &__recommendation {
+    padding-top: $global-spacing-unit;
+    border-top: 0;
+  }
+
+  @include mq($from: tablet-landscape) {
+    &__image {
+      width: 75px;
+      height: 56px;
+    }
+
+    &__recommendation {
+      overflow-y: scroll;
+      max-height: calc(100vh - 288px);
+    }
+  }
+
+  &__recommendation::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  &__recommendation::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: rgba(0,0,0,.5);
+  }
+
+  &__heading {
+    margin-left: $global-spacing-unit;
+  }
+
+  &__warranty-body.c-modal__content {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  &__warranty-footer {
+    padding: $global-spacing-unit-small 0;
+    border-top: 1px solid #CBC4C3;
+  }
+
+  &__thumbnail {
+    padding-top: $global-spacing-unit-small;
+    border-bottom: 1px solid #CBC4C3;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .c-currency {
+      &:first-of-type .c-currency__value {
+        color: $color-red-fuchsia;
+      }
+    }
+  }
+  &__warranty-body{
+    .c-currency__tax {
+      font-size: $global-font-size-small;
+    }
+  }
+}

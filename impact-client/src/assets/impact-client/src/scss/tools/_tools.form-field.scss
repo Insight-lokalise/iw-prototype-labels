@@ -1,0 +1,34 @@
+/* ==========================================================================
+   #FORM FIELD
+   ========================================================================== */
+
+/**
+ * Mixin to ensure consistent form field styles. Do not use on checkbox/radio
+ * button input types. Usage:
+ *   @include form-field();
+ * 1. Remove default appearance in Chrome, Firefox, and Safari.
+ */
+
+@mixin form-field() {
+  background-color: $color-white;
+  border: $global-input-border-width solid $global-input-border-color;
+  border-radius: $global-radius;
+  color: $color-text;
+  padding: $global-input-padding;
+  -webkit-appearance: none; /* [1] */
+  -moz-appearance: none; /* [1] */
+  appearance: none; /* [1] */
+
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $color-warm-gray-5;
+  }
+  &::-moz-placeholder { /* Firefox 19+ */
+    color: $color-warm-gray-5;
+  }
+  &:-ms-input-placeholder { /* IE 10+ */
+    color: $color-warm-gray-5;
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    color: $color-warm-gray-5;
+  }
+}

@@ -1,0 +1,1 @@
+export const selector_dep = (state) => state.DEP || {}

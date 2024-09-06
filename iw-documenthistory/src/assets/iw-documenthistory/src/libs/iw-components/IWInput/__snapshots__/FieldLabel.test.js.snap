@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FieldLabel renders correctly 1`] = `
+<DocumentFragment>
+  <label
+    class="form__label"
+    for="testing"
+  >
+    <span
+      class="form__label--checkbox form__label-text"
+    >
+      Testing 
+      <span
+        class="form__required"
+      >
+        * 
+      </span>
+       (format: regex!) 
+      <div
+        class="iw-tooltippy"
+      >
+        <span
+          class="ion-help-circled help-icon__icon"
+        />
+        <div
+          class="hide"
+        >
+          <span
+            class="iw-tooltippy__content"
+          >
+            test tooltip
+          </span>
+        </div>
+      </div>
+    </span>
+  </label>
+</DocumentFragment>
+`;

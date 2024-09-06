@@ -1,0 +1,20 @@
+.c-image--optimal {
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: none 0;
+  display: inline-block;
+  margin: 0;
+  max-width: 100%;
+  opacity: 0;
+  overflow: auto;
+  padding: 0;
+  transition: opacity 250ms;
+
+	&.c-image--is-loaded {
+		opacity: 1;
+	}
+  &.c-image--fallback {
+    object-fit: contain;
+    opacity: 1;
+  }
+}

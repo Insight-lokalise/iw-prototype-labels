@@ -1,0 +1,22 @@
+.c-item-card__contract {
+  @include font-size(14px);
+  background: $color-blue-light;
+  padding: $global-spacing-unit-tiny;
+  margin-bottom: $global-spacing-unit-small;
+}
+
+.c-item-card__inventory-grid {
+	@include mq($until: tablet) {
+		margin: $global-spacing-unit 0;
+	}
+}
+
+.c-item-card__inventory-label {
+	margin-bottom: $global-spacing-unit-tiny;
+	color: $color-warm-gray-5;
+	text-align: center;
+
+	@include mq($from: tablet) {
+		display: none;
+	}	
+}

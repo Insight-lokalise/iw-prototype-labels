@@ -1,0 +1,101 @@
+@import '@insight/toolkit-css-core/src/all';
+@import '@insight/toolkit-css-ui/src/all';
+
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+.c-lightbox {
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  padding: $global-spacing-unit;
+  img {
+    user-select: none;
+  }
+  .c-lightbox__background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.33);
+  }
+  &__body {
+    background-color: #ffffff;
+    overflow-y: auto;
+    padding: $global-spacing-unit-small;
+    max-height: 100%;
+  }
+  &__close {
+    position: absolute;
+    top: $global-spacing-unit-small;
+    right: $global-spacing-unit;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-warm-gray-5;
+    }
+    svg {
+      height: 36px;
+      width: 36px;
+    }
+  }
+  &__current {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    > div {
+      width: 100%;
+    }
+    &__left-nav,
+    &__right-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg:hover {
+        color: $color-warm-gray-5;
+        cursor: pointer;
+      }
+    }
+    &__image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 400px;
+      img {
+        min-width: 400px;
+      }
+    }
+  }
+  &__gallery {
+    overflow: auto;
+    height: 100%;
+    padding: $global-spacing-unit-large;
+    &__featured-image {
+      text-align: center;
+      cursor: pointer;
+    }
+    &__image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 0.5px;
+      border-style: solid;
+      border-color: transparent;
+      padding: $global-spacing-unit-small;
+      cursor: pointer;
+      &.selected {
+        border-color: $color-turquoise;
+      }
+    }
+  }
+}
+
+.c-lightbox__is-visible {
+  display: block;
+}

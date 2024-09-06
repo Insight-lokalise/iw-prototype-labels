@@ -1,0 +1,137 @@
+.c-search-filter {
+  padding: $global-spacing-unit-large;
+  height: fit-content;
+  user-select: none;
+  box-sizing: border-box;
+  @include mq($until: desktop) {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    background: white;
+    z-index: 9999;
+  }
+  &-show {
+    display: block;
+    .c-button__icon--left {
+      margin: 0;
+    }
+  }
+  &__close {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: $global-spacing-unit;
+    right: $global-spacing-unit;
+    z-index: 1000;
+  }
+  &__clear-all {
+    display: none !important;
+    width: 136px;
+    justify-content: center;
+  }
+  &__group {
+    padding-bottom: $global-spacing-unit;
+    &__label {
+      margin-bottom: $global-spacing-unit-small;
+      font-weight: $global-font-weight-bold;
+    }
+    &__container {
+      margin: 0;
+    }
+    &__input {
+      font-size: $global-font-size-small;
+      height: 36px;
+      padding: 6px 36px 6px 6px;
+      color: $color-black;
+      width: 100%;
+      max-width: 350px;
+      border: $color-warm-gray-5 solid 1px;
+      margin-bottom: $global-spacing-unit-small;
+    }
+    &__none {
+      color: $color-status-error;
+      font-size: $global-font-size-small;
+    }
+    &__show-more,
+    &__show-less {
+      margin-top: $global-spacing-unit-small;
+      font-size: $global-font-size-small ;
+    }
+  }
+  &__show-in-stock {
+    padding: $global-spacing-unit 0;
+  }
+  .c-filter-range {
+    align-items: center;
+    padding-bottom: $global-spacing-unit-small;
+    margin: 0;
+    .o-grid__item {
+      padding-right: $global-spacing-unit-small;
+    }
+    .c-form__label {
+      display: none;
+    }
+    input,
+    button {
+      height: 36px;
+    }
+    input {
+      padding: $global-spacing-unit-tiny;
+      margin-bottom: 0;
+
+      &::placeholder {
+        letter-spacing: normal;
+      }
+    }
+  }
+  .c-form__control {
+    display: flex;
+  }
+  header {
+    top: 0;
+  }
+  @include mq($from: desktop) {
+    padding: 0 $global-spacing-unit-small 0 0 ;
+
+    &__close {
+      display: none;
+    }
+    &__apply-filters {
+      display: none !important;
+    }
+    &__clear-all {
+      display: flex !important;
+    }
+  }
+  ul {
+    li {
+      list-style: none;
+    }
+  }
+}
+
+.c-category-facet {
+  font-size: $global-font-size-small;
+}
+
+.solutions-services-wrapper {
+  .c-search-filter {
+    @include mq($from: desktop) {
+      padding-top: $global-spacing-unit;
+      padding-right: $global-spacing-unit;
+    }
+
+    @include mq($until: desktop) {
+      &__group {
+        margin-top: $global-spacing-unit;
+      }
+    }
+  }
+  .c-search-controls {
+    padding-top: $global-spacing-unit-small;
+  }
+}

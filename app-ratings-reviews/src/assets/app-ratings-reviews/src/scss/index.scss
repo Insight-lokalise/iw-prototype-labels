@@ -1,0 +1,22 @@
+@import 'scoping/index';
+
+#react-app-ratings-reviews {
+  // CSS-CORE
+	@import '~@insight/toolkit-css-core/src/_all.scss';
+
+	// CSS-UI
+	@import '~@insight/toolkit-css-ui';
+	@import 'defense/index';
+	@import 'components/index';
+
+	background: $color-white;
+	.c-helpfulness{
+		.c-button{
+			color: $color-warm-gray-11;
+			font-weight: unset;
+			&.is-clicked {
+			    font-weight: 400 !important;
+			}
+		}
+	}
+}

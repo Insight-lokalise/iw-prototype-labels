@@ -1,0 +1,86 @@
+/**
+ * The simple header search suggestions.
+ */
+
+.c-search-suggestions__list,
+.c-search-suggestions__docs,
+.c-search-suggestions__products {
+  font-size: $global-font-size-small;
+  text-align: left;
+  margin-bottom: $global-spacing-unit-small;
+
+  .c-search-suggestions__header {
+    font-weight: $global-font-weight-bold;
+    padding-top: $global-spacing-unit-tiny;
+    padding-left: $global-spacing-unit-small;
+
+    &__divider {
+      border-bottom: solid 1px $color-warm-gray-5;
+      width: 60px;
+      position: absolute;
+    }
+  }
+
+  .c-search-suggestions__btn {
+    font-size: $global-font-size-small;
+    padding-left: $global-spacing-unit-small;
+    padding-top: $global-spacing-unit-tiny;
+    padding-bottom: $global-spacing-unit-tiny;
+
+    .c-button__content {
+      line-height: 2;
+      display: block;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      /* autoprefixer: off */
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 14px;
+      word-break: break-word;
+
+      .c-button__text {
+        word-break: break-all;
+      }
+    }
+
+    &:hover {
+      background-color: $color-warm-gray-custom-light;
+    }
+  }
+  .c-search-suggestions__match {
+    color: $color-link;
+    font-weight: $global-font-weight-bold;
+  }
+
+  .c-search-suggestions__category {
+    color: $color-text;
+    padding-left: $global-spacing-unit-small;
+
+    .c-search-suggestions__btn {
+      font-size: 12px;
+    }
+
+    .c-search-suggestions__btn:hover {
+      color: $color-red-fuchsia;
+      font-weight: $global-font-weight-bold;
+    }
+  }
+
+  @include mq($until: desktop) {
+    .c-search-suggestions__item-divider {
+      border-bottom: solid 1px $color-warm-gray-2;
+    }
+  }
+}
+
+.c-search-suggestions.is-visible {
+  opacity: 1;
+  visibility: visible;
+  z-index: z('mega-menu') + 1;
+
+  @include mq($until: desktop) {
+    left: 0;
+    right: 0;
+  }
+}

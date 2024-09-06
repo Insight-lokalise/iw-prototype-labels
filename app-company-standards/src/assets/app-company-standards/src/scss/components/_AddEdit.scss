@@ -1,0 +1,80 @@
+.c-cs-admin__product-list-checkbox {
+    margin-right: 0px;
+}
+
+.c-cs-admin__discontinued-product-icon {
+    color: $color-link;
+    &:hover {
+        color: $color-link-hover;
+    }
+}
+
+.c-cs-admin-addset-error {
+    border: none;
+    padding: $global-spacing-unit-tiny 0 0 0;
+    color: $color-red;
+    max-width: 90%;
+}
+
+.c-cs-product-list__draggable-icon {
+    position: relative;
+    top: 40px
+}
+
+.c-cs-product-list__interactives {
+    padding-top: 4px;
+}
+
+.c-cs-product-list__custom-description {
+    padding: $global-spacing-unit-small
+}
+
+.c-cs-product-list__item:not(:last-child)  {
+    border-bottom: $global-input-border-width solid $global-input-border-color
+}
+
+.c-cs-product__list-header {
+    padding: $global-spacing-unit-small $global-spacing-unit;
+    background-color: $color-warm-gray-2;
+    margin-right: -$global-spacing-unit;
+    margin-left: -$global-spacing-unit;
+}
+
+.c-fieldWrapper {
+    margin-left: $global-spacing-unit-small;
+}
+
+.c-tooltip {
+    margin-left: $global-spacing-unit-tiny;
+}
+
+.c-tooltip__message {
+    background-color: $color-white;
+    width: 200px;
+    position: absolute;
+    z-index: 9999;
+    border: $global-input-border-width solid $global-input-border-color;
+    padding: $global-spacing-unit-small;
+}
+
+.c-assign-tags__dropdown-menu {
+  width: 275px;
+  max-height: 250px;
+}
+
+.c-assign-tags__options {
+  max-height: 230px;
+  overflow-y: auto;
+}
+
+.c-cs-admin__unlink-text {
+    color: $color-turquoise;
+    padding-bottom: $global-spacing-unit-small;
+}
+.c-cs-admin__button-group {
+    .is-disabled {
+        opacity: .5;
+        cursor: not-allowed;
+        text-decoration: none;
+    }
+}

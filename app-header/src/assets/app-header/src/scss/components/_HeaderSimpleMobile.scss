@@ -1,0 +1,53 @@
+/**
+ * The simple header navigation on mobile.
+ */
+
+.c-header-simple-mob {
+  width: 100%;
+  height: 50px;
+}
+
+.c-header-simple-mob__list {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  margin-bottom: 0;
+  text-align: right;
+
+  .c-header-simple-mob__li {
+    width: 100%;
+  }
+
+  .c-header-simple-nav__item .c-button {
+    padding-left: $global-spacing-unit-small;
+    padding-right: $global-spacing-unit-small;
+  }
+
+  .c-search-suggestions
+    .c-search-suggestions__list
+    .c-search-suggestions__item {
+    padding-top: $global-spacing-unit-tiny - 3;
+    padding-bottom: $global-spacing-unit-tiny - 3;
+  }
+}
+
+/**
+  * The icons navigation.
+  */
+.c-header-simple-nav {
+  @include mq($until: desktop) {
+    margin-right: $global-spacing-unit-small;
+  }
+}
+/**
+  * Mega Menu navigation.
+  */
+@include mq($until: desktop) {
+  .c-header-mega-menu {
+    top: $header-mob-size + 50px;
+  }
+
+  .c-header-mega-menu__submenu {
+    top: $header-mob-size + 55px;
+  }
+}

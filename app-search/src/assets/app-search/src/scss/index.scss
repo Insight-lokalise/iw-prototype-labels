@@ -1,0 +1,134 @@
+@import '@insight/toolkit-css-core/src/all';
+@import '~@insight/toolkit-css-ui/src/components/add-to-cart-modal';
+@import '~@insight/toolkit-css-ui/src/components/add-item-to-cart-modal';
+@import '~@insight/toolkit-css-ui/src/components/tooltip';
+@import '~@insight/toolkit-css-ui/src/components/PDPModal';
+@import '~@insight/toolkit-css-ui/src/components/list-price';
+@import '~@insight/toolkit-css-ui/src/components/simpleStockInfo';
+
+#react-app-search {
+  @import '@insight/toolkit-css-ui/src/all';
+
+  ul {
+    margin: 0;
+  }
+
+  .c-breadcrumbs {
+    padding: $global-spacing-unit-small;
+    text-transform: capitalize;
+
+    >ol {
+      font-size: 14px;
+    }
+  }
+
+  .c-search-page {
+    @import 'components/Index';
+    @import 'components/CartActions';
+    @import 'components/ListItem';
+    @import 'components/ListItemDetails';
+    @import 'components/SearchFilter';
+    @import 'components/SearchControls';
+    @import 'components/SearchProducts';
+    @import 'components/TinyPagination';
+    @import 'components/SearchTab';
+    @import 'components/TopicTag';
+    @import 'components/SoftwareContractProrationItem';
+
+    &__search-result {
+      margin-bottom: $global-spacing-unit-small;
+    }
+  }
+
+  .c-pagination {
+    padding-top: $global-spacing-unit-large;
+  }
+
+  @import 'components/SearchCompare';
+  @import 'components/SearchNotFound';
+  @import 'components/SearchContentTiles';
+  @import 'components/SolutionsContentProductTile';
+
+  .c-checkbox {
+    // override styles leaking from legacy
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
+.c-search-result-description__tooltip {
+  //renders outside #app-search scope
+  padding: 12px;
+  font-weight: 400;
+  max-width: 500px;
+  line-height: 20px;
+}
+
+.c-tooltip__carousel {
+  top: 320px !important;
+  position: fixed !important;
+  z-index: 9999;
+}
+
+.c-modal {
+  @import '~@insight/toolkit-css-ui/src/components/button';
+  @import '~@insight/toolkit-css-ui/src/components/button-group';
+  @import '~@insight/toolkit-css-ui/src/components/currency';
+  @import '~@insight/toolkit-css-ui/src/components/loading';
+  @import '~@insight/toolkit-css-ui/src/components/icon';
+  @import '~@insight/toolkit-css-ui/src/components/message';
+  @import '~@insight/toolkit-css-ui/src/components/modal';
+  @import '~@insight/toolkit-css-ui/src/components/part-numbers';
+  @import '~@insight/toolkit-css-ui/src/components/product-details-tabs';
+  @import '~@insight/toolkit-css-ui/src/components/structured-list';
+  @import '~@insight/toolkit-css-ui/src/components/tabs';
+}
+
+// override content page breadcrumbs
+.hero-image-container .breadcrumbs-outer {
+  visibility: hidden;
+}
+
+.c-search-page__search {
+  width: 100%;
+  margin: 0 12px;
+  
+  &__tabpanel {
+    width : 100%
+  }
+}
+
+select {
+  display: inline-block !important;
+}
+
+.c-tabs {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+
+  &__item {
+    color: $color-warm-gray-11;
+
+    .is-selected {
+      color: $color-red-fuchsia !important;
+    }
+  }
+}
+
+.c-tab {
+  font-size: $global-font-size-small;
+  letter-spacing: 0px;
+  padding-bottom: 0px !important;
+}
+
+.country-se {
+  #react-app-search .c-search-page .c-cart-actions__price-container {
+    .c-cart-actions__label{
+      font-size: $global-font-size-tiny;
+    }
+    .c-currency__value {
+      font-size: $global-font-size-large + 2;
+    }
+  }
+}

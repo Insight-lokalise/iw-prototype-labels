@@ -1,0 +1,36 @@
+/* ==========================================================================
+   #ORDER TEMPLATE
+   ========================================================================== */
+
+.c-order-template__block {
+  background-color: $color-white;
+  padding-bottom: $global-spacing-unit-small;
+
+  &:not(:last-child) {
+    margin-bottom: $global-spacing-unit-small;
+  }
+
+}
+
+
+
+@include mq($until: desktop) {
+  .c-order-template__block-item:not(:last-child) {
+    margin-bottom: $global-spacing-unit-small;
+  }
+}
+
+
+
+.c-order-template__title {
+  @include font-family-body();
+}
+
+
+
+.c-order-template__heading {
+  @include font-family-body($margin: 0 0 $global-spacing-unit-small);
+  border-bottom: 1px solid $color-warm-gray-2;
+  color: $color-turquoise;
+  padding-bottom: $global-spacing-unit-small;
+}

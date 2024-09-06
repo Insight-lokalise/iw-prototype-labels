@@ -1,0 +1,16 @@
+///* ========================================================================
+//   #TRUNCATE
+//   ======================================================================== */
+
+/**
+ * Mixin to truncate text and add an ellipsis at the end to act as a visual cue.
+ *
+ * This will only work on block level elements, or if the `display` property is
+ * set to `block`.
+ */
+
+@mixin truncate() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

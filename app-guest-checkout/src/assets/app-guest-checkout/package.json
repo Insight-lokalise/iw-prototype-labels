@@ -1,0 +1,51 @@
+{
+  "name": "app-guest-checkout",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "buildkit-legacy-scripts start",
+    "build": "buildkit-legacy-scripts build",
+    "aem-import": "buildkit-legacy-scripts aem-import",
+    "import-labels": "buildkit-legacy-scripts labels app-guest-checkout",
+    "test": "buildkit-asserter --coverage",
+    "test:watch": "buildkit-asserter --watch",
+    "lint": "buildkit-legacy-scripts lint",
+    "prettify": "buildkit-legacy-scripts prettify"
+  },
+  "jestSonar": {
+    "sonar56x": true,
+    "reportPath": "coverage",
+    "reportFile": "test-reporter.xml",
+    "indent": 4
+  },
+  "dependencies": {
+    "@insight/toolkit-css-core": "^2.2.17",
+    "@insight/toolkit-css-ui": "^2.2.182",
+    "@insight/toolkit-react": "^2.2.183",
+    "@insight/toolkit-utils": "^2.2.181",
+    "@reduxjs/toolkit": "^1.8.6",
+    "axios": "^1.1.3",
+    "crypto-js": "^4.1.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^6.1.0",
+    "react-redux": "^8.0.4",
+    "react-router-dom": "^5.3.0",
+    "redux-persist": "^6.0.0",
+    "redux-persist-expire": "^1.1.1",
+    "redux-persist-transform-compress": "^4.2.0",
+    "redux-persist-transform-encrypt": "^5.0.0",
+    "redux-thunk": "^2.4.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.15.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "msw": "^0.36.3",
+    "buildkit-asserter": "^1.0.37",
+    "buildkit-legacy-scripts": "^5.0.0-Beta.9",
+    "prop-types": "^15.8.1",
+    "redux-logger": "^3.0.6",
+    "why-did-you-update": "^1.0.8"
+  }
+}

@@ -1,0 +1,214 @@
+/* ==========================================================================
+   #GLOBAL
+   ========================================================================== */
+
+// The global settings file contains any project-wide variables; things that
+// need to be made available to the entire codebase.
+
+
+
+/* Color Palette
+   ========================================================================== */
+
+/**
+ * First, we define our color palette, naming the variables based on the visual
+ * appearance of the color, rather than it's usage.
+ */
+
+
+
+/**
+ * Primary Palette
+ */
+
+$color-warm-gray-11: #3E332D;
+$color-red-fuchsia: #AE0A46;
+$color-red: #AF0E2E;
+$color-fuchsia: #A80B6E;
+$color-deep-pink: #9F177A;
+
+
+
+/**
+ * Secondary Palette
+ */
+
+$color-warm-gray-8: #5F5753;
+$color-warm-gray-5: #CBC4C3;
+$color-warm-gray-2: #E6E6E5;
+$color-turquoise: #007996;
+$color-blue: #95CFEE;
+
+
+
+/**
+ * Unapproved Palette
+ */
+
+$color-warm-gray-custom-light: #f7f6f5;
+$color-custom-container: #f0eeed;
+
+/**
+ * Extensions
+ *
+ * 1. BlueMetal
+ * 2. Datalink
+ */
+
+$color-bluemetal-blue: #21499c; /* [1] */
+$color-datalink-blue: #0076bb; /* [2] */
+
+
+
+/**
+ * Custom Palette
+ */
+
+$color-white: #fff;
+$color-black: #000;
+$color-green: #406129;
+$color-yellow: #ffc208;
+$color-blue-light: #dcf0fa;
+$color-maroon: #6F062D;
+
+
+
+/**
+ * Status Palette
+ */
+
+$color-status-success: $color-green;
+$color-status-info: $color-turquoise;
+$color-status-warning: $color-yellow;
+$color-status-error: $color-red;
+
+
+
+/**
+ * Semi-transparent Palette
+ */
+
+$color-black-opacity-50: transparentize($color-black, 0.5);
+
+/* Color Mappings
+   ========================================================================== */
+
+/**
+ * Next, we map our color palette onto specific, common usages of that color.
+ * This gives us the ability to change the color palette and usages of the
+ * palette independently. For example, we could change all the text to black,
+ * without changing everything that is dark brown to also be black.
+ */
+
+$color-primary: $color-red-fuchsia;
+$color-text: $color-warm-gray-11;
+$color-link: $color-red-fuchsia;
+$color-link-hover: $color-maroon;
+$color-mask: $color-black-opacity-50;
+
+/* Gradients
+   ========================================================================== */
+
+/**
+ * TODO
+ */
+
+$global-gradient-brand: linear-gradient(60deg, $color-red-fuchsia, $color-deep-pink);
+
+/* Global Radius
+   ========================================================================== */
+
+/**
+ * Insight doesn't currently have a border radius, so we're setting a default
+ * which is 0 to ensure a quick site wide way of changing this in future.
+ */
+
+$global-radius: 0;
+
+
+
+
+
+/* Font Families
+   ========================================================================== */
+
+/**
+ * Text is the primary way that users digest content and accomplish work, so
+ * it’s important to use good typographic principles to establish a clear visual
+ * hierarchy and to maximize legibility.
+ *
+ * 1. Allumi
+ *    Used for all text, except headings, Allumi is a clean and straightforward
+ *    typeface, chosen to maximize legibility.
+ *
+ * 2. Klinic Slab
+ *    Reserved solely for headings, Klinic Slab offers sharp contrast to Allumi,
+ *    giving clarity to the visual heirarchy of the content.
+ */
+
+$global-font-family-body: "allumi-2-std", Verdana, sans-serif; /* [1] */
+$global-font-family-heading: "klinic-slab", Verdana, serif; /* [2] */
+
+
+
+
+
+/* Font Sizes
+   ========================================================================== */
+
+$global-font-size-small: 14px;
+$global-font-size: 16px;
+$global-font-size-large: 18px;
+
+
+
+
+
+/* Font Weights
+   ========================================================================== */
+
+/**
+ * The Insight typefaces (detailed above) have specific font weights that should
+ * be used. Do not use anything other than the weights listed below.
+ *
+ * 1. Default body copy and heading font weight.
+ *
+ * 2. Default bold/strong font weight.
+ *
+ * 3. Not to be used for headings using Klinic Slab font - weight not available.
+ */
+
+$global-font-weight-normal: 100; /* [1] */
+$global-font-weight-bold: 400; /* [2] */
+$global-font-weight-bolder: 700; /* [3] */
+
+
+
+
+
+/* Form Elements
+   ========================================================================== */
+
+/**
+ * To ensure all types of form elements, including inputs, textareas, selects,
+ * checkboxes, radio buttons, and buttons have a consistent style and can all
+ * work together we have grouped the relevant variables together here.
+ *
+ * 1. Default form element size - matches default button size.
+ *
+ * 2. Small form element size - matches small button size.
+ */
+
+$global-select-triangle-width: 5px;
+$global-select-triangle-height: 8px;
+$global-button-border-width: 2px;
+$global-input-border-width: 1px;
+$global-input-border-color: $color-warm-gray-5;
+
+$global-input-padding: $global-spacing-unit-small - $global-input-border-width; /* [1] */
+$global-input-height: $global-line-height + ($global-input-padding * 2) + ($global-input-border-width * 2); /* [1] */
+$global-textarea-height: ($global-line-height * 3) + ($global-input-padding * 2) + ($global-input-border-width * 2); /* [1] */
+
+$global-input-small-padding: $global-spacing-unit-tiny - $global-input-border-width; /* [2] */
+$global-input-small-height: $global-line-height + ($global-input-small-padding * 2) + ($global-input-border-width * 2); /* [2] */
+$global-textarea-small-height: ($global-line-height * 3) + ($global-input-small-padding * 2) + ($global-input-border-width * 2); /* [2] */

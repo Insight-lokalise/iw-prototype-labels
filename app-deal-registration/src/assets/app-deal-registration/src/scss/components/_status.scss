@@ -1,0 +1,20 @@
+.c-status {
+	color: $color-text;
+}
+
+.c-status__circle {
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	margin-right: 5px;
+	border-radius: 50%;
+	transition: background-color 150ms ease-in-out;
+
+	&.is-active {
+		background-color: $color-status-success;
+	}
+
+	&.is-inactive {
+		background-color: $color-primary;
+	}
+}

@@ -1,0 +1,14 @@
+@import '~@insight/toolkit-css-core/src/_all';
+@import '~@insight/toolkit-css-ui';
+
+#react-app-invoices {
+  .c-app-invoices__breadcrumb {
+    background-color: $color-warm-gray-custom-light;
+    padding: $global-spacing-unit-small 0 0 $global-spacing-unit;
+  }
+  @import 'components/index';
+  @media only screen and (min-width: 1440px)  {
+    margin: auto;
+    width: 1440px;
+  }
+}

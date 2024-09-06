@@ -1,0 +1,1 @@
+export { default as createUniversalTemplate } from './createUniversalTemplate'

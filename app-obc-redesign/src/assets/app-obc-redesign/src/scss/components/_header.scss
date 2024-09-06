@@ -1,0 +1,24 @@
+/**
+ * Header
+ */
+
+.c-app-obc__header {
+	font-size: $global-font-size;
+
+	.c-title {
+		@include font-family-body();
+	}
+
+	.c-soldto-button {
+		margin-left: 10px;
+	}
+
+	.c-previous-run-time-section {
+		margin-left: $global-spacing-unit;
+	}
+
+	.c-status-section {
+		margin-top: $global-spacing-unit;
+		padding: $global-spacing-unit-small;
+	}
+}

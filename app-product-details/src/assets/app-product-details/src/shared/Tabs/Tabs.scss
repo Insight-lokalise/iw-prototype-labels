@@ -1,0 +1,48 @@
+.c-responsive-tabs {
+  @import '@insight/toolkit-css-core/src/all';
+  &__header {
+    display: grid;
+    width: 100%;
+    &__tab {
+      height: 64px;
+      padding: $global-spacing-unit-tiny;
+      border-style: solid;
+      border-width: 0 0 $global-spacing-unit-tiny;
+      border-color: transparent;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden !important;
+      color: $color-black;
+      letter-spacing: normal;
+      background-color: $color-warm-gray-custom-light;
+      transition: all 0.3s ease;
+      &:hover,
+      &:focus,
+      &:active,
+      &.selected {
+        color: $color-red;
+        border-color: $color-red;
+        background-color: $color-warm-gray-custom-light;
+      }
+      &:not(:last-child):after {
+        content: '';
+        position: absolute;
+        top: 16px;
+        right: 0;
+        bottom: 8px;
+        border-right: 1px solid black;
+        width: 100%;
+      }
+    }
+  }
+  &__content {
+    width: 100%;
+    &__section-header {
+      width: 50%;
+      border-bottom: 4px solid $color-red;
+      font-weight: $global-font-weight-bold;
+      padding: $global-spacing-unit-tiny 0;
+      margin-bottom: $global-spacing-unit;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+/**
+ * Setup Delivery
+ */
+
+.c-setup-delivery {
+  > div {
+    margin-bottom: 3rem;
+  }
+}
+
+.c-email {
+  &__step-3 {
+    margin-bottom: 0;
+  }
+  &__input {
+    display: inline-block;
+    width: 75%;
+  }
+  &__trash-icon {
+    display: inline-block;
+    height: 57.5px;
+  }
+  &__button {
+    height: 57px;
+    vertical-align: top;
+  }
+}
+
+#o-help-text {
+  margin-top: -6px;
+  @extend %setup-delivery-spacing;
+}

@@ -1,0 +1,50 @@
+/**
+ * App styling
+ */
+
+.c-app-obc {
+  clear: both;
+  @include font-size(12px);
+
+  .c-select, .c-input {
+    height: auto;
+  }
+
+  .c-input {
+    box-sizing: border-box;
+  }
+  
+  .c-form__label, ol {
+    font-size: $global-font-size;
+  }
+
+  h4 {
+    @include font-family-body(18px);    
+  }
+
+  .c-tabs {
+
+    .c-tab {
+      border: none;
+      background-color: $color-white; //fix IE background color issue
+    
+      &:not(.is-disabled) {
+
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+          color: $color-link-hover;
+        }
+      }
+
+    }
+
+    .is-selected {
+      border-bottom: 4px solid $color-red-fuchsia;
+      padding-bottom: 8px;
+    }
+
+  }
+
+}

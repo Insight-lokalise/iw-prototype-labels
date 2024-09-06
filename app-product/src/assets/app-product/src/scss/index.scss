@@ -1,0 +1,22 @@
+/* ==========================================================================
+   App: Product
+   ========================================================================== */
+
+/**
+ * CONTENTS
+ *
+ * COMPONENTS
+ * Name.................Description of 'Name'
+ */
+
+// CSS-CORE (TOOLS ONLY)
+@import '~@insight/toolkit-css-core';
+
+// Wrap in an ID selector so that we don't affect other projects.
+#app-product {
+
+  // COMPONENTS
+  @import 'components/product-description';
+  @import 'components/product-part-numbers';
+  @import 'components/product-summary-panel';
+}

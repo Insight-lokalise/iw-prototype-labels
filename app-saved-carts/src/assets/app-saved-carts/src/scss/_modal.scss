@@ -1,0 +1,43 @@
+/* ==========================================================================
+   #MODAL
+   ========================================================================== */
+
+/* DEFENSE LAYER
+   ========================================================================== */
+
+.c-modal * {
+  -webkit-font-smoothing: auto;
+
+	p {
+		line-height: $global-line-height / $global-font-size;
+		margin-bottom: $global-spacing-unit;
+	}
+
+}
+
+.c-modal.is-open {
+	z-index: 1000;
+}
+
+.c-modal__heading {
+	margin-top: 0;
+}
+
+.c-button {
+	letter-spacing: normal;
+	margin-bottom: 0;
+}
+
+/* IW-HEADER - DEFENSE LAYER
+   ========================================================================== */
+
+#iw-header.c-modal {
+  background-color: $color-white;
+  opacity: 1;
+  position: relative;
+  visibility: visible;
+}
+
+#iw-header .c-modal__footer {
+  width: 100%;
+}

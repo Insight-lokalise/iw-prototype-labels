@@ -1,0 +1,14 @@
+.c-panel {
+	flex-grow: 1;
+	background-color: #fff;
+	border-radius: 4px;
+	@include bottomShadowSmall;
+}
+
+.c-panel--shrink {
+	flex-grow: 0;
+}
+
+.c-panel--shadow {
+	@include bottomShadowMedium;
+}

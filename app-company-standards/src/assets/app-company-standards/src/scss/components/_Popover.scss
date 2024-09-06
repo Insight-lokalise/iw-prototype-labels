@@ -1,0 +1,34 @@
+.c-popover {
+  position: absolute;
+  top: 60px;
+  background-color: $color-white;
+  border: $global-input-border-width solid $color-warm-gray-5;
+  z-index: 5000;
+  min-width: 250px;
+}
+
+.c-popover__outer-arrow--up {
+  border-bottom: 11px solid $color-warm-gray-5;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  width: 0; 
+  height: 0;
+  position: absolute;
+  top: -11px;
+  right: 18px;
+}
+
+.c-popover__inner-arrow--up {
+  border-bottom: 9px solid $color-white;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  width: 0; 
+  height: 0; 
+  position: absolute;
+  right: -9px;
+  bottom: -11px;
+}
+
+.c-cs-popover__message {
+  margin: $global-spacing-unit-small $global-spacing-unit-small 0px $global-spacing-unit-small;
+}

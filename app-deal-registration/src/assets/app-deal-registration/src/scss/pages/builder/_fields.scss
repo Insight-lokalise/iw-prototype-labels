@@ -1,0 +1,27 @@
+.c-builder-fields {
+	padding: $global-spacing-unit 0;
+}
+
+.c-builder-fields.is-empty {
+	padding: $global-spacing-unit-large 0;
+}
+
+.c-builder-fields__message {
+	width: 60%;
+	padding: $global-spacing-unit-small;
+	margin: 0 auto;
+	background-color: $color-white;
+}
+
+.c-builder-fields__group {
+	margin-bottom: $global-spacing-unit;
+	
+	.c-form__element {
+		padding-left: 0;
+	}
+}
+
+.c-fieldWrapper-modal{
+  opacity: 1;
+  visibility: visible;
+}

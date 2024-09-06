@@ -1,0 +1,18 @@
+npm-debug.log
+.idea/
+node_modules/
+.sass-cache/
+target/
+dist/jcr_root/
+build
+.classpath
+.project
+.settings/
+*.iml
+
+# Webpack bundle statistics and bundle report
+bundleStats.json
+bundleReport.html
+
+# Jest test coverage report
+coverage/

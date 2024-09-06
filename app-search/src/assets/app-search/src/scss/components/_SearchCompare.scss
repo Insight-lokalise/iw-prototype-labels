@@ -1,0 +1,88 @@
+.c-search-compare { 
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: rgba(62, 51, 45, 0.75);
+  padding: $global-spacing-unit-tiny 0;
+  &__items {
+    padding: $global-spacing-unit-small 0;
+    &__product,
+    &__placeholder {
+      height: 85px;
+    }
+    &__product {
+      position: relative;
+      padding: $global-spacing-unit-small;
+      background-color: white;
+      &__container {
+        height: 100%;
+        > div, .c-image, img, svg {
+        max-height: 100%;
+        }
+        &__link {
+          line-height: 1.4;;
+          letter-spacing: initial;
+          display: block;
+          color: $color-red;
+          font-weight: $global-font-weight-bold;
+          font-size: $global-font-size-small;
+          height: 100%;
+          width: 100%;
+          padding-left: $global-spacing-unit-small;
+          span {
+            display: block;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            /* autoprefixer: off */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            height: 100%;
+          }
+        }
+        .c-image, .c-image__fallback {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          fill: $color-warm-gray-5;
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+      &__close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0;
+        svg {
+          margin: 0;
+        }
+      }
+    }
+    &__placeholder {
+      display: flex;
+      background-color: rgba(62, 51, 45, 0.75);
+    }
+  }
+  &__actions {
+    padding: $global-spacing-unit-small 0;
+    button {
+      letter-spacing: normal;
+    }
+    &__compare {
+      margin-bottom: $global-spacing-unit-small;
+    }
+  }
+  @include mq($from: tablet) {
+    &__items {
+      &__product {
+        &__container {
+          margin-right: $global-spacing-unit;
+        }
+      }
+    }
+  }
+}

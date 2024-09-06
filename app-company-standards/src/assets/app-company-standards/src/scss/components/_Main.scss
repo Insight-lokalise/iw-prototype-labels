@@ -1,0 +1,11 @@
+.c-cs-main {
+  width: 100%;
+  background-color: inherit;
+}
+
+.c-cs-main__container, .c-cs-main__header {
+  padding: 12px;
+  border: $global-input-border-width solid $color-warm-gray-5;
+  margin-bottom: 12px;
+  background-color: white;
+}

@@ -1,0 +1,168 @@
+/**
+ * The simple header navigation.
+ */
+
+$search-bar-width-min: 750px;
+$search-bar-width-max: 970px;
+
+.c-header-simple__top,
+.c-header-simple__bottom {
+  @include mq($from: desktop) {
+    padding-left: $global-spacing-unit-small;
+    padding-right: $global-spacing-unit-small;
+  }
+
+  @include mq($from: desktop-large) {
+    padding-left: $global-spacing-unit;
+    padding-right: $global-spacing-unit;
+  }
+}
+
+.c-header-simple__top,
+.c-header-simple-mob {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px $color-warm-gray-custom-light;
+
+  /**
+  * The header logo.
+  */
+  .c-header-logo {
+    @include mq($from: desktop) {
+      width: 225px;
+    }
+    @include mq($from: desktop-large) {
+      flex: none;
+    }
+  }
+
+  /**
+  * The header search bar.
+  */
+  .c-search-bar-container {
+    flex: 1 0 auto;
+
+    .c-search-bar {
+      margin-top: 0;
+      width: 100%;
+      padding-right: $global-spacing-unit-small;
+
+      @include mq($from: desktop) {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: $global-spacing-unit-tiny + 2;
+        min-width: $search-bar-width-min;
+        max-width: $search-bar-width-max;
+        width: 80%;
+        padding-right: 0;
+      }
+    }
+
+    .c-search-input {
+      border: none;
+    }
+
+    .c-search-bar__input {
+      padding-left: $global-spacing-unit-small !important;
+      border-top: solid 1px $color-warm-gray-5;
+      border-bottom: solid 1px $color-warm-gray-5;
+      border-left: solid 1px $color-warm-gray-5;
+
+      // TODO: Here we are overriding the focus style of inputs as defined in the
+      // Design System. We need to have a discussion with the design team about
+      // whether we really want to diverge like this, or whether we should in fact
+      // update the Design System focus styles to match this here.
+      outline-width: 2px !important;
+      outline-color: $color-blue !important;
+      outline-offset: -2px !important;
+      box-shadow: none !important;
+      &:focus {
+        outline-style: solid !important;
+      }
+    }
+
+    .c-search-bar__button {
+      height: 100%;
+      padding-left: $global-spacing-unit-tiny;
+      padding-right: $global-spacing-unit-tiny;
+      background-color: $color-link;
+      color: $color-white;
+
+      &:hover {
+        background-color: $color-link-hover;
+        color: $color-white;
+      }
+    }
+  }
+
+  /**
+  * The icons navigation.
+  */
+  .c-header-simple-nav {
+    height: 100%;
+    list-style: none;
+    margin-bottom: 0;
+    margin-right: $global-spacing-unit-tiny;
+    text-align: right;
+
+    @include mq($from: desktop) {
+      padding: 0 $global-spacing-unit-small;
+    }
+
+    &__item {
+      color: $color-warm-gray-11;
+      .c-button {
+        border: none;
+        padding-left: $global-spacing-unit-tiny;
+        padding-right: $global-spacing-unit-tiny;
+      }
+      &__locale {
+        padding: 0 $global-spacing-unit-tiny;
+        .c-dropdown__menu {
+          text-align: left;
+          min-width: 200px;
+        }
+        &__link {
+          font-size: 0.875rem;
+          white-space: nowrap;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .c-button {
+    border: none;
+  }
+}
+
+.c-header-simple__bottom {
+  position: relative;
+  display: flex;
+
+  @include mq($from: desktop) {
+     height: 100%;
+     max-height: $global-spacing-unit-large;
+  }
+
+  .c-header-main-nav__item {
+    margin-bottom: $global-spacing-unit;
+  }
+}
+
+.c-header.is-search-open .c-header-main-nav {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.c-header-simple__top__feedback {
+  color: $color-fuchsia;
+  font-size: 12px;
+
+  @include mq($from: tablet) {
+    font-size: 14px;
+    min-width: 110px;
+    margin-right: 40px;
+  }
+}

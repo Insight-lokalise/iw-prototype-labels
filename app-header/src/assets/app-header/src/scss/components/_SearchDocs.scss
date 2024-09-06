@@ -1,0 +1,21 @@
+/**
+ * The simple header search suggestions docs.
+ */
+.c-search-suggestions__docs {
+  .c-search-suggestions__docs-divider {
+    border-top: solid 1px $color-warm-gray-5;
+    width: $global-spacing-unit-large;
+    margin-bottom: $global-spacing-unit-tiny;
+    margin-left: $global-spacing-unit-small;
+  }
+
+  @include mq($until: desktop) {
+    .c-search-suggestions__docs-divider {
+      display: none;
+    }
+    .c-search-suggestions__header {
+      padding-top: $global-spacing-unit-small + 4;
+      padding-bottom: $global-spacing-unit-small;
+    }
+  }
+}

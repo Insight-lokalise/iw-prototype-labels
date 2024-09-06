@@ -1,0 +1,73 @@
+.iw-tooltippy {
+    display: inline-block;
+    margin-left: 0.35rem;
+
+    @include breakpoint(medium) {
+        position: relative;
+    }
+
+    &__content {
+        background-color: $brand-cyan;
+        color: #fff;
+        padding: 10px 12px;
+        border-radius: 5px;
+        position: absolute;
+        z-index: 1;
+        line-height: 1.2;
+        font-weight: $global-weight-bold;
+        box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+        width: 250px;
+        @include breakpoint(small only) {
+            left: .625rem; /* Full width minus left gutter width */
+            right: .625rem; /* Full width minus right gutter width */
+        }
+
+        @include breakpoint(medium) {
+            top: -5px;
+            left: 135%;
+
+            &--large {
+                width: 400px;
+            }
+        }
+
+        @include breakpoint(medium) {
+            &::after {
+                content: " ";
+                position: absolute;
+                border-width: 5px;
+                border-style: solid;
+                border-color: transparent $brand-cyan transparent transparent;
+                top: 15px;
+                right: 100%; /* To the left of the tooltip */
+                margin-top: -5px;
+            }
+        }
+
+        &.left {
+            @include breakpoint(medium) {
+                right: 135%;
+                left: auto;
+            }
+
+            @include breakpoint(medium) {
+                &::after {
+                    border-color: transparent transparent transparent $brand-cyan;
+                    left: 100%; /* To the right of the tooltip */
+                }
+            }
+        }
+
+        /* Needed to fix specificity issues with legacy code */
+        p,
+        li {
+            color: #fff;
+            font-weight: $global-weight-bold;
+        }
+    }
+}
+
+
+.help-icon__icon {
+    color: $brand-cyan;
+}

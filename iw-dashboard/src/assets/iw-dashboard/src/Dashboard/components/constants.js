@@ -1,0 +1,26 @@
+export const TAB_FAVORITES = 'Favorites'
+export const TAB_LICENSING = 'Licensing & Renewals'
+export const TAB_NEWS = 'News'
+export const TAB_ORDERS = 'Orders'
+export const TAB_POWERBI = 'PowerBI'
+export const TAB_REPORTING = 'Reporting'
+export const TAB_SEARCH = 'Search'
+
+export const APPROVER = 'Approver'
+export const EADETAILS = 'enterpriseAgreementDetails'
+export const INSIGHTNEWS = 'InsightNews'
+export const RECENTINVOICES = 'RecentInvoices'
+export const RECENTORDERS = 'RecentOrders'
+export const RECENTQUOTES = 'RecentQuotes'
+export const REQUESTOR = 'Requestor'
+export const SBBILLING = 'SBBilling'
+export const SBMANUFACTURER = 'SBManufacturer'
+export const SBMONTH = 'SBMonth'
+export const SBPRODUCT = 'SBProduct'
+export const SBREGION = 'SBRegion'
+export const SBSHIPPING = 'SBShipping'
+export const UPCOMINGRENEWALS = 'UpcomingRenewals'
+export const PURCHASE_CHECKOUT_TYPE = {
+  REQUISITION_CHECKOUT : 'Requisition Checkout',
+  REQUISITION_APPROVED : 'Requisition Approved'
+}

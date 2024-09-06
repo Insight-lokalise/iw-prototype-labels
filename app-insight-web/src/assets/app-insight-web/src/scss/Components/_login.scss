@@ -1,0 +1,112 @@
+/* ==========================================================================
+   #LOGIN
+   ========================================================================== */
+
+/* Structure / Layout
+   ========================================================================== */
+
+/**
+ * 1. Fix the footer to the bottom of the viewport. When the height of the 
+ *    content is greater than the viewport height then the footer will revert 
+ *    to being positioned according to the normal flow of the page.
+ *
+ * 2. For this approach to work we need to take the height of the header into 
+ *    account. This includes both mobile and desktop versions, and the addition 
+ *    of the account menu when logged in.
+ *
+ * 3. Horizontally center the login form within the page.
+ *
+ * 4. Vertically center the login form within the page on tablet and above.
+ *
+ * This has been disabled due to issues with the banner that can be displayed by the header in specific circumstances. ~Nathan Christian
+ */
+
+.c-login {
+  display: flex; /* [1] */
+  flex-direction: column; /* [1] */
+  // height: calc(100vh - #{$header-mob-size}); /* [2] */
+
+  @include mq($from: desktop) {
+    // height: calc(100vh - #{$header-desktop-size}); /* [2] */
+
+    .is-logged-in & {
+      // height: calc(100vh - #{$header-desktop-size-logged-in}); /* [2] */
+    }
+  }
+}
+
+.c-login__inner {
+  flex: 1 0 auto; /* [1] */
+  display: flex; /* [3] */
+  justify-content: center; /* [3] */
+
+  @include mq($from: tablet) {
+    align-items: center; /* [4] */
+  }
+}
+
+
+
+/* Login form
+   ========================================================================== */
+
+.c-login-form-wrapper {
+  width: 100%;
+  max-width: 30rem;
+  padding: $global-spacing-unit;
+}
+
+.c-login-form {
+  padding: 0;
+
+  @include mq($from: tablet) {
+    padding: $global-spacing-unit;
+    border: 1px solid $color-warm-gray-2;
+  }
+  &__guest-button{
+    text-align: center;
+  }
+}
+
+
+
+/* Login footer - stripped back version of the global footer
+   ========================================================================== */
+
+.c-login-footer {
+  padding: $global-spacing-unit-small;
+  @include font-size($global-font-size-tiny);
+  flex-shrink: 0; /* [1] */
+}
+
+.c-login-footer__list {
+  margin-bottom: 0;
+  flex-wrap: wrap;
+}
+
+.c-login-footer__list-item {
+  margin-right: $global-spacing-unit-small;
+
+  &:last-child {
+    margin-right: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.c-login-footer__list-item::after {
+  color: $color-warm-gray-5;
+  content: "|";
+  margin-left: $global-spacing-unit-small;
+}
+
+
+
+/* Message
+   ========================================================================== */
+
+.c-login-message__text {
+  margin-right: .25em;
+}

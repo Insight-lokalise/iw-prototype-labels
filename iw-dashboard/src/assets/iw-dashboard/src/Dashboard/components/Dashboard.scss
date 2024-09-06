@@ -1,0 +1,931 @@
+@import '~@insight/toolkit-css-core';
+@import '~iw-styles/src/iw-settings';
+@import '~@insight/toolkit-css-ui/src/components/datepicker';
+@import '../../iw-components/index';
+
+@function tint($color, $percent) {
+  @return mix(#fff, $color, $percent);
+}
+
+
+$dashboard-font-size: .875rem;
+$mobile-dashboard-min-height: 250px;
+$dashboard-critical-color: $brand-red;
+$dashboard-critical-color--faded: tint(#a30000, 85%);
+$dashboard-warning-color: #ffbf00;
+$dashboard-warning-color--faded: tint(adjust-hue(#cf3800, 20%), 85%);
+$dashboard-safe-color: #406129;
+$dashboard-order-complete: #007996;
+$dashboard-order-prt-shipped: #9F177A;
+$dashboard-color-white: #FFF;
+$dashlet-padding: rem-calc(10);
+$dashlet-height: 530px;
+$recharts-font-size: rem-calc(13);
+$dashboard-background-color: #f7f6f5;
+$dashboard-header-border-color: #cbc4c3;
+
+/**
+ * Hack to override the padding and overflow set within manage.css
+ * Resetting the padding removes the white space around the dashboard
+ * Hiding the overflow stops the scrollbars from appearing on Windows machines
+ */
+.manage-content {
+  padding: 0;
+  overflow: hidden;
+  min-height: 500px;
+
+  /**
+   * Hack to override the min-height inline style
+   * Needed on mobile to allow auto height of dashboard container
+   */
+  @include breakpoint(small only) {
+    min-height: $mobile-dashboard-min-height !important;
+  }
+}
+
+/* Stop the scope of all styles within the confines of this class
+ * Add the class iw-styles to all projects using iw-styles and iw-components
+ */
+html body .iw-styles {
+
+  @import '~@insight/toolkit-css-ui/src/components/tabs';
+
+  /**
+   * Replicate the line-height now missing from iw-styles body element
+   */
+  line-height: 1.5;
+  background-color: $dashboard-background-color;
+
+  /**
+   * Hack to override common.css checkbox styling
+   * The common.css styling is overriding the Foundation 6 form styling
+   */
+  label > [type=checkbox] {
+    margin-right: .5rem !important;
+  }
+
+
+  .dashboard {
+
+    &__header {
+      background-color: white;
+      position: relative;
+
+      @include breakpoint(medium) {
+        padding: rem-calc(10) rem-calc(15);
+      }
+
+      .c-tab {
+        font-weight: 400;
+        color: $primary-color;
+      }
+      .c-tab:focus, .c-tab:hover {
+        color: #6f062d;
+      }
+    }
+
+    &__tabs {
+      overflow: auto;
+      white-space: nowrap;
+    }
+
+    &__tab {
+      font-size: $dashboard-font-size;
+      font-weight: $global-weight-bold;
+      padding: rem-calc(10);
+      display: inline-block;
+      color: $brand-darkgray;
+      border-bottom: 3px solid white;
+
+      @include breakpoint(medium) {
+        font-size: 1rem;
+        padding: 1rem;
+      }
+
+      @include breakpoint(large) {
+        font-size: 1rem;
+        padding: 1rem 2rem;
+      }
+
+      &--active {
+        color: $primary-color;
+        border-bottom-color: $primary-color;
+      }
+    }
+
+    &__settings {
+      position: fixed;
+      background: white;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      @include breakpoint(small only) {
+        overflow: auto;
+      }
+
+      @include breakpoint(medium) {
+        position: absolute;
+        z-index: 1;
+        width: 300px;
+        max-height: 65vh;
+        overflow-y: auto;
+        top: rem-calc(-14);
+        left: auto;
+        right: rem-calc(-15);
+        bottom: auto;
+        border: 1px solid $brand-lightgray;
+        box-shadow: -1px 1px 3px 0px rgba($brand-darkgray, 0.2);
+      }
+
+      @include breakpoint(large) {
+        width: 25vw;
+        max-height: 65vh;
+        overflow-y: auto;
+      }
+
+      &-header {
+        margin: .5rem 1rem;
+      }
+
+      &-heading {
+        font-size: 1rem;
+        font-weight: $global-weight-bold;
+        font-family: $body-font-family;
+        margin: 0 1rem;
+      }
+
+      &-overlay {
+        display: block;
+      }
+    }
+
+    &__btn,
+    &__icon {
+      font-size: rem-calc(28);
+      vertical-align: middle;
+    }
+
+    &__btn {
+
+      &.clear {
+        padding: 0;
+      }
+
+      &--open {
+        font-size: 0;
+        border-left: 1px solid $brand-lightgray !important;
+        padding-left: .5rem !important;
+
+        @include breakpoint(medium) {
+          font-size: 1rem;
+          padding-left: 1rem !important;
+          letter-spacing: normal; // Removes default button letter spacing styling
+        }
+
+        .dashboard__icon {
+          margin-right: .5rem;
+        }
+      }
+
+      &--close {
+        color: $brand-darkgray !important;
+      }
+
+      &--toggle {
+        color: $brand-darkgray !important;
+        font-size: rem-calc(18);
+      }
+
+      &--remove {
+        color: $brand-lightgray !important;
+        margin-right: -4px;
+      }
+
+      &--fav {
+        font-size: rem-calc(18);
+
+        &.ion-ios-heart-outline {
+          color: $brand-darkgray !important;
+        }
+      }
+
+      &:hover,
+      &:focus {
+        color: $anchor-color-hover !important;
+      }
+    }
+
+    &__selector {
+
+      &-header {
+        background-color: $brand-lightgray;
+        padding: .5rem 1rem;
+        border-bottom: 3px solid white;
+      }
+
+      &-heading {
+        font-size: 1rem;
+        font-family: $body-font-family;
+        font-weight: $global-weight-bold;
+      }
+
+      &-section {
+        padding: 0 1rem;
+        display: block;
+      }
+
+      &-links {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+      }
+
+      &-link {
+        font-size: $dashboard-font-size;
+        font-weight: $global-weight-bold;
+
+        &:not(:first-child) {
+          margin-left: .5rem;
+          padding-left: .5rem;
+          border-left: 1px solid $brand-lightgray;
+        }
+      }
+
+      &-dashlet:last-child {
+        padding-bottom: 1rem;
+      }
+
+      &-label {
+        font-size: $dashboard-font-size;
+        font-weight: $global-weight-bold;
+        line-height: 1.2;
+
+        &--fav {
+          display: block;
+        }
+      }
+    }
+
+    /**
+     * CSS transitions for dashboard
+     * Using https://github.com/reactjs/react-transition-group/tree/v1-stable React plugin
+     */
+    &--enter {
+      opacity: 0.01;
+
+      &-active {
+        opacity: 1;
+        transition: opacity 150ms ease-in;
+      }
+    }
+
+    &--leave {
+      opacity: 1;
+
+      &-active {
+        opacity: 0.01;
+        transition: opacity 150ms ease-out;
+      }
+    }
+
+    &__empty-tab {
+      background-color: white;
+      margin: .625rem 0;
+      padding: 1rem;
+
+      @include breakpoint(medium) {
+        margin-top: 5rem;
+        padding: 3rem;
+      }
+    }
+
+    &__loading-wrapper {
+      text-align: center;
+      margin: 15vh 0;
+    }
+  }
+
+  .dashlet {
+    background-color: white;
+    border: 1px solid $dashboard-header-border-color;
+
+    /**
+     * Add border to dashlet
+     * Border will transition on hover
+     */
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      transition: opacity 300ms;
+      z-index: -1; // Fixes bug whereby dashlet content wasn't scrollable
+    }
+
+    /**
+     * Show dashlet border on hover
+     */
+    &:hover,
+    &:focus {
+
+      &::before {
+        opacity: 1;
+      }
+    }
+
+    &__welcome-container {
+      height: 530px;
+      overflow: auto;
+      
+      select {
+        display: inline-block;
+      }
+    }
+
+    &__header {
+      margin-bottom: .6em;
+      border-bottom: 1px solid $dashboard-header-border-color;
+      padding: 0 17px;
+
+      @include breakpoint(small only) {
+        padding-bottom: .3em;
+      }
+
+      /**
+       * Change cursor to indicate dashlet draggable
+       */
+      &:hover,
+      &:focus {
+        cursor: move;
+      }
+
+      &-text {
+        font-size: $dashboard-font-size;
+        font-weight: $global-weight-normal;
+
+        @include breakpoint(small only) {
+          align-self: flex-end;
+        }
+      }
+    }
+
+    &__title {
+      font-size: rem-calc(22);
+      font-weight: $global-weight-bold;
+      display: inline-block;
+      margin-bottom: 0;
+      padding: .3em 0;
+
+      @include breakpoint(medium) {
+        padding: .6em 0;
+      }
+    }
+
+    &__link {
+      display: inline-block;
+      font-size: $dashboard-font-size;
+      margin-left: 1em;
+      padding-left: 1em;
+      border-left: 1px solid $dashboard-header-border-color;
+    }
+
+    &__btn {
+      padding: .75em 1em !important;
+    }
+
+    &__label {
+      font-size: $dashboard-font-size;
+      font-weight: $global-weight-bold;
+      margin-bottom: 1rem;
+      display: table;
+
+      @include breakpoint(small only) {
+        width: 100%; // Full width labels on mobile
+      }
+    }
+
+    &__period {
+      position: relative;
+      margin: 1rem 0;
+    }
+
+    &__back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $brand-lightgray;
+
+      &-btn {
+        &::before {
+          margin-right: .3em;
+          font-size: 1.5em;
+          vertical-align: sub;
+        }
+
+        &-text {
+          font-size: $dashboard-font-size;
+        }
+      }
+
+      &-text {
+        font-size: $dashboard-font-size;
+        display: block;
+        line-height: 1.2;
+      }
+    }
+
+    &__select {
+      margin-bottom: 0;
+
+      .Select-value-label,
+      .Select-placeholder,
+      .Select-option {
+        font-size: $dashboard-font-size;
+      }
+
+      &--currency {
+        width: auto; // 3 character currency code always selected
+        min-width: 7em; // When dropdown disabled keep 3 character width
+      }
+
+      @include breakpoint(medium) {
+        padding: 0 1em 0 .5em;
+        display: table-cell;
+      }
+    }
+
+    &__chart-wrapper {
+      width: 100%;
+      height: 400px;
+    }
+
+      /**
+       * Reduce height of chart wrapper for product category dashlet
+       * This is needed due to 2 extra dropdowns which take up more space
+       */
+      &--sbproductcategory .dashlet__chart-wrapper {
+        height: 350px;
+      }
+
+
+
+    &__tooltip {
+      margin-left: .5em;
+    }
+
+    &__footer {
+
+      @include breakpoint(medium) {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: .5rem;
+      }
+
+      &-link {
+        font-size: $dashboard-font-size;
+        font-weight: $global-weight-bold;
+
+        &::before {
+          font-size: rem-calc(20);
+          margin-right: .5em;
+          vertical-align: middle;
+        }
+      }
+
+      &-text {
+        font-weight: $global-weight-normal;
+        font-size: rem-calc(12);
+      }
+    }
+
+    /**
+     * Message that appears in the dashlet when no data is available
+     */
+    @include breakpoint(medium) {
+      &__no-data-message {
+        margin: auto;
+        position: absolute;
+        top: calc(50% - 1rem);
+        left: 0;
+        bottom: 0;
+        right: 0;
+        text-align: center;
+        font-weight: $global-weight-bold;
+        font-size: 1rem;
+      }
+    }
+
+    &__table {
+      &-subheading {
+        background-color: lighten($brand-lightgray, 10%);
+        padding: $dashlet-padding / 2 $dashlet-padding;
+        font-weight: 300;
+
+        &.subheading-critical {
+          background-color: $dashboard-critical-color--faded;
+        }
+        &.subheading-warning {
+          background-color: $dashboard-warning-color--faded;
+        }
+        &.subheading-safe {
+          background-color: $brand-lightgray;
+        }
+
+        .subheading__icon {
+          margin-right: .5em;
+          vertical-align: middle;
+        }
+      }
+
+      &-flag {
+        margin-right: $dashlet-padding;
+      }
+
+      &-dropdown {
+        display: inline-block;
+        width: auto;
+        min-width: 10em; // Needs a minimum width due to not being able to determine width based on largest option without extra development
+        margin-bottom: 0;
+        text-align: left;
+      }
+
+      &-button {
+        margin-left: $dashlet-padding;
+      }
+
+      &-confirm-msg {
+        background-color: lighten($brand-blue, 35%);
+        padding: $dashlet-padding;
+      }
+
+      &-error-msg {
+        padding: $dashlet-padding $dashlet-padding 0;
+
+        .ion-android-alert {
+          color: $alert-color;
+          margin-right: .5em;
+          font-size: rem-calc(18);
+          vertical-align: middle;
+        }
+      }
+
+      &-overlay {
+        display: inline-block;
+
+        &-body {
+          @include breakpoint(medium) {
+            width: 350px; // Needed to cope with dashlet at 50% width
+          }
+
+          @media screen and (min-width: 1400px) {
+            width: 400px;
+          }
+        }
+      }
+    }
+
+   &--licensepositionbypublisher {
+      .recharts-default-legend {
+        width: 25%;
+        margin: 0 auto !important; // Override inline styles
+        padding: 8px 0 !important;
+        border: 1px solid #666;
+      }
+    }
+
+    &--enterpriseagreementdetails {
+      > section {
+          @include breakpoint(small only) {
+            height: 100%;
+          }
+      }
+
+      .enterprise-agreement__body {
+        width: 100%;
+
+        > div:not(.dashlet__select) {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          padding: 0 .5em;
+
+          @include breakpoint(small only) {
+            flex-direction: column;
+          }
+        }
+
+        .dashlet__select {
+          width: 40%;
+        }
+
+        @include breakpoint(small only) {
+          height: calc(100% - 58px);
+          overflow-y: auto;
+
+          .dashlet__select {
+            width: 100%;
+          }
+        }
+      }
+
+      .enterprise-agreement__table {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 0;
+        padding-right: 0.5rem;
+
+        > a {
+          font-size: rem-calc(25);
+          letter-spacing: 1.5px;
+          padding: 0.5rem 0;
+        }
+
+        table {
+          width: 100%;
+        }
+
+        tr {
+          padding: .3rem 0;
+        }
+
+        td {
+          width: 50%;
+
+          &:nth-of-type(even) {
+            text-align: right;
+          }
+        }
+
+        @include breakpoint(small only) {
+          order: 2;
+        }
+      }
+
+      .enterprise-agreement__icon {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 0;
+        align-items: center;
+
+        @include breakpoint(small only) {
+          order: 1;
+        }
+      }
+
+      .c-icon {
+        vertical-align: middle;
+        height: 100px;
+        width: 240px;
+
+        &.safe {
+          fill: $dashboard-safe-color;
+        }
+        &.warning {
+          fill: $dashboard-warning-color;
+        }
+        &.danger {
+          fill: $dashboard-critical-color;
+        }
+
+      }
+    }
+
+    &__loading-wrapper {
+      text-align: center;
+
+      @include breakpoint(small only) {
+        margin-top: 1rem;
+      }
+
+      @include breakpoint(medium) {
+        position: absolute;
+        top: $dashlet-height / 2;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+
+  /**
+   * Override Recharts plugin styling
+   */
+  .recharts {
+
+    &-cartesian-axis-tick {
+      font-size: $recharts-font-size; // Reduce font size of chart axis labels
+      font-weight: $global-weight-bold;
+    }
+
+    &-default-legend,
+    &-legend-item-text {
+      font-size: $recharts-font-size; // Reduce font size of chart legend labels
+      font-weight: $global-weight-bold;
+    }
+
+    &-default-tooltip {
+      padding: $dashlet-padding / 2 $dashlet-padding !important; // Override tooltip inline padding styles
+    }
+
+    &-tooltip-label {
+      font-weight: $global-weight-bold;
+      font-size: $dashboard-font-size;
+    }
+
+    &-tooltip-item {
+      padding: 0 !important; // Override inline padding styles
+      font-size: $recharts-font-size;
+
+      /**
+       * Add coloured box to tooltip labels
+       */
+      &::before {
+        content: "";
+        width: 1em;
+        height: 1em;
+        margin-right: .5em;
+        vertical-align: middle;
+        display: inline-block;
+        background-color: currentColor; // Get inline color style of label and assign it to background color
+      }
+
+      &-value {
+
+        .iw-currency__amount {
+          color: $body-font-color !important; // Reset color of text back to standard text color
+          font-size: $recharts-font-size;
+        }
+      }
+
+      &-name,
+      &-separator,
+      &-unit {
+        display: none; // Hide name and separator to reduce size of tooltip (This information is in the legend anyway). We don't use the unit label
+      }
+    }
+  }
+
+  /**
+   * Override ReactGridLayout plugin styling
+   */
+  .react-grid-item {
+
+    &.react-grid-placeholder {
+      background-color: $brand-mediumgray;
+    }
+
+    .react-resizable-handle {
+      width: 1.5rem;
+      height: 1.5rem;
+      padding: 0 .5rem .5rem 0;
+      background-size: .5rem;
+      cursor: ew-resize;
+
+      @include breakpoint(small only) {
+        display: none; // As there is only 1 column which will always be full width, we need to hide the resize handle on mobile
+      }
+    }
+  }
+
+  /**
+   * Approval Tracker popup
+   */
+  .approval-tracker {
+
+    &__list {
+      margin: 0;
+      list-style: none;
+
+      &-item {
+        padding: .2em 0;
+        line-height: 1.25;
+      }
+    }
+
+    &__list,
+    &__list-item {
+      position: relative;
+
+      &::before {
+        content: "";
+        border-left: 1px dotted $brand-lightgray;
+        position: absolute;
+        top: 1.2em;
+        bottom: -.4em;
+        left: .4em;
+      }
+
+      &:last-of-type {
+        &::before {
+          border-left: none;
+        }
+      }
+
+      &--solid {
+        &::before {
+          border-left-color: $brand-blue;
+          border-left-style: solid;
+        }
+      }
+
+      & .approval-tracker__list {
+        margin: .3em 0 .3em .3em;
+      }
+    }
+
+    &__list-item .approval-tracker__list-item {
+      &::before {
+        border-left: none;
+      }
+    }
+
+    &__icon {
+      color: $brand-blue;
+      margin-right: .5em;
+
+      &--gray {
+        color: $brand-lightgray;
+      }
+    }
+
+    &__path-group {
+      margin: 0;
+      font-family: $body-font-family;
+    }
+
+    &__grouped-approvers {
+      font-weight: $global-weight-normal;
+    }
+  }
+
+  /**
+   * Mobile specific scaffolding
+   */
+  &.mobile-dashboard {
+    background-color: white;
+    padding: .625rem;
+    min-height: $mobile-dashboard-min-height;
+  }
+
+    .mobile-dashlet {
+      margin: .5rem 0;
+    }
+
+  /**
+   * Insight News dashlet
+   */
+   .insight-news {
+     width: 100%;
+     height: $dashlet-height;
+   }
+
+  /**
+   * Stop dates or any other text with this class added from wrapping
+   */
+  .no-wrap {
+    white-space: nowrap;
+  }
+}
+
+.c-order-status {
+  display: inline-flex;
+  width: 100%;
+}
+
+.c-order-status__text {
+  margin: auto 0 !important;
+  width: 75%;
+}
+
+.c-order-status__truck {
+  height: 30px;
+  width: 30px;
+}
+
+.c-order-status--complete {
+  color: $dashboard-order-complete;
+}
+
+.c-order-status--partially-shipped {
+  color: $dashboard-order-prt-shipped;
+}
+
+.c-order-status--placeholder {
+  color: $dashboard-color-white;
+}
+
+.c_dashboard__powerbi-dashlet {
+  height: 480px;
+}
+
+.Select-placeholder {
+  text-align: left;
+}

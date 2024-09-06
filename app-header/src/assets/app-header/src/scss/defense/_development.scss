@@ -1,0 +1,19 @@
+/**
+ * EMEA development environments have a fixed 'debug' bar at the top of the
+ * page, so the header needs to be pushed below this.
+ */
+
+@import '~@insight/toolkit-css-core/src/tools/tools.z-index';
+
+$testbar-size: 31px;
+
+#testbar ~ * .c-header,
+#testbar ~ * .c-header .c-header-search-suggestions {
+  margin-top: $testbar-size;
+}
+
+#testbar_inner {
+  height: $testbar-size;
+  overflow-y: hidden;
+  z-index: z('overlay') + 1;
+}

@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+$shopping-cart-padding: 18px;
+$shopping-cart-margin: 10px;
+
+.cart-info {
+    @include mq($from: desktop) {
+        padding-right: $global-spacing-unit-small - 2;
+        padding-left: $global-spacing-unit-small + 3;
+    }
+}
+
+.summary-info {
+    @include mq($from: desktop) {
+        padding-right: $global-spacing-unit-small + 4;
+        padding-left: $global-spacing-unit-small + 3;
+    }
+}
+
+.shopping-cart {
+    padding-right: $global-spacing-unit-small - 2;
+    padding-left: $global-spacing-unit-small + 2;
+
+    &__header { 
+        @include mq($from: desktop) {
+            padding-right: $global-spacing-unit-small - 2;
+            padding-left: $global-spacing-unit-small + 2;
+        }
+        padding-top: $shopping-cart-padding;
+        padding-bottom: $shopping-cart-padding;
+        background-color: white;
+        margin-bottom: 10px;
+        border: 1px solid $color-warm-gray-5;
+
+        .Select {
+            width: 180px;
+            @extend .no-margin-bot;
+
+            @include breakpoint(medium) {
+                width: 200px;
+            }
+        }
+
+        &-title {
+            line-height: 1.2;
+        }
+
+        &-link {
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+    }
+
+    &__messages {
+        padding-top: $shopping-cart-padding;
+        padding-bottom: $shopping-cart-padding;
+        background-color: white;
+        margin-bottom: $shopping-cart-margin;
+        border: 1px solid $color-warm-gray-5;
+
+        .iw-message__text--error {
+            color: $color-red-fuchsia;
+        }
+    }
+
+
+    &__share {
+        sep {
+            &::after {
+                content: "|";
+                color: $brand-mediumgray;
+                margin: 0 5px;
+
+                @include breakpoint(medium) {
+                    margin: 0 5px 0 15px;
+                }
+            }
+        }
+    }
+
+    &__export,
+    &__send,
+    &__print {
+        display: inline-block;
+
+        @include breakpoint(small only) {
+            font-size: rem-calc(24);
+        }
+
+        &::before {
+            margin: 0 6px;
+
+            @include breakpoint(medium) {
+                margin: 0 10px;
+            }
+        }
+    }
+
+}
+
+.shopping-cart__carrier-charge-message {
+    font-weight: $global-weight-bold;
+    color: $brand-red;
+}
+
+.iw-dialog .cart-print-preview .hide-for-print-modal {
+    display: none !important;
+}
+
+.empty-cart--container {
+  min-height: 175px;
+  padding: $global-spacing-unit;
+  background-color: $color-white;
+  border: 1px solid $color-warm-gray-5;
+}
+
+.empty-cart--ces-help-links {
+  padding-top: $global-spacing-unit-small;
+  display: flex;
+  flex-direction: column;
+  margin-left: -$global-spacing-unit-small;
+}

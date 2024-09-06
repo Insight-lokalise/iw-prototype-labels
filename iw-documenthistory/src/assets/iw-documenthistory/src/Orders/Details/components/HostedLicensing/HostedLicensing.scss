@@ -1,0 +1,23 @@
+.hosted-licensing {
+  padding: 0px;
+
+  &__message {
+    margin-bottom: $global-spacing-unit-tiny;
+    display: flex;
+    align-items: flex-start;
+
+    > span {
+      width: fit-content;
+    }
+  }
+
+  &__icon {
+    margin-right: $global-spacing-unit-tiny;
+    width: 18px;
+    height: 18px;
+  }
+
+  .ion-android-warning {
+    color: $color-yellow
+  }
+}

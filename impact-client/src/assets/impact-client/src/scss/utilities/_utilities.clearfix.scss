@@ -1,0 +1,14 @@
+/* ==========================================================================
+   #CLEARFIX
+   ========================================================================== */
+
+/**
+ * Attach our clearfix mixin to a utility class.
+ * This should only be needed if using older float based layouts. You should
+ * consider whether using new CSS based layouts such as flex and grid would be a
+ * better solution.
+ */
+
+.u-clearfix {
+  @include clearfix();
+}

@@ -1,0 +1,12 @@
+cert-file.pem
+key-file.pem
+okta.pem
+package-lock.json
+yarn.lock
+node_modules
+npm-debug.log
+.babelrc
+.prettierrc
+.vscode
+.idea
+.eslintrc

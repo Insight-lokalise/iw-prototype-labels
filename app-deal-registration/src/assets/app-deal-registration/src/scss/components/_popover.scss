@@ -1,0 +1,10 @@
+.c-popover__content {
+    position: absolute;
+    background: #fff;
+    z-index: 5000;
+}
+
+.c-popover__content--top-right {
+    top: 0;
+    right: 0;
+}

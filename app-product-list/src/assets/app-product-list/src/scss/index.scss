@@ -1,0 +1,121 @@
+.c-product-list {
+  @import '~@insight/toolkit-css-core/src/_all';
+  .c-dynamic-grid--carousel .c-carousel__viewport .c-carousel__slides {
+    align-items: flex-start;
+  }
+
+  .c-dynamic-grid--carousel .c-product__info {
+    text-align: left;
+    margin: auto;
+  }
+
+  .c-product__design-layout-single .c-product__image img {
+    margin: 0 auto $global-spacing-unit-small;
+    width: inherit;
+    max-width: inherit;
+  }
+
+  .c-product__image {
+    margin-right: 0;
+    overflow: hidden;
+  }
+
+  .c-product__image img {
+    margin: 0 auto $global-spacing-unit-small;
+  }
+
+  .c-product__design-layout-single .c-button.c-button--secondary {
+    display: block;
+    padding: 10px auto;
+    width: fit-content;
+  }
+
+  .c-product__mfr-part {
+    margin-bottom: 10px;
+  }
+
+  .c-product-price {
+    font-weight: $global-font-weight-bold;
+    color: $color-warm-gray-8;
+    font-size: 22px;
+    margin: 5px 0 10px;
+    height: 50px;
+  }
+
+  .c-product-price .c-currency__code {
+    font-size: 100%;
+  }
+
+  .c-product-price .c-currency.c-currency__strikethrough {
+    font-weight: $global-font-weight-normal;
+    font-size: $global-font-size;
+  }
+
+  .c-product-price .c-currency__strikethrough .c-currency__value {
+    font-weight: $global-font-weight-normal;
+  }
+
+  .c-product-stock {
+    padding-bottom: 10px;
+    height: 30px;
+    white-space: nowrap;
+    font-size: 14px;
+  }
+
+  .c-product-stock .c-stock__icon {
+    display: none;
+  }
+
+  .c-button.c-button--secondary {
+    display: block;
+    width: 100%;
+    padding: 10px auto 10px auto;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .c-product__name {
+    font-family: $global-font-family-heading;
+    color: $color-black;
+    margin-bottom: $global-spacing-unit-small;
+    font-size: 24px;
+    height: 73px;
+  }
+
+  .c-product__name:hover {
+    color: $color-red-fuchsia;
+  }
+
+  .c-carousel__indicators {
+    margin: 10px;
+    position: relative;
+  }
+
+  .c-product__design-layout-basic {
+    .c-product__image {
+      height: 120px;
+    }
+
+    .c-product__image img {
+      width: 150px;
+      min-width: 50px;
+      margin-top: $global-spacing-unit-tiny;
+    }
+
+    .c-product__image .c-image__fallback {
+      width: 100%;
+      max-width: 150px;
+    }
+  }
+
+  @include mq($from: desktop) {
+    .c-product-stock .c-stock__icon {
+      display: block;
+    }
+    .c-product__design-layout-basic {
+      .c-product__image {
+        height: 130px;
+      }
+    }
+  }
+}

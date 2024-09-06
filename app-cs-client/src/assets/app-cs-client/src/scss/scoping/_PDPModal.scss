@@ -1,0 +1,138 @@
+// nested to overcome design system default styling
+.c-pdp__details-container {
+  margin-bottom: $global-spacing-unit;
+  .c-pdp__details--table {
+    margin-bottom: $global-spacing-unit-small;
+  }
+  .c-pdp__details--table-row {
+    padding: 0px;
+    padding-right: $global-spacing-unit-small;
+    @include font-size($global-font-size-tiny);
+  }
+  .c-product__title {
+    margin-bottom: $global-spacing-unit-tiny;
+  }
+  .u-margin-top-tiny {
+    margin-top: $global-spacing-unit-tiny;
+  }
+  .u-margin-bot-tiny {
+    margin-bottom: $global-spacing-unit-tiny;
+  }
+  .u-font-size-tiny {
+    @include font-size($global-font-size-tiny, $modifier: -1);
+  }  
+  .u-font-size-small {
+    @include font-size($global-font-size-small, $modifier: -1);
+  }
+  .u-margin-right-tiny {
+    margin-right: $global-spacing-unit-tiny;
+  }
+  .c-cart__stock-icon-container, .c-cart__stock-desc {
+    .c-cart__stock-icon {
+      height: 16px;
+      width: 16px;
+    }
+    margin-right: $global-spacing-unit-tiny;
+  }
+  .c-prorated-product {
+    color: $color-turquoise;
+    margin-top: $global-spacing-unit-small;
+    @include font-size($global-font-size-small, $modifier: -1);
+  }
+  .c-pdp__customer-price {
+    @include font-size(25px);
+  }
+  .c-pdp__customer-price-strike {
+    @include font-size(18px);
+    .c-currency__code, .c-currency__value {
+      color: $color-warm-gray-8 !important;
+    }
+  }
+}
+
+// nested to overcome design system default styling
+.c-cs-mini-pdp__tabs {
+  .u-font-size-small {
+    @include font-size($global-font-size-small);
+  }
+  .c-tabs {
+    border-bottom: $global-input-border-width solid $global-input-border-color;
+    margin-left: 0px;
+  }
+  .c-cs-mini-pdp__tab {
+    padding: 0px 15px 0px 15px;
+  }
+  .u-margin-right-tiny {
+    margin-right: $global-spacing-unit-tiny;
+  }
+}
+
+.c-product__details-image {
+  width: 112px;
+}
+
+.c-pdp__pricing-container {
+  border-top: $global-input-border-width solid $global-input-border-color;
+  padding-top: $global-spacing-unit-tiny;
+
+  .c-cs-client-pdp__product-logo {
+    width: 75px;
+  }
+}
+
+.c-pdp__details--table {
+  border: none;
+  margin-bottom: $global-spacing-unit;
+}
+
+.c-pdp__tech-specs--info {
+  height: 260px;
+  overflow: hidden;
+}
+
+.c-pdp__tech-specs--title {
+  margin: 0;
+}
+
+.c-pdp__tech-specs--table {
+  margin: 0;
+  border: 0;
+}
+
+.c-pdp__tech-specs--table-data {
+  padding: 0;
+}
+
+.c-pdp__tech-specs--table-row:nth-child(odd) {
+  background-color: $color-warm-gray-2;
+}
+
+.c-modal__container {
+  overflow: auto
+}
+
+.c-cs__pdp-contract {
+  background-color: $color-blue-light;
+  padding: $global-spacing-unit-tiny $global-spacing-unit-tiny $global-spacing-unit-tiny $global-spacing-unit-small;
+}
+
+.c-cs__pdp-discount {
+  font-size: $global-font-size-small !important;
+  color: $color-turquoise;
+  .c-currency__code {
+    color: $color-turquoise;
+  }
+}
+
+// popover styling
+.c-tooltip__popover--modal {
+  position: fixed;
+  z-index:  5000;
+  background: #fff;
+  border: $global-input-border-width solid $global-input-border-color;
+  padding: $global-spacing-unit-small;
+}
+
+.u-font-size-tiny {
+  @include font-size($global-font-size-tiny, $modifier: -1);
+}

@@ -1,0 +1,22 @@
+@charset 'utf-8';
+
+.item-card {
+  background-color: white;
+  border-bottom: 1px solid $brand-lightgray;
+  border-top: 1px solid $brand-lightgray;
+  margin-bottom: $orders-spacing-medium;
+
+  @include breakpoint(medium) {
+    border: 1px solid $brand-lightgray;
+  }
+
+  &__status {
+    @include order-status();
+    display: inline-block;
+    margin-bottom: $orders-spacing-small;
+
+    @media print {
+      margin-bottom: $orders-spacing-tiny;
+    }
+  }
+}

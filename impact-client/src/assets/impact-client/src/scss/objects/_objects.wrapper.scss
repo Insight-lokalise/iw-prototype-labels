@@ -1,0 +1,15 @@
+/* ==========================================================================
+   #WRAPPER
+   ========================================================================== */
+
+/**
+ * Page-level constraining and wrapping elements.
+ */
+
+$wrapper-width: mq-get-breakpoint-width(desktop);
+
+.o-wrapper {
+  margin-right: auto;
+  margin-left:  auto;
+  max-width: $wrapper-width;
+}

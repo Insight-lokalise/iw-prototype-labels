@@ -1,0 +1,16 @@
+html body .iw-styles {
+  @import "IWAnchor/IWAnchor";
+  @import "IWDatePicker/IWDatePicker";
+  @import "IWLoading/IWLoading";
+  @import "IWModal/IWModal";
+  @import "IWMonthPicker/IWMonthPicker";
+  @import "IWOverlay/IWOverlay";
+  @import "IWResponsiveTable/IWResponsiveTable";
+  @import "IWSelect/IWSelect";
+  @import "IWTimeFrameSelector/IWTimeFrameSelector";
+  @import "IWTooltip/IWTooltip";
+  // Since the header appears on all pages, including those with legacy styles and iw-styles,
+  // we provide reset.scss file into toolkit-css-ui to create an option for undo legacy styles applied directly to elements
+  // (such as <button>) in the legacy codebase.
+  @import '~@insight/toolkit-css-ui/src/components/reset';
+}

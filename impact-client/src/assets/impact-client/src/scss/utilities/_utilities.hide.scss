@@ -1,0 +1,83 @@
+/* ==========================================================================
+   #HIDE
+   ========================================================================== */
+
+/**
+ * Hide visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.u-hide-visually {
+  @include hide-visually();
+}
+
+
+
+/**
+ * Extends the .u-hide-visually class to allow the element to be focusable
+ * when navigated to via the keyboard:
+ * https://www.nomensa.com/blog/2017/how-improve-web-accessibility-hiding-elements
+ */
+
+.u-hide-visually--focusable:active,
+.u-hide-visually--focusable:focus {
+  clip: auto !important;
+  clip-path: none !important;
+  height: auto !important;
+  margin: 0 !important;
+  overflow: visible !important;
+  position: static !important;
+  width: auto !important;
+  white-space: inherit !important;
+}
+
+
+
+/**
+ * Hide visually and from screen readers.
+ */
+
+.u-hide {
+  display: none !important;
+}
+
+
+
+/**
+ * Hide visually and from screen readers, but maintain layout.
+ */
+
+.u-invisible {
+  visibility: hidden !important;
+}
+
+
+
+/**
+ * Using Sass-MQ, automatically generate hidden and shown classes for each of
+ * our defined breakpoints, and give them a responsive suffix, e.g.:
+ *
+ *   <div class="u-hide@tablet"> Element hidden at tablet and above.
+ *
+ *   <div class="u-show@tablet"> Element shown at tablet and above.
+ */
+
+@each $bp-name, $bp-value in $mq-breakpoints {
+
+  @include mq($from: $bp-name) {
+
+    .u-hide\@#{$bp-name} {
+      display: none !important;
+    }
+
+  }
+
+  @include mq($until: $bp-name) {
+
+    .u-show\@#{$bp-name} {
+      display: none !important;
+    }
+
+  }
+
+}

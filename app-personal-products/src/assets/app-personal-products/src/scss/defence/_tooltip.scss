@@ -1,0 +1,41 @@
+.c-tooltip {
+  background: #007996;
+  color: #fff;
+	position: absolute;
+	padding: 16px;
+	max-width: 256px;
+	border-radius: 4px;
+	opacity: 0;
+	animation: tooltipTop 350ms ease-out 250ms forwards;
+	z-index: 9000;
+	
+	$arrowSize: 14px;
+	$arrowPlusSize: (($arrowSize / 2) + 1px) * -1;
+	$arrowMinusSize: (($arrowSize / 2) - 1px) * -1;
+	
+	.c-tooltip__arrow {
+    background: #007996;
+		position: absolute;
+		content: '';
+		transform-origin: center;
+		border-radius: 2px;
+		width: $arrowSize;
+		height: $arrowSize;
+		transform: translateY($arrowPlusSize) rotateZ(45deg);
+	}
+}
+
+.c-tooltip__anchor {
+	display: inline-block;
+}
+
+@keyframes tooltipTop {
+	0% {
+		opacity: 0;
+		transform: translateY(-14px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

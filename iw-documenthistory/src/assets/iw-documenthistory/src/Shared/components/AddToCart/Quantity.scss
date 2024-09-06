@@ -1,0 +1,15 @@
+@charset 'utf-8';
+
+.quantity {
+
+  &__input {
+    border: 1px solid $brand-lightgray !important;
+    color: $brand-darkgray;
+    font-size: $font-size-small;
+    height: auto;
+    line-height: 1;
+    margin: 0 auto;
+    padding: .75em 0 !important;
+    width: 3em;
+  }
+}

@@ -1,0 +1,59 @@
+
+
+/**
+ * Accordion styling
+ */
+
+.c-collapsible{
+  height: auto !important;
+}
+
+.c-collapsible__content {
+  padding: 0 $global-spacing-unit-small;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  overflow-y: hidden;
+  transform: translateZ(0);
+  transition:
+    height 200ms ease-in-out,
+    opacity 200ms ease-in-out;
+}
+
+.c-collapsible__content.is-open {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+}
+
+.c-accordion__controls {  
+  align-items: center;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding: $global-spacing-unit-tiny $global-spacing-unit-small;
+  .c-icon{
+    vertical-align: middle;
+  }
+  .c-button__text{
+    margin-left:$global-spacing-unit-tiny;
+  }  
+}
+
+.c-accordion__trigger {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0%;
+  background-color: transparent;
+  padding-left: $global-spacing-unit-small + 4;
+}
+
+.c-accordion__extra {
+  display: flex;
+  flex-grow: 0;
+  flex-basis: auto;
+}
+
+.c-accordion__item{
+  margin-bottom: $global-spacing-unit
+}

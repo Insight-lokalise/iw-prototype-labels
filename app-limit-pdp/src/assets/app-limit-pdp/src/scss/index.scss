@@ -1,0 +1,28 @@
+#react-app-limit-pdp {
+  @import '@insight/toolkit-css-ui/src/all';
+
+  @import 'components/index';
+  @import 'components/product_header';
+  @import 'components/product_gallery';
+  @import 'components/product_specifications';
+  @import 'components/product_tabs';
+
+  .row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 1200px;
+    width: 100%;
+    *zoom:1
+  }
+}
+
+.c-modal {
+  @import '~@insight/toolkit-css-core/src/_all';
+  @import '@insight/toolkit-css-ui/src/components/product-details-tabs';
+}
+
+.seo-tags {
+  display: none;
+}

@@ -1,0 +1,7 @@
+export { default as Addresses } from './Addresses'
+export { default as AddAddress } from './AddAddress'
+export { default as AddressesHeader } from './AddressesHeader'
+export { default as AddressesList } from './AddressesList'
+export { default as AddressItem } from'./AddressItem'
+export { default as AccountCenterAddresses } from './AccountCenterAddresses'
+export { default as EditAddress } from './EditAddress'

@@ -1,0 +1,15 @@
+@import '~@insight/toolkit-css-core/src/_all';
+@import '~@insight/toolkit-css-ui';
+
+#react-app-reporting {
+  background-color: $color-white;
+  min-height: calc(100vh - 220px);
+  padding: $global-spacing-unit;
+
+  @import './components/index';
+}
+
+// For Modals
+@import './components/modal';
+
+@import './components/tooltip';

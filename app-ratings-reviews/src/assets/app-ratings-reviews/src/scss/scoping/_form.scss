@@ -1,0 +1,235 @@
+.c-modal-grid {
+  .c-form {
+    width: 100%;
+  }
+
+  .c-input {
+    margin-bottom: 0;
+    height: 40px;
+    color: $color-warm-gray-11;
+    padding: $global-spacing-unit-tiny;
+    font-weight: 400;
+    font-size: $global-font-size-small;
+    &::placeholder {
+      letter-spacing: normal;
+    }
+  }
+
+  .c-form__group {
+    margin-bottom: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+	.c-form__legend {
+	  color: #3E332D;
+	  font-weight: 400;
+	  margin-bottom: 12px;
+	}
+
+  .c-form__element:not(:last-child) {
+    padding: 15px;
+  }
+
+  .c-form__label {
+    color: #3E332D;
+    font-weight: 400;
+		padding: 6px 0;
+  }
+
+  .c-form__label--checkbox,
+  .c-form__label--radio {
+    margin-bottom: 0;
+		margin-left:10px
+  }
+
+	.c-textarea {
+		background-color: #fff;
+		border: 1px solid #CBC4C3;
+		border-radius: 0;
+		color: #3E332D;
+		appearance: none;
+		display: block;
+		min-height: 96px;
+		resize: vertical;
+		width: 100%;
+    margin-bottom: 0;
+	}
+
+  .c-form__required {
+    border-bottom: 0 !important; /* [1] */
+    color: #6F062D;
+    margin-left: 0;
+		text-decoration: none;
+  }
+
+  .c-form__help {
+    font-size: .875rem;
+    color: #5F5753;
+    display: inline-block;
+    margin-top: 6px;
+  }
+
+  .c-form__radio {
+    display: flex;
+    justify-content: flex-start;
+  }
+  /* Error state.
+     ========================================================================== */
+
+  .c-form__element.has-error {
+
+    .c-form__required {
+      color: #AF0E2E;
+    }
+
+    .c-input,
+    .c-select,
+    .c-textarea {
+      border-color: #AF0E2E;
+    }
+
+    .c-form__help {
+      color: #AF0E2E;
+      font-weight: 400;
+    }
+  }
+
+  /* Disabled state.
+     ========================================================================== */
+
+  .c-form__element.is-disabled {
+
+    .c-form__label {
+      cursor: inherit;
+    }
+
+    .c-input[disabled],
+    .c-select[disabled],
+    .c-textarea[disabled] {
+      background-color: #E6E6E5;
+      cursor: not-allowed;
+      user-select: none;
+    }
+
+    .c-textarea[disabled] {
+      resize: none;
+    }
+  }
+
+
+
+  .c-checkbox[disabled],
+  .c-radio[disabled] {
+    cursor: not-allowed;
+
+    & + .c-form__label {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+  }
+
+
+  /* Horizontal form modifier
+     ========================================================================== */
+
+  /**
+   * Create a horizontal form on desktop.
+   */
+
+  .c-form--horizontal {
+
+    @include mq($from: desktop) {
+      .c-form__element {
+        display: flex;
+        align-items: baseline;
+
+        & > {
+          .c-form__legend,
+          .c-form__label {
+            max-width: 75%;
+            padding-right: 12px;
+            text-align: left;
+          }
+        }
+      }
+
+      .c-form__control {
+        flex: auto;
+    }
+
+
+      .c-checkbox__container:only-child {
+        margin-left: 25%;
+
+      }
+    }
+  }
+
+	.c-radio {
+	  cursor: pointer;
+	  margin-bottom: 0;
+	  margin-left: 15px; /* [1] */
+	}
+
+  .c-checkbox__container {
+    display: flex;
+    align-items: center;
+  }
+	.c-radio__container {
+	  display: flex;
+	  align-items: center;
+		float:right;
+    margin-left: $global-spacing-unit-tiny;
+    margin-right: $global-spacing-unit-tiny;
+	}
+}
+.c-form__control-error {
+  vertical-align: text-top;
+  color: $color-red;
+  font-size: $global-font-size-small;
+}
+.c-form--bordered {
+  border: 1px solid $color-warm-gray-2;
+}
+
+.c-form__element--bordered {
+  border-top: 1px solid $color-warm-gray-2;
+  padding: 15px;
+}
+
+.c-form__element-meta {
+  margin-top: $global-spacing-unit-tiny;
+}
+.c-submit-review-modal__form-required {
+  padding: 15px;
+  font-weight: 400;
+  font-size: $global-font-size-small;
+}
+.c-submit-review-modal__form-agreement {
+  padding-left: 15px;
+}
+.c-submit-review-modal__form-error {
+  padding: 0 $global-spacing-unit-small $global-spacing-unit-small;
+}
+.c-submit-review-modal__form-error-text {
+  vertical-align: super;
+}
+
+.c-submit-review-modal__form-microcopy {
+  font-size: 10px;
+  margin-bottom: $global-spacing-unit-tiny;
+}
+.c-review__star-rating-label {
+  .c-form__label {
+    padding-top: 10px;
+    display: inline-block;
+  }
+}
+.c-review__star-rating-help {
+  padding-top: 10px;
+}
+.c-review__star-rating-error {
+  padding-top: 8px;
+}

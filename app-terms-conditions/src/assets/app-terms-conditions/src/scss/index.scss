@@ -1,0 +1,108 @@
+#app-terms-conditions {
+  @import '~@insight/toolkit-css-core/src/_all';
+  @import '~@insight/toolkit-css-ui';
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  strong {
+    font-weight: bolder !important;
+  }
+
+  .c-tc-container {
+    width: 100% !important;
+    background-color: $color-white;
+    height: 100%;
+    width: $global-wrapper;
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    h1 {
+      font-size: 1.8em;
+    }
+
+    h3 {
+      font-size: 1.2em;
+      font-weight: 600;
+    }
+
+    @include mq($until: tablet) {
+      width: 768px;
+    }
+
+    @import './components/index';
+    @import '~react-quill/dist/quill.snow.css';
+  }
+
+  .u-border {
+    border-width: $global-input-border-width;
+    border-style: solid;
+    border-color: $global-input-border-color;
+  }
+
+  .u-border-bot {
+    border-bottom: $global-input-border-width solid $color-warm-gray-5;
+  }
+
+  .u-padding {
+    padding: $global-spacing-unit;
+  }
+
+  .u-padding-top {
+    padding-top: $global-spacing-unit;
+  }
+
+  .u-padding-top-tiny {
+    padding-top: $global-spacing-unit-tiny;
+  }
+
+  .u-padding-bot-tiny {
+    padding-bottom: $global-spacing-unit-tiny;
+  }
+
+  .u-padding-bot {
+    padding-bottom: $global-spacing-unit;
+  }
+
+  .u-padding-left {
+    padding-left: $global-spacing-unit-tiny;
+  }
+
+  .u-border-bot {
+    border-bottom: $global-input-border-width solid $global-input-border-color;
+  }
+
+  .u-margin-right {
+    margin-right: $global-spacing-unit-small;
+  }
+
+  .u-margin-left {
+    margin-left: $global-spacing-unit-small;
+  }
+
+  .u-margin-top {
+    margin-top: $global-spacing-unit-small;
+  }
+
+  .u-margin-top-tiny {
+    margin-top: $global-spacing-unit-tiny;
+  }
+
+  .u-margin-top-small {
+     margin-top: $global-spacing-unit-small;
+   }
+
+  .u-margin-bot-small {
+    margin-bottom: $global-spacing-unit-small;
+  }
+
+  .u-margin-bot-tiny {
+    margin-bottom: $global-spacing-unit-tiny;
+  }
+
+}
+

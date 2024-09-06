@@ -1,0 +1,21 @@
+.c-item-card__stock {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	@include font-size(14px);
+
+	.c-icon {
+		height: $global-spacing-unit-small + $global-spacing-unit-tiny;
+		width: $global-spacing-unit-small + $global-spacing-unit-tiny;
+	}
+
+	.c-icon--success {
+    color: $color-green;
+	}
+}
+
+.c-item-card__unlimitedStock {
+  @include font-size(14px);
+  text-align: center;
+}

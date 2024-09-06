@@ -1,0 +1,35 @@
+.c-entrygrid-elapsed {
+  text-align: right;
+}
+.c-entrygrid-size {
+  text-align: right;
+  .c-entrygrid-size-savings {
+    font-weight: 800;
+    color: darkmagenta;
+    display: inline-block;
+  }
+}
+.ReactTable .rt-tr {
+  &.c-entrygrid--pageLoad {
+    border-left: red solid 3px;
+    background-color: #ffdddd;
+    &.-odd {
+      background-color: #ffeeee;
+    }
+  }
+  &.c-entrygrid--pageContentLoad {
+    border-left: blue solid 3px;
+    background-color: #ddddff;
+    &.-odd {
+      background-color: #eeeeff;
+    }
+  }
+
+  &.c-entrygrid--pageLoading {
+    border-left: green solid 3px;
+    background-color: #ddffdd;
+    &.-odd {
+      background-color: #eeffee;
+    }
+  }
+}

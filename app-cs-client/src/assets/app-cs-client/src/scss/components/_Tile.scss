@@ -1,0 +1,27 @@
+.c-cs-tile__image-container{
+  width: 240px;
+}
+
+.c-cs-tile__product-image-container {
+  width: 240px;
+  height: 180px;
+}
+
+.c-cs-tile__product-image {
+  max-height: 180px;
+}
+
+.c-image__fallback {
+  fill: $color-warm-gray-5;
+}
+
+.c-cs-tile-view__actions {
+  display: flex;
+  align-items: center;
+}
+
+.c-cs-tile__row:not(:last-of-type) .c-cs-client__tile {
+  border-bottom: $global-input-border-width solid $global-input-border-color;
+}
+
+

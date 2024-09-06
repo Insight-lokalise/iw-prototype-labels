@@ -1,0 +1,180 @@
+@import 'iw-styles/src/iw-settings';
+
+$overlay-spacing: 10px;
+$overlay-arrow-width: 11px;
+$overlay-arrow-before: -$overlay-arrow-width * 2;
+$overlay-arrow-after: $overlay-arrow-before + 1;
+
+.iw-overlay {
+
+  @include breakpoint(medium) {
+    position: relative;
+  }
+
+  &__header {
+    margin-top: -$overlay-spacing;
+  }
+
+  &__title {
+    font-size: 1rem;
+    font-family: $body-font-family;
+    margin-bottom: 0;
+  }
+
+  &__btn {
+    font-size: rem-calc(24);
+    color: $brand-gray !important;
+    padding: .25em .35em;
+    margin-right: -.35em;
+
+    &:hover,
+    &:focus {
+      color: $primary-color !important;
+    }
+  }
+
+  &__body {
+    padding: $overlay-spacing * 1.5;
+    position: absolute;
+    z-index: 9999;
+    background-color: white;
+    text-align: left;
+
+    @include breakpoint(small only) {
+      position: fixed; // Make overlays full screen on mobile
+      overflow: auto; // Allow overlay to scroll on mobile if content too large for display
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    @include breakpoint(medium) {
+      width: 300px;
+      border: 1px solid $brand-lightgray;
+      border-radius: 5px;
+    }
+
+    @include breakpoint(large) {
+      width: 400px;
+    }
+
+    @include breakpoint(medium) {
+      /**
+       * Before and after pseudo elements form the arrow
+       */
+      &:not(.iw-overlay__body--none) {
+        &::before,
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: $overlay-arrow-width;
+        }
+      }
+
+      /**
+       * Popup appears at the bottom, arrow is top left
+       */
+      &--bottom {
+        top: calc(100% + .5em);
+
+        &::before,
+        &::after {
+          left: $overlay-spacing * 1.5;
+        }
+
+        &::before {
+          top: $overlay-arrow-before;
+          border-color: transparent transparent $brand-lightgray transparent;
+        }
+
+        &::after {
+          top: $overlay-arrow-after;
+          border-color: transparent transparent white transparent;
+        }
+      }
+
+      /**
+       * Popup appears at the top, arrow is bottom left
+       */
+      &--top {
+        bottom: calc(100% + .5em);
+
+        &::before,
+        &::after {
+          left: $overlay-spacing * 1.5;
+        }
+
+        &::before {
+          bottom: $overlay-arrow-before;
+          border-color: $brand-lightgray transparent transparent transparent;
+        }
+
+        &::after {
+          bottom: $overlay-arrow-after;
+          border-color: white transparent transparent transparent;
+        }
+      }
+
+      /**
+       * Popup appears at the left, arrow is top right
+       */
+      &--left {
+        top: -$overlay-spacing;
+        right: calc(100% + #{$overlay-arrow-width});
+
+        &::before,
+        &::after {
+          top: $overlay-spacing;
+        }
+
+        &::before {
+          right: $overlay-arrow-before;
+          border-color: transparent transparent transparent $brand-lightgray;
+        }
+
+        &::after {
+          right: $overlay-arrow-after;
+          border-color: transparent transparent transparent white;
+        }
+      }
+
+      /**
+       * Popup appears at the right, arrow is top left
+       */
+      &--right {
+        top: -$overlay-spacing;
+        left: calc(100% + #{$overlay-arrow-width});
+
+        &::before,
+        &::after {
+          top: $overlay-spacing;
+        }
+
+        &::before {
+          left: $overlay-arrow-before;
+          border-color: transparent $brand-lightgray transparent transparent;
+        }
+
+        &::after {
+          left: $overlay-arrow-after;
+          border-color: transparent white transparent transparent;
+        }
+      }
+
+      /**
+       * Remove arrow from popup
+       */
+      &--hide-arrow {
+        &::before,
+        &::after {
+          display: none !important;
+        }
+      }
+    }
+  }
+}

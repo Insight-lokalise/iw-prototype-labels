@@ -1,0 +1,13 @@
+.stored-address {
+    margin-top: 1rem;
+}
+
+.stored-address__label {
+    line-height: 1.4;
+    display: inline-block;
+}
+.favorite-address-dropdown{
+    &__help-icon{
+        margin-bottom: 1em;
+    }
+}

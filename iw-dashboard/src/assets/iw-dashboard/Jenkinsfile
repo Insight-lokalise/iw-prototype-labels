@@ -1,0 +1,40 @@
+@Library('groovy-shared-lib') _
+pipeline {
+    agent any
+    stages {
+
+        stage('Run Node') {
+            steps {
+                dir("packages/iw-dashboard") {
+                    script {
+                        jenkinsfileutils.runNode { sh 'npm install && npm run build' }
+                    }
+                }
+            }
+        }
+
+        stage('Install') {
+            steps {
+                dir("packages/iw-dashboard") {
+                    script {
+                        jenkinsfileutils.runSSHCmd("mvn -e clean deploy -Dsurefire.useFile=false")
+                    }
+                }
+            }
+        }
+    }
+    post {
+        success {
+            script {
+                jenkinsfileutils.teamsnotify('Result': "Success")
+                jenkinsfileutils.emailnotify('Result': "Success")
+            }
+        }
+        failure {
+            script {
+                jenkinsfileutils.teamsnotify('Result': "Failure")
+                jenkinsfileutils.emailnotify('Result': "Failure")
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.c-end-ie-support-message {
+  background-color: $color-red-fuchsia;
+  background-image: linear-gradient(to right, #AE0A46, #A80B6E, #582873);
+  padding: 20px 30px;
+  
+  @include mq($until: desktop) {
+    top: 60px;
+
+    .is-ces & {
+      top: 108px;
+    }
+  }
+  
+  @include mq($from: desktop) {
+    top: 89px;
+
+    .is-logged-in & {
+      top: 131px;
+    }
+
+    .is-ces & {
+      top: 108px;
+    }
+
+    .is-logged-in-webgroup & {
+      top: 145px;
+    }
+  }
+  color: $color-white;
+  text-align: left;
+  min-height: 65px;
+  @include font-size($global-font-size);
+}
+
+.c-end-ie-support-message a {
+  color: $color-white;
+  text-decoration: underline;
+  font-weight: $global-font-weight-bold;
+}
+
+.c-end-ie-support-message.secondary-nav {
+  margin-top: 45px;
+}
+
+.c-end-ie-support-message.secondary-nav-black {
+  margin-top: 31px;
+}

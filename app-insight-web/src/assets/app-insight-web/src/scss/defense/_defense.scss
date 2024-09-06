@@ -1,0 +1,40 @@
+.manage-content {
+  padding: 0;
+}
+
+// Blocks rendering of the normal footer
+.footerContainer {
+  display: none;
+}
+
+/**
+ * Fix `is-disabled` state of primary buttons on login forms. This is only
+ * needed for the "loading" condition which is when a button is clicked but the 
+ * response hasn't been received yet. This is particularly helpful for users if 
+ * things are running slowly in the background.
+ *
+ * The reason this "hack" is necessary is because of specific defense styles in 
+ * `app-header`, which exist to override the legacy CSS!
+ *
+ * iw-prototype/packages/app-header/src/scss/defense/_reset.scss:
+ *
+ * `button:focus, button:hover {
+ *    background-color: unset;
+ *  }`
+ * 
+ * `button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
+ *    color: inherit;
+ *  }`
+ */
+
+.ds-v1.app-insight-web {
+
+  .c-button--primary.is-disabled, .c-button--primary[disabled] {  
+    &:hover,
+    &:focus {
+      background-color: $color-link;
+      color: $color-white;
+    }
+  }
+
+}

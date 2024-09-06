@@ -1,0 +1,48 @@
+.c-cs-main__container {
+  @include font-size($global-font-size);
+}
+
+.c-catalog-actions {
+  @include font-size($global-font-size);
+}
+
+.c-category-list-header {
+  @include font-size($global-font-size);
+}
+
+.c-search-bar {
+  @include font-size($global-font-size-small);
+}
+
+.c-general-settings__modified-caption {
+  @include font-size($global-font-size-small);
+}
+
+.c-cs-settings__internal-notes > .c-character-counter {
+  position: relative;
+  bottom: 30px;
+}
+
+.c-dropdown__menu, .c-dropdown__button {
+  z-index: 990;
+}
+
+.c-cs-tag-edit__form .c-form__element {
+  margin-bottom: 0px;
+}
+
+.c-settings-tags__dropdown .c-dropdown__button {
+  border: $global-input-border-width solid $global-input-border-color;
+}
+
+.i-padding-top-none {
+  padding-top: 0px !important;
+}
+
+.i-padding-bot-none {
+  padding-bottom: 0px !important;
+}
+
+.i-margin-bot-none {
+  margin-bottom: 0px !important;
+}

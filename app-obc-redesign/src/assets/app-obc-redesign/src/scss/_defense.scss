@@ -1,0 +1,15 @@
+/**
+ * Defense layer to override specific styles which are outside of the project.
+ */
+
+%no-margin-bottom {
+  margin-bottom: 0px;
+}
+
+%setup-delivery-spacing {
+  margin-bottom: 24px;
+}
+
+select {
+  display: inline-block;
+}

@@ -1,0 +1,33 @@
+@import 'iw-styles/src/iw-settings';
+
+/* SCSS overrides for the react-select module to match up with Insight styles */
+@import 'react-select/scss/default';
+
+.Select {
+  width: 100%;
+  margin: 0 0 1rem;
+  &-control {
+    height: $global-spacing-unit-large;
+    border-radius: 0;
+    border-color: $brand-gray;
+  }
+  &-placeholder {
+    color: $brand-gray;
+    padding-left: 10px;
+    font-weight: $global-weight-bold;
+    line-height: $global-spacing-unit-large;
+  }
+  &-input {
+    height: rem-calc(35);
+    input {
+      padding: 0.5rem;
+    }
+  }
+  &-value {
+    line-height: $global-spacing-unit-large !important; 
+    &-label {
+      color: $brand-mediumgray !important;
+      font-weight: $global-weight-bold;
+    }
+  }
+}
