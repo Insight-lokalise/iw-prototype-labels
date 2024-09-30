@@ -4,9 +4,6 @@ on:
   schedule:
     - cron: '40 00 * * *'
   workflow_dispatch:
-  push:
-    branches:
-      - lokalise-1
 
 jobs:
   Download_labels:
@@ -35,7 +32,6 @@ jobs:
               "directory_prefix": ""
             }
           method: POST
-
       - name: Show API Response Status
         run: |
           echo "Response Status: ${{ steps.api-request.outputs.response-status }}"
