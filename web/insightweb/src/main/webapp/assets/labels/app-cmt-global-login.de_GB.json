@@ -1,0 +1,32 @@
+{
+    "labels": {
+        "no": "Nein",
+        "lastName": "Last Name",
+        "errorSalesOrgNotFound": "Konnte den angegebenen SalesOrg nicht finden",
+        "select": "Auswählen",
+        "errorEmailNotInGLM": "Konnte keine E-Mail-Adresse im GLM finden",
+        "update": "Aktualisieren",
+        "salesOrg": "salesOrg",
+        "errorWithRequest": "Konnte die Anfrage nicht abschließen",
+        "whatManage": "Was möchten Sie verwalten",
+        "stillSeemsReferenced": "Es scheint immer noch von Konten in SAP referenziert zu werden.",
+        "updateGLM": "GLM aktualisieren",
+        "existingClientIssues": "Bestehende Client-GLM-Probleme",
+        "emailAddress": "Email Adresse",
+        "loginLinkSuccessful": "Die Anmeldung wurde erfolgreich verknüpft",
+        "loginRemoveSuccessful": "Die Anmeldung wurde erfolgreich entfernt",
+        "errorSoldToNotFound": "Konnte den angegebenen SoldTo nicht finden",
+        "errorExistingSAPUserFound": "SAP-Benutzer mit dieser E-Mail-Adresse gefunden",
+        "yes": "Ja",
+        "newSACErrors": "Neue, vereinfachte Fehler bei der Kontoerstellung",
+        "linkToSoldTo": "Link user to additional GGP\/Soldto",
+        "firstName": "First Name",
+        "errorEmailNotLinkedToAccount": "Konnte kein bestehendes Konto für E-Mail finden",
+        "phoneNumber": "Phone Number",
+        "linkToSoldToSuccessful": "Die Anmeldung wurde erfolgreich verknüpft",
+        "areYouSureDelete": "Sind Sie sicher, dass Sie diese GLM-Anmeldung löschen wollen?",
+        "soldToNumber": "Sold To-Nummer",
+        "errorSAPContactNotFound": "Konnte den angegebenen SAP-Kontakt nicht finden",
+        "sapContactID": "SAP-Kontakt-ID"
+    }
+}

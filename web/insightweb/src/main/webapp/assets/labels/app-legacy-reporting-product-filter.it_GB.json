@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "filterByProduct": "Filtra per prodotto:",
+        "productCategories": "Categorie di prodotti",
+        "productSubCategories": "Sottocategorie di prodotti",
+        "manufacturers": "Produttori",
+        "hardwareFilters": "Mostra solo filtri hardware",
+        "AllTypes": "TUTTI i tipi",
+        "productTypes": "Tipo di prodotto ",
+        "hardwareSoftwareFilters": "Mostra filtri software e hardware",
+        "softwareFilters": "Mostra solo filtri software"
+    }
+}

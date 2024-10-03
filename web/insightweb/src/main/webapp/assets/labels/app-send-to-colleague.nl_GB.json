@@ -1,0 +1,23 @@
+{
+    "labels": {
+        "emailErrorText": "Voer een geldig e-mailadres in",
+        "thankYou": "Dank u",
+        "recEmail": "E-mailadres van ontvanger",
+        "attachLicenseProof": "Licentiebewijs bijvoegen",
+        "bottomText2": "Als u deze e-mail naar meer dan één ontvanger wilt sturen, plaats dan een komma of puntkomma tussen afzonderlijke e-mailadressen in de E-mailadres van ontvanger vakje hierboven.",
+        "bottomText3": "Voorbeeld: ontvanger1@mijnwebsite.com, ontvanger2@mijnwebsite.com",
+        "yourName": "Uw naam",
+        "bottomText1": "Uw e-mailadres wordt niet verkocht of gebruikt voor promotionele doeleinden. Het wordt alleen gebruikt zodat de ontvanger weet wie het product aanbeveelt.",
+        "inputErrorText": "This field is required. Please enter a value.",
+        "yourEmail": "Uw e-mailadres",
+        "sendEmail": "Verstuur e-mail",
+        "pdf": "PDF",
+        "requiredFields": "Geeft verplichte velden aan",
+        "yourComments": "Uw opmerkingen",
+        "html": "HTML",
+        "emailinputFormat": "Zorg ervoor dat het e-mailadres van de ontvanger correct is opgemaakt",
+        "successMsg": "Uw e-mail is succesvol verzonden.",
+        "sendtoColleague": "Naar collega sturen",
+        "emailFormat": "E-mailindeling"
+    }
+}

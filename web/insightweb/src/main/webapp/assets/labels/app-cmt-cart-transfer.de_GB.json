@@ -1,0 +1,20 @@
+{
+    "labels": {
+        "taxEstimate": "Steuerschätzung",
+        "unitPrice": "Stückpreis",
+        "submit": "Abschicken",
+        "totalPrice": "Gesamtpreis",
+        "shippingEstimate": "Kostenvoranschlag für den Versand",
+        "unspsc": "UNSPSC ver ",
+        "manufacturer": "Hersteller",
+        "confirm": "Bestätigen",
+        "total": "Gesamtbetrag",
+        "cartTransferPageHeading": "Bestellen: Versand, Rechnung und Bezahlung:",
+        "subtotal": "Zwischensumme netto",
+        "qty": "Menge",
+        "prodName": "Produktname",
+        "pageDescription": "Vielen Dank, dass Sie Insight als Ihre elektronische Beschaffungs-Lösung nutzen. Bitte überprüfen Sie den Inhalt des Warenkorbs unten, um Ihre Bestellung zu bestätigen. Um Ihre Bestellung aufzugeben, wählen und<br\/> senden Sie bitte Ihren Warenkorb mit Ihrer Host-Anwendung.",
+        "partNumber": "Teilnummer",
+        "ewrFee": "EWR-Kostenvoranschlag:"
+    }
+}

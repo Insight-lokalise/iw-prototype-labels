@@ -1,0 +1,272 @@
+{
+    "labels": {
+        "ADHOCoptions": [
+            {
+                "name": "ACCOUNT NAME",
+                "value": "Accountnaam"
+            },
+            {
+                "name": "ACCOUNT NUMBER",
+                "value": "Rekeningnummer"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 1",
+                "value": "Aanvullende laboratoriumgegevens 1"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 2",
+                "value": "Aanvullende laboratoriumgegevens 2"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 3",
+                "value": "Aanvullende laboratoriumgegevens 3"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 4",
+                "value": "Aanvullende laboratoriumgegevens 4"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 5",
+                "value": "Aanvullende laboratoriumgegevens 5"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 6",
+                "value": "Aanvullende laboratoriumgegevens 6"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 7",
+                "value": "Aanvullende laboratoriumgegevens 7"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 8",
+                "value": "Aanvullende laboratoriumgegevens 8"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 9",
+                "value": "Aanvullende laboratoriumgegevens 9"
+            },
+            {
+                "name": "ASSET TAG",
+                "value": "Asset-tag"
+            },
+            {
+                "name": "CARRIER",
+                "value": "Fluggesellschaft"
+            },
+            {
+                "name": "CONTACT EMAIL",
+                "value": "E-mailadres voor contact"
+            },
+            {
+                "name": "CONTACT NAME",
+                "value": "Kontakt Name"
+            },
+            {
+                "name": "CONTACT PHONE",
+                "value": "Telefoonnummer contactpersoon"
+            },
+            {
+                "name": "CURRENCY",
+                "value": "Valuta"
+            },
+            {
+                "name": "CUSTOMER SKU",
+                "value": "Klant SKU"
+            },
+            {
+                "name": "EWR FEES",
+                "value": "EWR-vergoedingen"
+            },
+            {
+                "name": "EXPECTED DELIVERY DATE",
+                "value": "Verwachte leveringsdatum"
+            },
+            {
+                "name": "EXTENDED PRICE",
+                "value": "Uitgebreide prijs"
+            },
+            {
+                "name": "FREIGHT LINE",
+                "value": "Vrachtlijn"
+            },
+            {
+                "name": "GST\/HST",
+                "value": "GST\/HST"
+            },
+            {
+                "name": "INSIGHT MATERAL NO",
+                "value": "Insight Materieelnr"
+            },
+            {
+                "name": "INVOICE DATE",
+                "value": "Factuurdatum"
+            },
+            {
+                "name": "INVOICE NUMBER",
+                "value": "Factuurnummer"
+            },
+            {
+                "name": "INVOICE LINE NUMBER",
+                "value": "Factuur regelnummer"
+            },
+            {
+                "name": "INVOICED QUANTITY",
+                "value": "Gefactureerde hoeveelheid"
+            },
+            {
+                "name": "MANUFACTURER",
+                "value": "Fabrikant"
+            },
+            {
+                "name": "MATERIAL DESCRIPTION",
+                "value": "Materiaalbeschrijving"
+            },
+            {
+                "name": "MATERIAL NUMBER",
+                "value": "Materiaalnummer"
+            },
+            {
+                "name": "MSRP",
+                "value": "MSRP"
+            },
+            {
+                "name": "OPERATIONS CENTER",
+                "value": "Operatiecentrum"
+            },
+            {
+                "name": "ORDER DATE",
+                "value": "Besteldatum"
+            },
+            {
+                "name": "ORDER TYPE",
+                "value": "Bestellungsart"
+            },
+            {
+                "name": "PO NUMBER",
+                "value": "Auftragsnummer"
+            },
+            {
+                "name": "PO RELEASE NO",
+                "value": "PO-uitgavenr."
+            },
+            {
+                "name": "PRODUCT CATEGORY",
+                "value": "Product Categorie"
+            },
+            {
+                "name": "PRODUCT SUBCATEGORY",
+                "value": "Subcategorie van product"
+            },
+            {
+                "name": "PRODUCT TITLE",
+                "value": "Producttitel"
+            },
+            {
+                "name": "PRODUCT TYPE",
+                "value": "Art des Produkts"
+            },
+            {
+                "name": "PST\/QST",
+                "value": "PST\/QST"
+            },
+            {
+                "name": "RECEIVER OF PARCEL",
+                "value": "Ontvanger van pakket"
+            },
+            {
+                "name": "REPORTING PARENT #",
+                "value": "Nummer rapporterende ouder"
+            },
+            {
+                "name": "REPORTING PARENT NAME",
+                "value": "Naam rapporterend ouder"
+            },
+            {
+                "name": "SALES REP NAME",
+                "value": "Naam van verkoopvertegenwoordiger"
+            },
+            {
+                "name": "SERIAL NUMBER",
+                "value": "Serienummer"
+            },
+            {
+                "name": "CONSIGNMENT REFERENCE",
+                "value": "Referentienummer van de zending"
+            },
+            {
+                "name": "SHIPPING CITY",
+                "value": "Plaats van verzending"
+            },
+            {
+                "name": "SHIPPING COUNTRY",
+                "value": "Land van verzending"
+            },
+            {
+                "name": "SHIP METHOD",
+                "value": "Verzendmethode"
+            },
+            {
+                "name": "SHIPPING NAME",
+                "value": "Naam van verzending"
+            },
+            {
+                "name": "SHIPPING STATE\/PROVINCE",
+                "value": "Staat\/provincie van verzending"
+            },
+            {
+                "name": "SHIPPING ADDRESS",
+                "value": "Verzendadres"
+            },
+            {
+                "name": "SHIPPING ATTENTION",
+                "value": "T.a.v. voor verzending"
+            },
+            {
+                "name": "SHIPPING POSTAL CODE",
+                "value": "Postcode van verzending"
+            },
+            {
+                "name": "TAX CHARGE",
+                "value": "Belastingen op de factuur"
+            },
+            {
+                "name": "TOTAL PRICE",
+                "value": "Totale prijs"
+            },
+            {
+                "name": "TRACKING DATE",
+                "value": "Trackingdatum"
+            },
+            {
+                "name": "TRACKING NUMBER",
+                "value": "Traceernummer"
+            },
+            {
+                "name": "UNIT PRICE",
+                "value": "Eenheidsprijs"
+            },
+            {
+                "name": "UNSPSC CODE",
+                "value": "UNSPSC-code"
+            }
+        ],
+        "ADHOCReqOptions": [
+            {
+                "name": "ORDER NUMBER",
+                "value": "Bestelnummer"
+            },
+            {
+                "name": "ORDER LINE NUMBER",
+                "value": "Regelnummer bestelling"
+            },
+            {
+                "name": "QUANTITY SHIPPED",
+                "value": "Verzonden hoeveelheid"
+            },
+            {
+                "name": "SHIP DATE",
+                "value": "Verzenddatum"
+            }
+        ]
+    }
+}

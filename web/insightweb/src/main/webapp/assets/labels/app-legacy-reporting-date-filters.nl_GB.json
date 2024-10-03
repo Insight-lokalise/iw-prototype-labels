@@ -1,0 +1,9 @@
+{
+    "labels": {
+        "filterByDate": "Filteren op datumbereik:",
+        "scheduleOpts": "Uit te voeren rapport inplannen:",
+        "endDate": "Einddatum:",
+        "quickDate": "Snelle datum:",
+        "startDate": "Begindatum:"
+    }
+}

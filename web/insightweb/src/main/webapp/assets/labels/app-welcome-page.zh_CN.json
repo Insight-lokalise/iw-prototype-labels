@@ -1,0 +1,12 @@
+{
+    "labels": {
+        "SalesRepFAX": "传真： ",
+        "SalesRepYourSalesTeamLabel": "您的销售团队",
+        "SalesRepVoice": "语音：",
+        "SalesRepTeamNumber": "团队编号：",
+        "SalesRepInfo": "有关代表的信息",
+        "welcomeText": "欢迎",
+        "downloadableFilesHeading": "下面是您可下载的文件",
+        "welcomeToInsight": "欢迎使用%1$s Insight.com%2$s"
+    }
+}

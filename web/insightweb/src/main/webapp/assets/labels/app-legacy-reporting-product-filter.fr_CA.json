@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "filterByProduct": "Filtrer par produit:",
+        "productCategories": "Catégories de produits",
+        "productSubCategories": "Sous-catégories de produits",
+        "manufacturers": "Fabricants",
+        "hardwareFilters": "Afficher les filtres matériels seulement",
+        "AllTypes": "TOUS les types",
+        "productTypes": "Types de licence logiciel",
+        "hardwareSoftwareFilters": "Afficher les filtres matériels et logiciels",
+        "softwareFilters": "Afficher les filtres logiciels seulement"
+    }
+}
