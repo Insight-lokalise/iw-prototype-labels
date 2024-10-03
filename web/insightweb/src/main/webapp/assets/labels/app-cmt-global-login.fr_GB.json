@@ -1,0 +1,32 @@
+{
+    "labels": {
+        "no": "Non",
+        "lastName": "Last Name",
+        "errorSalesOrgNotFound": "Impossible de trouver l’acheteur spécifié",
+        "select": "Sélectionner",
+        "errorEmailNotInGLM": "Impossible de trouver l’adresse e-mail dans GLM",
+        "update": "Mise à jour",
+        "salesOrg": "salesOrg",
+        "errorWithRequest": "Impossible de terminer la demande",
+        "whatManage": "Ce que vous voulez gérer",
+        "stillSeemsReferenced": "Elle semble toujours être référencée par les comptes dans SAP.",
+        "updateGLM": "Mettre à jour GLM",
+        "existingClientIssues": "Problèmes GLM du client existant",
+        "emailAddress": "Adresse de messagerie",
+        "loginLinkSuccessful": "La connexion a été liée avec succès",
+        "loginRemoveSuccessful": "La connexion a été supprimée avec succès",
+        "errorSoldToNotFound": "Impossible de trouver l’acheteur spécifié",
+        "errorExistingSAPUserFound": "Utilisateur SAP trouvé avec cette adresse e-mail",
+        "yes": "Oui",
+        "newSACErrors": "Nouvelles erreurs de création de compte simplifiée",
+        "linkToSoldTo": "Link user to additional GGP\/Soldto",
+        "firstName": "First Name",
+        "errorEmailNotLinkedToAccount": "Impossible de trouver le compte existant lié à l’e-mail",
+        "phoneNumber": "Phone Number",
+        "linkToSoldToSuccessful": "La connexion a été liée avec succès",
+        "areYouSureDelete": "Êtes-vous sûr de vouloir supprimer ce compte GLM ?",
+        "soldToNumber": "Numéro d’acheteur",
+        "errorSAPContactNotFound": "Impossible de trouver le contact SAP spécifié",
+        "sapContactID": "ID de contact SAP"
+    }
+}

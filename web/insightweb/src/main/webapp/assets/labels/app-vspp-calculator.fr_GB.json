@@ -1,0 +1,27 @@
+{
+    "labels": {
+        "cancel": "Annuler",
+        "product": "Produit",
+        "AllReportingPeriodsCurrent": "Toutes les périodes de rapport en cours",
+        "commitlevel": "Niveau d’engagement",
+        "one": "1",
+        "zero": "0",
+        "reportmessage": "Le rapport VMware est dû avant le 5 du mois. Vous devez déclarer l’utilisation par ordre mensuel (janvier, février, etc.).",
+        "VSPPMonthlyRental": "Location mensuelle VSPP",
+        "total": "Total",
+        "dec2011": "Décembre 2011",
+        "pointValue": "Valeur de point",
+        "monthlyoverage": "Location mensuelle VSPP (excédent)",
+        "reportperiod": "Période de rapport :",
+        "earnedpoints": "Points gagnés",
+        "jan2012": "Janvier 2012",
+        "qty": "Quantité",
+        "YouAreAbout": "Vous êtes sur le point de déclarer une utilisation nulle pour le mois sélectionné. Êtes-vous sûr de vouloir déclarer une utilisation nulle ?",
+        "MonthlyRentalSku": "Location mensuelle UGS",
+        "cartproceed": "Accéder au panier >>",
+        "totalpoints": "Total des points",
+        "usagecalc": "Calculatrice d’utilisation VMware",
+        "nov2011": "Novembre 2011",
+        "totalearnedpoints": "Total des points gagnés"
+    }
+}

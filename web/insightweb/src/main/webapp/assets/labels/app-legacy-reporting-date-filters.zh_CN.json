@@ -1,0 +1,9 @@
+{
+    "labels": {
+        "filterByDate": "按日期范围筛选：",
+        "scheduleOpts": "计划要运行的报告：",
+        "endDate": "结束日期：",
+        "quickDate": "快速日期：",
+        "startDate": "起始日期："
+    }
+}

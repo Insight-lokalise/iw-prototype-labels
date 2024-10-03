@@ -1,0 +1,328 @@
+{
+    "labels": {
+        "ADHOCoptions": [
+            {
+                "name": "# OF USERS",
+                "value": "# gebruikers"
+            },
+            {
+                "name": "ACCOUNT ADDRESS",
+                "value": "Adres van account"
+            },
+            {
+                "name": "ACCOUNT ATTENTION",
+                "value": "T.a.v. van account"
+            },
+            {
+                "name": "ACCOUNT CITY",
+                "value": "Plaats van account"
+            },
+            {
+                "name": "ACCOUNT STATE\/PROVINCE",
+                "value": "Staat\/provincie van account"
+            },
+            {
+                "name": "ACCOUNT POSTAL CODE",
+                "value": "Postcode van account"
+            },
+            {
+                "name": "ACCOUNT COUNTRY",
+                "value": "Land van account"
+            },
+            {
+                "name": "ASSET TAG",
+                "value": "Asset-tag"
+            },
+            {
+                "name": "BILLING ACCOUNT NUMBER",
+                "value": "Accountnummer factureren"
+            },
+            {
+                "name": "BILLING ACCOUNT NAME",
+                "value": "Factureren aan bedrijf"
+            },
+            {
+                "name": "CARRIER",
+                "value": "Transporteur"
+            },
+            {
+                "name": "CONTACT EMAIL",
+                "value": "E-mailadres voor contact"
+            },
+            {
+                "name": "CONTACT NAME",
+                "value": "Naam contactpersoon"
+            },
+            {
+                "name": "CONTACT PHONE",
+                "value": "Telefoonnummer contactpersoon"
+            },
+            {
+                "name": "COUNTRY OF USAGE",
+                "value": "Land van gebruik"
+            },
+            {
+                "name": "CURRENCY",
+                "value": "Valuta"
+            },
+            {
+                "name": "CUSTOMER ID",
+                "value": "Klant-ID"
+            },
+            {
+                "name": "CUSTOMER SKU",
+                "value": "Customer SKU"
+            },
+            {
+                "name": "ENROLLMENT END DATE",
+                "value": "Enrollment End Date"
+            },
+            {
+                "name": "ENROLLMENT NUMBER",
+                "value": "Enrollment Number"
+            },
+            {
+                "name": "ENROLLMENT START DATE",
+                "value": "Begindatum inschrijving"
+            },
+            {
+                "name": "EWR FEES",
+                "value": "EWR-vergoedingen"
+            },
+            {
+                "name": "EXTENDED PRICE",
+                "value": "Uitgebreide prijs"
+            },
+            {
+                "name": "FREIGHT LINE",
+                "value": "Vrachtlijn"
+            },
+            {
+                "name": "FREIGHT TOTAL",
+                "value": "Totaal vracht"
+            },
+            {
+                "name": "GST\/HST",
+                "value": "GST\/HST"
+            },
+            {
+                "name": "INSIGHT MATERAL NO",
+                "value": "Insight Materieelnr"
+            },
+            {
+                "name": "INVOICE DATE",
+                "value": "Factuurdatum"
+            },
+            {
+                "name": "INVOICED QUANTITY",
+                "value": "Gefactureerde hoeveelheid"
+            },
+            {
+                "name": "LANGUAGE",
+                "value": "Taal"
+            },
+            {
+                "name": "MANUFACTURER",
+                "value": "Fabrikant"
+            },
+            {
+                "name": "MATERIAL DESCRIPTION",
+                "value": "Materiaalbeschrijving"
+            },
+            {
+                "name": "MATERIAL NUMBER",
+                "value": "Materiaalnummer"
+            },
+            {
+                "name": "MAINTENANCE END DATE",
+                "value": "Einddatum onderhoud"
+            },
+            {
+                "name": "MAINTENANCE START DATE",
+                "value": "Begindatum onderhoud"
+            },
+            {
+                "name": "MASTER AGREEMENT NUMBER",
+                "value": "Overeenkomstnummer"
+            },
+            {
+                "name": "MEDIA",
+                "value": "Media"
+            },
+            {
+                "name": "OPERATIONS CENTER",
+                "value": "Operatiecentrum"
+            },
+            {
+                "name": "ORDER DATE",
+                "value": "Besteldatum"
+            },
+            {
+                "name": "ORDER TYPE",
+                "value": "Besteltype"
+            },
+            {
+                "name": "QUANTITY ORDERED",
+                "value": "Bestelde hoeveelheid"
+            },
+            {
+                "name": "PACKAGE COUNT",
+                "value": "Aantal pakketten"
+            },
+            {
+                "name": "PLANT SOURCE",
+                "value": "Fabriek Oorsprong"
+            },
+            {
+                "name": "PO NUMBER",
+                "value": "Uw orderreferentie"
+            },
+            {
+                "name": "PO Release No",
+                "value": "PO-uitgavenr"
+            },
+            {
+                "name": "PRODUCT CATEGORY",
+                "value": "Product Categorie"
+            },
+            {
+                "name": "PRODUCT SUBCATEGORY",
+                "value": "Subcategorie van product"
+            },
+            {
+                "name": "PRODUCT TITLE",
+                "value": "Producttitel"
+            },
+            {
+                "name": "PRODUCT TYPE",
+                "value": "Producttype"
+            },
+            {
+                "name": "PST\/QST",
+                "value": "PST\/QST"
+            },
+            {
+                "name": "PURCHASE TYPE",
+                "value": "Aankooptype"
+            },
+            {
+                "name": "REFERENCE NUMBER",
+                "value": "Referentienummer"
+            },
+            {
+                "name": "REGION",
+                "value": "Regio"
+            },
+            {
+                "name": "REPORTING PARENT #",
+                "value": "Nummer rapporterende ouder"
+            },
+            {
+                "name": "REPORTING PARENT NAME",
+                "value": "Naam rapporterend ouder"
+            },
+            {
+                "name": "SALES REP NAME",
+                "value": "Naam van verkoopvertegenwoordiger"
+            },
+            {
+                "name": "SERIAL NUMBER",
+                "value": "Serienummer"
+            },
+            {
+                "name": "SALES SERVICE REP NAME",
+                "value": "Naam van verkoopvertegenwoordiger"
+            },
+            {
+                "name": "SHIPPING CITY",
+                "value": "Plaats van verzending"
+            },
+            {
+                "name": "SHIPPING COUNTRY",
+                "value": "Land van verzending"
+            },
+            {
+                "name": "SHIP DATE",
+                "value": "Verzenddatum"
+            },
+            {
+                "name": "Ship Method",
+                "value": "Verzendmethode"
+            },
+            {
+                "name": "SHIPPING NAME",
+                "value": "Naam van verzending"
+            },
+            {
+                "name": "SHIPPING STATE\/PROVINCE",
+                "value": "Staat\/provincie van verzending"
+            },
+            {
+                "name": "SHIPPING ADDRESS",
+                "value": "Straat van verzending"
+            },
+            {
+                "name": "SHIPPING ATTENTION",
+                "value": "T.a.v. van Verzenden aan"
+            },
+            {
+                "name": "SHIPPING POSTAL CODE",
+                "value": "Postcode van Verzenden aan"
+            },
+            {
+                "name": "SHIPPING ACCOUNT",
+                "value": "Account voor verzending"
+            },
+            {
+                "name": "TAX CHARGE",
+                "value": "Belastingen op de factuur"
+            },
+            {
+                "name": "TOTAL PRICE",
+                "value": "Totale prijs"
+            },
+            {
+                "name": "TRACKING NUMBER",
+                "value": "Traceernummer"
+            },
+            {
+                "name": "UNIT PRICE",
+                "value": "Eenheidsprijs"
+            },
+            {
+                "name": "UNSPSC CODE",
+                "value": "UNSPSC-code"
+            },
+            {
+                "name": "VERSION",
+                "value": "Versie"
+            }
+        ],
+        "ADHOCReqOptions": [
+            {
+                "name": "ACCOUNT NAME",
+                "value": "Accountnaam"
+            },
+            {
+                "name": "ACCOUNT NUMBER",
+                "value": "Rekeningnummer"
+            },
+            {
+                "name": "ORDER NUMBER",
+                "value": "Bestelnummer"
+            },
+            {
+                "name": "ORDER LINE Number",
+                "value": "Regelnummer bestelling"
+            },
+            {
+                "name": "INVOICE NUMBER",
+                "value": "Factuurnummer"
+            },
+            {
+                "name": "INVOICE LINE Number",
+                "value": "Factuur regelnummer"
+            }
+        ]
+    }
+}
