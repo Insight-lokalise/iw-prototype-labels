@@ -297,6 +297,8 @@
     "Email Report": "Email Report",
     "Please enter template name": "Please enter template name",
     "To customize your report": "To customize your report",
-    "Go to new report": "Go to new report"
+    "Go to new report": "Go to new report",
+    "SmartTracker is custom data captured for our clients during the ordering process to allow for customized record-keeping for each customer. This service can assist a company in tracking and auditing internally to maintain license compliance and other internal reporting functions.": "SmartTracker is custom data captured for our clients during the ordering process to allow for customized record-keeping for each customer. This service can assist a company in tracking and auditing internally to maintain license compliance and other internal reporting functions.",
+    "SmartTracker / Order Information": "SmartTracker / Order Information"
   }
 }
