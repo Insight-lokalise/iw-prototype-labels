@@ -200,6 +200,8 @@
     "Your current password is not correct": "Your current password is not correct",
     "Add card": "Add card",
     "Edit card": "Edit card",
-    "Delete Now test": "Delete Now"
+    "Delete Now test": "Delete Now",
+    "Change login information": "Change login information",
+    "Clicking \"Change login information\" will take you to our secure update page.": "Clicking \"Change login information\" will take you to our secure update page."
   }
 }
