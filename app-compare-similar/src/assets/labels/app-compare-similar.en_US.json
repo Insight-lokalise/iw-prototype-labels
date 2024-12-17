@@ -20,7 +20,7 @@
     "Search": "Search",
     "Home": "Home",
     "Availability": "Availability",
-    "Added to cart": "Added to cart\\n",
+    "Added to cart": "Added to cart\n",
     "Your price": "Your price",
     "Subtotal": "Subtotal",
     "Mfr #:": "Mfr #:",
@@ -36,6 +36,7 @@
     "Your price:": "Your price:",
     "Item backordered": "Item backordered",
     "Insight #:": "Insight #:",
-    "Protection plans": "Protection plans"
+    "Protection plans": "Protection plans",
+    "Add to your purchase": "Add to your purchase"
   }
 }
