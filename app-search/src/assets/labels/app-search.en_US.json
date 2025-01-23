@@ -115,6 +115,8 @@
     "Add carrier": "Add carrier",
     "Back to carriers": "Back to carriers",
     "Carrier provider": "Carrier provider",
-    "Cancel": "Cancel"
+    "Cancel": "Cancel",
+    "CELLULAR ACTIVATION VIA BELL": "CELLULAR ACTIVATION VIA BELL",
+    "CELLULAR ACTIVATION VIA ROGERS": "CELLULAR ACTIVATION VIA ROGERS"
   }
 }
