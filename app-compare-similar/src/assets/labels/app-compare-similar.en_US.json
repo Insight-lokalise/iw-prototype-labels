@@ -20,7 +20,7 @@
     "Search": "Search",
     "Home": "Home",
     "Availability": "Availability",
-    "Added to cart": "Added to cart\\n",
+    "Added to cart": "Added to cart",
     "Your price": "Your price",
     "Subtotal": "Subtotal",
     "Mfr #:": "Mfr #:",
@@ -56,6 +56,8 @@
     "Add carrier": "Add carrier",
     "Back to carriers": "Back to carriers",
     "Carrier provider": "Carrier provider",
-    "Cancel": "Cancel"
+    "Cancel": "Cancel",
+    "CELLULAR ACTIVATION VIA BELL": "CELLULAR ACTIVATION VIA BELL",
+    "CELLULAR ACTIVATION VIA ROGERS": "CELLULAR ACTIVATION VIA ROGERS"
   }
 }
