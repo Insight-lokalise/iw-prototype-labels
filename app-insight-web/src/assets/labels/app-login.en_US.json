@@ -280,6 +280,9 @@
     "New to Insight?": "New to Insight?",
     "webinars": "Webinars",
     "inventoryReports": "",
-    "updateButtonText": ""
+    "updateButtonText": "",
+    "Access to this page is restricted to users with the appropriate permissions as determined by your role or administrative access.": "Access to this page is restricted to users with the appropriate permissions as determined by your role or administrative access.",
+    "Access Denied. Unfortunately, you don't have permission to view this page.": "Access Denied. Unfortunately, you don't have permission to view this page.",
+    "Go back": "Go back"
   }
 }
