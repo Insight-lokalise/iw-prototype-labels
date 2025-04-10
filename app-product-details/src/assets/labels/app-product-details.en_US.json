@@ -175,6 +175,20 @@
     "Activate device with a carrier": "Activate device with a carrier",
     "Select your carrier when you add to cart. After completing your purchase, our team will assist you in activating your device.": "Select your carrier when you add to cart. After completing your purchase, our team will assist you in activating your device.",
     "CELLULAR ACTIVATION VIA BELL": "CELLULAR ACTIVATION VIA BELL",
-    "CELLULAR ACTIVATION VIA ROGERS": "CELLULAR ACTIVATION VIA ROGERS"
+    "CELLULAR ACTIVATION VIA ROGERS": "CELLULAR ACTIVATION VIA ROGERS",
+    "Level": "Level",
+    "License qty": "License qty",
+    "pricing": "pricing",
+    "per license": "per license",
+    "This account is currently at level": "This account is currently at level",
+    "There are ": "There are ",
+    "days left in your subscription cycle.": "days left in your subscription cycle.",
+    "Proration applied": "Proration applied",
+    " days left in your subscription cycle.": " days left in your subscription cycle.",
+    "This account is currently at level ": "This account is currently at level ",
+    " days remaining in the current annual subscription cycle": " days remaining in the current annual subscription cycle",
+    " and in the 3-year commitment.": " and in the 3-year commitment.",
+    " and ": " and ",
+    " days remaining in the 3-year commitment.": " days remaining in the 3-year commitment."
   }
 }
