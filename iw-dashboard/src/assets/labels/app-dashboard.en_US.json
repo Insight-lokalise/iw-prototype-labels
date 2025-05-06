@@ -206,6 +206,10 @@
     "Norway": "Norway",
     "Total": "Total",
     "Denmark": "Denmark",
-    "Approver workflow": ""
+    "Approver workflow": "",
+    "Terms and Conditions Text": "Terms and Conditions",
+    "Review and accept Terms Text": "Please review and accept the following terms and conditions before approving the requisition:",
+    "Accept the terms and conditions to continue Text": "By clicking this box, you hereby agree with the terms and conditions for all products. You must accept the",
+    "to continue.": "to continue."
   }
 }
