@@ -667,6 +667,10 @@
     "Insight.com requires a phone number to contact you regarding your activation": "Insight.com requires a phone number to contact you regarding your activation",
     "Insight.com requires a phone number to contact you regarding your activation.": "Insight.com requires a phone number to contact you regarding your activation.",
     "Please enter a valid Phone.": "Please enter a valid Phone.",
-    "By clicking this box, you hereby agree with the terms and conditions for all products.": "By clicking this box, you hereby agree with the terms and conditions for all products."
+    "By clicking this box, you hereby agree with the terms and conditions for all products.": "By clicking this box, you hereby agree with the terms and conditions for all products.",
+    "Subscription": "Subscription",
+    "Subscription amount is an estimate and will be billed later.": "Subscription amount is an estimate and will be billed later.",
+    "*Subscription total": "*Subscription total",
+    "*Subscription total may be different than the amount shown here and will be displayed on your invoice. It is not part of your total today.": "*Subscription total may be different than the amount shown here and will be displayed on your invoice. It is not part of your total today."
   }
 }
