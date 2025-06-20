@@ -358,6 +358,11 @@
     "NET 90": "",
     "Please enter a valid": "Please enter a valid",
     "Please select a valid": "Please select a valid",
-    "Please enter a valid Shipping postal code": "Please enter a valid Shipping postal code"
+    "Please enter a valid Shipping postal code": "Please enter a valid Shipping postal code",
+    "One-time purchase": "One-time purchase",
+    "One-time total": "One-time total",
+    "Subscription": "Subscription",
+    "Subscription total": "Subscription total",
+    "Subscription total is not included in the final total.": "Subscription total is not included in the final total."
   }
 }
