@@ -671,6 +671,13 @@
     "Subscription": "Subscription",
     "Subscription amount is an estimate and will be billed later.": "Subscription amount is an estimate and will be billed later.",
     "*Subscription total": "*Subscription total",
-    "*Subscription total may be different than the amount shown here and will be displayed on your invoice. It is not part of your total today.": "*Subscription total may be different than the amount shown here and will be displayed on your invoice. It is not part of your total today."
+    "*Subscription total may be different than the amount shown here and will be displayed on your invoice. It is not part of your total today.": "*Subscription total may be different than the amount shown here and will be displayed on your invoice. It is not part of your total today.",
+    "This order will qualify for level": "This order will qualify for level",
+    "discount pricing, according to Adobe": "discount pricing, according to Adobe.",
+    "Your existing Adobe subscriptions have": "Your existing Adobe subscriptions have",
+    "days remaining": "days remaining.",
+    "One-time purchase": "One-time purchase",
+    "One-time total": "One-time total",
+    "Due today": "Due today"
   }
 }
