@@ -213,6 +213,10 @@
     "to continue.": "to continue.",
     "Subscription total": "Subscription total",
     "(before tax)": "(before tax)",
-    "Invoice Status": "Invoice Status"
+    "Invoice Status": "Invoice Status",
+    "Cleared": "Cleared",
+    "Not Cleared": "Not Cleared",
+    "Unavailable": "Unavailable",
+    "Pay now": "Pay now"
   }
 }
