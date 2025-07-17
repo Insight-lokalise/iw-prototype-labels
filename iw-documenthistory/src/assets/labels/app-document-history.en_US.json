@@ -363,6 +363,8 @@
     "One-time total": "One-time total",
     "Subscription": "Subscription",
     "Subscription total": "Subscription total",
-    "Subscription total is not included in the final total.": "Subscription total is not included in the final total."
+    "Subscription total is not included in the final total.": "Subscription total is not included in the final total.",
+    "Invoice History": "Invoice History",
+    "Please note that once subscription products are invoiced, they can be found only in": "Please note that once subscription products are invoiced, they can be found only in"
   }
 }
