@@ -72,6 +72,7 @@
     "Summary": "Summary",
     "EWR fee:": "EWR fee:",
     "Invoice status": "Invoice status",
-    "Account name / number": "Account name / number"
+    "Account name / number": "Account name / number",
+    "Pay now": "Pay now"   
   }
 }
