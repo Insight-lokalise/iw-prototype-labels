@@ -73,6 +73,7 @@
     "EWR fee:": "EWR fee:",
     "Invoice status": "Invoice status",
     "Account name / number": "Account name / number",
-    "Pay now": "Pay now"   
+    "Pay now": "Pay now",
+    "Clicking Pay Now will redirect you to our payment portal": "*Clicking 'Pay Now' will redirect you to our payment portal."
   }
 }
