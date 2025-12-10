@@ -135,6 +135,12 @@
     "Fill out our quick inquiry form →": "Fill out our quick inquiry form →",
     "Visit our finance and leasing page to learn more": "Visit our finance and leasing page to learn more",
     "Insight leasing and finance services": "Insight leasing and finance services",
-    "Your leasing inquiry has been successfully submitted. An Insight specialist will contact you within 48 business hours.": "Your leasing inquiry has been successfully submitted. An Insight specialist will contact you within 48 business hours."
+    "Your leasing inquiry has been successfully submitted. An Insight specialist will contact you within 48 business hours.": "Your leasing inquiry has been successfully submitted. An Insight specialist will contact you within 48 business hours.",
+    "AI-Ready": "AI-Ready",
+    "A hardware-enabled AI PC with a Neural Processing Unit (NPU) delivering less than 40 Tera Operations Per Second (TOPS); supports foundational on-device AI capabilities.": "A hardware-enabled AI PC with a Neural Processing Unit (NPU) delivering less than 40 Tera Operations Per Second (TOPS); supports foundational on-device AI capabilities.",
+    "A next-generation AI PC with a Neural Processing Unit (NPU) delivering 40–60 Tera Operations Per Second (TOPS) and meeting Microsoft's requirements; enables advanced, system-wide AI experiences.": "A next-generation AI PC with a Neural Processing Unit (NPU) delivering 40–60 Tera Operations Per Second (TOPS) and meeting Microsoft's requirements; enables advanced, system-wide AI experiences.",
+    "AI-Capable": "AI-Capable",
+    "A traditional PC without a dedicated Neural Processing Unit (NPU); relies on CPU/GPU for AI tasks and does not accelerate on-device AI workloads.": "A traditional PC without a dedicated Neural Processing Unit (NPU); relies on CPU/GPU for AI tasks and does not accelerate on-device AI workloads.",
+    "Discover our AI Laptops": "Discover our AI Laptops"
   }
 }
