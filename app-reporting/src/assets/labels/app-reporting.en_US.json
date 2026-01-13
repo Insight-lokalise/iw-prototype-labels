@@ -306,6 +306,9 @@
     "Schedule Report: Easily schedule the report to run automatically based on the selected criteria. View the report schedules under Report Management.": "Schedule Report: Easily schedule the report to run automatically based on the selected criteria. View the report schedules under Report Management.",
     "Customer Supplied Inventory": "Customer Supplied Inventory",
     "Save in Posted Reports: Save the report to our system for easy access later. Access Posted Reports at your convenience under Report Management.": "Save in Posted Reports: Save the report to our system for easy access later. Access Posted Reports at your convenience under Report Management.",
-    "Report Scope": "Report Scope"
+    "Report Scope": "Report Scope",
+    "Failed to search manufacturers": "Failed to search manufacturers",
+    "min 2 characters": "min 2 characters",
+    "Searching manufacturers...": "Searching manufacturers..."
   }
 }
