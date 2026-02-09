@@ -693,6 +693,8 @@
     "SIGNATURE REQUIRED": "Signature Required",
     "DVAS pricing estimated. For other offerings, contact your Insight representative.": "DVAS pricing estimated. For other offerings, contact your Insight representative.",
     "Delivery Value Added Services": "Delivery Value Added Services",
-    "An unexpected error occurred while calculating the tax. Please refresh the page or return to previous step and try again. If the problem persists, please contact your Account Executive for more information.": "An unexpected error occurred while calculating the tax. Please refresh the page or return to previous step and try again. If the problem persists, please contact your Account Executive for more information."
+    "An unexpected error occurred while calculating the tax. Please refresh the page or return to previous step and try again. If the problem persists, please contact your Account Executive for more information.": "An unexpected error occurred while calculating the tax. Please refresh the page or return to previous step and try again. If the problem persists, please contact your Account Executive for more information.",
+    "Replenish COI": "Replenish COI",
+    "I can use this to purchase new inventory at today's price and add it to my COI stock.": "I can use this to purchase new inventory at today's price and add it to my COI stock."
   }
 }
