@@ -413,6 +413,9 @@
     "SR Only - QBA": "SR Only - QBA",
     "NET 5 DAYS": "NET 5 DAYS",
     "AppleCare+ insurance is subject to TIP (Tax on Insurance Premium) in Quebec.": "AppleCare+ insurance is subject to TIP (Tax on Insurance Premium) in Quebec.",
-    "Tax on Insurance Premium": "Tax on Insurance Premium"
+    "Tax on Insurance Premium": "Tax on Insurance Premium",
+    "Search for another order": "Search for another order",
+    "Order not found": "Order not found",
+    "The order you are looking for could not be found or you do not have permission to view it.": "The order you are looking for could not be found or you do not have permission to view it."
   }
 }
