@@ -222,6 +222,9 @@
     "Action Required: Access Needed for Checkout": "Action Required: Access Needed for Checkout",
     "I Understand": "I Understand",
     "To proceed with your checkout, you must be added to the relevant requestor groups to secure the required permissions.": "To proceed with your checkout, you must be added to the relevant requestor groups to secure the required permissions.",
-    "Renewals Hub": "Renewals Hub"
+    "Renewals Hub": "Renewals Hub",
+    "You'll need an IPS account to access the cart": "You'll need an IPS account to access the cart",
+    "You can make purchases and use public-sector contracts, but you must be logged in to an IPS account. If you haven't created an account yet, you'll need to do so first.": "You can make purchases and use public-sector contracts, but you must be logged in to an IPS account. If you haven't created an account yet, you'll need to do so first.",
+    "After your account is created, your assigned IPS Represntative will connect your account to the available IPS contracts so you can continue with your purchase.": "After your account is created, your assigned IPS Represntative will connect your account to the available IPS contracts so you can continue with your purchase."
   }
 }
