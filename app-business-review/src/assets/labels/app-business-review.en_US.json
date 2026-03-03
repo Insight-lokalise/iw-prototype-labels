@@ -1,1 +1,23 @@
-{"labels":{"No reports found":"No reports found","View report":"View report","Business Review":"Business Review","Spending Analysis":"Spending Analysis"}}
+{
+  "labels": {
+    "No reports found": "No reports found",
+    "View report": "View report",
+    "Business Review": "Business Review",
+    "Spending Analysis": "Spending Analysis",
+    "Account Status Reporting": "Account Status Reporting",
+    "Back to report list": "Back to report list",
+    "Business Review provides a consolidated view of spend and performance across time periods, products, regions, and manufacturers. It highlighting trends, comparisons, and key drivers of business activity.": "Business Review provides a consolidated view of spend and performance across time periods, products, regions, and manufacturers. It highlighting trends, comparisons, and key drivers of business activity.",
+    "Interactive Reports": "Interactive Reports",
+    "It looks like we've encountered a technical issue. Please try again after sometime.": "It looks like we've encountered a technical issue. Please try again after sometime.",
+    "No reports available": "No reports available",
+    "Order Status Reporting": "Order Status Reporting",
+    "Select a Interactive report to view": "Select a Interactive report to view",
+    "Software Spend Analysis": "Software Spend Analysis",
+    "Software Spend Analysis delivers visibility into software spend across manufacturers, accounts, and geographic locations over time. It helps identify cost drivers, concentration areas, and optimization opportunities.": "Software Spend Analysis delivers visibility into software spend across manufacturers, accounts, and geographic locations over time. It helps identify cost drivers, concentration areas, and optimization opportunities.",
+    "Solutions Lifecycle Dashboard": "Solutions Lifecycle Dashboard",
+    "The Account Status Reporting provides a comprehensive view of account details, ownership, and management attributes across the portfolio. It enables clear visibility into account structure and status to support effective oversight and informed business discussions.": "The Account Status Reporting provides a comprehensive view of account details, ownership, and management attributes across the portfolio. It enables clear visibility into account structure and status to support effective oversight and informed business discussions.",
+    "The Order Status Reporting provides a clear view of order progress across projects, regions, and delivery stages. It enables teams to track current status, key milestones, and exceptions to support timely execution and follow-up.": "The Order Status Reporting provides a clear view of order progress across projects, regions, and delivery stages. It enables teams to track current status, key milestones, and exceptions to support timely execution and follow-up.",
+    "The Solutions Lifecycle Dashboard provides an end-to-end view of order flow and fulfillment performance across key lifecycle stages. It highlights volumes, timelines, and trends to support operational visibility and proactive decision-making.": "The Solutions Lifecycle Dashboard provides an end-to-end view of order flow and fulfillment performance across key lifecycle stages. It highlights volumes, timelines, and trends to support operational visibility and proactive decision-making.",
+    "The requested report could not be found. Please select a report from the list.": "The requested report could not be found. Please select a report from the list."
+  }
+}
