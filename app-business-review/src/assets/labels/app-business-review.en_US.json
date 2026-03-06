@@ -21,6 +21,7 @@
     "The requested report could not be found. Please select a report from the list.": "The requested report could not be found. Please select a report from the list.",
     "Access Denied. Unfortunately, you don't have permission to view this page": "Access Denied. Unfortunately, you don't have permission to view this page",
     "Back to Homepage": "Back to Homepage",
-    "This could be because your user role does not have the necessary privileges to access this tool. Please contact your administrator to request the access.": "This could be because your user role does not have the necessary privileges to access this tool. Please contact your administrator to request the access."
+    "This could be because your user role does not have the necessary privileges to access this tool. Please contact your administrator to request the access.": "This could be because your user role does not have the necessary privileges to access this tool. Please contact your administrator to request the access.",
+    "Select an interactive report to view": "Select an interactive report to view"
   }
 }
