@@ -220,6 +220,9 @@
     "Submit question to Nia": "Submit question to Nia",
     "Add and Return to requisition": "Add and Return to requisition",
     "Client owned price": "Client owned price",
-    "Client supplied price": "Client supplied price"
+    "Client supplied price": "Client supplied price",
+    "Client Owned": "Client Owned",
+    "Client Supplied": "Client Supplied",
+    "Reserved": "Reserved"
   }
 }
