@@ -223,6 +223,8 @@
     "Client supplied price": "Client supplied price",
     "Client Owned": "Client Owned",
     "Client Supplied": "Client Supplied",
-    "Reserved": "Reserved"
+    "Reserved": "Reserved",
+    "Client owned": "Client owned",
+    "Client supplied": "Client supplied"
   }
 }
