@@ -698,6 +698,8 @@
     "I can use this to purchase new inventory at today's price and add it to my COI stock.": "I can use this to purchase new inventory at today's price and add it to my COI stock.",
     "An order with this web reference number already exists. To avoid duplicate orders, this request can't be completed.": "An order with this web reference number already exists. To avoid duplicate orders, this request can't be completed.",
     "This quote has already been converted to an order and is no longer valid.": "This quote has already been converted to an order and is no longer valid.",
-    "testForRemoval": "testForRemoval"
+    "testForRemoval": "testForRemoval",
+    "This order will replenish your client-owned inventory and will go on hold for review by Insight before processing.": "This order will replenish your client-owned inventory and will go on hold for review by Insight before processing.",
+    "As soon as your client-owned inventory replenishment order is processed, you will receive an email confirmation containing your order details.": "As soon as your client-owned inventory replenishment order is processed, you will receive an email confirmation containing your order details."
   }
 }
