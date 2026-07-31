@@ -237,6 +237,10 @@
     "Account menu": "Account menu",
     "Close menu": "Close menu",
     "Menu categories": "Menu categories",
-    "Subcategories": "Subcategories"
+    "Subcategories": "Subcategories",
+    "Are you sure you want to close this live agent chat?": "Are you sure you want to close this live agent chat?",
+    "No, keep chatting": "No, keep chatting",
+    "Yes, end chat": "Yes, end chat",
+    "You'll need to ask the AI Assistant to open a new connection.": "You'll need to ask the AI Assistant to open a new connection."
   }
 }
