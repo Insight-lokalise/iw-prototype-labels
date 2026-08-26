@@ -232,6 +232,12 @@
     "Search Results for": "Search Results for",
     "Users can choose more than one item for purchase.": "Users can choose more than one item for purchase.",
     "Select": "Select",
-    "Enrollment": "Enrollment"
+    "Enrollment": "Enrollment",
+    "Assortment pricing:": "Assortment pricing:",
+    "Use dynamic best price": "Use dynamic best price",
+    "Use specific assortment pricing": "Use specific assortment pricing",
+    "Select specific assortment pricing": "Select specific assortment pricing",
+    "Selected assortment": "Selected assortment",
+    "Change assortment": "Change assortment"
   }
 }
