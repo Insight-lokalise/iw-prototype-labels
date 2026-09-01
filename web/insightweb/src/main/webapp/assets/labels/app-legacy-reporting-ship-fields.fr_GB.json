@@ -1,0 +1,272 @@
+{
+    "labels": {
+        "ADHOCoptions": [
+            {
+                "name": "ACCOUNT NAME",
+                "value": "Nom du compte"
+            },
+            {
+                "name": "ACCOUNT NUMBER",
+                "value": "Numéro de compte"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 1",
+                "value": "Données de laboratoire supplémentaires 1"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 2",
+                "value": "Données de laboratoire supplémentaires 2"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 3",
+                "value": "Données de laboratoire supplémentaires 3"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 4",
+                "value": "Données de laboratoire supplémentaires 4"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 5",
+                "value": "Données de laboratoire supplémentaires 5"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 6",
+                "value": "Données de laboratoire supplémentaires 6"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 7",
+                "value": "Données de laboratoire supplémentaires 7"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 8",
+                "value": "Données de laboratoire supplémentaires 8"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 9",
+                "value": "Données de laboratoire supplémentaires 9"
+            },
+            {
+                "name": "ASSET TAG",
+                "value": "Étiquette d’actif"
+            },
+            {
+                "name": "CARRIER",
+                "value": "Transporteur"
+            },
+            {
+                "name": "CONTACT EMAIL",
+                "value": "Adresse électronique du contact"
+            },
+            {
+                "name": "CONTACT NAME",
+                "value": "Nom du contact"
+            },
+            {
+                "name": "CONTACT PHONE",
+                "value": "Téléphone de contact"
+            },
+            {
+                "name": "CURRENCY",
+                "value": "Devise"
+            },
+            {
+                "name": "CUSTOMER SKU",
+                "value": "UGS du client"
+            },
+            {
+                "name": "EWR FEES",
+                "value": "Écoparticipation DEEE"
+            },
+            {
+                "name": "EXPECTED DELIVERY DATE",
+                "value": "Date de livraison prévue"
+            },
+            {
+                "name": "EXTENDED PRICE",
+                "value": "Prix global"
+            },
+            {
+                "name": "FREIGHT LINE",
+                "value": "Ligne de fret"
+            },
+            {
+                "name": "GST\/HST",
+                "value": "TPS\/TVH"
+            },
+            {
+                "name": "INSIGHT MATERAL NO",
+                "value": "N° de contenu Insight"
+            },
+            {
+                "name": "INVOICE DATE",
+                "value": "Date de facturation"
+            },
+            {
+                "name": "INVOICE NUMBER",
+                "value": "Numéro de facture"
+            },
+            {
+                "name": "INVOICE LINE NUMBER",
+                "value": "Numéro de ligne de facture"
+            },
+            {
+                "name": "INVOICED QUANTITY",
+                "value": "Quantité facturée"
+            },
+            {
+                "name": "MANUFACTURER",
+                "value": "Fabricant"
+            },
+            {
+                "name": "MATERIAL DESCRIPTION",
+                "value": "Description du matériau"
+            },
+            {
+                "name": "MATERIAL NUMBER",
+                "value": "Numéro du matériau"
+            },
+            {
+                "name": "MSRP",
+                "value": "PDSF"
+            },
+            {
+                "name": "OPERATIONS CENTER",
+                "value": "Centre des opérations"
+            },
+            {
+                "name": "ORDER DATE",
+                "value": "Date de commande"
+            },
+            {
+                "name": "ORDER TYPE",
+                "value": "Type de commande"
+            },
+            {
+                "name": "PO NUMBER",
+                "value": "Numéro de bon de commande"
+            },
+            {
+                "name": "PO RELEASE NO",
+                "value": "N° d’émission du BC"
+            },
+            {
+                "name": "PRODUCT CATEGORY",
+                "value": "Catégorie de produit"
+            },
+            {
+                "name": "PRODUCT SUBCATEGORY",
+                "value": "Sous-catégorie de produit"
+            },
+            {
+                "name": "PRODUCT TITLE",
+                "value": "Nom du produit"
+            },
+            {
+                "name": "PRODUCT TYPE",
+                "value": "Type de produit"
+            },
+            {
+                "name": "PST\/QST",
+                "value": "TVP\/TVQ"
+            },
+            {
+                "name": "RECEIVER OF PARCEL",
+                "value": "Destinataire du colis"
+            },
+            {
+                "name": "REPORTING PARENT #",
+                "value": "N° parent du rapport"
+            },
+            {
+                "name": "REPORTING PARENT NAME",
+                "value": "Nom parent du rapport"
+            },
+            {
+                "name": "SALES REP NAME",
+                "value": "Nom du représentant commercial"
+            },
+            {
+                "name": "SERIAL NUMBER",
+                "value": "Numéro de série"
+            },
+            {
+                "name": "CONSIGNMENT REFERENCE",
+                "value": "Référence de l'expédition"
+            },
+            {
+                "name": "SHIPPING CITY",
+                "value": "Ville de livraison"
+            },
+            {
+                "name": "SHIPPING COUNTRY",
+                "value": "Pays de livraison"
+            },
+            {
+                "name": "SHIP METHOD",
+                "value": "Mode d’expédition"
+            },
+            {
+                "name": "SHIPPING NAME",
+                "value": "Appellation réglementaire"
+            },
+            {
+                "name": "SHIPPING STATE\/PROVINCE",
+                "value": "État\/Province de livraison"
+            },
+            {
+                "name": "SHIPPING ADDRESS",
+                "value": "Adresse de livraison"
+            },
+            {
+                "name": "SHIPPING ATTENTION",
+                "value": "Destinataire de la livraison"
+            },
+            {
+                "name": "SHIPPING POSTAL CODE",
+                "value": "Code postal de livraison"
+            },
+            {
+                "name": "TAX CHARGE",
+                "value": "Charge fiscale de la facture"
+            },
+            {
+                "name": "TOTAL PRICE",
+                "value": "Prix total"
+            },
+            {
+                "name": "TRACKING DATE",
+                "value": "Date de suivi"
+            },
+            {
+                "name": "TRACKING NUMBER",
+                "value": "Numéro de suivi"
+            },
+            {
+                "name": "UNIT PRICE",
+                "value": "Prix unitaire"
+            },
+            {
+                "name": "UNSPSC CODE",
+                "value": "Code UNSPSC"
+            }
+        ],
+        "ADHOCReqOptions": [
+            {
+                "name": "ORDER NUMBER",
+                "value": "Numéro de commande"
+            },
+            {
+                "name": "ORDER LINE NUMBER",
+                "value": "Numéro de ligne de commande"
+            },
+            {
+                "name": "QUANTITY SHIPPED",
+                "value": "Quantité expédiée"
+            },
+            {
+                "name": "SHIP DATE",
+                "value": "Date d’expédition"
+            }
+        ]
+    }
+}

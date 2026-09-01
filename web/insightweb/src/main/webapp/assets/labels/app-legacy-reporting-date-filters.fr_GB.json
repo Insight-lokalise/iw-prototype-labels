@@ -1,0 +1,9 @@
+{
+    "labels": {
+        "filterByDate": "Filtrer par plage de dates:",
+        "scheduleOpts": "Planifier l’exécution du rapport:",
+        "endDate": "Date de fin:",
+        "quickDate": "Date rapide:",
+        "startDate": "Date de début:"
+    }
+}

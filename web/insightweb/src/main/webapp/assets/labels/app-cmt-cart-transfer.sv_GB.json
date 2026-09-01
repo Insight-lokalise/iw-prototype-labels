@@ -1,0 +1,20 @@
+{
+    "labels": {
+        "taxEstimate": "Uppskattad skatt",
+        "unitPrice": "Enhetspris",
+        "submit": "Skicka",
+        "totalPrice": "Pris totalt",
+        "shippingEstimate": "Uppskattad leverans",
+        "unspsc": "UNSPSC-version ",
+        "manufacturer": "Tillverkare",
+        "confirm": "Bekräfta",
+        "total": "Totalsumma",
+        "cartTransferPageHeading": "Beställning: Skicka, fakturera och betala:",
+        "subtotal": "Delsumma",
+        "qty": "Antal",
+        "prodName": "Produktnamn",
+        "pageDescription": "Tack för att du använder Insight som din e-upphandlingslösning. Granska innehållet i kundvagnen nedan för att bekräfta din beställning. När du vill göra din beställning ska du <br\/>välja och skicka in din kundvagn till din värdtillämpning.",
+        "partNumber": "Artikelnummer",
+        "ewrFee": "Uppskattad EWR-avgift:"
+    }
+}

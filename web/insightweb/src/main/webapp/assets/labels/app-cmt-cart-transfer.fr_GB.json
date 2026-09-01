@@ -1,0 +1,20 @@
+{
+    "labels": {
+        "taxEstimate": "Estimation des taxes",
+        "unitPrice": "Prix unitaire",
+        "submit": "Valider",
+        "totalPrice": "Prix total",
+        "shippingEstimate": "Estimation de livraison",
+        "unspsc": "Version UNSPSC ",
+        "manufacturer": "Fabricant",
+        "confirm": "Confirmer",
+        "total": "Total",
+        "cartTransferPageHeading": "Commande : Expédier, facturer et payer :",
+        "subtotal": "Sous-total",
+        "qty": "Qté",
+        "prodName": "Nom du produit",
+        "pageDescription": "Merci d’avoir utilisé Insight comme solution d’approvisionnement électronique. Vérifiez le contenu du panier ci-dessous pour confirmer votre commande. Pour passer votre commande, veuillez<br\/> sélectionner et soumettre votre panier avec votre application hôte.",
+        "partNumber": "Numéro de pièce",
+        "ewrFee": "Estimation des frais EWR :"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "labels": {
+        "cancel": "Abbrechen",
+        "product": "Produkt",
+        "AllReportingPeriodsCurrent": "Alle Berichtszeiträume aktuell",
+        "commitlevel": "Verpflichtungsgrad",
+        "one": "1",
+        "zero": "0",
+        "reportmessage": "VMware-Bericht ist bis zum 5. des Monats fällig. Sie müssen die Nutzung in monatlicher Reihenfolge (Januar, Februar usw.) melden.",
+        "VSPPMonthlyRental": "VSPP Monatliche Anmietung",
+        "total": "Gesamtbetrag",
+        "dec2011": "Dezember, 2011",
+        "pointValue": "Punktwert",
+        "monthlyoverage": "VSPP Monatliche Anmietung (Überschuss)",
+        "reportperiod": "Berichtszeitraum:",
+        "earnedpoints": "Gesammelte Punkte",
+        "jan2012": "Januar 2012",
+        "qty": "Menge",
+        "YouAreAbout": "Sie sind im Begriff, eine Null-Nutzung für den ausgewählten Monat zu melden. Sind Sie sicher, dass Sie weiterhin Null-Nutzung melden möchten?",
+        "MonthlyRentalSku": "Monatliche Anmietung Sku",
+        "cartproceed": "Weiter zum Einkaufswagen >>",
+        "totalpoints": "Punkte insgesamt",
+        "usagecalc": "Rechner für VMware-Nutzung",
+        "nov2011": "November 2011",
+        "totalearnedpoints": "Insgesamt gesammelte Punkte"
+    }
+}

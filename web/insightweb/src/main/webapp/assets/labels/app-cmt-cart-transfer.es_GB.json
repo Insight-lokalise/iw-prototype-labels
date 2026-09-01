@@ -1,0 +1,20 @@
+{
+    "labels": {
+        "taxEstimate": "Impuestos calculados",
+        "unitPrice": "Precio unitario",
+        "submit": "Aceptar",
+        "totalPrice": "Precio total",
+        "shippingEstimate": "Cálculo costes envío",
+        "unspsc": "Versión de UNSPSC ",
+        "manufacturer": "Fabricante",
+        "confirm": "Confirmar",
+        "total": "Total",
+        "cartTransferPageHeading": "Pedido: Enviar, facturar y pagar:",
+        "subtotal": "Subtotal",
+        "qty": "Cantidad",
+        "prodName": "Nombre del producto",
+        "pageDescription": "Gracias por elegir Insight como su proveedor de soluciones de compra electrónica. Revise el contenido de su carro que aparece a continuación para confirmar su pedido. Para realizar su pedido, seleccione<br\/> y envíe su carro con su aplicación host.",
+        "partNumber": "Número de pieza",
+        "ewrFee": "Cálculo tasa RAEE:"
+    }
+}

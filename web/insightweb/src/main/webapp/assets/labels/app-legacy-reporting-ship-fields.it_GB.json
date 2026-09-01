@@ -1,0 +1,272 @@
+{
+    "labels": {
+        "ADHOCoptions": [
+            {
+                "name": "ACCOUNT NAME",
+                "value": "Nome account"
+            },
+            {
+                "name": "ACCOUNT NUMBER",
+                "value": "Numero account"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 1",
+                "value": "Dati di laboratorio aggiuntivi 1"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 2",
+                "value": "Dati di laboratorio aggiuntivi 2"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 3",
+                "value": "Dati di laboratorio aggiuntivi 3"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 4",
+                "value": "Dati di laboratorio aggiuntivi 4"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 5",
+                "value": "Dati di laboratorio aggiuntivi 5"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 6",
+                "value": "Dati di laboratorio aggiuntivi 6"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 7",
+                "value": "Dati di laboratorio aggiuntivi 7"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 8",
+                "value": "Dati di laboratorio aggiuntivi 8"
+            },
+            {
+                "name": "ADDITIONAL LAB DATA 9",
+                "value": "Dati di laboratorio aggiuntivi 9"
+            },
+            {
+                "name": "ASSET TAG",
+                "value": "Tag risorsa"
+            },
+            {
+                "name": "CARRIER",
+                "value": "corriere"
+            },
+            {
+                "name": "CONTACT EMAIL",
+                "value": "Indirizzo e-mail di contatto"
+            },
+            {
+                "name": "CONTACT NAME",
+                "value": "Contatto"
+            },
+            {
+                "name": "CONTACT PHONE",
+                "value": "Telefono di contatto"
+            },
+            {
+                "name": "CURRENCY",
+                "value": "Valuta"
+            },
+            {
+                "name": "CUSTOMER SKU",
+                "value": "SKU cliente"
+            },
+            {
+                "name": "EWR FEES",
+                "value": "Contributi EWR"
+            },
+            {
+                "name": "EXPECTED DELIVERY DATE",
+                "value": "Data di consegna prevista"
+            },
+            {
+                "name": "EXTENDED PRICE",
+                "value": "Prezzo esteso"
+            },
+            {
+                "name": "FREIGHT LINE",
+                "value": "Linea merci"
+            },
+            {
+                "name": "GST\/HST",
+                "value": "GST\/HST"
+            },
+            {
+                "name": "INSIGHT MATERAL NO",
+                "value": "N. materiale Insight"
+            },
+            {
+                "name": "INVOICE DATE",
+                "value": "Data fattura"
+            },
+            {
+                "name": "INVOICE NUMBER",
+                "value": "Numero fattura"
+            },
+            {
+                "name": "INVOICE LINE NUMBER",
+                "value": "Numero riga fattura"
+            },
+            {
+                "name": "INVOICED QUANTITY",
+                "value": "Quantità fatturata"
+            },
+            {
+                "name": "MANUFACTURER",
+                "value": "Produttore"
+            },
+            {
+                "name": "MATERIAL DESCRIPTION",
+                "value": "Descrizione materiale"
+            },
+            {
+                "name": "MATERIAL NUMBER",
+                "value": "Numero materiale"
+            },
+            {
+                "name": "MSRP",
+                "value": "MSRP"
+            },
+            {
+                "name": "OPERATIONS CENTER",
+                "value": "Centro operativo"
+            },
+            {
+                "name": "ORDER DATE",
+                "value": "Data ordine"
+            },
+            {
+                "name": "ORDER TYPE",
+                "value": "Tipo di ordine"
+            },
+            {
+                "name": "PO NUMBER",
+                "value": "Numero PO"
+            },
+            {
+                "name": "PO RELEASE NO",
+                "value": "N. emissione PO."
+            },
+            {
+                "name": "PRODUCT CATEGORY",
+                "value": "Categoria prodotto"
+            },
+            {
+                "name": "PRODUCT SUBCATEGORY",
+                "value": "Sottocategoria prodotto"
+            },
+            {
+                "name": "PRODUCT TITLE",
+                "value": "Titolo prodotto"
+            },
+            {
+                "name": "PRODUCT TYPE",
+                "value": "Tipo di prodotto"
+            },
+            {
+                "name": "PST\/QST",
+                "value": "PST\/QST"
+            },
+            {
+                "name": "RECEIVER OF PARCEL",
+                "value": "Destinatario del pacco"
+            },
+            {
+                "name": "REPORTING PARENT #",
+                "value": "N. entità padre di rendicontazione"
+            },
+            {
+                "name": "REPORTING PARENT NAME",
+                "value": "Nome entità padre di rendicontazione"
+            },
+            {
+                "name": "SALES REP NAME",
+                "value": "Nome rappresentante alle vendite"
+            },
+            {
+                "name": "SERIAL NUMBER",
+                "value": "Numero di serie"
+            },
+            {
+                "name": "CONSIGNMENT REFERENCE",
+                "value": "Riferimento di spedizione"
+            },
+            {
+                "name": "SHIPPING CITY",
+                "value": "Città di spedizione"
+            },
+            {
+                "name": "SHIPPING COUNTRY",
+                "value": "Paese di spedizione"
+            },
+            {
+                "name": "SHIP METHOD",
+                "value": "Metodo di spedizione"
+            },
+            {
+                "name": "SHIPPING NAME",
+                "value": "Nome di spedizione"
+            },
+            {
+                "name": "SHIPPING STATE\/PROVINCE",
+                "value": "Stato\/Provincia di spedizione"
+            },
+            {
+                "name": "SHIPPING ADDRESS",
+                "value": "Indirizzo di spedizione"
+            },
+            {
+                "name": "SHIPPING ATTENTION",
+                "value": "Attenzione di spedizione"
+            },
+            {
+                "name": "SHIPPING POSTAL CODE",
+                "value": "Codice postale di spedizione"
+            },
+            {
+                "name": "TAX CHARGE",
+                "value": "Addebito imposta da fattura"
+            },
+            {
+                "name": "TOTAL PRICE",
+                "value": "Prezzo totale"
+            },
+            {
+                "name": "TRACKING DATE",
+                "value": "Data di tracciamento"
+            },
+            {
+                "name": "TRACKING NUMBER",
+                "value": "Numero di tracking"
+            },
+            {
+                "name": "UNIT PRICE",
+                "value": "Prezzo unitario"
+            },
+            {
+                "name": "UNSPSC CODE",
+                "value": "Codice UNSPSC"
+            }
+        ],
+        "ADHOCReqOptions": [
+            {
+                "name": "ORDER NUMBER",
+                "value": "Numero ordine"
+            },
+            {
+                "name": "ORDER LINE NUMBER",
+                "value": "Numero riga ordine"
+            },
+            {
+                "name": "QUANTITY SHIPPED",
+                "value": "Quantità spedita"
+            },
+            {
+                "name": "SHIP DATE",
+                "value": "Data di spedizione"
+            }
+        ]
+    }
+}

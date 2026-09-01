@@ -1,0 +1,18 @@
+{
+    "labels": {
+        "Please enter the cardholder name.": "Veuillez saisir le nom du\/de la titulaire de la carte.",
+        "CVV": "CVV",
+        "Security code is required.": "Code de sécurité requis.",
+        "Card number": "Numéro de la carte",
+        "Please enter a valid expiration date.": "Veuillez saisir une date d’expiration valide.",
+        "year": "année",
+        "Enter cardholder's name exactly as it appears on the card.": "Entrer le nom du\/de la titulaire de la carte tel qu’il apparaît sur la carte.",
+        "Expiration date": "Date d’expiration",
+        "Please enter a card number.": "Veuillez saisir un numéro de carte.",
+        "Cardholder name": "Nom du titulaire de la carte",
+        "month": "mois",
+        "Select card": "Sélectionner la carte",
+        "Please enter the card security code.": "Veuillez saisir le code de sécurité de la carte.",
+        "Please enter a card number": "Veuillez saisir un numéro de carte."
+    }
+}

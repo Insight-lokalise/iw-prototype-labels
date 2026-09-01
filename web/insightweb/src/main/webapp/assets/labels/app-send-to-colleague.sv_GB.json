@@ -1,0 +1,23 @@
+{
+    "labels": {
+        "emailErrorText": "Ange giltig e-postadress",
+        "thankYou": "Tack",
+        "recEmail": "Mottagarens e-post",
+        "attachLicenseProof": "Bifoga licensbevis",
+        "bottomText2": "Om du vill skicka detta e-postmeddelande till fler än en mottagare ska du placera ett komma eller semikolon mellan separata e-postadresser i Mottagarens e-postadress ovan.",
+        "bottomText3": "Exempel: recipient1@mywebsite.com, recipient2@mywebsite.com",
+        "yourName": "Your Name",
+        "bottomText1": "Din e-postadress kommer inte att säljas eller användas för reklamändamål. Den används helt enkelt så att mottagaren vet vem som rekommenderar produkten.",
+        "inputErrorText": "Detta fält är obligatoriskt. Ange ett värde.",
+        "yourEmail": "Din e-post",
+        "sendEmail": "Skicka e-post",
+        "pdf": "PDF",
+        "requiredFields": "Indikerar obligatoriska fält",
+        "yourComments": "Dina kommentarer",
+        "html": "HTML",
+        "emailinputFormat": "Se till att mottagarens e-postadress är korrekt formaterad",
+        "successMsg": "Ditt e-postmeddelande har skickats.",
+        "sendtoColleague": "Skicka till kollega",
+        "emailFormat": "E-postformat"
+    }
+}

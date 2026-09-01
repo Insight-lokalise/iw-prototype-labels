@@ -1,0 +1,23 @@
+{
+    "labels": {
+        "emailErrorText": "Veuillez saisir une adresse e-mail valide",
+        "thankYou": "Merci",
+        "recEmail": "E-mail du destinataire",
+        "attachLicenseProof": "Joindre une preuve de licence",
+        "bottomText2": "Si vous souhaitez envoyer cet e-mail à plus d’un destinataire, placez une virgule ou un point-virgule entre les différentes adresses e-mail saisies dans la E-mail du destinataire case ci-dessus.",
+        "bottomText3": "Exemple: recipient1@mywebsite.com, recipient2@mywebsite.com",
+        "yourName": "Votre nom",
+        "bottomText1": "Votre adresse e-mail ne sera ni vendue ni utilisée à des fins promotionnelles. Il est simplement utilisé pour que le destinataire sache qui recommande le produit.",
+        "inputErrorText": "Ce champ est requis. Entrer un nombre, SVP.",
+        "yourEmail": "Votre e-mail",
+        "sendEmail": "Envoyer un e-mail",
+        "pdf": "PDF",
+        "requiredFields": "Indique les champs obligatoires",
+        "yourComments": "Vos commentaires",
+        "html": "HTML",
+        "emailinputFormat": "Veuillez vous assurer que l'adresse e-mail des destinataires est correctement formatée",
+        "successMsg": "Votre e-mail a été envoyé avec succès.",
+        "sendtoColleague": "Envoyer à un collègue",
+        "emailFormat": "Format Email"
+    }
+}

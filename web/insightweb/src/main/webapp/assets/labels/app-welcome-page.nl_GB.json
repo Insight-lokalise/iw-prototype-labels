@@ -1,0 +1,12 @@
+{
+    "labels": {
+        "SalesRepFAX": "FAX:",
+        "SalesRepYourSalesTeamLabel": "Uw verkoopteam",
+        "SalesRepVoice": "Stem:",
+        "SalesRepTeamNumber": "Teamnummer:",
+        "SalesRepInfo": "Informatie vertegenwoordiger:",
+        "welcomeText": "Welkom",
+        "downloadableFilesHeading": "Hieronder staan ​​uw downloadbare bestanden.",
+        "welcomeToInsight": "Welkom bij %1$s Insight.com %2$s"
+    }
+}
