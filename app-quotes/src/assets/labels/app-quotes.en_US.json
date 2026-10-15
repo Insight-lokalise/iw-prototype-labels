@@ -168,6 +168,8 @@
     "Unable to update shipping method": "Unable to update shipping method",
     "You can bill your carrier account for this purchase. Just check the Bill my carrier box and select the account from the list or use the search feature to search for an account.": "You can bill your carrier account for this purchase. Just check the Bill my carrier box and select the account from the list or use the search feature to search for an account.",
     "You're about to leave this page.": "You're about to leave this page.",
-    "required": "required"
+    "required": "required",
+    "No shippable lines": "No shippable lines",
+    "Please select a shipping option": "Please select a shipping option"
   }
 }
