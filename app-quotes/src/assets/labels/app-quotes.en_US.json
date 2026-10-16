@@ -170,6 +170,21 @@
     "You're about to leave this page.": "You're about to leave this page.",
     "required": "required",
     "No shippable lines": "No shippable lines",
-    "Please select a shipping option": "Please select a shipping option"
+    "Please select a shipping option": "Please select a shipping option",
+    "Enter the street address, P.O. box, or company name.": "Enter the street address, P.O. box, or company name.",
+    "Enter apartment, suite, unit, building, or floor.": "Enter apartment, suite, unit, building, or floor.",
+    "Attention": "Attention",
+    "Street address line 1": "Street address line 1",
+    "Street address line 2": "Street address line 2",
+    "State": "State",
+    "ZIP/Postal code": "ZIP/Postal code",
+    "Location ID/Store number": "Location ID/Store number",
+    "Add to my shipping favorites": "Add to my shipping favorites",
+    "Favorite name:": "Favorite name:",
+    "Please enter a favorite name.": "Please enter a favorite name.",
+    "Set as default shipping address": "Set as default shipping address",
+    "Set as private ship to": "Set as private ship to",
+    "Select a state/province": "Select a state/province",
+    "Save": "Save"
   }
 }
