@@ -185,6 +185,24 @@
     "Set as default shipping address": "Set as default shipping address",
     "Set as private ship to": "Set as private ship to",
     "Select a state/province": "Select a state/province",
-    "Save": "Save"
+    "Save": "Save",
+    "Address info, including suite": "Address info, including suite",
+    "Additional street address information": "Additional street address information",
+    "Unable to load the state/province list.": "Unable to load the state/province list.",
+    "Unable to load the country list.": "Unable to load the country list.",
+    "addresses": "addresses",
+    "Favorite name": "Favorite name",
+    "Add to favorites": "Add to favorites",
+    "New Favorite Name": "New Favorite Name",
+    "DEFAULT": "DEFAULT",
+    "Search by account name, number or address": "Search by account name, number or address",
+    "Search": "Search",
+    "Use this address": "Use this address",
+    "Edit favorite name": "Edit favorite name",
+    "Save favorite name": "Save favorite name",
+    "Unable to save favorite name": "Unable to save favorite name",
+    "The favorite name entered already exists.": "The favorite name entered already exists.",
+    "Please select a different address": "Please select a different address",
+    "Retry": "Retry"
   }
 }
