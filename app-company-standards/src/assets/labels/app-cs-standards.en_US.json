@@ -238,6 +238,7 @@
     "Use specific assortment pricing": "Use specific assortment pricing",
     "Select specific assortment pricing": "Select specific assortment pricing",
     "Selected assortment": "Selected assortment",
-    "Change assortment": "Change assortment"
+    "Change assortment": "Change assortment",
+    "Changing the enrollment number will reset all software items under this product group to the default dynamic lowest price.": "Changing the enrollment number will reset all software items under this product group to the default dynamic lowest price."
   }
 }
