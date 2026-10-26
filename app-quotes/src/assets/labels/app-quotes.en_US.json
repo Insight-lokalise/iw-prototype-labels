@@ -203,6 +203,8 @@
     "Unable to save favorite name": "Unable to save favorite name",
     "The favorite name entered already exists.": "The favorite name entered already exists.",
     "Please select a different address": "Please select a different address",
-    "Retry": "Retry"
+    "Retry": "Retry",
+    "Remove from favorites": "Remove from favorites",
+    "Unable to remove favorite": "Unable to remove favorite"
   }
 }
