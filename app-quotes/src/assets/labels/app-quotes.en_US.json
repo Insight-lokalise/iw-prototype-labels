@@ -205,6 +205,7 @@
     "Please select a different address": "Please select a different address",
     "Retry": "Retry",
     "Remove from favorites": "Remove from favorites",
-    "Unable to remove favorite": "Unable to remove favorite"
+    "Unable to remove favorite": "Unable to remove favorite",
+    "Image": "Image"
   }
 }
