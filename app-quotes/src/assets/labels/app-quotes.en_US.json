@@ -209,6 +209,22 @@
     "Image": "Image",
     "International Freight fees will apply to this order. Totals are therefore showing as 'Estimated' and may be adjusted upon order receipt.": "International Freight fees will apply to this order. Totals are therefore showing as 'Estimated' and may be adjusted upon order receipt.",
     "Additional address information": "Additional address information",
-    "Full Physical Address including building name/number, unit, street etc": "Full Physical Address including building name/number, unit, street etc"
+    "Full Physical Address including building name/number, unit, street etc": "Full Physical Address including building name/number, unit, street etc",
+    "Expand all": "Expand all",
+    "Collapse all": "Collapse all",
+    "Save cart contents": "Save cart contents",
+    "Export cart": "Export cart",
+    "Electronic Waste Recycling Fee": "Electronic Waste Recycling Fee",
+    "Enrollment #": "Enrollment #",
+    "Deploy Date": "Deploy Date",
+    "Client owned/client supplied inventory pricing will be updated by your Insight Account Manager during order processing.": "Client owned/client supplied inventory pricing will be updated by your Insight Account Manager during order processing.",
+    "Approved Item": "Approved Item",
+    "Company Standards": "Company Standards",
+    "Device Enrollment Program": "Device Enrollment Program",
+    "Insight Part#": "Insight Part#",
+    "DEP Organisation ID#": "DEP Organisation ID#",
+    "Item information": "Item information",
+    "Smart tracker": "Smart tracker",
+    "License information": "License information"
   }
 }
