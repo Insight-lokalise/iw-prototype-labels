@@ -226,6 +226,20 @@
     "Item information": "Item information",
     "Smart tracker": "Smart tracker",
     "License information": "License information",
-    "DEP Organization ID#": "DEP Organization ID#"
+    "DEP Organization ID#": "DEP Organization ID#",
+    "Applied": "Applied",
+    "Applicable tax exemption certificate on file with Insight's Tax Department.": "Applicable tax exemption certificate on file with Insight's Tax Department.",
+    "Estimated total": "Estimated total",
+    "Failed: Quote failed to send": "Failed: Quote failed to send",
+    "GST/HST": "GST/HST",
+    "Items": "Items",
+    "Message from Insight at the request of": "Message from Insight at the request of",
+    "Order summary": "Order summary",
+    "PST": "PST",
+    "Product": "Product",
+    "Quantity": "Quantity",
+    "Quote saved": "Quote saved",
+    "TIP tax": "TIP tax",
+    "Unknown Person": "Unknown Person"
   }
 }
