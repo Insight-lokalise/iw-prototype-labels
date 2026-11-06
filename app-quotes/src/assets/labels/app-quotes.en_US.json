@@ -274,6 +274,11 @@
     "product": "product",
     "products": "products",
     "Not Determined": "Not Determined",
-    "Attention line is required": "Attention line is required"
+    "Attention line is required": "Attention line is required",
+    "Country of usage": "Country of usage",
+    "PCN #": "PCN #",
+    "License #": "License #",
+    "Initial stock #": "Initial stock #",
+    "PA #": "PA #"
   }
 }
