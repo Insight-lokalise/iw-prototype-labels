@@ -280,6 +280,7 @@
     "License #": "License #",
     "Initial stock #": "Initial stock #",
     "PA #": "PA #",
-    "Result": "Result"
+    "Result": "Result",
+    "An unexpected error occurred while calculating the tax. Please refresh the page or return to the previous page and try again. If the problem persists, please contact your Account Executive for more information.": "An unexpected error occurred while calculating the tax. Please refresh the page or return to the previous page and try again. If the problem persists, please contact your Account Executive for more information."
   }
 }
