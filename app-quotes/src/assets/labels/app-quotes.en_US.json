@@ -281,6 +281,7 @@
     "Initial stock #": "Initial stock #",
     "PA #": "PA #",
     "Result": "Result",
-    "An unexpected error occurred while calculating the tax. Please refresh the page or return to the previous page and try again. If the problem persists, please contact your Account Executive for more information.": "An unexpected error occurred while calculating the tax. Please refresh the page or return to the previous page and try again. If the problem persists, please contact your Account Executive for more information."
+    "An unexpected error occurred while calculating the tax. Please refresh the page or return to the previous page and try again. If the problem persists, please contact your Account Executive for more information.": "An unexpected error occurred while calculating the tax. Please refresh the page or return to the previous page and try again. If the problem persists, please contact your Account Executive for more information.",
+    "Shipments to the specified country require a special ordering process. Please contact your account executive for assistance.": "Shipments to the specified country require a special ordering process. Please contact your account executive for assistance."
   }
 }
