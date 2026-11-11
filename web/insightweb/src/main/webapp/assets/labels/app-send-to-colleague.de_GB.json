@@ -1,0 +1,23 @@
+{
+    "labels": {
+        "emailErrorText": "Bitte geben Sie eine gültige Email Adresse an",
+        "thankYou": "Danke",
+        "recEmail": "E-Mail des Empfängers",
+        "attachLicenseProof": "Lizenznachweis anhängen",
+        "bottomText2": "Wenn Sie diese E-Mail an mehrere Empfänger senden möchten, setzen Sie ein Komma oder ein Semikolon zwischen die einzelnen E-Mail-Adressen im Feld ",
+        "bottomText3": "Beispiel: recipient1@mywebsite.com, recipient2@mywebsite.com",
+        "yourName": "Ihr Name",
+        "bottomText1": "Ihre E-Mail-Adresse wird nicht verkauft oder für Werbezwecke verwendet. Es wird einfach verwendet, damit der Empfänger weiß, wer das Produkt empfiehlt.",
+        "inputErrorText": "Dieses Feld wird benötigt. Bitte einen Wert eingeben.",
+        "yourEmail": "Ihre E-Mail",
+        "sendEmail": "E-Mail senden",
+        "pdf": "PDF",
+        "requiredFields": "Kennzeichnet Pflichtfelder",
+        "yourComments": "Ihre Kommentare",
+        "html": "HTML",
+        "emailinputFormat": "Bitte stellen Sie sicher, dass die E-Mail-Adresse des Empfängers richtig formatiert ist",
+        "successMsg": "Ihre E-Mail wurde erfolgreich gesendet.",
+        "sendtoColleague": "An Kollegen senden",
+        "emailFormat": "E-Mail Format"
+    }
+}

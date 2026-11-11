@@ -1,0 +1,32 @@
+{
+    "labels": {
+        "no": "Nej",
+        "lastName": "Last Name",
+        "errorSalesOrgNotFound": "Det gick inte att hitta den angivna köparen",
+        "select": "Välj",
+        "errorEmailNotInGLM": "Det gick inte att hitta e-postadressen i GLM",
+        "update": "Uppdatera",
+        "salesOrg": "salesOrg",
+        "errorWithRequest": "Det gick inte att slutföra begäran",
+        "whatManage": "Vad vill du hantera",
+        "stillSeemsReferenced": "Det verkar som att det fortfarande finns referenser för den i SAP-konton.",
+        "updateGLM": "Uppdatera GLM",
+        "existingClientIssues": "Befintliga GLM-klientproblem",
+        "emailAddress": "E-postadress",
+        "loginLinkSuccessful": "Inloggningen har länkats",
+        "loginRemoveSuccessful": "Inloggningen har tagits bort",
+        "errorSoldToNotFound": "Det gick inte att hitta den angivna köparen",
+        "errorExistingSAPUserFound": "En SAP-användare med denna e-postadress hittades",
+        "yes": "Ja",
+        "newSACErrors": "Nya fel vid upprättande av förenklat konto",
+        "linkToSoldTo": "Link user to additional GGP\/Soldto",
+        "firstName": "First Name",
+        "errorEmailNotLinkedToAccount": "Det gick inte att hitta ett befintligt konto för e-postadressen",
+        "phoneNumber": "Phone Number",
+        "linkToSoldToSuccessful": "Inloggningen har länkats",
+        "areYouSureDelete": "Vill du verkligen radera denna GLM-inloggning?",
+        "soldToNumber": "Köparnummer",
+        "errorSAPContactNotFound": "Det gick inte att hitta den angivna SAP-kontakten",
+        "sapContactID": "SAP-kontakt-ID"
+    }
+}

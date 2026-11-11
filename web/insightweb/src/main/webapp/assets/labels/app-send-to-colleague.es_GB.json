@@ -1,0 +1,23 @@
+{
+    "labels": {
+        "emailErrorText": "Por favor ingrese una dirección de correo electrónico válida",
+        "thankYou": "Gracias",
+        "recEmail": "Correo electrónico del destinatario",
+        "attachLicenseProof": "Adjuntar prueba de licencia",
+        "bottomText2": "Si desea enviar este correo electrónico a más de un destinatario, coloque una coma o punto y coma entre direcciones de correo electrónico separadas en el Correo electrónico del destinatario casilla arriba.",
+        "bottomText3": "Ejemplo: recipient1@mywebsite.com, recipient2@mywebsite.com",
+        "yourName": "Su nombre",
+        "bottomText1": "Su dirección de correo electrónico no se venderá ni utilizará con fines promocionales. Simplemente se utiliza para que el destinatario sepa quién recomienda el producto.",
+        "inputErrorText": "Este campo es requerido. Porfavor introduzca un valor.",
+        "yourEmail": "Su correo electrónico",
+        "sendEmail": "Enviar correo electrónico",
+        "pdf": "PDF",
+        "requiredFields": "Indica los campos obligatorios",
+        "yourComments": "Sus comentarios",
+        "html": "HTML",
+        "emailinputFormat": "Asegúrese de que la dirección de correo electrónico de los destinatarios tenga el formato correcto",
+        "successMsg": "Su correo electrónico se ha enviado correctamente.",
+        "sendtoColleague": "Enviar al compañero",
+        "emailFormat": "Formato de Correo Electrónico"
+    }
+}

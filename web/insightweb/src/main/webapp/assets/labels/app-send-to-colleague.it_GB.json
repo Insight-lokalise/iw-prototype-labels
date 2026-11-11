@@ -1,0 +1,23 @@
+{
+    "labels": {
+        "emailErrorText": "Inserisci un indirizzo email valido",
+        "thankYou": "Merci",
+        "recEmail": "E-mail del destinatario",
+        "attachLicenseProof": "Allega prova di licenza",
+        "bottomText2": "Se si desidera inviare questa e-mail a più di un destinatario, inserire una virgola o un punto e virgola tra indirizzi e-mail separati in E-mail del destinatario casella sopra.",
+        "bottomText3": "Esempio: recipient1@mywebsite.com, recipient2@mywebsite.com",
+        "yourName": "Nome",
+        "bottomText1": "Il tuo indirizzo e-mail non verrà venduto o utilizzato per scopi promozionali. Viene semplicemente utilizzato in modo che il destinatario sappia chi sta consigliando il prodotto.",
+        "inputErrorText": "Questo campo è obbligatorio. Inserisci un valore.",
+        "yourEmail": "Il tuo indirizzo e-mail",
+        "sendEmail": "Inviatore di un'e-mail",
+        "pdf": "PDF",
+        "requiredFields": "Indica i campi obbligatori",
+        "yourComments": "I tuoi commenti",
+        "html": "HTML",
+        "emailinputFormat": "Assicurati che l'indirizzo email del destinatario sia formattato correttamente",
+        "successMsg": "Votre e-mail a été envoyé avec succès.",
+        "sendtoColleague": "Invia a un collega",
+        "emailFormat": "Formato email"
+    }
+}

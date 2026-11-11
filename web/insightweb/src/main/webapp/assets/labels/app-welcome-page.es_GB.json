@@ -1,0 +1,12 @@
+{
+    "labels": {
+        "SalesRepFAX": "FAX:",
+        "SalesRepYourSalesTeamLabel": "Su equipo de ventas",
+        "SalesRepVoice": "Voz:",
+        "SalesRepTeamNumber": "Número de equipo:",
+        "SalesRepInfo": "Información sobre el representante:",
+        "welcomeText": "Bienvenidos",
+        "downloadableFilesHeading": "A continuación se muestran sus archivos descargables",
+        "welcomeToInsight": "Bienvenido a %1$s Insight.com %2$s"
+    }
+}
