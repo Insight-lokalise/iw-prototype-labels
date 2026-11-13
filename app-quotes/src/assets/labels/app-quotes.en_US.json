@@ -282,6 +282,8 @@
     "PA #": "PA #",
     "Result": "Result",
     "An unexpected error occurred while calculating the tax. Please refresh the page or return to the previous page and try again. If the problem persists, please contact your Account Executive for more information.": "An unexpected error occurred while calculating the tax. Please refresh the page or return to the previous page and try again. If the problem persists, please contact your Account Executive for more information.",
-    "Shipments to the specified country require a special ordering process. Please contact your account executive for assistance.": "Shipments to the specified country require a special ordering process. Please contact your account executive for assistance."
+    "Shipments to the specified country require a special ordering process. Please contact your account executive for assistance.": "Shipments to the specified country require a special ordering process. Please contact your account executive for assistance.",
+    "VAT": "VAT",
+    "Goods and services are invoiced at the price prevailing at time of acceptance of order. VAT is charged at the rate applicable at the time of invoicing or otherwise in accordance with the law.": "Goods and services are invoiced at the price prevailing at time of acceptance of order. The VAT amount shown is an estimate. The actual VAT amount due will be confirmed upon invoice issuance."
   }
 }
