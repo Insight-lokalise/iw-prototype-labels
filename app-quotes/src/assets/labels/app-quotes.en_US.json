@@ -286,6 +286,7 @@
     "VAT": "VAT",
     "Goods and services are invoiced at the price prevailing at time of acceptance of order. VAT is charged at the rate applicable at the time of invoicing or otherwise in accordance with the law.": "Goods and services are invoiced at the price prevailing at time of acceptance of order. The VAT amount shown is an estimate. The actual VAT amount due will be confirmed upon invoice issuance.",
     "Warranty": "Warranty",
-    "Quote cart is no longer available for export.": "Quote cart is no longer available for export."
+    "Quote cart is no longer available for export.": "Quote cart is no longer available for export.",
+    "Carriers charges cannot be calculated at this time and will be adjusted by your sales representative.": "Carriers charges cannot be calculated at this time and will be adjusted by your sales representative."
   }
 }
