@@ -288,6 +288,7 @@
     "Warranty": "Warranty",
     "Quote cart is no longer available for export.": "Quote cart is no longer available for export.",
     "Carriers charges cannot be calculated at this time and will be adjusted by your sales representative.": "Carriers charges cannot be calculated at this time and will be adjusted by your sales representative.",
-    "Inventory Storage (No Shipment)": "Inventory Storage (No Shipment)"
+    "Inventory Storage (No Shipment)": "Inventory Storage (No Shipment)",
+    "Shipping charges have not yet been determined and are not included in the displayed total.": "Shipping charges have not yet been determined and are not included in the displayed total."
   }
 }
