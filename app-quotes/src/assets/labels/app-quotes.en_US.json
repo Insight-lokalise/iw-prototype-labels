@@ -291,6 +291,24 @@
     "Inventory Storage (No Shipment)": "Inventory Storage (No Shipment)",
     "Shipping charges have not yet been determined and are not included in the displayed total.": "Shipping charges have not yet been determined and are not included in the displayed total.",
     "Prices have been updated based on the shipping country.": "Prices have been updated based on the shipping country.",
-    "Unable to update prices for the selected shipping country. Please select the address again.": "Unable to update prices for the selected shipping country. Please select the address again."
+    "Unable to update prices for the selected shipping country. Please select the address again.": "Unable to update prices for the selected shipping country. Please select the address again.",
+    "Address created": "Address created",
+    "The address already exists.": "The address already exists.",
+    "The favorite name entered already exists": "The favorite name entered already exists.",
+    "Address creation in SAP failed.": "Address creation in SAP failed.",
+    "Address could not be verified.": "Address could not be verified.",
+    "An issue exists with the shipping/billing address. Please contact your account representative for more information.": "An issue exists with the shipping/billing address. Please contact your account representative for more information.",
+    "There is an issue with the entered address.  Please use the suggested address or modify the address as necessary.": "There is an issue with the entered address.  Please use the suggested address or modify the address as necessary.",
+    "Attn:": "Attn:",
+    "Contract": "Contract",
+    "EWR Fee Information ": "EWR Fee Information ",
+    "Error retrieving quote": "Error retrieving quote",
+    "Please select an address": "Please select an address",
+    "Protection": "Protection",
+    "Save as quote confirmation": "Save as quote confirmation",
+    "Shipments out of Canada require a special ordering process.  Please contact your Account Executive for assistance.": "Shipments out of Canada require a special ordering process.  Please contact your Account Executive for assistance.",
+    "Shipping related notes": "Shipping related notes",
+    "The address was successfully added.": "The address was successfully added.",
+    "You are using this address:": "You are using this address:"
   }
 }
