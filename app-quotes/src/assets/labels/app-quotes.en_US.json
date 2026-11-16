@@ -289,6 +289,8 @@
     "Quote cart is no longer available for export.": "Quote cart is no longer available for export.",
     "Carriers charges cannot be calculated at this time and will be adjusted by your sales representative.": "Carriers charges cannot be calculated at this time and will be adjusted by your sales representative.",
     "Inventory Storage (No Shipment)": "Inventory Storage (No Shipment)",
-    "Shipping charges have not yet been determined and are not included in the displayed total.": "Shipping charges have not yet been determined and are not included in the displayed total."
+    "Shipping charges have not yet been determined and are not included in the displayed total.": "Shipping charges have not yet been determined and are not included in the displayed total.",
+    "Prices have been updated based on the shipping country.": "Prices have been updated based on the shipping country.",
+    "Unable to update prices for the selected shipping country. Please select the address again.": "Unable to update prices for the selected shipping country. Please select the address again."
   }
 }
