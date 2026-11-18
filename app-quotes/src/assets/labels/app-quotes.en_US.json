@@ -309,6 +309,10 @@
     "Shipments out of Canada require a special ordering process.  Please contact your Account Executive for assistance.": "Shipments out of Canada require a special ordering process.  Please contact your Account Executive for assistance.",
     "Shipping related notes": "Shipping related notes",
     "The address was successfully added.": "The address was successfully added.",
-    "You are using this address:": "You are using this address:"
+    "You are using this address:": "You are using this address:",
+    "Legal entity": "Legal entity",
+    "GST Estimate": "GST Estimate",
+    "VAT Estimate": "VAT Estimate",
+    "Company Number": "Company Number"
   }
 }
