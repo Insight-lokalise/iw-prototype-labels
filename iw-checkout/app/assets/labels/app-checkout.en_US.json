@@ -700,6 +700,7 @@
     "This quote has already been converted to an order and is no longer valid.": "This quote has already been converted to an order and is no longer valid.",
     "testForRemoval": "testForRemoval",
     "This order will replenish your client-owned inventory and will go on hold for review by Insight before processing.": "This order will replenish your client-owned inventory and will go on hold for review by Insight before processing.",
-    "As soon as your client-owned inventory replenishment order is processed, you will receive an email confirmation containing your order details.": "As soon as your client-owned inventory replenishment order is processed, you will receive an email confirmation containing your order details."
+    "As soon as your client-owned inventory replenishment order is processed, you will receive an email confirmation containing your order details.": "As soon as your client-owned inventory replenishment order is processed, you will receive an email confirmation containing your order details.",
+    "Try again": "Try again"
   }
 }
